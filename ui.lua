@@ -2,7 +2,7 @@
 -- Spotify-inspired single-window UI. Transport, seek, BPM, error margin and
 -- MIDI-spoof controls all live inside the one window (no separate popup).
 
-return function(Engine, catalog, host)
+return function(Engine, catalog, host, inheritedParent)
     local Players = game:GetService("Players")
     local HttpService = game:GetService("HttpService")
     local TweenService = game:GetService("TweenService")
@@ -58,10 +58,28 @@ return function(Engine, catalog, host)
         return l
     end
 
-    local parentGui = (gethui and pcall and (function()
-        local ok, h = pcall(gethui)
-        return ok and h or nil
-    end)()) or game:GetService("CoreGui")
+    local function resolveParent()
+        local candidates = {}
+        if inheritedParent then candidates[#candidates + 1] = function() return inheritedParent end end
+        if gethui then candidates[#candidates + 1] = function() return gethui() end end
+        candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
+        candidates[#candidates + 1] = function() return game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui", 5) end
+        for _, f in ipairs(candidates) do
+            local ok, parent = pcall(f)
+            if ok and parent then
+                local ok2 = pcall(function()
+                    local t = Instance.new("ScreenGui")
+                    t.Parent = parent
+                    t:Destroy()
+                end)
+                if ok2 then return parent end
+            end
+        end
+        return nil
+    end
+
+    local parentGui = resolveParent()
+    if not parentGui then error("[P1AN0] no valid gui parent (gethui/CoreGui/PlayerGui all failed)") end
 
     local gui = make("ScreenGui", {
         Name = "0M3G4_P1AN0",
