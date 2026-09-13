@@ -562,12 +562,22 @@ return function(Engine, catalog, host, inheritedParent)
     render()
     notify("0M3G4 P1AN0 loaded  •  " .. tostring(catalog.count or #catalog.songs) .. " songs")
 
-    task.delay(0.7, function()
-        pcall(function()
-            print(string.format(
-                "[P1AN0] diag parent=%s enabled=%s frameVisible=%s frameSize=%s framePos=%s togglePos=%s",
-                tostring(gui.Parent), tostring(gui.Enabled), tostring(frame.Visible),
-                tostring(frame.AbsoluteSize), tostring(frame.AbsolutePosition), tostring(toggle.AbsolutePosition)))
-        end)
+    print(string.format("[P1AN0] ui built: gui=%s parent=%s enabled=%s children=%d",
+        tostring(gui), tostring(gui.Parent), tostring(gui.Enabled), #gui:GetChildren()))
+    print(string.format("[P1AN0] frame parent=%s visible=%s size=%s pos=%s | toggle parent=%s pos=%s",
+        tostring(frame.Parent), tostring(frame.Visible), tostring(frame.Size), tostring(frame.Position),
+        tostring(toggle.Parent), tostring(toggle.Position)))
+
+    task.spawn(function()
+        task.wait(0.5)
+        local size = frame.AbsoluteSize
+        print(string.format("[P1AN0] diag parent=%s frameAbsSize=%s frameAbsPos=%s", tostring(gui.Parent), tostring(size), tostring(frame.AbsolutePosition)))
+        if size.X < 2 or size.Y < 2 then
+            local pg = game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
+            if pg then
+                gui.Parent = pg
+                print("[P1AN0] frame had no size under " .. tostring(parentGui) .. " ; reparented ui to PlayerGui")
+            end
+        end
     end)
 end
