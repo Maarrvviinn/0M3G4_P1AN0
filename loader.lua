@@ -44,7 +44,7 @@ end
 
 -- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
 -- can never serve a stale copy. Bump REV whenever those files change.
-local REV = "0e956e0"
+local REV = "ed8630b"
 
 local HOSTS = {
     "https://cdn.jsdelivr.net/gh/Maarrvviinn/0M3G4_P1AN0@" .. REV .. "/",
@@ -160,6 +160,8 @@ local function main()
     if not engineSrc then return false, "could not download engine.lua" end
     local uiSrc = fetchFile("ui.lua")
     if not uiSrc then return false, "could not download ui.lua" end
+    local iconsSrc = fetchFile("icons.lua")
+    if not iconsSrc then return false, "could not download icons.lua" end
 
     local compile = loadstring or load
     if type(compile) ~= "function" then return false, "loadstring is not available in this executor" end
@@ -177,7 +179,14 @@ local function main()
     if not uiChunk then return false, "ui compile error: " .. tostring(uerr) end
     local uiFn = uiChunk()
     if type(uiFn) ~= "function" then return false, "ui.lua did not return a factory" end
-    uiFn(Engine, catalog, host, parentGui)
+
+    local iconsChunk, ierr = compile(iconsSrc, "P1AN0_ICONS")
+    if not iconsChunk then return false, "icons compile error: " .. tostring(ierr) end
+    local iconsFn = iconsChunk()
+    local Icons = type(iconsFn) == "function" and iconsFn() or nil
+    log("icons ready:", Icons and tostring(Icons.Lucide ~= nil) or "none")
+
+    uiFn(Engine, catalog, host, parentGui, Icons)
     log("ui ready")
 
     return true
