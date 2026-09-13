@@ -1,10 +1,9 @@
 -- 0M3G4 P1AN0 || ui.lua
 -- Spotify-inspired desktop client for Roblox piano autoplayer.
--- Features: Fixed native HttpGet download flow matching TALENTLESS source,
--- sleek player bar with NO bulky grey backgrounds, compact 52px MIDI badge with zero timestamp collisions,
--- clean 68px collapsible sidebar with centered icons, dynamic proportional table columns
--- that resize without clipping behind Settings, tactile button click/hover micro-interactions,
--- and ironclad isolation from ghost hovers.
+-- Features: Native HTTP song download, rock-solid playback flow,
+-- sleek player bar with no bulky cards, compact 52px MIDI badge with zero collisions,
+-- clean 68px collapsible sidebar with centered icons, pure percentage table columns
+-- that never overlap, tactile button micro-interactions, and ghost hover isolation.
 
 return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local Players = game:GetService("Players")
@@ -77,7 +76,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         if IIcons then IIcons.set(obj, name, color) end
     end
 
-    -- Tactile button interaction helper (hover brightening + scale depress)
+    -- Tactile button interaction helper
     local function addTactile(btn, opts)
         opts = opts or {}
         local uis = make("UIScale", { Parent = btn, Scale = 1 })
@@ -228,13 +227,12 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         Visible = true,
     })
     corner(win, 10)
-    -- Subtle elegant border around the window
     make("UIStroke", {
         Parent = win, Color = C.border, Thickness = 1, Transparency = 0.45,
         ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
     })
 
-    -- Floating edge toggle button on screen edge (visible only when minimized)
+    -- Floating edge toggle button (visible only when minimized)
     local toggle = make("TextButton", {
         Name = "toggle", Parent = gui, AnchorPoint = Vector2.new(0, 0.5),
         Position = UDim2.new(0, 8, 0.4, 0), Size = UDim2.fromOffset(44, 44),
@@ -263,19 +261,17 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         ClipsDescendants = true, ZIndex = 1,
     })
 
-    -- Sidebar brand header with collapse toggle button
-    local brand = make("Frame", { Parent = sidebar, Size = UDim2.new(1, 0, 0, 56), BackgroundTransparency = 1, ZIndex = 2 })
-    local brandIcon = icon(brand, "music", 20, C.accent, UDim2.new(0, isSidebarCollapsed and 34 or 20, 0.5, 0), Vector2.new(0.5, 0.5), "o")
-    local brandTitle = label(brand, { Position = UDim2.new(0, 42, 0, 0), Size = UDim2.new(1, -84, 1, 0), ZIndex = 2 }, "0M3G4 P1AN0", 15, true, C.text)
-    brandTitle.Visible = not isSidebarCollapsed
+    -- Brand header with non-colliding collapse toggle button
+    local brand = make("Frame", { Parent = sidebar, Size = UDim2.new(1, 0, 0, 52), BackgroundTransparency = 1, ZIndex = 2 })
+    local brandIcon = icon(brand, "music", 18, C.accent, UDim2.new(0, 18, 0.5, 0), Vector2.new(0, 0.5), "o")
+    local brandTitle = label(brand, { Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(0, 120, 1, 0), ZIndex = 2 }, "0M3G4 P1AN0", 15, true, C.text)
 
     local collapseBtn = make("TextButton", {
-        Parent = brand, AnchorPoint = isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(1, 0.5),
-        Position = isSidebarCollapsed and UDim2.new(0.5, 0, 0.5, 0) or UDim2.new(1, -10, 0.5, 0),
-        Size = UDim2.fromOffset(30, 30), BackgroundTransparency = 1, Text = "", AutoButtonColor = false, ZIndex = 4,
+        Parent = brand, AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -12, 0.5, 0),
+        Size = UDim2.fromOffset(28, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false, ZIndex = 4,
     })
     corner(collapseBtn, 6)
-    local collapseIcon = icon(collapseBtn, isSidebarCollapsed and "panel-left-open" or "panel-left-close", 16, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), isSidebarCollapsed and "[>]" or "[|]")
+    local collapseIcon = icon(collapseBtn, "panel-left-close", 16, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "[|]")
     addTactile(collapseBtn, {
         onHover = function(h)
             collapseBtn.BackgroundTransparency = h and 0.85 or 1
@@ -286,33 +282,28 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
     local nav = make("Frame", { Parent = sidebar, Position = UDim2.new(0, 0, 0, 56), Size = UDim2.new(1, 0, 0, 88), BackgroundTransparency = 1, ZIndex = 2 })
     local browseBtn = make("TextButton", {
-        Parent = nav, Position = UDim2.new(0, isSidebarCollapsed and 14 or 10, 0, 2),
-        Size = isSidebarCollapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40),
+        Parent = nav, Position = UDim2.new(0, 10, 0, 2), Size = UDim2.new(1, -20, 0, 38),
         BackgroundColor3 = C.hover, BackgroundTransparency = 0.8, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2,
     })
     corner(browseBtn, 6)
-    local browseIcon = icon(browseBtn, "home", 18, C.text, isSidebarCollapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0), isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5), "^")
+    local browseIcon = icon(browseBtn, "home", 18, C.text, UDim2.new(0, 12, 0.5, 0), Vector2.new(0, 0.5), "^")
     local browseLbl = label(browseBtn, { Position = UDim2.new(0, 38, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Browse", 14, true, C.text)
-    browseLbl.Visible = not isSidebarCollapsed
     addTactile(browseBtn)
 
     local settingsBtn = make("TextButton", {
-        Parent = nav, Position = UDim2.new(0, isSidebarCollapsed and 14 or 10, 0, 44),
-        Size = isSidebarCollapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40),
+        Parent = nav, Position = UDim2.new(0, 10, 0, 44), Size = UDim2.new(1, -20, 0, 38),
         BackgroundColor3 = C.hover, BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2,
     })
     corner(settingsBtn, 6)
-    local settingsIcon = icon(settingsBtn, "sliders", 18, C.sub, isSidebarCollapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0), isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5), "*")
+    local settingsIcon = icon(settingsBtn, "sliders", 18, C.sub, UDim2.new(0, 12, 0.5, 0), Vector2.new(0, 0.5), "*")
     local settingsLbl = label(settingsBtn, { Position = UDim2.new(0, 38, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Settings", 14, false, C.sub)
-    settingsLbl.Visible = not isSidebarCollapsed
     addTactile(settingsBtn)
 
     local libHeader = label(sidebar, { Position = UDim2.new(0, 18, 0, 150), Size = UDim2.new(1, -26, 0, 18), ZIndex = 2 }, "LIBRARY", 11, true, C.dim)
-    libHeader.Visible = not isSidebarCollapsed
 
     local sideList = make("ScrollingFrame", {
         Parent = sidebar, Position = UDim2.new(0, 6, 0, 172), Size = UDim2.new(1, -12, 1, -180),
-        BackgroundTransparency = 1, BorderSizePixel = 0, ScrollBarThickness = isSidebarCollapsed and 0 or 2,
+        BackgroundTransparency = 1, BorderSizePixel = 0, ScrollBarThickness = 2,
         ScrollBarImageColor3 = Color3.fromRGB(60, 60, 60),
         CanvasSize = UDim2.new(0, 0, 0, 0), AutomaticCanvasSize = Enum.AutomaticSize.Y,
         ZIndex = 2,
@@ -346,16 +337,22 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local header = label(main, { Position = UDim2.new(0, 20, 0, 64), Size = UDim2.new(1, -40, 0, 24) }, "All songs", 20, true, C.text)
     local subheader = label(main, { Position = UDim2.new(0, 20, 0, 90), Size = UDim2.new(1, -40, 0, 16) }, "", 12, false, C.sub)
 
-    -- Dynamic table header
+    -- Dynamic table header with 100% scale proportions (zero overlap)
     local tableHeader = make("Frame", {
         Parent = main, Position = UDim2.new(0, 12, 0, 112), Size = UDim2.new(1, -24, 0, 28),
         BackgroundTransparency = 1, BorderSizePixel = 0, ZIndex = 2,
     })
     local thIndex = label(tableHeader, { Position = UDim2.new(0, 4, 0, 0), Size = UDim2.fromOffset(36, 26) }, "#", 12, false, C.dim, Enum.TextXAlignment.Center)
-    local thTitle = label(tableHeader, { Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(0, 240, 1, 0) }, "Title", 12, false, C.dim)
-    local thArtist = label(tableHeader, { Position = UDim2.new(0, 290, 0, 0), Size = UDim2.new(0, 160, 1, 0) }, "Artist", 12, false, C.dim)
-    local thGenre = label(tableHeader, { Position = UDim2.new(0, 460, 0, 0), Size = UDim2.new(0, 130, 1, 0) }, "Genre", 12, false, C.dim)
     local thBpm = label(tableHeader, { Position = UDim2.new(1, -64, 0, 0), Size = UDim2.fromOffset(56, 26) }, "BPM", 12, false, C.dim, Enum.TextXAlignment.Right)
+
+    local thCols = make("Frame", {
+        Parent = tableHeader, Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(1, -124, 1, 0),
+        BackgroundTransparency = 1, BorderSizePixel = 0,
+    })
+    local thTitle = label(thCols, { Position = UDim2.new(0, 0, 0, 0), Size = UDim2.new(0.46, -8, 1, 0) }, "Title", 12, false, C.dim)
+    local thArtist = label(thCols, { Position = UDim2.new(0.48, 0, 0, 0), Size = UDim2.new(0.28, -8, 1, 0) }, "Artist", 12, false, C.dim)
+    local thGenre = label(thCols, { Position = UDim2.new(0.78, 0, 0, 0), Size = UDim2.new(0.22, 0, 1, 0) }, "Genre", 12, false, C.dim)
+
     make("Frame", {
         Parent = tableHeader, Position = UDim2.new(0, 0, 1, -1), Size = UDim2.new(1, 0, 0, 1),
         BackgroundColor3 = Color3.fromRGB(36, 36, 36), BorderSizePixel = 0,
@@ -412,9 +409,9 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         })
         return b, ic
     end
-    local shuffleBtn = transportBtn("shuffle", "~", 26, false)
-    local playBtn = transportBtn("play", ">", 36, true)
-    local stopBtn = transportBtn("square", "[]", 26, false)
+    local shuffleBtn, shuffleIcon = transportBtn("shuffle", "~", 26, false)
+    local playBtn, playBtnIcon = transportBtn("play", ">", 36, true)
+    local stopBtn, stopIcon = transportBtn("square", "[]", 26, false)
 
     local curTime = label(transport, { Position = UDim2.new(0, 0, 0, 42), Size = UDim2.fromOffset(38, 16) }, "0:00", 11, false, C.sub, Enum.TextXAlignment.Right)
     local totTime = label(transport, { Position = UDim2.new(1, -38, 0, 42), Size = UDim2.fromOffset(38, 16) }, "0:00", 11, false, C.sub, Enum.TextXAlignment.Left)
@@ -518,20 +515,16 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     end
 
     -- ---------------------------------------------------------------- robust song fetching
-    -- Matches TALENTLESS source directly: relies on native game:HttpGet without hanging request stubs
     local memCache = {}
     local function cachePath(file) return CACHE_DIR .. "/" .. file end
 
     local function httpGet(url)
-        -- 1. Direct game:HttpGet with cache (standard native executor API)
         local ok, res = pcall(function() return game:HttpGet(url, true) end)
         if ok and type(res) == "string" and #res > 0 then return res end
 
-        -- 2. Direct game:HttpGet without cache flag
         local ok2, res2 = pcall(function() return game:HttpGet(url) end)
         if ok2 and type(res2) == "string" and #res2 > 0 then return res2 end
 
-        -- 3. game:HttpGetAsync
         local ok3, res3 = pcall(function() return game:HttpGetAsync(url) end)
         if ok3 and type(res3) == "string" and #res3 > 0 then return res3 end
 
@@ -585,7 +578,8 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     end
 
     local function setTransportIcon()
-        setIcon(playBtn, (Engine.playing and not Engine.paused) and "pause" or "play", Color3.fromRGB(0, 0, 0))
+        local isPlaying = Engine.playing and not Engine.paused
+        setIcon(playBtnIcon, isPlaying and "pause" or "play", Color3.fromRGB(0, 0, 0))
     end
 
     local function updateProgress()
@@ -644,12 +638,11 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         npSub.Text = string.format("%s BPM  ·  %s", tostring(song.bpm), tags)
     end
 
-    -- Asynchronous song loader that immediately prepares song for playing
+    -- Asynchronous song loader that immediately prepares and starts playback
     local function selectSong(song, forcePlay)
         updateNow(song)
         if forcePlay then playPendingOnLoad = true end
 
-        -- If song script is already in memory and engine has it loaded
         if Engine.songName == song.name and #Engine.song > 0 then
             Engine.setBpm(tonumber(song.bpm) or 120)
             updateBpmLabels()
@@ -661,7 +654,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             return
         end
 
-        npSub.Text = "Loading song from CDN..."
+        npSub.Text = "Downloading song..."
         curTime.Text = "0:00"
         totTime.Text = "--:--"
         fill.Size = UDim2.new(0, 0, 1, 0)
@@ -673,7 +666,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
         if not src then
             print(string.format("[P1AN0] failed to load '%s': %s", song.name, tostring(err)))
-            notify("Failed to load " .. song.name .. " (" .. tostring(err) .. ")", C.danger)
+            notify("Download failed: " .. song.name, C.danger)
             npSub.Text = "Download failed"
             playPendingOnLoad = false
             return
@@ -681,9 +674,10 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
         Engine.setBpm(tonumber(song.bpm) or 120)
         updateBpmLabels()
+        npSub.Text = "Loading notes..."
 
-        local ok, lerr = Engine.load(src, song.name)
-        if not ok then
+        local ok, lerr = pcall(function() return Engine.load(src, song.name) end)
+        if not ok or not lerr then
             print(string.format("[P1AN0] Engine.load error for '%s': %s", song.name, tostring(lerr)))
             notify("Song error: " .. tostring(lerr), C.danger)
             npSub.Text = "Load error"
@@ -708,7 +702,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         end
     end
 
-    -- ---------------------------------------------------------------- dynamic proportional columns
+    -- ---------------------------------------------------------------- 100% scale proportional columns
     local function updateColumnLayout()
         local showArt = Settings.data.showColArtist
         local showGen = Settings.data.showColGenre
@@ -718,52 +712,57 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         thGenre.Visible = showGen
         thBpm.Visible = showBpm
 
-        -- Measure list width or use dynamic proportions
-        local availW = math.max(300, list.AbsoluteSize.X - 44 - (showBpm and 64 or 12))
+        local colRightBuffer = showBpm and 124 or 52
+        thCols.Size = UDim2.new(1, -colRightBuffer, 1, 0)
 
-        local titleW, artW, genW
+        local titleScale, titlePos
+        local artScale, artPos
+        local genScale, genPos
+
         if showArt and showGen then
-            titleW = math.floor(availW * 0.46)
-            artW = math.floor(availW * 0.30)
-            genW = math.floor(availW * 0.24)
+            titlePos = 0.00; titleScale = 0.46
+            artPos   = 0.48; artScale   = 0.28
+            genPos   = 0.78; genScale   = 0.22
         elseif showArt and not showGen then
-            titleW = math.floor(availW * 0.62)
-            artW = math.floor(availW * 0.38)
-            genW = 0
+            titlePos = 0.00; titleScale = 0.60
+            artPos   = 0.62; artScale   = 0.38
+            genPos   = 1.00; genScale   = 0.00
         elseif not showArt and showGen then
-            titleW = math.floor(availW * 0.66)
-            artW = 0
-            genW = math.floor(availW * 0.34)
+            titlePos = 0.00; titleScale = 0.68
+            artPos   = 1.00; artScale   = 0.00
+            genPos   = 0.70; genScale   = 0.30
         else
-            titleW = availW
-            artW = 0
-            genW = 0
+            titlePos = 0.00; titleScale = 1.00
+            artPos   = 1.00; artScale   = 0.00
+            genPos   = 1.00; genScale   = 0.00
         end
 
-        local offset = 44
-        thTitle.Position = UDim2.new(0, offset, 0, 0)
-        thTitle.Size = UDim2.new(0, titleW, 1, 0)
+        thTitle.Position = UDim2.new(titlePos, 0, 0, 0)
+        thTitle.Size     = UDim2.new(titleScale, -8, 1, 0)
 
-        thArtist.Position = UDim2.new(0, offset + titleW + 8, 0, 0)
-        thArtist.Size = UDim2.new(0, artW, 1, 0)
+        thArtist.Position = UDim2.new(artPos, 0, 0, 0)
+        thArtist.Size     = UDim2.new(artScale, -8, 1, 0)
 
-        thGenre.Position = UDim2.new(0, offset + titleW + (showArt and (artW + 16) or 8), 0, 0)
-        thGenre.Size = UDim2.new(0, genW, 1, 0)
+        thGenre.Position = UDim2.new(genPos, 0, 0, 0)
+        thGenre.Size     = UDim2.new(genScale, 0, 1, 0)
 
         for _, ref in pairs(rowRefs) do
+            if ref.rowCols then
+                ref.rowCols.Size = UDim2.new(1, -colRightBuffer, 1, 0)
+            end
             if ref.nm then
-                ref.nm.Position = UDim2.new(0, offset, 0, 0)
-                ref.nm.Size = UDim2.new(0, titleW, 1, 0)
+                ref.nm.Position = UDim2.new(titlePos, 0, 0, 0)
+                ref.nm.Size     = UDim2.new(titleScale, -8, 1, 0)
             end
             if ref.artistLbl then
-                ref.artistLbl.Visible = showArt
-                ref.artistLbl.Position = UDim2.new(0, offset + titleW + 8, 0, 0)
-                ref.artistLbl.Size = UDim2.new(0, artW, 1, 0)
+                ref.artistLbl.Visible  = showArt
+                ref.artistLbl.Position = UDim2.new(artPos, 0, 0, 0)
+                ref.artistLbl.Size     = UDim2.new(artScale, -8, 1, 0)
             end
             if ref.genreLbl then
-                ref.genreLbl.Visible = showGen
-                ref.genreLbl.Position = UDim2.new(0, offset + titleW + (showArt and (artW + 16) or 8), 0, 0)
-                ref.genreLbl.Size = UDim2.new(0, genW, 1, 0)
+                ref.genreLbl.Visible  = showGen
+                ref.genreLbl.Position = UDim2.new(genPos, 0, 0, 0)
+                ref.genreLbl.Size     = UDim2.new(genScale, 0, 1, 0)
             end
             if ref.bpmLbl then
                 ref.bpmLbl.Visible = showBpm
@@ -825,19 +824,26 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                 local rowPlayIcon = icon(indexSlot, "play", 14, isCurrent and C.accent or C.text, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), ">")
                 rowPlayIcon.Visible = false
 
-                local nm = label(row, { Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(0, 240, 1, 0) }, song.name, 13, false, isCurrent and C.accent or C.text)
+                -- Proportional container between index and BPM
+                local rowCols = make("Frame", {
+                    Parent = row, Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(1, -124, 1, 0),
+                    BackgroundTransparency = 1, BorderSizePixel = 0,
+                })
+
+                local nm = label(rowCols, { Position = UDim2.new(0, 0, 0, 0), Size = UDim2.new(0.46, -8, 1, 0) }, song.name, 13, false, isCurrent and C.accent or C.text)
                 nm.TextTruncate = Enum.TextTruncate.AtEnd
 
-                local artistLbl = label(row, { Position = UDim2.new(0, 290, 0, 0), Size = UDim2.new(0, 160, 1, 0) }, getSongArtist(song), 12, false, C.sub)
+                local artistLbl = label(rowCols, { Position = UDim2.new(0.48, 0, 0, 0), Size = UDim2.new(0.28, -8, 1, 0) }, getSongArtist(song), 12, false, C.sub)
                 artistLbl.TextTruncate = Enum.TextTruncate.AtEnd
 
-                local genreLbl = label(row, { Position = UDim2.new(0, 460, 0, 0), Size = UDim2.new(0, 130, 1, 0) }, (#song.cat > 0) and song.cat[1] or "", 12, false, C.sub)
+                local genreLbl = label(rowCols, { Position = UDim2.new(0.78, 0, 0, 0), Size = UDim2.new(0.22, 0, 1, 0) }, (#song.cat > 0) and song.cat[1] or "", 12, false, C.sub)
                 genreLbl.TextTruncate = Enum.TextTruncate.AtEnd
 
                 local bpmLbl = label(row, { Position = UDim2.new(1, -64, 0, 0), Size = UDim2.fromOffset(56, 36) }, tostring(song.bpm), 12, false, C.sub, Enum.TextXAlignment.Right)
 
                 rowRefs[song.file] = {
                     row = row,
+                    rowCols = rowCols,
                     nm = nm,
                     artistLbl = artistLbl,
                     genreLbl = genreLbl,
@@ -903,17 +909,13 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local function sideItem(name, iconName, glyph, filter)
         order = order + 1
         local b = make("TextButton", {
-            Parent = sideList,
-            Size = isSidebarCollapsed and UDim2.fromOffset(40, 36) or UDim2.new(1, 0, 0, 32),
-            Position = isSidebarCollapsed and UDim2.new(0.5, 0, 0, 0) or UDim2.new(0, 0, 0, 0),
-            AnchorPoint = isSidebarCollapsed and Vector2.new(0.5, 0) or Vector2.new(0, 0),
-            BackgroundColor3 = C.sidebar, BackgroundTransparency = 1, BorderSizePixel = 0,
-            Text = "", AutoButtonColor = false, LayoutOrder = order, ZIndex = 2,
+            Parent = sideList, Size = UDim2.new(1, 0, 0, 32),
+            Position = UDim2.new(0, 0, 0, 0), BackgroundColor3 = C.sidebar, BackgroundTransparency = 1,
+            BorderSizePixel = 0, Text = "", AutoButtonColor = false, LayoutOrder = order, ZIndex = 2,
         })
         corner(b, 4)
-        local ic = icon(b, iconName, 16, C.sub, isSidebarCollapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 8, 0.5, 0), isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5), glyph)
+        local ic = icon(b, iconName, 16, C.sub, UDim2.new(0, 8, 0.5, 0), Vector2.new(0, 0.5), glyph)
         local lbl = label(b, { Position = UDim2.new(0, 34, 0, 0), Size = UDim2.new(1, -40, 1, 0), ZIndex = 2 }, name, 13, false, C.sub)
-        lbl.Visible = not isSidebarCollapsed
 
         sideItemButtons[#sideItemButtons + 1] = { btn = b, lbl = lbl, icon = ic, filter = filter }
         addTactile(b, {
@@ -962,35 +964,66 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         }):Play()
 
         brandTitle.Visible = not collapsed
+        brandIcon.Visible = not collapsed
         browseLbl.Visible = not collapsed
         settingsLbl.Visible = not collapsed
         libHeader.Visible = not collapsed
         sideList.ScrollBarThickness = collapsed and 0 or 2
 
-        collapseIcon.Text = collapsed and "[>]" or "[|]"
-        setIcon(collapseIcon, collapsed and "panel-left-open" or "panel-left-close", C.sub)
-        collapseBtn.Position = collapsed and UDim2.new(0.5, 0, 0.5, 0) or UDim2.new(1, -10, 0.5, 0)
-        collapseBtn.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(1, 0.5)
+        -- Collapse button placement: centered when collapsed, right-anchored when expanded
+        if collapsed then
+            collapseBtn.AnchorPoint = Vector2.new(0.5, 0.5)
+            collapseBtn.Position = UDim2.new(0.5, 0, 0.5, 0)
+            collapseBtn.Size = UDim2.fromOffset(32, 32)
+            setIcon(collapseIcon, "panel-left-open", C.sub)
+            collapseIcon.Text = "[>]"
 
-        brandIcon.Position = UDim2.new(0, collapsed and 34 or 20, 0.5, 0)
+            browseBtn.AnchorPoint = Vector2.new(0.5, 0)
+            browseBtn.Position = UDim2.new(0.5, 0, 0, 2)
+            browseBtn.Size = UDim2.fromOffset(40, 38)
+            browseIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+            browseIcon.Position = UDim2.fromScale(0.5, 0.5)
 
-        browseBtn.Size = collapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40)
-        browseBtn.Position = UDim2.new(0, collapsed and 14 or 10, 0, 2)
-        browseIcon.Position = collapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0)
-        browseIcon.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5)
+            settingsBtn.AnchorPoint = Vector2.new(0.5, 0)
+            settingsBtn.Position = UDim2.new(0.5, 0, 0, 44)
+            settingsBtn.Size = UDim2.fromOffset(40, 38)
+            settingsIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+            settingsIcon.Position = UDim2.fromScale(0.5, 0.5)
+        else
+            collapseBtn.AnchorPoint = Vector2.new(1, 0.5)
+            collapseBtn.Position = UDim2.new(1, -12, 0.5, 0)
+            collapseBtn.Size = UDim2.fromOffset(28, 28)
+            setIcon(collapseIcon, "panel-left-close", C.sub)
+            collapseIcon.Text = "[|]"
 
-        settingsBtn.Size = collapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40)
-        settingsBtn.Position = UDim2.new(0, collapsed and 14 or 10, 0, 44)
-        settingsIcon.Position = collapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0)
-        settingsIcon.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5)
+            browseBtn.AnchorPoint = Vector2.new(0, 0)
+            browseBtn.Position = UDim2.new(0, 10, 0, 2)
+            browseBtn.Size = UDim2.new(1, -20, 0, 38)
+            browseIcon.AnchorPoint = Vector2.new(0, 0.5)
+            browseIcon.Position = UDim2.new(0, 12, 0.5, 0)
+
+            settingsBtn.AnchorPoint = Vector2.new(0, 0)
+            settingsBtn.Position = UDim2.new(0, 10, 0, 44)
+            settingsBtn.Size = UDim2.new(1, -20, 0, 38)
+            settingsIcon.AnchorPoint = Vector2.new(0, 0.5)
+            settingsIcon.Position = UDim2.new(0, 12, 0.5, 0)
+        end
 
         for _, item in ipairs(sideItemButtons) do
             item.lbl.Visible = not collapsed
-            item.btn.Size = collapsed and UDim2.fromOffset(40, 36) or UDim2.new(1, 0, 0, 32)
-            item.btn.Position = collapsed and UDim2.new(0.5, 0, 0, 0) or UDim2.new(0, 0, 0, 0)
-            item.btn.AnchorPoint = collapsed and Vector2.new(0.5, 0) or Vector2.new(0, 0)
-            item.icon.Position = collapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 8, 0.5, 0)
-            item.icon.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5)
+            if collapsed then
+                item.btn.AnchorPoint = Vector2.new(0.5, 0)
+                item.btn.Position = UDim2.new(0.5, 0, 0, 0)
+                item.btn.Size = UDim2.fromOffset(40, 36)
+                item.icon.AnchorPoint = Vector2.new(0.5, 0.5)
+                item.icon.Position = UDim2.fromScale(0.5, 0.5)
+            else
+                item.btn.AnchorPoint = Vector2.new(0, 0)
+                item.btn.Position = UDim2.new(0, 0, 0, 0)
+                item.btn.Size = UDim2.new(1, 0, 0, 32)
+                item.icon.AnchorPoint = Vector2.new(0, 0.5)
+                item.icon.Position = UDim2.new(0, 8, 0.5, 0)
+            end
         end
 
         task.delay(0.24, function() updateColumnLayout() end)
@@ -1026,7 +1059,6 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         updateNav()
         if open then clearSongHovers() end
 
-        -- Smoothly resize main area so table columns NEVER clip behind settings panel
         local tInfo = TweenInfo.new(0.22, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
         local mainW = open and (currentSideW + PANEL_W) or currentSideW
         TweenService:Create(main, tInfo, { Size = UDim2.new(1, -mainW, 1, -NOW_H) }):Play()
@@ -1276,6 +1308,9 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     updateBpmLabels()
     updateProgress()
     render(false)
+
+    -- Synchronize sidebar collapse state cleanly on startup
+    setSidebarCollapsed(isSidebarCollapsed)
 
     print(string.format("[P1AN0] ui built: parent=%s songs=%d cache=%s autoplay=%s fileapi=%s/%s",
         tostring(gui.Parent), #catalog.songs, tostring(Settings.data.cachesongs), tostring(Settings.data.autoplay),

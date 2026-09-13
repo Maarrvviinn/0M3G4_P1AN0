@@ -109,13 +109,28 @@ return function()
 
     function I.set(img, name, color)
         if not img then return end
+        if not (img:IsA("ImageLabel") or img:IsA("TextLabel")) then
+            local child = img:FindFirstChild("Icon")
+            if child then img = child else return end
+        end
         local asset = I.get(name)
         if asset and img:IsA("ImageLabel") then
             img.Image = asset.Url
             if asset.ImageRectSize then img.ImageRectSize = asset.ImageRectSize end
             if asset.ImageRectOffset then img.ImageRectOffset = asset.ImageRectOffset end
+            if color then img.ImageColor3 = color end
+        elseif img:IsA("TextLabel") then
+            local glyphs = {
+                ["play"] = ">", ["pause"] = "||", ["square"] = "[]", ["stop"] = "[]",
+                ["panel-left-close"] = "[|]", ["panel-left-open"] = "[>]",
+                ["panel-left"] = "[|]", ["home"] = "^", ["sliders"] = "*",
+                ["music"] = "o", ["sparkles"] = "*", ["zap"] = "!", ["tag"] = "#"
+            }
+            if glyphs[name] then img.Text = glyphs[name] end
+            if color then img.TextColor3 = color end
+        elseif img:IsA("ImageLabel") and color then
+            img.ImageColor3 = color
         end
-        if color then img.ImageColor3 = color end
     end
 
     return I
