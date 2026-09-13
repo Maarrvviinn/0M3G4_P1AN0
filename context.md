@@ -16,23 +16,25 @@ Important Details
 - UI must stay Spotify-style (user approved current look, wants further polish). Do NOT copy the Neighbors UI style (user finds it ugly).
 - Test tooling in temp: C:\Users\marvi\AppData\Local\Temp\opencode\luau\bin\luau-compile.exe (syntax check), luau.exe (run), talentless-src\ (full clone), generation scripts harvest.py, checklive.js, generate.py, build_loader.py, fetch_songs.js, p1ano\ (loader/engine/ui/icons staging), out\ (build outputs).
 - Use Write tool / .NET WriteAllText(..., newline="\n") with UTF-8 no BOM for repo files (PowerShell Set-Content -Encoding utf8 adds BOM -> breaks luau-compile; a BOM round-trip also mojibake'd emoji).
-- Pinned entry file: C:\Users\marvi\Documents\ANTIAV\Roblox\! scripts\0M3G4 P1AN0.lua (points at d546950/loader.lua).
+- Pinned entry file: C:\Users\marvi\Documents\ANTIAV\Roblox\! scripts\0M3G4 P1AN0.lua (points at 79dbafe/loader.lua).
 Work State
 Completed
 - Cloned + populated repo; 650 songs in songs/<url>.lua; catalog.json (version, generated, count, 24 categories, per-song {name,file,bpm,cat[],alts[],size,sha256,sha}); verified live via commit-pinned raw.
 - Delivered no-key build earlier (TALENTLESS_NOKEY.lua self-contained, MAIN_full.lua) in the session workspace folder ...\workspace\0M3G4\S0URCE D3T3CT0R\2026-09-12\18-04-50_f29436d8\.
 - Repo files committed:
-  - 4912355 songs+catalog; c5a2d9e .gitattributes * -text; e177ef3 loader/engine/ui v1; f85b552 loader v2 diagnostics; ba42971 parent fix + diag; 74d9934 explicit build diagnostics; 0e956e0 UI parent to PlayerGui; 031d457 REV pinning; 37571e0 strip BOM; 2382611 double-call fix; ed8630b Spotify UI + Lucide + settings + autoplay + cache (engine/ui/icons); 88bfa39 loader REV=ed8630b; 1b56d3a initial fixes; 86adac3 loader REV=1b56d3a; e36857c Spotify UI overhaul; 709604e loader REV=e36857c; 974f022 error toast fix; 3e90474 loader REV=974f022; e46c273 dragging, pause, keybind input, styling; d546950 loader REV=e46c273.
-- Verified live at d546950 / e46c273: loader.lua, ui.lua, engine.lua all serve HTTP 200 OK.
+  - 4912355 songs+catalog; c5a2d9e .gitattributes * -text; e177ef3 loader/engine/ui v1; f85b552 loader v2 diagnostics; ba42971 parent fix + diag; 74d9934 explicit build diagnostics; 0e956e0 UI parent to PlayerGui; 031d457 REV pinning; 37571e0 strip BOM; 2382611 double-call fix; ed8630b Spotify UI + Lucide + settings + autoplay + cache (engine/ui/icons); 88bfa39 loader REV=ed8630b; 1b56d3a initial fixes; 86adac3 loader REV=1b56d3a; e36857c Spotify UI overhaul; 709604e loader REV=e36857c; 974f022 error toast fix; 3e90474 loader REV=974f022; e46c273 dragging, pause, keybind input, styling; d546950 loader REV=e46c273; cff8bb5 full 650 song library audit (author, genre, title fixes); 79dbafe loader REV=cff8bb5.
+- Verified live at 79dbafe / cff8bb5: loader.lua, ui.lua, engine.lua, catalog.json all serve HTTP 200 OK.
 - Headless verification: compiled cleanly using luau-compile.
 Active
-- Pinned entry loadstring updated in `! scripts\0M3G4 P1AN0.lua` to `d546950/loader.lua`.
-- Fixed fast dragging follow issue: bound to `UserInputService.InputChanged` and `UserInputService.InputEnded` globally so rapid mouse sweeps never drop.
-- Fixed playback pausing: integrated pause-wait state inside `preciseWait` in `engine.lua`, and connected row play icon synchronization inside `Engine.onState`.
-- Replaced minimize hotkey toggle with interactive key-capture input field (supports any key, esc to cancel, persists to settings.json).
-- Fixed Autoplay subtitle overlap in settings: reduced width margin and added `TextTruncate = AtEnd`.
-- Restyled "Reset to defaults" button to seamlessly blend into settings menu card hierarchy.
-- Refined UICorners to sleek 6px-8px standard radii across pill steppers, search bar, and badges.
+- Pinned entry loadstring updated in `! scripts\0M3G4 P1AN0.lua` to `79dbafe/loader.lua`.
+- Full song library audit completed:
+  - Fixed 109 songs with missing/empty genre categories.
+  - Enriched 183 songs that had missing or empty artist / alternative search tags.
+  - Replaced misplaced genre tags in the artist slot with real composers/producers (e.g. Tom Odell for Another Love, Grover Washington Jr. / Bill Withers for Just The Two Of Us, Toby Fox for Undertale/Deltarune, Michael Giacchino for Married Life).
+  - Fixed raw underscore titles (e.g. `A_TALE_OF_SIX` -> `A TALE OF SIX TRILLION YEARS AND AN OVERNIGHT STORY`, `AI_SCREAM` -> `AI SCREAM`).
+  - Fixed prominent typos in classic titles (`A CRUEL ANGLES THESIS` -> `A CRUEL ANGEL'S THESIS`, `CHHA LA HEAD CHA LA` -> `CHA-LA HEAD-CHA-LA`, `LEVAN POLKKA` -> `IEVAN POLKKA`).
+  - Removed inappropriate keywords and slurs from metadata.
+  - Upgraded Now Playing subtitle to cleanly render `Artist · Genre · BPM`.
 Blocked
 - None. Ready for user in-game test.
 Relevant Files
