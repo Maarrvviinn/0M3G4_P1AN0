@@ -21,7 +21,10 @@ end
 -- ----------------------------------------------------------------------
 local function tryHttpGet(url)
     local ok, res = pcall(function() return game:HttpGet(url, true) end)
-    if not ok then
+    if not ok or not res then
+        ok, res = pcall(function() return game:HttpGet(url) end)
+    end
+    if not ok or not res then
         ok, res = pcall(function() return game:HttpGetAsync(url) end)
     end
     if ok and res then
@@ -56,7 +59,7 @@ end
 -- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
 -- can never serve a stale copy. Bump REV whenever those files change.
 -- raw.githubusercontent.com is listed FIRST because commits are immediately live.
-local REV = "871963b"
+local REV = "cbd681e"
 
 local HOSTS = {
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
