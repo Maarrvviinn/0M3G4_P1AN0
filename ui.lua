@@ -675,8 +675,13 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         updateRowHighlight(song)
         current = song
         npTitle.Text = song.name
-        local tags = (#song.cat > 0) and table.concat(song.cat, " · ") or "untagged"
-        npSub.Text = string.format("%s BPM  ·  %s", tostring(song.bpm), tags)
+        local art = getSongArtist(song)
+        local genre = (#song.cat > 0) and song.cat[1] or "untagged"
+        if art ~= "—" then
+            npSub.Text = string.format("%s  ·  %s  ·  %s BPM", art, genre, tostring(song.bpm))
+        else
+            npSub.Text = string.format("%s  ·  %s BPM", genre, tostring(song.bpm))
+        end
     end
 
     -- Asynchronous song loader that immediately prepares and starts playback
@@ -727,8 +732,13 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         end
 
         updateProgress()
-        local tags = (#song.cat > 0) and table.concat(song.cat, " · ") or "untagged"
-        npSub.Text = string.format("%s BPM  ·  %s", tostring(song.bpm), tags)
+        local art = getSongArtist(song)
+        local genre = (#song.cat > 0) and song.cat[1] or "untagged"
+        if art ~= "—" then
+            npSub.Text = string.format("%s  ·  %s  ·  %s BPM", art, genre, tostring(song.bpm))
+        else
+            npSub.Text = string.format("%s  ·  %s BPM", genre, tostring(song.bpm))
+        end
         print(string.format("[P1AN0] ready '%s': %d actions, duration=%.1fs", song.name, #Engine.song, Engine.duration()))
 
         if playPendingOnLoad or Settings.data.autoplay then

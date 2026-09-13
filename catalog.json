@@ -8,17 +8,17 @@
   "best",
   "epic",
   "beautiful",
-  "video games",
-  "movies/tv",
-  "memes",
-  "classical",
   "pop/hiphop",
-  "anime/jpop",
-  "sad",
-  "seasonal",
   "electronic",
   "phonk/funk",
   "rock",
+  "classical",
+  "anime/jpop",
+  "sad",
+  "movies/tv",
+  "video games",
+  "memes",
+  "seasonal",
   "creepy/weirdcore",
   "undertale",
   "deltarune",
@@ -30,15 +30,18 @@
  ],
  "songs": [
   {
-   "name": "2 PHUT HON FUNK",
+   "name": "2 PHÚT HƠN (FUNK)",
    "file": "2_PHUT_HON.lua",
    "bpm": "130",
    "cat": [
     "electronic",
+    "phonk/funk",
     "best",
     "new"
    ],
    "alts": [
+    "phao",
+    "kaiz",
     "phonk",
     "salesman"
    ],
@@ -67,9 +70,12 @@
    "file": "7_WEEKS_3_DAYS.lua",
    "bpm": "130",
    "cat": [
-    "creepy/weirdcore"
+    "creepy/weirdcore",
+    "rock"
    ],
-   "alts": [],
+   "alts": [
+    "yungatita"
+   ],
    "size": 32368,
    "sha256": "0c9e7e689691f8cab0ccd47d0e9a43b487d77d48641a97ea779009a98c737b7d",
    "sha": "0c9e7e689691"
@@ -122,7 +128,7 @@
    "sha": "ab7737a15c71"
   },
   {
-   "name": "A CRUEL ANGLES THESIS",
+   "name": "A CRUEL ANGEL'S THESIS",
    "file": "A_CRUEL_ANGELS_THESIS.lua",
    "bpm": "76",
    "cat": [
@@ -131,8 +137,8 @@
     "new"
    ],
    "alts": [
-    "neon genesis evangelion",
-    "neo genesis"
+    "yoko takahashi",
+    "neon genesis evangelion"
    ],
    "size": 82584,
    "sha256": "c82976d4ba807b4bd2a5ad70c35d29e5786960ea45a4c1712007938cb1d7684f",
@@ -163,7 +169,11 @@
     "video games",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "omori",
+    "pedro silva",
+    "bo en"
+   ],
    "size": 13028,
    "sha256": "1d426f6583d4764bf0b199e8415d7fa4c2b493611579937eae566a10cd964ae1",
    "sha": "1d426f6583d4"
@@ -192,6 +202,7 @@
     "pop/hiphop"
    ],
    "alts": [
+    "vanessa carlton",
     "popular"
    ],
    "size": 61394,
@@ -199,7 +210,7 @@
    "sha": "1d5796b210fe"
   },
   {
-   "name": "A_TALE_OF_SIX",
+   "name": "A TALE OF SIX TRILLION YEARS AND AN OVERNIGHT STORY",
    "file": "A_TALE_OF_SIX.lua",
    "bpm": "165",
    "cat": [
@@ -208,7 +219,11 @@
     "movies/tv",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "kemu",
+    "ia",
+    "vocaloid"
+   ],
    "size": 94716,
    "sha256": "abc62caced2cccd43dce2b88e233ff8d5d9690d2eace144dcd7e589538ebe8c0",
    "sha": "abc62caced2c"
@@ -245,14 +260,19 @@
    "sha": "9638fe37cee0"
   },
   {
-   "name": "AI_SCREAM",
+   "name": "AI SCREAM",
    "file": "AI_SCREAM.lua",
    "bpm": "135",
    "cat": [
     "anime/jpop",
+    "electronic",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "kemu",
+    "gumi",
+    "vocaloid"
+   ],
    "size": 60794,
    "sha256": "98c8150952a0bce2fdf42083b981c24045defd9337a698b9cc43628c9c4ff2ec",
    "sha": "98c8150952a0"
@@ -310,9 +330,12 @@
    "file": "ALL_MY_FELLAS.lua",
    "bpm": "160",
    "cat": [
-    "memes"
+    "memes",
+    "electronic"
    ],
-   "alts": [],
+   "alts": [
+    "frizk"
+   ],
    "size": 9055,
    "sha256": "ecc01c2a79cc78bdc47e80b1ec0f28181d86cf39c48ace27f9166749b8855dbe",
    "sha": "ecc01c2a79cc"
@@ -388,8 +411,14 @@
    "name": "ALORS ON DANSE",
    "file": "ALORS_ON_DANSE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "electronic",
+    "memes"
+   ],
+   "alts": [
+    "stromae"
+   ],
    "size": 35491,
    "sha256": "c559faf05af2610ffdb8410549b8459a6e0344570a64a1914ac1f496c3fdc02e",
    "sha": "c559faf05af2"
@@ -399,9 +428,12 @@
    "file": "ALTALE.lua",
    "bpm": "90",
    "cat": [
-    "electronic"
+    "electronic",
+    "video games"
    ],
-   "alts": [],
+   "alts": [
+    "sakuzyo"
+   ],
    "size": 56990,
    "sha256": "43808a666f5ee1906810b8b391e07023aeaf4058433003b6b027b1b14b2d8dbf",
    "sha": "43808a666f5e"
@@ -413,12 +445,12 @@
    "cat": [
     "sad",
     "memes",
-    "new"
+    "new",
+    "pop/hiphop"
    ],
    "alts": [
-    "napolean",
-    "theres nothing we can do",
-    "videoclub"
+    "videoclub",
+    "napoleon"
    ],
    "size": 8426,
    "sha256": "690efa3e35ae5a8083136f43e9eae9e9650839b5deddf528afaad032f14bced2",
@@ -445,25 +477,31 @@
    "name": "ANIMATION WARRIOR THEME",
    "file": "ANIMATION_WARRIOR_THEME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "memes"
+   ],
+   "alts": [
+    "alan becker",
+    "animator vs animation"
+   ],
    "size": 79078,
    "sha256": "d2a58d2e3f78558e7ad9c85016369abb4311c59f97d22358cb2163b5fdcc1f37",
    "sha": "d2a58d2e3f78"
   },
   {
-   "name": "ANNIHILATE",
+   "name": "ANNIHILATE (SPIDER-MAN)",
    "file": "ANNIHILATE.lua",
    "bpm": "146",
    "cat": [
     "pop/hiphop",
-    "movies/tv"
+    "movies/tv",
+    "epic"
    ],
    "alts": [
-    "spider man",
-    "spiderman",
-    "spider-man",
-    "metro boomin"
+    "metro boomin",
+    "swae lee",
+    "spider-man"
    ],
    "size": 38434,
    "sha256": "d1737e9e445649da523c93a36edb33144028388ee477977ce96a23b2030c5396",
@@ -481,20 +519,22 @@
     "pop/hiphop"
    ],
    "alts": [
-    "sad, love"
+    "tom odell"
    ],
    "size": 32009,
    "sha256": "a231d7b4127f371ceeebf9fe93e658c47880b4dcc32336a325f73652583559dc",
    "sha": "a231d7b4127f"
   },
   {
-   "name": "ANYONE CAN BE FIND LOVE (except you.)",
+   "name": "ANYONE CAN FIND LOVE (EXCEPT YOU.)",
    "file": "ANYONE_CAN.lua",
    "bpm": "100",
    "cat": [
-    "sad"
+    "sad",
+    "electronic"
    ],
    "alts": [
+    "hkmori",
     "breakcore"
    ],
    "size": 36140,
@@ -505,8 +545,16 @@
    "name": "AQUATIC AMBIENCE",
    "file": "AQUATIC_AMBIENCE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "video games",
+    "nintendo",
+    "beautiful"
+   ],
+   "alts": [
+    "donkey kong country",
+    "david wise",
+    "nintendo"
+   ],
    "size": 42524,
    "sha256": "00ac4154829424b0929318044bf36848d5e5db16341e7ad09ae784cb07a34813",
    "sha": "00ac41548294"
@@ -577,8 +625,14 @@
    "name": "ASCENSION",
    "file": "ASCENSION.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "smash hit",
+    "douglas holmquist"
+   ],
    "size": 48843,
    "sha256": "84f256d649556dbd6b789bad07c74c407f8c40c52b2cb1e3163d84f26321c9e7",
    "sha": "84f256d64955"
@@ -591,7 +645,9 @@
     "video games",
     "undertale"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 60574,
    "sha256": "53fec0c317a8b3bc65ee7e63e9838bb0181ddd8ae4f6456b93e64715288fd7a2",
    "sha": "53fec0c317a8"
@@ -602,23 +658,29 @@
    "bpm": "126",
    "cat": [
     "pop/hiphop",
-    "memes",
-    "electronic"
+    "electronic",
+    "memes"
    ],
-   "alts": [],
+   "alts": [
+    "sam gellaitry"
+   ],
    "size": 11535,
    "sha256": "15458aa203df3a30ed3b346c374de1d05197ed3b3fcae2a398d519577275df5d",
    "sha": "15458aa203df"
   },
   {
-   "name": "ASTRONAMIA (COFFIN DANCE)",
+   "name": "ASTRONOMIA (COFFIN DANCE)",
    "file": "ASTRONAMIA.lua",
    "bpm": "120",
    "cat": [
     "memes",
     "electronic"
    ],
-   "alts": [],
+   "alts": [
+    "vicetone",
+    "tony igy",
+    "coffin dance"
+   ],
    "size": 18733,
    "sha256": "1fc8a53e49ffcdf0810a2ce585a0de29274fdd2092eee6510c42df7be0bc52db",
    "sha": "1fc8a53e49ff"
@@ -664,14 +726,19 @@
    "name": "AUGUST 10",
    "file": "AUGUST_10.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "chill"
+   ],
+   "alts": [
+    "khruangbin"
+   ],
    "size": 38787,
    "sha256": "76dd248bd045a12c54b69a855cf06b1b141f56c0677025f2198f9944844e00bc",
    "sha": "76dd248bd045"
   },
   {
-   "name": "AVENGERS (EPIC COVER)",
+   "name": "AVENGERS THEME (EPIC COVER)",
    "file": "AVENGERS.lua",
    "bpm": "120",
    "cat": [
@@ -680,9 +747,9 @@
     "movies/tv"
    ],
    "alts": [
-    "popular",
-    "movie",
-    "hard"
+    "alan silvestri",
+    "marvel",
+    "avengers"
    ],
    "size": 68013,
    "sha256": "83f445a6eebb59ada9bf886ba372f612ad59bb2f9109014168c07e654c1018a1",
@@ -692,8 +759,14 @@
    "name": "BABY",
    "file": "BABY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "memes"
+   ],
+   "alts": [
+    "justin bieber",
+    "ludacris"
+   ],
    "size": 39202,
    "sha256": "46536f7ce5c34b70d0031705b49425316d160609b7daba0f29dc9543c4c621ac",
    "sha": "46536f7ce5c3"
@@ -702,8 +775,13 @@
    "name": "BABYDOLL",
    "file": "BABYDOLL.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "electronic"
+   ],
+   "alts": [
+    "ari abdul"
+   ],
    "size": 20960,
    "sha256": "27a7cbde72f1a36ef25d1ad3f6b7c2250310d89f0476e621cd4cf33077c3685b",
    "sha": "27a7cbde72f1"
@@ -712,8 +790,15 @@
    "name": "BACK ON TRACK",
    "file": "BACK_ON_TRACK.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "djvi",
+    "geometry dash"
+   ],
    "size": 27615,
    "sha256": "39798fffa52f430ac76b1c0693b6b47e25d9a7b0627ae4caa885c7761bc4d641",
    "sha": "39798fffa52f"
@@ -723,10 +808,14 @@
    "file": "BAD_APPLE.lua",
    "bpm": "138",
    "cat": [
-    "anime/jpop"
+    "anime/jpop",
+    "video games",
+    "electronic"
    ],
    "alts": [
-    "popular"
+    "masayoshi minoshima",
+    "nomico",
+    "touhou"
    ],
    "size": 71586,
    "sha256": "1f52c5aedeaface3d7154027fa2c728dbad0e4d95903d5c276b637af31bfc05b",
@@ -766,11 +855,14 @@
    "file": "BARBIE_GIRL.lua",
    "bpm": "136",
    "cat": [
+    "pop/hiphop",
     "movies/tv",
     "memes",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "aqua"
+   ],
    "size": 41357,
    "sha256": "1b64cd357cbc30c0b2cbb3b290a30569228e60b74ead29043c6730c0cf3a225f",
    "sha": "1b64cd357cbc"
@@ -779,8 +871,15 @@
    "name": "BASE AFTER BASE",
    "file": "BASE_AFTER_BASE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "djvi",
+    "geometry dash"
+   ],
    "size": 55436,
    "sha256": "523967d53aa2c4a7aef8cab8d1db595cc974d0d754ef1a7099ce7dc02d157c5b",
    "sha": "523967d53aa2"
@@ -791,9 +890,13 @@
    "bpm": "150",
    "cat": [
     "video games",
-    "undertale"
+    "undertale",
+    "epic"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox",
+    "undyne"
+   ],
    "size": 51808,
    "sha256": "d94975de8e682d5eb3528fcf3d042878ac9e0ce3dcd2fb1a76f845645df94f3c",
    "sha": "d94975de8e68"
@@ -816,8 +919,14 @@
    "name": "BEAUTIFUL IN WHITE",
    "file": "BEAUTIFUL_IN_WHITE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "pop/hiphop"
+   ],
+   "alts": [
+    "shane filan",
+    "westlife"
+   ],
    "size": 28858,
    "sha256": "3cc5fe17b16a65c32d902ad95510a50f2c33da197e48d3ab5f1edb32a452c043",
    "sha": "3cc5fe17b16a"
@@ -858,8 +967,15 @@
    "name": "BEGINNING",
    "file": "BEGINNING.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "minecraft",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "c418",
+    "minecraft"
+   ],
    "size": 3660,
    "sha256": "f4a4de282b197d895c90118d532588c14d902f39ae20a99eece8b211d8abfa10",
    "sha": "f4a4de282b19"
@@ -868,8 +984,15 @@
    "name": "BEGINNING 2",
    "file": "BEGINNING_2.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "minecraft",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "c418",
+    "minecraft"
+   ],
    "size": 3938,
    "sha256": "94f6616d5c7c9dcb10e9bfc231a733c169013f223af8ab6bfe8983becb56decf",
    "sha": "94f6616d5c7c"
@@ -898,7 +1021,10 @@
     "movies/tv",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "money heist",
+    "la casa de papel"
+   ],
    "size": 39613,
    "sha256": "24f179e91161d64a1565f89c84403b167e4b2a249ce0d075199801d5f7811f09",
    "sha": "24f179e91161"
@@ -925,9 +1051,14 @@
    "file": "BIG_FISH.lua",
    "bpm": "71",
    "cat": [
-    "beautiful"
+    "beautiful",
+    "anime/jpop",
+    "movies/tv"
    ],
-   "alts": [],
+   "alts": [
+    "zhou shen",
+    "big fish and begonia"
+   ],
    "size": 160280,
    "sha256": "02e21ee64ae4bd7f6a2a7d812cb94152262ec5fff5b6f03eb4c82a9ea26da24a",
    "sha": "02e21ee64ae4"
@@ -948,11 +1079,18 @@
    "sha": "43bbe23e8914"
   },
   {
-   "name": "BINKS RUM",
+   "name": "BINKS' SAKE (BINKS NO SAKE)",
    "file": "BINKS_RUM.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv"
+   ],
+   "alts": [
+    "kohei tanaka",
+    "one piece",
+    "brook"
+   ],
    "size": 57724,
    "sha256": "75e2eeefbdebb9733918f8f326a2ce42a84815ccaaf5ccdeb1a698dc79098d17",
    "sha": "75e2eeefbdeb"
@@ -962,10 +1100,12 @@
    "file": "BIRDLAND.lua",
    "bpm": "155",
    "cat": [
-    "new"
+    "new",
+    "classical"
    ],
    "alts": [
-    "jazz"
+    "weather report",
+    "joe zawinul"
    ],
    "size": 15841,
    "sha256": "c938dd6bfb746108e92eb4d3510085d2ee934fdcaf24424f28faab49915ef027",
@@ -1022,8 +1162,15 @@
    "name": "BLIND SPOTS",
    "file": "BLIND_SPOTS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "minecraft",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "c418",
+    "minecraft"
+   ],
    "size": 57510,
    "sha256": "07a317c99ebd4cd557de9a9ec2ec8a7fcd38528b5ba353bc90661156ead7b7ff",
    "sha": "07a317c99ebd"
@@ -1032,8 +1179,15 @@
    "name": "BLIND SPOTS 2",
    "file": "BLIND_SPOTS_2.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "minecraft",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "c418",
+    "minecraft"
+   ],
    "size": 69985,
    "sha256": "0c1f3b60e21e4bd274cfadf7686f750a5537c4fd6b0f6250cd80a5f71e0f183c",
    "sha": "0c1f3b60e21e"
@@ -1086,14 +1240,17 @@
    "sha": "69673a3737da"
   },
   {
-   "name": "BLUE (YUNG KAI)",
+   "name": "BLUE",
    "file": "BLUE_YUNG.lua",
    "bpm": "92",
    "cat": [
     "beautiful",
-    "best"
+    "best",
+    "pop/hiphop"
    ],
-   "alts": [],
+   "alts": [
+    "yung kai"
+   ],
    "size": 43825,
    "sha256": "4e7187a8923769fb1fe04bcc191ece9eccb8e04980666fb3922f80aec55ddf25",
    "sha": "4e7187a89237"
@@ -1153,7 +1310,10 @@
     "omori",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "omori",
+    "pedro silva"
+   ],
    "size": 84743,
    "sha256": "2657f2c78cd0c3178a39935124c9078bd17fc1ad060ca542ea5a8eb66cd72a67",
    "sha": "2657f2c78cd0"
@@ -1181,9 +1341,13 @@
    "bpm": "88",
    "cat": [
     "video games",
-    "omori"
+    "omori",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "omori",
+    "pedro silva"
+   ],
    "size": 35076,
    "sha256": "4313ccdf1d9090522fc7d8243ebb2cd91900fe3ba87dc11ea00bd45690c00884",
    "sha": "4313ccdf1d90"
@@ -1192,8 +1356,12 @@
    "name": "CALL ME MAYBE",
    "file": "CALL_ME_MAYBE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop"
+   ],
+   "alts": [
+    "carly rae jepsen"
+   ],
    "size": 54949,
    "sha256": "381176c3c7f2573a6434375c348a7ee9eb523061f59c44a00cd4f8de1efa09a5",
    "sha": "381176c3c7f2"
@@ -1202,8 +1370,17 @@
    "name": "CALL OF SILENCE",
    "file": "CALL_OF_SILENCE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "beautiful",
+    "sad"
+   ],
+   "alts": [
+    "hiroyuki sawano",
+    "attack on titan",
+    "aot"
+   ],
    "size": 19810,
    "sha256": "59dfaea2db892d9300d52e94997140ca895df562d9facbb26886691c3fed8123",
    "sha": "59dfaea2db89"
@@ -1295,9 +1472,13 @@
    "file": "CANON_D.lua",
    "bpm": "100",
    "cat": [
-    "classical"
+    "classical",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "johann pachelbel",
+    "pachelbel"
+   ],
    "size": 51549,
    "sha256": "c32093b1f461c6adf5efce9ae9fabc2c2dd401ceda9fa53420904a6bc77608b7",
    "sha": "c32093b1f461"
@@ -1322,8 +1503,14 @@
    "name": "CARAMELLDANSEN",
    "file": "CARAMELLDANSEN.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "memes",
+    "anime/jpop"
+   ],
+   "alts": [
+    "caramell"
+   ],
    "size": 59405,
    "sha256": "6b676e99e12454c893d6f8a147bbd3166b8b89bbc48f7abb1afabb3adea06bf6",
    "sha": "6b676e99e124"
@@ -1333,9 +1520,14 @@
    "file": "CARELESS.lua",
    "bpm": "153",
    "cat": [
-    "memes"
+    "pop/hiphop",
+    "memes",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "george michael",
+    "wham!"
+   ],
    "size": 40431,
    "sha256": "b42bfc0ea81d2d0ad454059180e1d02b1b6769621f82f96e5eb3f45144b65e76",
    "sha": "b42bfc0ea81d"
@@ -1411,8 +1603,14 @@
    "name": "CHAMPAGNE COAST",
    "file": "CHAMPAGNE_COAST.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "electronic"
+   ],
+   "alts": [
+    "blood orange",
+    "dev hynes"
+   ],
    "size": 26716,
    "sha256": "c74ba4351b1917490a51e745753a5aed91f28e3b1c10ccf661e70f52855aeb16",
    "sha": "c74ba4351b19"
@@ -1436,14 +1634,20 @@
    "name": "CHARIOTS OF FIRE",
    "file": "CHARIOTS_OF_FIRE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "classical",
+    "movies/tv",
+    "epic"
+   ],
+   "alts": [
+    "vangelis"
+   ],
    "size": 22606,
    "sha256": "8d0a02d4f6621c5ebfa1fb08d92a0172a52109195421277147713700d9ac0b36",
    "sha": "8d0a02d4f662"
   },
   {
-   "name": "CHHA LA HEAD CHA LA",
+   "name": "CHA-LA HEAD-CHA-LA",
    "file": "CHA_LA_HEAD_CHA_LA.lua",
    "bpm": "154",
    "cat": [
@@ -1453,6 +1657,7 @@
     "new"
    ],
    "alts": [
+    "hironobu kageyama",
     "dragon ball z"
    ],
    "size": 33226,
@@ -1469,7 +1674,9 @@
     "best",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "mongol800"
+   ],
    "size": 78175,
    "sha256": "e93c6af81ae6cad32eb89fb36cf8dc95ab28cbcf03afe5e19f712e0e2b5ce2f1",
    "sha": "e93c6af81ae6"
@@ -1600,7 +1807,7 @@
    "sha": "17a55e257bd9"
   },
   {
-   "name": "COMEDY/KIGEKI (SPY X FAMILY)",
+   "name": "COMEDY / KIGEKI (SPY X FAMILY)",
    "file": "COMEDY.lua",
    "bpm": "88",
    "cat": [
@@ -1608,7 +1815,10 @@
     "anime/jpop",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "gen hoshino",
+    "spy x family"
+   ],
    "size": 49331,
    "sha256": "18f9966a17f965bd3a98c3c5dc36b707e252785fb478c4d262044ad2ab883fd4",
    "sha": "18f9966a17f9"
@@ -1649,8 +1859,16 @@
    "name": "CORNFIELD CHASE",
    "file": "CORNFIELD_CHASE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "epic",
+    "beautiful",
+    "best"
+   ],
+   "alts": [
+    "hans zimmer",
+    "interstellar"
+   ],
    "size": 38403,
    "sha256": "9d0458409ef7d229ebc14af6c3d1574464936da3eafc8e18324e434fc57801ff",
    "sha": "9d0458409ef7"
@@ -1784,7 +2002,7 @@
    "sha": "f202501c14fa"
   },
   {
-   "name": "CRY FOR ME (feat. 愛海)",
+   "name": "CRY FOR ME (FEAT. 愛海)",
    "file": "CRY_FOR_ME_MICHITA.lua",
    "bpm": "92",
    "cat": [
@@ -1792,7 +2010,10 @@
     "sad",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "michita",
+    "aimi"
+   ],
    "size": 47870,
    "sha256": "4bdd247d187f3efefd85b0817750730bce1dd387dfd1b4507dc1e0be87ff6dfe",
    "sha": "4bdd247d187f"
@@ -1815,8 +2036,14 @@
    "name": "CUTE DEPRESSED",
    "file": "CUTE_DEPRESSED.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "phonk/funk"
+   ],
+   "alts": [
+    "dvrst",
+    "cute depressed"
+   ],
    "size": 40784,
    "sha256": "f093022e187d0d8d19d7b1d859cbad943f3520eb50d953918cdf665630146d7e",
    "sha": "f093022e187d"
@@ -1825,8 +2052,15 @@
    "name": "CYCLES",
    "file": "CYCLES.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "djvi",
+    "geometry dash"
+   ],
    "size": 45498,
    "sha256": "7b62ad4a8ae4523ecd94def3a5730e054b0197d6733ede3af2dd55281f91c4d9",
    "sha": "7b62ad4a8ae4"
@@ -1851,20 +2085,31 @@
    "name": "DAIJOUBU",
    "file": "DAIJOUBU.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "beautiful"
+   ],
+   "alts": [
+    "radwimps",
+    "weathering with you"
+   ],
    "size": 39999,
    "sha256": "c596e604e7b800fd3fda8be8ab751f6bca67ef0038ccd1ebad2a7d0bea3b1f81",
    "sha": "c596e604e7b8"
   },
   {
-   "name": "DAISY BELL",
+   "name": "DAISY BELL (BICYCLE BUILT FOR TWO)",
    "file": "DAISY_BELL.lua",
    "bpm": "120",
    "cat": [
-    "creepy/weirdcore"
+    "creepy/weirdcore",
+    "memes"
    ],
-   "alts": [],
+   "alts": [
+    "harry dacre",
+    "ibm 7094"
+   ],
    "size": 6102,
    "sha256": "6c25cb0b258ec65d3940c930d75f566b7ceb86d1d9e47275b1ed23598ea6dc01",
    "sha": "6c25cb0b258e"
@@ -1905,9 +2150,13 @@
    "file": "DANDELIONS.lua",
    "bpm": "100",
    "cat": [
+    "pop/hiphop",
+    "beautiful",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "ruth b."
+   ],
    "size": 16213,
    "sha256": "94e83c88be2ac601831848c6f79b834536905e1017bedca16279bf04b1dba7ad",
    "sha": "94e83c88be2a"
@@ -2008,13 +2257,19 @@
    "sha": "72feb1d8296e"
   },
   {
-   "name": "DEATH WALTZ (WARNING)",
+   "name": "DEATH WALTZ (U.N. OWEN WAS HER?)",
    "file": "DEATH_WALTZ.lua",
    "bpm": "210",
    "cat": [
-    "all"
+    "classical",
+    "video games",
+    "epic"
    ],
-   "alts": [],
+   "alts": [
+    "zun",
+    "john stump",
+    "touhou"
+   ],
    "size": 401432,
    "sha256": "1f47e654480b71c1bd3d5f024320fd3206f2c1e74f43ad57c46a38f047e1feeb",
    "sha": "1f47e654480b"
@@ -2023,8 +2278,14 @@
    "name": "DECK THE HALLS",
    "file": "DECK_THE_HALLS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "seasonal",
+    "classical"
+   ],
+   "alts": [
+    "traditional",
+    "christmas"
+   ],
    "size": 45757,
    "sha256": "a1536a3535b4604cbdc3a0ad450ad83151d509d59198fc287605f7869f07b33d",
    "sha": "a1536a3535b4"
@@ -2053,7 +2314,10 @@
     "pop/hiphop",
     "memes"
    ],
-   "alts": [],
+   "alts": [
+    "luis fonsi",
+    "daddy yankee"
+   ],
    "size": 57543,
    "sha256": "d12999382af5b0eb44ee13fcd35a1e4a805d8c4a2767519e9e2c216af8b9f9d3",
    "sha": "d12999382af5"
@@ -2064,9 +2328,13 @@
    "bpm": "60",
    "cat": [
     "video games",
-    "beautiful"
+    "beautiful",
+    "epic"
    ],
-   "alts": [],
+   "alts": [
+    "nima fakhrara",
+    "detroit become human"
+   ],
    "size": 20309,
    "sha256": "715d62d516cb0bcb4460396191204e38a28fbb10c526ef4b51df264deb278691",
    "sha": "715d62d516cb"
@@ -2076,9 +2344,13 @@
    "file": "DEXTER_BLOOD_THEME.lua",
    "bpm": "82",
    "cat": [
-    "movies/tv"
+    "movies/tv",
+    "creepy/weirdcore"
    ],
-   "alts": [],
+   "alts": [
+    "daniel licht",
+    "dexter"
+   ],
    "size": 14907,
    "sha256": "a6f9dc2a921e8a3ab938c15cce69fe592ee5ea07d69011c8a47cd0b68de021e9",
    "sha": "a6f9dc2a921e"
@@ -2119,11 +2391,16 @@
    "sha": "83eced99d394"
   },
   {
-   "name": "DIED IN YOUR ARMS",
+   "name": "(I JUST) DIED IN YOUR ARMS",
    "file": "DIED_IN_YOUR_ARMS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "rock",
+    "pop/hiphop"
+   ],
+   "alts": [
+    "cutting crew"
+   ],
    "size": 27712,
    "sha256": "d3cfd9cd8d66b04763db09c3733102ffc9babb35f7a64d458cd311e5ad124a48",
    "sha": "d3cfd9cd8d66"
@@ -2193,24 +2470,34 @@
    "sha": "af0fd231b783"
   },
   {
-   "name": "DOG SONG",
+   "name": "DOGSONG",
    "file": "DOG_SONG.lua",
    "bpm": "230",
    "cat": [
     "video games",
-    "undertale"
+    "undertale",
+    "memes"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 10501,
    "sha256": "4c421f9b77783d60e903c43f31462ae3aac4179782c54f773282ed0eb845fe51",
    "sha": "4c421f9b7778"
   },
   {
-   "name": "DOKI DOKI LITERATURE CLUB",
+   "name": "DOKI DOKI LITERATURE CLUB MAIN THEME",
    "file": "DOKI_DOKI_LITERATURE_CLUB.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 49027,
    "sha256": "4c532bded3029effa5033ee5dce69109ba1724e11089be78a78447c541dbb9eb",
    "sha": "4c532bded302"
@@ -2277,11 +2564,18 @@
    "sha": "f7a097d8ef68"
   },
   {
-   "name": "DREAM LANTERN",
+   "name": "DREAM LANTERN (YUME TOURU)",
    "file": "DREAM_LANTERN.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "rock"
+   ],
+   "alts": [
+    "radwimps",
+    "your name"
+   ],
    "size": 32125,
    "sha256": "a5ad6048fabf90f8e484739cd0c529d67307bb50c4038e6756a4989f321df983",
    "sha": "a5ad6048fabf"
@@ -2301,11 +2595,18 @@
    "sha": "8691c7a4a86a"
   },
   {
-   "name": "DREITON BEST PART",
+   "name": "DREITON (BEST PART)",
    "file": "DREITON_BEST_PART.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "minecraft",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "c418",
+    "minecraft"
+   ],
    "size": 16740,
    "sha256": "852e6fc723553d23e12086150ab9e0bbb9a75e1e1f688472ed2c70e691b23a71",
    "sha": "852e6fc72355"
@@ -2348,8 +2649,15 @@
    "name": "DRY OUT",
    "file": "DRY_OUT.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "djvi",
+    "geometry dash"
+   ],
    "size": 26498,
    "sha256": "77785b411b63b5e2c352368321ce860e5bc177f983fe164bbec01810594349d8",
    "sha": "77785b411b63"
@@ -2451,8 +2759,13 @@
    "name": "ENGRAVINGS",
    "file": "ENGRAVINGS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "piano"
+   ],
+   "alts": [
+    "ethan bortnick"
+   ],
    "size": 49153,
    "sha256": "e1625c0ebb7fdad68c7c7632928546982b789744302e0eafe5f7a968c6051bbe",
    "sha": "e1625c0ebb7f"
@@ -2512,20 +2825,32 @@
    "file": "EVERGREEN.lua",
    "bpm": "120",
    "cat": [
+    "omori",
+    "video games",
     "beautiful",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "omori",
+    "pedro silva"
+   ],
    "size": 22291,
    "sha256": "7c22a46a320b91eb6be1bd667c25623b335157c7c527af6534522a62bbc4b406",
    "sha": "7c22a46a320b"
   },
   {
-   "name": "EVERY LIVING BREATHING",
+   "name": "EVERY LIVING BREATHING CREATURE",
    "file": "EVERY_LIVING_BREATHING.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "minecraft",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "c418",
+    "minecraft"
+   ],
    "size": 36551,
    "sha256": "f143da731d128a9d40b8e24452a846fab60b37606c80961ea21e26988e2f2e33",
    "sha": "f143da731d12"
@@ -2535,12 +2860,15 @@
    "file": "EXPERIENCE.lua",
    "bpm": "92",
    "cat": [
+    "classical",
     "epic",
     "best",
     "beautiful",
     "peak"
    ],
-   "alts": [],
+   "alts": [
+    "ludovico einaudi"
+   ],
    "size": 66241,
    "sha256": "35a64acbb20b01f29480e8f6899492a44dcbafa780c43fc61d4915d9992dd69a",
    "sha": "35a64acbb20b"
@@ -2602,7 +2930,9 @@
     "undertale",
     "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 36730,
    "sha256": "c767c2ffdf1a84992371715dec24f252ace5bbd79f71bec1d49ebb4d3cc5d467",
    "sha": "c767c2ffdf1a"
@@ -2707,19 +3037,30 @@
    "bpm": "190",
    "cat": [
     "video games",
-    "undertale"
+    "undertale",
+    "epic",
+    "best"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 32711,
    "sha256": "c61fdb4be8a0704c3f05bb13964918e4b521a94e80716c203a18d780d13c0193",
    "sha": "c61fdb4be8a0"
   },
   {
-   "name": "FIREWORKS",
+   "name": "FIREWORKS (UCHIAGE HANABI)",
    "file": "FIREWORKS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "beautiful"
+   ],
+   "alts": [
+    "kenshi yonezu",
+    "daoko"
+   ],
    "size": 69614,
    "sha256": "49d9b10cba1d001fc3c6d5b9a461d4ea4f7a1430cdf6a48ac7a4fd754e2fa9bd",
    "sha": "49d9b10cba1d"
@@ -2794,8 +3135,13 @@
    "name": "FLIGHT OF THE BUMBLEBEE",
    "file": "FLIGHT_OF_THE_BUMBLEBEE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "classical",
+    "epic"
+   ],
+   "alts": [
+    "nikolai rimsky-korsakov"
+   ],
    "size": 39931,
    "sha256": "1847b021c513b9b3bf2c530620986e217b674a3e3772ecabce441c1e56987f4d",
    "sha": "1847b021c513"
@@ -2804,8 +3150,14 @@
    "name": "FLOWER DANCE",
    "file": "FLOWER_DANCE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "electronic",
+    "piano"
+   ],
+   "alts": [
+    "dj okawari"
+   ],
    "size": 74624,
    "sha256": "e589f71c612acaae5cd5568da113184af82182dadffe5c72915aa52c3692403e",
    "sha": "e589f71c612a"
@@ -2814,8 +3166,13 @@
    "name": "FLUXXWAVE",
    "file": "FLUXXWAVE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "phonk/funk"
+   ],
+   "alts": [
+    "clovis reyes"
+   ],
    "size": 33739,
    "sha256": "55046b9f1b1f5f24a98d80bbbaf430100361d5528fff3cccb36457cd6f7ad839",
    "sha": "55046b9f1b1f"
@@ -3055,11 +3412,18 @@
    "sha": "46b57ef5d9a4"
   },
   {
-   "name": "GIGACHAD THEME",
+   "name": "GIGACHAD THEME (CAN YOU FEEL MY HEART)",
    "file": "GIGACHAD_THEME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "memes",
+    "rock",
+    "electronic"
+   ],
+   "alts": [
+    "bring me the horizon",
+    "bmth"
+   ],
    "size": 23314,
    "sha256": "a26f928ee8f5f9a9d66464a374d6f5b1cbb0616ae82a94fb76a10a136e72f1ac",
    "sha": "a26f928ee8f5"
@@ -3080,16 +3444,19 @@
    "sha": "1f476fa9a204"
   },
   {
-   "name": "GIORNO'S THEME",
+   "name": "GIORNO'S THEME (IL VENTO D'ORO)",
    "file": "GIORNO.lua",
    "bpm": "135",
    "cat": [
     "anime/jpop",
     "memes",
-    "movies/tv"
+    "movies/tv",
+    "epic"
    ],
    "alts": [
-    "popular"
+    "yugo kanno",
+    "jojo's bizarre adventure",
+    "jojo"
    ],
    "size": 7409,
    "sha256": "b71444b305dd950705c5388d23ad7461b5044966135319817ae8ffc43dd4f32c",
@@ -3150,7 +3517,8 @@
    ],
    "alts": [
     "jvke",
-    "love, sad",
+    "love",
+    "sad",
     "popular"
    ],
    "size": 63649,
@@ -3207,7 +3575,7 @@
    "sha": "6a478affadef"
   },
   {
-   "name": "GRAVITY FALLS",
+   "name": "GRAVITY FALLS OPENING THEME",
    "file": "GRAVITY_FALLS.lua",
    "bpm": "120",
    "cat": [
@@ -3215,7 +3583,10 @@
     "best",
     "movies/tv"
    ],
-   "alts": [],
+   "alts": [
+    "brad breeck",
+    "gravity falls"
+   ],
    "size": 12663,
    "sha256": "7f5f5e5291941e54bae03b97bff98e59771a9996cca47085329a051ce1f172a2",
    "sha": "7f5f5e529194"
@@ -3263,10 +3634,11 @@
    "bpm": "54",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
    "alts": [
-    "satie"
+    "erik satie"
    ],
    "size": 13103,
    "sha256": "cd616338eff531a461076593a891148823819ed4cce5dfde66833a72436cfb47",
@@ -3278,10 +3650,11 @@
    "bpm": "48",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
    "alts": [
-    "satie"
+    "erik satie"
    ],
    "size": 10593,
    "sha256": "123255d3762cdaace21b5d2fe36868049346bccdd167e4f8594629d7c5e479c1",
@@ -3293,10 +3666,11 @@
    "bpm": "48",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
    "alts": [
-    "satie"
+    "erik satie"
    ],
    "size": 9488,
    "sha256": "f91c2927cdb6ce3869f76ff61996eefc25a7c5a3c1a82299343425d47fe8a742",
@@ -3428,7 +3802,10 @@
     "video games",
     "undertale"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox",
+    "toriel"
+   ],
    "size": 50141,
    "sha256": "8bfca77c7f45c63947f14ec9dbd835f6b161ae5c11206be08c08a75abc3697bb",
    "sha": "8bfca77c7f45"
@@ -3492,11 +3869,16 @@
    "sha": "9efb7a634d07"
   },
   {
-   "name": "HER JVKE",
+   "name": "HER",
    "file": "HER_JVKE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "beautiful"
+   ],
+   "alts": [
+    "jvke"
+   ],
    "size": 56675,
    "sha256": "94f81be4e09acb60a3db1a0d6a0c9e33446faae3c3466707fb02ec4940d3597b",
    "sha": "94f81be4e09a"
@@ -3521,8 +3903,15 @@
    "name": "HERE TO STAY",
    "file": "HERE_TO_STAY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "sad"
+   ],
+   "alts": [
+    "bleach",
+    "shiro sagisu"
+   ],
    "size": 22784,
    "sha256": "dfa9a57ae64c419ec723b6ada82e6deb4e7563e0f77ac6dcd5fbd0fefa5f294b",
    "sha": "dfa9a57ae64c"
@@ -3566,15 +3955,18 @@
    "bpm": "87",
    "cat": [
     "creepy/weirdcore",
-    "new"
+    "new",
+    "electronic"
    ],
-   "alts": [],
+   "alts": [
+    "molina"
+   ],
    "size": 40405,
    "sha256": "bb2608e55412e9ef43829037d295da015d45b9f3e2a7cc78c2768431db782cfa",
    "sha": "bb2608e55412"
   },
   {
-   "name": "HH",
+   "name": "HEIL HITLER / CARNIVAL MASHUP",
    "file": "HH.lua",
    "bpm": "150",
    "cat": [
@@ -3582,8 +3974,7 @@
     "peak"
    ],
    "alts": [
-    "kanye west",
-    "heil hitler"
+    "kanye west"
    ],
    "size": 20887,
    "sha256": "57fa052e2d09031f2d286ea2fccef106eca0fd697de07c5244acf9635c5a7b27",
@@ -3645,9 +4036,13 @@
    "bpm": "90",
    "cat": [
     "video games",
-    "undertale"
+    "undertale",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox",
+    "asriel"
+   ],
    "size": 15772,
    "sha256": "581161a9bfc09da3b75a4e74d800a48637c8ccbb2aed25b833dff2a267b4ff0c",
    "sha": "581161a9bfc0"
@@ -3672,9 +4067,13 @@
    "bpm": "55",
    "cat": [
     "video games",
+    "beautiful",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "christopher larkin",
+    "hollow knight"
+   ],
    "size": 6631,
    "sha256": "3a6132fc734fb98742ec7d060a5f0eb68f925e21cf64c9cd85cfbab9bdbb4858",
    "sha": "3a6132fc734f"
@@ -3696,11 +4095,18 @@
    "sha": "e1bf10ac932b"
   },
   {
-   "name": "HOMELANDER MASHUP",
+   "name": "HOMELANDER MASHUP (I CAN DO WHATEVER I WANT)",
    "file": "HOMELANDER_MASHUP.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "memes",
+    "electronic"
+   ],
+   "alts": [
+    "the boys",
+    "christopher lennertz"
+   ],
    "size": 35711,
    "sha256": "6680c90eebd999d7ab21c2e1137189f7e7c6adbedc4e605b39f9e683aa69304c",
    "sha": "6680c90eebd9"
@@ -3734,6 +4140,7 @@
     "peak"
    ],
    "alts": [
+    "toby fox",
     "asriel"
    ],
    "size": 116267,
@@ -3810,13 +4217,16 @@
    "sha": "b35a62a8a957"
   },
   {
-   "name": "HUNGARIAN DANCE",
+   "name": "HUNGARIAN DANCE NO.5",
    "file": "HUNGARIAN.lua",
    "bpm": "130",
    "cat": [
-    "classical"
+    "classical",
+    "epic"
    ],
-   "alts": [],
+   "alts": [
+    "johannes brahms"
+   ],
    "size": 50272,
    "sha256": "1561ec0957143b5f21aa2d358bc179dc30187bb5993afc34fec301f3790bdb30",
    "sha": "1561ec095714"
@@ -3831,7 +4241,9 @@
     "epic",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "chewiecatt"
+   ],
    "size": 34466,
    "sha256": "e1e894ee82b74fc531bf7693bc1f8b24a37cc4ff861cd234d45bfa081f46fd3d",
    "sha": "e1e894ee82b7"
@@ -3853,11 +4265,17 @@
    "sha": "306ec207a629"
   },
   {
-   "name": "I HATE U I LOVE U",
+   "name": "I HATE U, I LOVE U",
    "file": "I_HATE_U_I_LOVE_U.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "sad"
+   ],
+   "alts": [
+    "gnash",
+    "olivia o'brien"
+   ],
    "size": 37991,
    "sha256": "d5e1ff3a0c071f80ce280ecdea48ec33d03644bb708ce1eaac22b204d9ebbe1c",
    "sha": "d5e1ff3a0c07"
@@ -3900,8 +4318,16 @@
    "name": "I STILL LOVE YOU",
    "file": "I_STILL_LOVE_YOU.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "sad",
+    "beautiful"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 8928,
    "sha256": "8dcb889bfd48bbef6b5951e7ded4d5b04186d73ecc388bf553ed01b68b12df59",
    "sha": "8dcb889bfd48"
@@ -3925,8 +4351,15 @@
    "name": "I WANT YOU TO TELL ME",
    "file": "I_WANT_YOU_TO_TELL_ME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 43065,
    "sha256": "0561ae4a4bcf07c073bebdd2dbbba9f71a656766541315afafbb8b326006ea87",
    "sha": "0561ae4a4bcf"
@@ -3939,7 +4372,9 @@
     "pop/hiphop",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "gloria gaynor"
+   ],
    "size": 36664,
    "sha256": "8ab3b97a4ac050cb7bfd4b296e45889b3bcc9ef572cb35f7e2ac9d148e112741",
    "sha": "8ab3b97a4ac0"
@@ -3981,6 +4416,7 @@
    "bpm": "160",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
    "alts": [
@@ -3995,10 +4431,12 @@
    "file": "IDEA_10.lua",
    "bpm": "170",
    "cat": [
-    "beautiful"
+    "beautiful",
+    "classical",
+    "piano"
    ],
    "alts": [
-    "gibran alcocers"
+    "gibran alcocer"
    ],
    "size": 30240,
    "sha256": "2d1802ad2f5634d1a18d99224ed2c610c130c8d7a0818187b8f7ca4538da5cab",
@@ -4010,6 +4448,7 @@
    "bpm": "120",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
    "alts": [
@@ -4025,6 +4464,7 @@
    "bpm": "195",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
    "alts": [
@@ -4110,8 +4550,14 @@
    "name": "ILLUSIONARY DAYTIME",
    "file": "ILLUSIONARY_DAYTIME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "classical",
+    "piano"
+   ],
+   "alts": [
+    "shirfine"
+   ],
    "size": 39512,
    "sha256": "63a87a61505d29ab1ce9a0755c20a04263a73ea9c61f35b563ad09f9ec739f64",
    "sha": "63a87a61505d"
@@ -4179,11 +4625,16 @@
    "sha": "f4eab73da760"
   },
   {
-   "name": "IMPOSTER SYNDROME",
+   "name": "IMPOSTOR SYNDROME",
    "file": "IMPOSTER_SYNDROME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "rock",
+    "pop/hiphop"
+   ],
+   "alts": [
+    "sidney gish"
+   ],
    "size": 13844,
    "sha256": "ed20477df52a4682497065d5d65fcdff7170e7a57cdef9055104517916894c77",
    "sha": "ed20477df52a"
@@ -4215,7 +4666,10 @@
     "epic",
     "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "martin garrix",
+    "bebe rexha"
+   ],
    "size": 39422,
    "sha256": "c2bc90813d908e403b5f38e1858157dd9c24672bea1ba46629b2974f6c7b716f",
    "sha": "c2bc90813d90"
@@ -4224,8 +4678,15 @@
    "name": "IN THE POOL",
    "file": "IN_THE_POOL.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "omori",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "omori",
+    "pedro silva"
+   ],
    "size": 50244,
    "sha256": "01bada7680133c9fb09bb4a9b0b383d348ab8599f7ba2b9c5674de5b777296fa",
    "sha": "01bada768013"
@@ -4245,11 +4706,17 @@
    "sha": "1fd6311fd4fd"
   },
   {
-   "name": "INSTUPENDO",
+   "name": "COMFORT CHAIN",
    "file": "INSTUPENDO.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "beautiful",
+    "chill"
+   ],
+   "alts": [
+    "instupendo"
+   ],
    "size": 21679,
    "sha256": "f873a147a6c285d43a18a084912b95a0c9bce3bc4913e71c8dad650f8aa5d895",
    "sha": "f873a147a6c2"
@@ -4294,20 +4761,32 @@
    "name": "IRIS OUT",
    "file": "IRIS_OUT.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "rock"
+   ],
+   "alts": [
+    "kenshi yonezu",
+    "chainsaw man"
+   ],
    "size": 68683,
    "sha256": "4477d4dd18083e9bb9c4219466d35c4dd693a0e60d2678304f5ad99feba10bee",
    "sha": "4477d4dd1808"
   },
   {
-   "name": "ISABELLA'S LULLABY",
+   "name": "ISABELLA'S LULLABY (THE PROMISED NEVERLAND)",
    "file": "ISABELLAS_LULLABY.lua",
    "bpm": "112",
    "cat": [
-    "video games"
+    "anime/jpop",
+    "movies/tv",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "takahiro obata",
+    "the promised neverland"
+   ],
    "size": 10647,
    "sha256": "ce09e63ff913e496d484e4d3a38eca54a52398d3ab5db73512afc5d8c5694bd1",
    "sha": "ce09e63ff913"
@@ -4332,14 +4811,18 @@
    "sha": "e53f6bbf317f"
   },
   {
-   "name": "IT MEANS EVERYTHING",
+   "name": "IT MEANS EVERYTHING.",
    "file": "IT_MEANS.lua",
    "bpm": "96",
    "cat": [
     "video games",
-    "omori"
+    "omori",
+    "rock"
    ],
-   "alts": [],
+   "alts": [
+    "omori",
+    "pedro silva"
+   ],
    "size": 21990,
    "sha256": "807dc9cd5e58b8a00c9bd8fd4e213782d113a686b18492031e5b40d5c8363a95",
    "sha": "807dc9cd5e58"
@@ -4413,13 +4896,16 @@
    "sha": "4b18988488c6"
   },
   {
-   "name": "ITS RAINING TACOS",
+   "name": "IT'S RAINING TACOS",
    "file": "ITS_RAINING.lua",
    "bpm": "120",
    "cat": [
-    "memes"
+    "memes",
+    "electronic"
    ],
-   "alts": [],
+   "alts": [
+    "parry gripp"
+   ],
    "size": 18345,
    "sha256": "9696686c37d5fa9152448b5d56fd46494a9060175da1182f8f4d5783cf2ef1d4",
    "sha": "9696686c37d5"
@@ -4428,18 +4914,30 @@
    "name": "JE TE LAISSERAI DES MOTS",
    "file": "JE_TE_LAISSERAI_DES_MOTS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "sad",
+    "classical"
+   ],
+   "alts": [
+    "patrick watson"
+   ],
    "size": 24700,
    "sha256": "da67c2ab7c755f9af231949f2c5480199f40a4ae5795f11a61e30875bdc1db11",
    "sha": "da67c2ab7c75"
   },
   {
-   "name": "JEOPARDY THEME",
+   "name": "JEOPARDY THINK THEME",
    "file": "JEOPARDY_THEME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "memes"
+   ],
+   "alts": [
+    "merv griffin",
+    "jeopardy"
+   ],
    "size": 6934,
    "sha256": "beed4fddeaf06c6c766ec8aa9c7565b8d38af795b19dfd3b52ad58ffa11b49ea",
    "sha": "beed4fddeaf0"
@@ -4448,8 +4946,14 @@
    "name": "JINGLE BELL ROCK",
    "file": "JINGLE_BELL_ROCK.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "seasonal",
+    "pop/hiphop"
+   ],
+   "alts": [
+    "bobby helms",
+    "christmas"
+   ],
    "size": 33527,
    "sha256": "d787a4f79befa78c92b1f257938c753d134f4954e4c4c7b952819f5b2dc686c7",
    "sha": "d787a4f79bef"
@@ -4458,8 +4962,14 @@
    "name": "JINGLE BELLS",
    "file": "JINGLE_BELLS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "seasonal",
+    "classical"
+   ],
+   "alts": [
+    "james lord pierpont",
+    "christmas"
+   ],
    "size": 64466,
    "sha256": "38ad2cd774f304d89a3d33521fd29dfd572a246102c55376cfab24b5554fb769",
    "sha": "38ad2cd774f3"
@@ -4498,8 +5008,15 @@
    "name": "JUMPER",
    "file": "JUMPER.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "waterflame",
+    "geometry dash"
+   ],
    "size": 39375,
    "sha256": "ade87785bc5245a0fc320087ebbf50739dac5870fecfd8c2e7c4d7321d492da5",
    "sha": "ade87785bc52"
@@ -4509,21 +5026,31 @@
    "file": "JUST_THE_TWO_OF_US.lua",
    "bpm": "120",
    "cat": [
+    "pop/hiphop",
+    "beautiful",
     "new"
    ],
    "alts": [
-    "jazz"
+    "grover washington jr.",
+    "bill withers"
    ],
    "size": 27868,
    "sha256": "964c203c296ef75d98df5cf493bdd45ffb085957078032b52aa62eec295fb088",
    "sha": "964c203c296e"
   },
   {
-   "name": "KAIKAI KITAN",
+   "name": "KAIKAI KITAN (JUJUTSU KAISEN)",
    "file": "KAIKAI_KITAN.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "rock"
+   ],
+   "alts": [
+    "eve",
+    "jujutsu kaisen"
+   ],
    "size": 64980,
    "sha256": "93e147a1bbcf18a10f3b627dade68d6bf1850f1c378cbc60763c4833c45e750e",
    "sha": "93e147a1bbcf"
@@ -4560,7 +5087,7 @@
    "sha": "1cc2fb2bf293"
   },
   {
-   "name": "KEEP UP (ODETARI)",
+   "name": "KEEP UP",
    "file": "KEEP_UP.lua",
    "bpm": "135",
    "cat": [
@@ -4568,7 +5095,9 @@
     "electronic",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "odetari"
+   ],
    "size": 39787,
    "sha256": "d4729e35f2e46c9d12f4389535e46bf5372f713ebcc4f79f28c2695444efa722",
    "sha": "d4729e35f2e4"
@@ -4578,10 +5107,11 @@
    "file": "KEROSENE.lua",
    "bpm": "116",
    "cat": [
-    "electronic"
+    "electronic",
+    "phonk/funk"
    ],
    "alts": [
-    "popular"
+    "crystal castles"
    ],
    "size": 19319,
    "sha256": "c1273526e60c65fc7208753b29bfd5c685dbdc805a9b54ced527757f8b1f2871",
@@ -4610,9 +5140,13 @@
    "cat": [
     "movies/tv",
     "anime/jpop",
+    "rock",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "kenshi yonezu",
+    "chainsaw man"
+   ],
    "size": 30221,
    "sha256": "14217752b95aab65f7291422aca860682a43864bc4fe00688aa37178e4000bcf",
    "sha": "14217752b95a"
@@ -4621,8 +5155,14 @@
    "name": "KIDS",
    "file": "KIDS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "pop/hiphop",
+    "rock"
+   ],
+   "alts": [
+    "mgmt"
+   ],
    "size": 20416,
    "sha256": "c119323c840d52edfdc478a618e0903412fcb60d28f465b2b1519c56271821c9",
    "sha": "c119323c840d"
@@ -4631,18 +5171,29 @@
    "name": "KILLSWITCH LULLABY",
    "file": "KILLSWITCH_LULLABY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "beautiful"
+   ],
+   "alts": [
+    "flawed mangoes"
+   ],
    "size": 36536,
    "sha256": "3c478d52d617463c6be553a2b81272561fa3614515f39f4d069d6edaa4bb28e1",
    "sha": "3c478d52d617"
   },
   {
-   "name": "KISS OF DEATH",
+   "name": "KISS OF DEATH (DARLING IN THE FRANXX)",
    "file": "KISS_OF_DEATH.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv"
+   ],
+   "alts": [
+    "mika nakashima",
+    "darling in the franxx"
+   ],
    "size": 80568,
    "sha256": "4ec34acc10b95a22ccd2f245cd420f36ba0a94a42f63935998e3a1a7121ea085",
    "sha": "4ec34acc10b9"
@@ -4662,7 +5213,7 @@
    "sha": "a413d61b68fe"
   },
   {
-   "name": "L",
+   "name": "L'S THEME",
    "file": "L.lua",
    "bpm": "71",
    "cat": [
@@ -4671,6 +5222,7 @@
     "movies/tv"
    ],
    "alts": [
+    "hideki taniuchi",
     "death note"
    ],
    "size": 53821,
@@ -4799,9 +5351,12 @@
    "bpm": "100",
    "cat": [
     "best",
-    "new"
+    "new",
+    "electronic"
    ],
-   "alts": [],
+   "alts": [
+    "richard carter"
+   ],
    "size": 20907,
    "sha256": "1de80f7111c1e6ec35bc621cb19e2bceee1d4e7d71619e17aaa5b5c5e2d1df48",
    "sha": "1de80f7111c1"
@@ -4810,8 +5365,15 @@
    "name": "LEAVE THE DOOR OPEN",
    "file": "LEAVE_THE_DOOR_OPEN.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "beautiful"
+   ],
+   "alts": [
+    "silk sonic",
+    "bruno mars",
+    "anderson .paak"
+   ],
    "size": 81412,
    "sha256": "5fcfd935beb51db55a112fd8e9c4b20146d3540f136df161e138a0186e81fc1e",
    "sha": "5fcfd935beb5"
@@ -4820,8 +5382,15 @@
    "name": "LET GO",
    "file": "LET_GO.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "sad",
+    "beautiful"
+   ],
+   "alts": [
+    "ark patrol",
+    "veronika redd"
+   ],
    "size": 12211,
    "sha256": "fc6b9e549e38e0be08136cb20f6da62a4a08f1b1122a6dc60932c1749c8bd8e8",
    "sha": "fc6b9e549e38"
@@ -4937,16 +5506,17 @@
    "sha": "bc4acd1ba9ef"
   },
   {
-   "name": "LEVAN POLKKA",
+   "name": "IEVAN POLKKA",
    "file": "LEVAN_POLKKA.lua",
    "bpm": "135",
    "cat": [
-    "memes"
+    "memes",
+    "electronic"
    ],
    "alts": [
+    "loituma",
     "hatsune miku",
-    "vocaloid",
-    "le van"
+    "vocaloid"
    ],
    "size": 56933,
    "sha256": "94da2d6c69385406c06acc902c06113938e1c7e1c3d423c8f9bc22f87cbdd872",
@@ -4958,8 +5528,8 @@
    "bpm": "122",
    "cat": [
     "electronic",
-    "levels",
-    "best"
+    "best",
+    "peak"
    ],
    "alts": [
     "avicii"
@@ -4983,11 +5553,18 @@
    "sha": "390fb5d8d7df"
   },
   {
-   "name": "LIFE WILL CHANGE",
+   "name": "LIFE WILL CHANGE (PERSONA 5)",
    "file": "LIFE_WILL_CHANGE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "video games",
+    "rock",
+    "epic"
+   ],
+   "alts": [
+    "shoji meguro",
+    "persona 5"
+   ],
    "size": 75887,
    "sha256": "18312207e2021d3dbd87dc9d7d2c7b00bec3000f76c3f447d176fc8e9287835b",
    "sha": "18312207e202"
@@ -5007,13 +5584,15 @@
    "sha": "9e4e15d56231"
   },
   {
-   "name": "LIGHTS THEME",
+   "name": "LIGHT'S THEME",
    "file": "LIGHTS.lua",
    "bpm": "132",
    "cat": [
-    "anime/jpop"
+    "anime/jpop",
+    "movies/tv"
    ],
    "alts": [
+    "hideki taniuchi",
     "death note"
    ],
    "size": 35237,
@@ -5169,10 +5748,14 @@
    "file": "LOVELY_B.lua",
    "bpm": "150",
    "cat": [
+    "electronic",
+    "phonk/funk",
     "memes",
     "best"
    ],
    "alts": [
+    "yatashigang",
+    "zwearb",
     "phonk"
    ],
    "size": 50931,
@@ -5260,9 +5843,14 @@
    "file": "MANGOMANGOMANGO.lua",
    "bpm": "110",
    "cat": [
-    "peak"
+    "memes",
+    "peak",
+    "electronic",
+    "phonk/funk"
    ],
-   "alts": [],
+   "alts": [
+    "kxnvgh"
+   ],
    "size": 13317,
    "sha256": "db7cbe8c065452208a825d677a9cd994e77644d9bf28fe76022e1fee77457658",
    "sha": "db7cbe8c0654"
@@ -5283,16 +5871,18 @@
    "sha": "45eaa8c773ad"
   },
   {
-   "name": "MARRIED LIFE",
+   "name": "MARRIED LIFE (UP)",
    "file": "MARRIED.lua",
    "bpm": "83",
    "cat": [
     "sad",
-    "movies/tv"
+    "movies/tv",
+    "beautiful"
    ],
    "alts": [
-    "movie",
-    "up"
+    "michael giacchino",
+    "up",
+    "pixar"
    ],
    "size": 47957,
    "sha256": "e5009d78f4652b236de5be148e7cc5d0721cf974aaf6e8f406512881ebf6a8fa",
@@ -5303,9 +5893,12 @@
    "file": "MARY_ON.lua",
    "bpm": "130",
    "cat": [
-    "rock"
+    "rock",
+    "memes"
    ],
-   "alts": [],
+   "alts": [
+    "ghost"
+   ],
    "size": 52464,
    "sha256": "03d2c3cc7b6fca32e4a1a17ac6a66a0462cbebbe0ae41a13226e9490f2384851",
    "sha": "03d2c3cc7b6f"
@@ -5328,8 +5921,13 @@
    "name": "MEANINGFUL LOVE",
    "file": "MEANINGFUL_LOVE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "electronic"
+   ],
+   "alts": [
+    "flawed mangoes"
+   ],
    "size": 47402,
    "sha256": "9ddad488820230ddaa18d957a5d7391824f59fa75523e1ff7af34fe8c612530c",
    "sha": "9ddad4888202"
@@ -5341,21 +5939,30 @@
    "cat": [
     "video games",
     "undertale",
-    "memes"
+    "memes",
+    "best",
+    "peak"
    ],
    "alts": [
-    "popular"
+    "toby fox",
+    "sans"
    ],
    "size": 52644,
    "sha256": "f212600ca783df7686d850f4f9b4f834565d7f3b442803ebe0b6729da661b2d3",
    "sha": "f212600ca783"
   },
   {
-   "name": "MERRY CHRISTMAS MR LAWRENCE",
+   "name": "MERRY CHRISTMAS MR. LAWRENCE",
    "file": "MERRY_CHRISTMAS_MR_LAWRENCE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "classical",
+    "beautiful",
+    "movies/tv"
+   ],
+   "alts": [
+    "ryuichi sakamoto"
+   ],
    "size": 64246,
    "sha256": "29d50942f09502da08c218ce18cc6661d2e0988473da5cc381a79dffefee7b5f",
    "sha": "29d50942f095"
@@ -5365,9 +5972,11 @@
    "file": "METAMORPH.lua",
    "bpm": "180",
    "cat": [
-    "electronic"
+    "electronic",
+    "phonk/funk"
    ],
    "alts": [
+    "interworld",
     "phonk"
    ],
    "size": 7193,
@@ -5442,9 +6051,12 @@
    "file": "MIKU.lua",
    "bpm": "135",
    "cat": [
-    "anime/jpop"
+    "anime/jpop",
+    "electronic"
    ],
    "alts": [
+    "ananamanaguchi",
+    "hatsune miku",
     "vocaloid"
    ],
    "size": 46352,
@@ -5505,9 +6117,11 @@
    "bpm": "130",
    "cat": [
     "electronic",
+    "phonk/funk",
     "new"
    ],
    "alts": [
+    "dj holanda",
     "phonk",
     "funk"
    ],
@@ -5519,8 +6133,14 @@
    "name": "MONTAGEM HIKARI",
    "file": "MONTAGEM_HIKARI.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "phonk/funk"
+   ],
+   "alts": [
+    "dj fku",
+    "phonk"
+   ],
    "size": 28183,
    "sha256": "980dd779f30df5588e241f62b5b68f659fd3f6f0b4f705584c211745fbf5f947",
    "sha": "980dd779f30d"
@@ -5530,9 +6150,11 @@
    "file": "MONTAGEM_TOMADA.lua",
    "bpm": "120",
    "cat": [
-    "electronic"
+    "electronic",
+    "phonk/funk"
    ],
    "alts": [
+    "dj tokyo",
     "phonk"
    ],
    "size": 10223,
@@ -5668,8 +6290,15 @@
    "name": "MY CONFESSION",
    "file": "MY_CONFESSION.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 16008,
    "sha256": "cd94b18e4fca401e72e97eb60ff12d04f841e8232ac99110fb416f67f5165401",
    "sha": "cd94b18e4fca"
@@ -5695,8 +6324,15 @@
    "name": "MY FEELINGS",
    "file": "MY_FEELINGS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "sad"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 8527,
    "sha256": "cf86a9a7bcc3d1a26399a7886b753dcb5c1b5658fcadd1fe7dabf20519986c6a",
    "sha": "cf86a9a7bcc3"
@@ -5812,8 +6448,14 @@
    "name": "NEVADA",
    "file": "NEVADA.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "pop/hiphop"
+   ],
+   "alts": [
+    "vicetone",
+    "cozi zuehlsdorff"
+   ],
    "size": 76186,
    "sha256": "54e542a0275ee0b6db34ff12f1fc9fba21a1bcd0bb2e7b6f0d5843ed476e34e6",
    "sha": "54e542a0275e"
@@ -5888,9 +6530,13 @@
    "file": "NEW_HOME.lua",
    "bpm": "100",
    "cat": [
+    "video games",
+    "undertale",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 6450,
    "sha256": "9b275816b13bbe3332779ddedcc41cf80e9f6eb9b82d226d76740e47df38bcd9",
    "sha": "9b275816b13b"
@@ -5912,11 +6558,18 @@
    "sha": "42287759597d"
   },
   {
-   "name": "NO BATIDAO",
+   "name": "NO BATIDÃO",
    "file": "NO_BATIDAO.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "phonk/funk"
+   ],
+   "alts": [
+    "dj gbr",
+    "phonk",
+    "funk"
+   ],
    "size": 23855,
    "sha256": "de773975f0bfafabd8c5837b4ad6ff23d94e0f1238d82cb2ee8041a40442668b",
    "sha": "de773975f0bf"
@@ -5974,7 +6627,10 @@
     "video games",
     "undertale"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox",
+    "undertale last breath"
+   ],
    "size": 53326,
    "sha256": "025d1ef62ac855226532de9e335710d054e216dea83eda8604cb9d4daa73660d",
    "sha": "025d1ef62ac8"
@@ -6029,8 +6685,14 @@
    "name": "NUKE POWDER",
    "file": "NUKE_POWDER.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "vane lily",
+    "roblox forsaken"
+   ],
    "size": 73714,
    "sha256": "a34645250edab11f2c79ae1898cf1ac017bd46ff00c310e876600530cf9b0341",
    "sha": "a34645250eda"
@@ -6050,14 +6712,18 @@
    "sha": "92464d8eb063"
   },
   {
-   "name": "NYAN CAT",
+   "name": "NYAN CAT THEME",
    "file": "NYAN_CAT.lua",
    "bpm": "140",
    "cat": [
     "memes",
+    "electronic",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "daniwell-p",
+    "saraj00n"
+   ],
    "size": 24427,
    "sha256": "49a1d74bb4039e7ca2dc5471c39adc4b19861684f2157fc5a02124cd692c253b",
    "sha": "49a1d74bb403"
@@ -6072,6 +6738,7 @@
     "best"
    ],
    "alts": [
+    "toby fox",
     "papyrus"
    ],
    "size": 35375,
@@ -6094,21 +6761,35 @@
    "sha": "70d00d395807"
   },
   {
-   "name": "OHAYOU SAYORI",
+   "name": "OHAYOU SAYORI!",
    "file": "OHAYOU_SAYORI.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "anime/jpop"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 35138,
    "sha256": "983ae68694673051e3d0a4cf5603b471c775ac74d1bd99e059404d6b0df9263b",
    "sha": "983ae6869467"
   },
   {
-   "name": "OKAY EVERYONE",
+   "name": "OKAY, EVERYONE!",
    "file": "OKAY_EVERYONE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 35870,
    "sha256": "4740c16d12040d593d025192bd56ec1d39d5fab74107aa5fafce634b119278ab",
    "sha": "4740c16d1204"
@@ -6163,8 +6844,15 @@
    "name": "ONCE UPON A DECEMBER",
    "file": "ONCE_UPON_A_DECEMBER.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "classical",
+    "beautiful"
+   ],
+   "alts": [
+    "anastasia",
+    "stephen flaherty"
+   ],
    "size": 34606,
    "sha256": "c62f3f753ff7850918c7107ccc2f535b45e82a011a398e958e93577df87350e3",
    "sha": "c62f3f753ff7"
@@ -6175,9 +6863,12 @@
    "bpm": "65",
    "cat": [
     "video games",
-    "undertale"
+    "undertale",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 7821,
    "sha256": "52cb07125fbc74e0475173ba1101f4c2535d9ea1f619334ed2bf721adf99199f",
    "sha": "52cb07125fbc"
@@ -6330,10 +7021,12 @@
    "file": "PASSO_BEM_SOLTO.lua",
    "bpm": "120",
    "cat": [
-    "electronic"
+    "electronic",
+    "phonk/funk"
    ],
    "alts": [
-    "phonk"
+    "atlanta phonk",
+    "dj jz"
    ],
    "size": 22812,
    "sha256": "d2d12f20e0564e378b489891577d627dca482ed4ed7c8b16d3d4f3a1bc870cb7",
@@ -6345,9 +7038,13 @@
    "bpm": "110",
    "cat": [
     "sad",
-    "beautiful"
+    "beautiful",
+    "pop/hiphop"
    ],
-   "alts": [],
+   "alts": [
+    "borns",
+    "børns"
+   ],
    "size": 62558,
    "sha256": "85b5f23ec401a3d1cc10217e3ae90ec7d0b7b8ac902fa18720a76003f727fde5",
    "sha": "85b5f23ec401"
@@ -6449,7 +7146,7 @@
    "sha": "e3504ac5f8f7"
   },
   {
-   "name": "PLANT VS ZOMBIES",
+   "name": "PLANTS VS. ZOMBIES - MAIN THEME",
    "file": "PLANT_VS_ZOMBIES.lua",
    "bpm": "100",
    "cat": [
@@ -6457,6 +7154,7 @@
     "memes"
    ],
    "alts": [
+    "laura shigihara",
     "pvz"
    ],
    "size": 12912,
@@ -6467,8 +7165,15 @@
    "name": "PLAY WITH ME",
    "file": "PLAY_WITH_ME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "creepy/weirdcore"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 39466,
    "sha256": "9319bca1661fa4c0ed3cab7b9a79375af1f4577f6f30c38dfd9f049d250d5797",
    "sha": "9319bca1661f"
@@ -6493,39 +7198,54 @@
    "sha": "ec1939a8f9cd"
   },
   {
-   "name": "POEM PANIC",
+   "name": "POEM PANIC!",
    "file": "POEM_PANIC.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "ddlc",
+    "video games"
+   ],
+   "alts": [
+    "dan salvato",
+    "ddlc"
+   ],
    "size": 42384,
    "sha256": "55d6a3ec93c61399f34e7f5504d62e120d80bc398ac7124409790b765e3855d0",
    "sha": "55d6a3ec93c6"
   },
   {
-   "name": "POKEMON MAIN THEME",
+   "name": "POKÉMON THEME SONG",
    "file": "POKEMON.lua",
    "bpm": "160",
    "cat": [
     "video games",
     "anime/jpop",
-    "movies/tv"
+    "movies/tv",
+    "nintendo"
    ],
-   "alts": [],
+   "alts": [
+    "john siegler",
+    "jason paige",
+    "pokemon"
+   ],
    "size": 59113,
    "sha256": "0c5d6f3abc9b3192f268eae6297120e71e246a5b31bc54f21ea18ecd5018acec",
    "sha": "0c5d6f3abc9b"
   },
   {
-   "name": "POKEMON RED AND BLUE",
+   "name": "POKÉMON RED & BLUE OPENING",
    "file": "POKEMON_RED.lua",
    "bpm": "180",
    "cat": [
     "video games",
     "anime/jpop",
-    "movies/tv"
+    "movies/tv",
+    "nintendo"
    ],
-   "alts": [],
+   "alts": [
+    "junichi masuda",
+    "pokemon"
+   ],
    "size": 17204,
    "sha256": "a9bdc38608e768a45e062e94deeae0176344085073a39cb52855d19557de8a49",
    "sha": "a9bdc38608e7"
@@ -6534,8 +7254,15 @@
    "name": "POLARGEIST",
    "file": "POLARGEIST.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "step",
+    "geometry dash"
+   ],
    "size": 20916,
    "sha256": "36ff0ef08087f81d66a86b613fbb5a6cb4673aad70f4eefbb0245dafc9f2adf4",
    "sha": "36ff0ef08087"
@@ -6559,8 +7286,13 @@
    "name": "POSTER BOY",
    "file": "POSTER_BOY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "sad"
+   ],
+   "alts": [
+    "lyn lapid"
+   ],
    "size": 38707,
    "sha256": "d5053cc7189f938ad0ff0fd00c9bde75d61b2ab4ea98db03609da0d2fae50dda",
    "sha": "d5053cc7189f"
@@ -6613,8 +7345,13 @@
    "name": "PROPOSE",
    "file": "PROPOSE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "classical",
+    "beautiful"
+   ],
+   "alts": [
+    "toshifumi hinata"
+   ],
    "size": 112726,
    "sha256": "5dcd80dbbfa58aad61937e29969bfef01fbc12898d022b4f04faeccbd6401d9b",
    "sha": "5dcd80dbbfa5"
@@ -6797,13 +7534,16 @@
    "sha": "e441fc9a57cf"
   },
   {
-   "name": "RIGHTEOUS (MO BEATS)",
+   "name": "RIGHTEOUS",
    "file": "RIGHTEOUS.lua",
    "bpm": "160",
    "cat": [
-    "electronic"
+    "electronic",
+    "pop/hiphop"
    ],
-   "alts": [],
+   "alts": [
+    "mo beats"
+   ],
    "size": 19745,
    "sha256": "4a63c67c500c50ecb2a627df171a1d2eaa2b5476dace94d1f0d665ae9b5d3801",
    "sha": "4a63c67c500c"
@@ -6859,9 +7599,14 @@
    "file": "RIVER_FLOWS_IN_YOU.lua",
    "bpm": "137",
    "cat": [
-    "sad"
+    "classical",
+    "sad",
+    "beautiful",
+    "best"
    ],
-   "alts": [],
+   "alts": [
+    "yiruma"
+   ],
    "size": 10695,
    "sha256": "511745334cc3c1cef2e28771414d082aba6c98b50cfde4f3d874bd07efeee633",
    "sha": "511745334cc3"
@@ -6883,7 +7628,7 @@
    "sha": "729e3d40db9b"
   },
   {
-   "name": "ROI (VIDEOCLUB)",
+   "name": "ROI",
    "file": "ROI.lua",
    "bpm": "110",
    "cat": [
@@ -6891,7 +7636,9 @@
     "best",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "videoclub"
+   ],
    "size": 13081,
    "sha256": "89fa4e8c4215f7efbc4ada77cc4636b46a96e703727cfc8c7824065e52de299a",
    "sha": "89fa4e8c4215"
@@ -6929,14 +7676,17 @@
    "sha": "b3059d23448a"
   },
   {
-   "name": "RUE DES TROIS FRERES",
+   "name": "RUE DES TROIS FRÈRES",
    "file": "RUE_DES_TROIS_FRERES.lua",
    "bpm": "120",
    "cat": [
     "classical",
+    "beautiful",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "fabrizio paterlini"
+   ],
    "size": 21520,
    "sha256": "2e11a70f9c56159a6ec8519bb951f23551e10d2cfb482f180234435412a9dd46",
    "sha": "2e11a70f9c56"
@@ -6949,7 +7699,9 @@
     "video games",
     "undertale"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 24649,
    "sha256": "a1decce79ae9ffb596ff5afea460813a014dd029f1ce87329eb4620c70fc23e3",
    "sha": "a1decce79ae9"
@@ -6972,15 +7724,18 @@
    "sha": "8daace2883ea"
   },
   {
-   "name": "RUNAWAY (AURORA)",
+   "name": "RUNAWAY",
    "file": "RUNAWAY_AURORA.lua",
    "bpm": "90",
    "cat": [
     "sad",
     "beautiful",
-    "best"
+    "best",
+    "pop/hiphop"
    ],
-   "alts": [],
+   "alts": [
+    "aurora"
+   ],
    "size": 26150,
    "sha256": "f618f3759ee2bf426d8033978ce85c7bb52b0aa10cf8fec8c100515cf76b8d51",
    "sha": "f618f3759ee2"
@@ -7022,7 +7777,11 @@
    "name": "RUSH C",
    "file": "RUSH_C.lua",
    "bpm": "60",
-   "cat": [],
+   "cat": [
+    "classical",
+    "memes",
+    "epic"
+   ],
    "alts": [
     "sheet music boss"
    ],
@@ -7048,7 +7807,11 @@
    "name": "RUSH F",
    "file": "RUSH_F.lua",
    "bpm": "60",
-   "cat": [],
+   "cat": [
+    "classical",
+    "memes",
+    "epic"
+   ],
    "alts": [
     "sheet music boss"
    ],
@@ -7060,7 +7823,11 @@
    "name": "RUSH G",
    "file": "RUSH_G.lua",
    "bpm": "60",
-   "cat": [],
+   "cat": [
+    "classical",
+    "memes",
+    "epic"
+   ],
    "alts": [
     "sheet music boss"
    ],
@@ -7086,11 +7853,17 @@
    "sha": "0d7a6b3e391b"
   },
   {
-   "name": "SAD XXX",
+   "name": "SAD!",
    "file": "SAD_XXX.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "sad",
+    "best"
+   ],
+   "alts": [
+    "xxxtentacion"
+   ],
    "size": 38806,
    "sha256": "cf25dd7b0ad58b68d957c6eed4321e1e810e245465e35156483c783493df0091",
    "sha": "cf25dd7b0ad5"
@@ -7126,11 +7899,18 @@
    "sha": "11481c95a653"
   },
   {
-   "name": "SAITAMAS THEME",
+   "name": "SAITAMA'S THEME (ONE PUNCH MAN)",
    "file": "SAITAMAS_THEME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "epic"
+   ],
+   "alts": [
+    "makoto miyazaki",
+    "one punch man"
+   ],
    "size": 16662,
    "sha256": "9dfe80ca62fadf0e4db4a854901f033b69e6d900249e6be717105db6c0b2e267",
    "sha": "9dfe80ca62fa"
@@ -7145,18 +7925,25 @@
     "memes"
    ],
    "alts": [
-    "undertale"
+    "toby fox"
    ],
    "size": 11135,
    "sha256": "a1c573d477c0a549a5f694cc6a814a31187344d55ca52ebbea58ff40cdc524f6",
    "sha": "a1c573d477c0"
   },
   {
-   "name": "SANTA CLAUS IS COMING",
+   "name": "SANTA CLAUS IS COMING TO TOWN",
    "file": "SANTA_CLAUS_IS_COMING.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "seasonal",
+    "classical",
+    "pop/hiphop"
+   ],
+   "alts": [
+    "j. fred coots",
+    "christmas"
+   ],
    "size": 16002,
    "sha256": "4b3098c0e8101cd280d1a86b6a6b7679ecc92acadb46a27f6dc41f57ab70181e",
    "sha": "4b3098c0e810"
@@ -7235,7 +8022,8 @@
    "alts": [
     "tyler the creator",
     "kali urchis",
-    "tyler, the creator",
+    "tyler",
+    "the creator",
     "flower boy"
    ],
    "size": 14369,
@@ -7318,7 +8106,9 @@
     "video games",
     "undertale"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 9502,
    "sha256": "5f2cdf36f16bd605535a291e350e2b278d1a9bb77a4f0639b69255b01ad3028b",
    "sha": "5f2cdf36f16b"
@@ -7346,7 +8136,7 @@
     "movies/tv"
    ],
    "alts": [
-    "naruto shippuden    "
+    "naruto shippuden"
    ],
    "size": 31328,
    "sha256": "711ee90e7a1508ef14884048ef4bd500587f99a852afefa4e8a443dc9c4854d8",
@@ -7371,8 +8161,15 @@
    "name": "SINKING TOWN",
    "file": "SINKING_TOWN.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "beautiful"
+   ],
+   "alts": [
+    "radwimps",
+    "weathering with you"
+   ],
    "size": 49277,
    "sha256": "767df9a6fc20235023f0f383a82881abe1202648be821605d804b6b1b066e449",
    "sha": "767df9a6fc20"
@@ -7477,9 +8274,12 @@
    "bpm": "120",
    "cat": [
     "video games",
-    "undertale"
+    "undertale",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 10576,
    "sha256": "098cb80640a7d139cb6963dbc39c61036f4ff6a735ba731f0efc529c123e9fbc",
    "sha": "098cb80640a7"
@@ -7489,10 +8289,12 @@
    "file": "SOLAS.lua",
    "bpm": "120",
    "cat": [
-    "beautiful"
+    "classical",
+    "beautiful",
+    "sad"
    ],
    "alts": [
-    "sad"
+    "jamie duffy"
    ],
    "size": 22107,
    "sha256": "52965c79f284da3d47b27c81efa4a7ae41ff87196c589a4f6c45d9c73477aaed",
@@ -7539,20 +8341,24 @@
     "undertale"
    ],
    "alts": [
-    "undertale"
+    "toby fox"
    ],
    "size": 26678,
    "sha256": "91982654460bf26410e1f30ddcb2a574fa5b134bc6e8d844b715dc472bd33254",
    "sha": "91982654460b"
   },
   {
-   "name": "SOVIET UNION ANTHEM",
+   "name": "STATE ANTHEM OF THE SOVIET UNION",
    "file": "SOVIET_UNION_ANTHEM.lua",
    "bpm": "80",
    "cat": [
-    "memes"
+    "memes",
+    "classical",
+    "epic"
    ],
-   "alts": [],
+   "alts": [
+    "alexander alexandrov"
+   ],
    "size": 20490,
    "sha256": "24c88d2c1828f984a66000b5c6ced1d08b422dbe72f9c7164a43cc7ec96d859d",
    "sha": "24c88d2c1828"
@@ -7617,9 +8423,13 @@
    "cat": [
     "video games",
     "undertale",
-    "best"
+    "best",
+    "epic"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox",
+    "undyne"
+   ],
    "size": 47268,
    "sha256": "9e3a3183a0edf17c9f254b6d8a5c0607becb1e283730169531ebe36895f879f0",
    "sha": "9e3a3183a0ed"
@@ -7669,6 +8479,7 @@
     "undertale"
    ],
    "alts": [
+    "toby fox",
     "muffet"
    ],
    "size": 41574,
@@ -7744,8 +8555,15 @@
    "name": "STEREO LOVE",
    "file": "STEREO_LOVE.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "electronic",
+    "pop/hiphop",
+    "memes"
+   ],
+   "alts": [
+    "edward maya",
+    "vika jigulina"
+   ],
    "size": 57546,
    "sha256": "eab04b03b98e093ec41b6e603f976bfd360a95ef8700ae5964276de1f0a85e96",
    "sha": "eab04b03b98e"
@@ -7783,13 +8601,18 @@
    "sha": "8f3632b97867"
   },
   {
-   "name": "STRANGER THINGS",
+   "name": "STRANGER THINGS THEME",
    "file": "STRANGER_THINGS.lua",
    "bpm": "80",
    "cat": [
-    "movies/tv"
+    "movies/tv",
+    "electronic",
+    "creepy/weirdcore"
    ],
-   "alts": [],
+   "alts": [
+    "kyle dixon",
+    "michael stein"
+   ],
    "size": 10632,
    "sha256": "f02e0ad167b045ab26ee7f4a230edaadf41a207213d3900dc244dd6a18d4543a",
    "sha": "f02e0ad167b0"
@@ -7844,11 +8667,18 @@
    "sha": "899e496295ca"
   },
   {
-   "name": "SUCCESSION THEME",
+   "name": "SUCCESSION MAIN THEME",
    "file": "SUCCESSION_THEME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "classical",
+    "epic"
+   ],
+   "alts": [
+    "nicholas britell",
+    "succession"
+   ],
    "size": 19771,
    "sha256": "508f6fd70b492589d78cbada13f80002ecbfdd61fcb26c4eff851a0fb1968b2b",
    "sha": "508f6fd70b49"
@@ -7876,22 +8706,30 @@
    "file": "SUPER_IDOL.lua",
    "bpm": "136",
    "cat": [
-    "memes"
+    "memes",
+    "pop/hiphop"
    ],
-   "alts": [],
+   "alts": [
+    "de renshenme",
+    "a-do"
+   ],
    "size": 47655,
    "sha256": "150629eaa85ea0afe44757ee32391041b79b8b6b7baa0237429bd85c4b1e55f4",
    "sha": "150629eaa85e"
   },
   {
-   "name": "SUPER MARIO BROS",
+   "name": "SUPER MARIO BROS. THEME",
    "file": "SUPER_MARIOS.lua",
    "bpm": "180",
    "cat": [
     "video games",
+    "nintendo",
     "memes"
    ],
-   "alts": [],
+   "alts": [
+    "koji kondo",
+    "nintendo"
+   ],
    "size": 31920,
    "sha256": "4a16de0f8dc2e1972010e6ef75c866e58e795641803f8ddd368b75a1532fd0a9",
    "sha": "4a16de0f8dc2"
@@ -7900,8 +8738,14 @@
    "name": "SUPER SHY",
    "file": "SUPER_SHY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "electronic",
+    "anime/jpop"
+   ],
+   "alts": [
+    "newjeans"
+   ],
    "size": 65405,
    "sha256": "ca9fda046a5014ca2aa3bb9dad37e3b3b1635ce140988f5d9d09d7c8012ea427",
    "sha": "ca9fda046a50"
@@ -7986,16 +8830,17 @@
    "sha": "215937c0c57c"
   },
   {
-   "name": "SWEET DREAMS",
+   "name": "SWEET DREAMS (ARE MADE OF THIS)",
    "file": "SWEET_DREAMS.lua",
    "bpm": "125",
    "cat": [
     "pop/hiphop",
+    "electronic",
     "best",
     "new"
    ],
    "alts": [
-    "sweet dreams are made of this"
+    "eurythmics"
    ],
    "size": 37680,
    "sha256": "d64be10eef836bcc6cf5d3e068a530793fa4af52a8869b5b9063baf2b62092bb",
@@ -8005,8 +8850,13 @@
    "name": "SWEETLY",
    "file": "SWEETLY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "electronic"
+   ],
+   "alts": [
+    "flawed mangoes"
+   ],
    "size": 35044,
    "sha256": "c6c094603eebb1285489bcff90707c40624aa650e867f6c756a161e32feed99f",
    "sha": "c6c094603eeb"
@@ -8047,10 +8897,13 @@
    "name": "TAKE FIVE",
    "file": "TAKE_FIVE.lua",
    "bpm": "166",
-   "cat": [],
+   "cat": [
+    "classical",
+    "best"
+   ],
    "alts": [
     "dave brubeck",
-    "jazz"
+    "paul desmond"
    ],
    "size": 40713,
    "sha256": "f9f103ad183c0eca1504ae53791c96ecc14a47af2679460bdaf33f1941e162e6",
@@ -8060,8 +8913,13 @@
    "name": "TAKE ME BACK HOME",
    "file": "TAKE_ME_BACK_HOME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "beautiful",
+    "electronic"
+   ],
+   "alts": [
+    "flawed mangoes"
+   ],
    "size": 18281,
    "sha256": "f107ea73c8132a468757c52a0537cd75b3d9af03dd0e3b102d9690bc528caa3d",
    "sha": "f107ea73c813"
@@ -8111,21 +8969,35 @@
    "sha": "23bcf087c558"
   },
   {
-   "name": "TETORIS",
+   "name": "TETORIS (TETRIS)",
    "file": "TETORIS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "memes",
+    "electronic",
+    "anime/jpop"
+   ],
+   "alts": [
+    "hiroyuki ohashi",
+    "vocaloid",
+    "kasane teto"
+   ],
    "size": 68565,
    "sha256": "a0790593e49e42592f324cc7b61026026a063c42a40ea6cfa7e69a1e36b3a301",
    "sha": "a0790593e49e"
   },
   {
-   "name": "THANG DIEN",
+   "name": "THẰNG ĐIÊN",
    "file": "THANG_DIEN.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "beautiful"
+   ],
+   "alts": [
+    "justatee",
+    "phuong ly"
+   ],
    "size": 47054,
    "sha256": "142fbb7a8a4810e840561c467aca87f519e44e28c5e58d1d11ebb317867feb4d",
    "sha": "142fbb7a8a48"
@@ -8223,8 +9095,15 @@
    "name": "THE ABYSS",
    "file": "THE_ABYSS.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "video games",
+    "beautiful",
+    "epic"
+   ],
+   "alts": [
+    "hollow knight",
+    "christopher larkin"
+   ],
    "size": 45127,
    "sha256": "f26b77b0b02a3c85532d6243f0aeb7173071dff9bb69d207a3fa192fcfc4d482",
    "sha": "f26b77b0b02a"
@@ -8268,7 +9147,10 @@
     "epic",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "chess",
+    "grandmaster"
+   ],
    "size": 44040,
    "sha256": "00e293f5fc3ccae3f7722e7ee94c85d5d036d1c998c8fc1864285b16bffde92c",
    "sha": "00e293f5fc3c"
@@ -8298,7 +9180,8 @@
     "beautiful"
    ],
    "alts": [
-    "the good, the bad and the ugly",
+    "the good",
+    "the bad and the ugly",
     "the good the bad and the ugly"
    ],
    "size": 28130,
@@ -8310,10 +9193,13 @@
    "file": "THE_ENTERTAINER.lua",
    "bpm": "60",
    "cat": [
+    "classical",
     "memes",
     "best"
    ],
-   "alts": [],
+   "alts": [
+    "scott joplin"
+   ],
    "size": 76575,
    "sha256": "89c3e67a9ef37e7cc2dba978cf6b9d72d437739f7dae9c5421dac0bf362c32eb",
    "sha": "89c3e67a9ef3"
@@ -8416,8 +9302,14 @@
    "name": "THE WINNER TAKES IT ALL",
    "file": "THE_WINNER_TAKES_IT_ALL.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "sad",
+    "beautiful"
+   ],
+   "alts": [
+    "abba"
+   ],
    "size": 72589,
    "sha256": "9898a60171d2552410cb3564a3f08749cb651fde6893004b7d8fae2fa1f89084",
    "sha": "9898a60171d2"
@@ -8455,11 +9347,18 @@
    "sha": "195b3606c722"
   },
   {
-   "name": "THE X FILES",
+   "name": "THE X-FILES THEME",
    "file": "THE_X_FILES.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "movies/tv",
+    "creepy/weirdcore",
+    "memes"
+   ],
+   "alts": [
+    "mark snow",
+    "x-files"
+   ],
    "size": 26414,
    "sha256": "ce8f307efab9704d8562d6d14492d794d495e66d59c871d739bb2b4be43e7264",
    "sha": "ce8f307efab9"
@@ -8468,8 +9367,15 @@
    "name": "THEORY OF EVERYTHING",
    "file": "THEORY_OF_EVERYTHING.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "dj-nate",
+    "geometry dash"
+   ],
    "size": 97481,
    "sha256": "ffb17e31130ba91adb4c6c2bb850145e80e4f08a497a8f58746bad237ead0f9a",
    "sha": "ffb17e31130b"
@@ -8479,13 +9385,12 @@
    "file": "THICK_OF_IT.lua",
    "bpm": "146",
    "cat": [
+    "pop/hiphop",
     "memes"
    ],
    "alts": [
-    "nigga",
     "ksi",
-    "shit",
-    "popular"
+    "trippie redd"
    ],
    "size": 22091,
    "sha256": "38897c50954da8a48f05aabb66aca6a69579c3364ffe1901f698c003b73474a7",
@@ -8496,10 +9401,15 @@
    "file": "THIS_IS_HALLOWEEN.lua",
    "bpm": "160",
    "cat": [
+    "seasonal",
     "creepy/weirdcore",
+    "movies/tv",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "danny elfman",
+    "nightmare before christmas"
+   ],
    "size": 63507,
    "sha256": "27d05f7698e73281189d88ad9a6ae63dfab7bbf32ff60e297bb8a4a40f6035e8",
    "sha": "27d05f7698e7"
@@ -8508,8 +9418,14 @@
    "name": "THIS IS HOME",
    "file": "THIS_IS_HOME.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "sad",
+    "beautiful"
+   ],
+   "alts": [
+    "cavetown"
+   ],
    "size": 35932,
    "sha256": "30778545f52554ca774229e7d6ccc9d452880957df6fac04da8f91939c44daa7",
    "sha": "30778545f525"
@@ -8583,8 +9499,14 @@
    "name": "THROUGH PATCHES OF VIOLET",
    "file": "THROUGH_PATCHES_OF_VIOLET.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "video games",
+    "beautiful"
+   ],
+   "alts": [
+    "limbus company",
+    "mili"
+   ],
    "size": 89765,
    "sha256": "6f8164915c71a1481121366b2a06335f59b8d894ce0cdc573eaca41eed6f3d8f",
    "sha": "6f8164915c71"
@@ -8593,8 +9515,13 @@
    "name": "THUNDERSTRUCK",
    "file": "THUNDERSTRUCK.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "rock",
+    "epic"
+   ],
+   "alts": [
+    "ac/dc"
+   ],
    "size": 94620,
    "sha256": "f206e65a7708636faed8960787dbab5891cd402e47cc654e766e4f2d4b1b0982",
    "sha": "f206e65a7708"
@@ -8604,11 +9531,14 @@
    "file": "TICKING.lua",
    "bpm": "77",
    "cat": [
+    "electronic",
     "epic",
     "best",
     "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "tini lin"
+   ],
    "size": 103366,
    "sha256": "3165c3ae15760ad393225dd88454c20b2bff7abd323bf47a39dbd03c88c3e6b6",
    "sha": "3165c3ae1576"
@@ -8636,9 +9566,13 @@
    "file": "TIME_BACK.lua",
    "bpm": "120",
    "cat": [
-    "movies/tv"
+    "movies/tv",
+    "electronic",
+    "sad"
    ],
-   "alts": [],
+   "alts": [
+    "bad style"
+   ],
    "size": 62391,
    "sha256": "36cb65f5febc98dd3f5f5f1cc595e4134e50e5b0a53eeb887b0a98d348681dad",
    "sha": "36cb65f5febc"
@@ -8680,8 +9614,12 @@
    "name": "TOOK HER TO THE O",
    "file": "TOOK_HER_TO_THE_O.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop"
+   ],
+   "alts": [
+    "king von"
+   ],
    "size": 16273,
    "sha256": "b9cda17ad0b5fb9535eda17d86200bf81872b08e3047072e3b20d17846459444",
    "sha": "b9cda17ad0b5"
@@ -8704,24 +9642,31 @@
    "sha": "de43555b508a"
   },
   {
-   "name": "TOXIC (BOYWITHUKE)",
+   "name": "TOXIC",
    "file": "TOXIC.lua",
    "bpm": "180",
    "cat": [
     "sad",
     "pop/hiphop"
    ],
-   "alts": [],
+   "alts": [
+    "boywithuke"
+   ],
    "size": 40019,
    "sha256": "87ff09b8d92151692750b9c1d9a7da01146b7b5c886767dd84f9d731e0522218",
    "sha": "87ff09b8d921"
   },
   {
-   "name": "TRANSCEDENTAL ETUDE 4",
+   "name": "TRANSCENDENTAL ÉTUDE NO.4 (MAZEPPA)",
    "file": "TRANSCEDENTAL_ETUDE_4.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "classical",
+    "epic"
+   ],
+   "alts": [
+    "franz liszt"
+   ],
    "size": 203289,
    "sha256": "8105b64c56c613c12f48a947f5ee764e5fe447f23f0eac505920a22b1ef8abad",
    "sha": "8105b64c56c6"
@@ -8744,11 +9689,18 @@
    "sha": "8918433e6459"
   },
   {
-   "name": "TREACHERY",
+   "name": "TREACHERY (BLEACH)",
    "file": "TREACHERY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "anime/jpop",
+    "movies/tv",
+    "epic"
+   ],
+   "alts": [
+    "shiro sagisu",
+    "bleach"
+   ],
    "size": 55535,
    "sha256": "5196f6523a6e7315003cdff5ec7f5c24e15bdaaae3b5e341af997c545d3afe81",
    "sha": "5196f6523a6e"
@@ -8790,9 +9742,12 @@
     "video games",
     "undertale",
     "best",
-    "epic"
+    "epic",
+    "beautiful"
    ],
-   "alts": [],
+   "alts": [
+    "toby fox"
+   ],
    "size": 74894,
    "sha256": "c8ec0e5208be073e75707d7e39672bfc21edee7fe5056a166dfd8e20910229aa",
    "sha": "c8ec0e5208be"
@@ -8955,7 +9910,9 @@
     "beautiful",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "virginio aiello"
+   ],
    "size": 27727,
    "sha256": "94fd7f569bfa5ffedc92ac6d33d0a808e7e2bad9990d203f4c4de6b096cedb44",
    "sha": "94fd7f569bfa"
@@ -8964,18 +9921,31 @@
    "name": "VICTORY",
    "file": "VICTORY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "epic",
+    "best"
+   ],
+   "alts": [
+    "two steps from hell",
+    "thomas bergersen"
+   ],
    "size": 92035,
    "sha256": "422d586eaeab8c8db6fe68fca91863416b80cfc8ab2f3f79ecc15f42fe8162bd",
    "sha": "422d586eaeab"
   },
   {
-   "name": "VICTORY BEST PART",
+   "name": "VICTORY (BEST PART)",
    "file": "VICTORY_BEST_PART.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "epic",
+    "best",
+    "peak"
+   ],
+   "alts": [
+    "two steps from hell",
+    "thomas bergersen"
+   ],
    "size": 53432,
    "sha256": "5dcc8c02c6ba2ba0947a4b563379251f32cdf68c44a64f41847bcf53c044163b",
    "sha": "5dcc8c02c6ba"
@@ -9012,11 +9982,16 @@
    "sha": "c1b602f11946"
   },
   {
-   "name": "VOILA",
+   "name": "VOILÀ",
    "file": "VOILA.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "beautiful"
+   ],
+   "alts": [
+    "barbara pravi"
+   ],
    "size": 23576,
    "sha256": "4981ddfbdcf10aeb7b1afce8c96383067e87ebda3d4318ab6ebd237a466b0c8c",
    "sha": "4981ddfbdcf1"
@@ -9090,6 +10065,7 @@
    "cat": [
     "video games",
     "undertale",
+    "beautiful",
     "new"
    ],
    "alts": [
@@ -9105,9 +10081,13 @@
    "bpm": "168",
    "cat": [
     "memes",
-    "new"
+    "new",
+    "movies/tv"
    ],
-   "alts": [],
+   "alts": [
+    "stefan karl stefansson",
+    "lazytown"
+   ],
    "size": 43398,
    "sha256": "12d249a82decbbe9f7293fc127ca2094d3eda30d762ef6e3c79379c1697c23b7",
    "sha": "12d249a82dec"
@@ -9120,17 +10100,24 @@
     "anime/jpop",
     "movies/tv"
    ],
-   "alts": [],
+   "alts": [
+    "hiiroshi kitadani",
+    "one piece"
+   ],
    "size": 56591,
    "sha256": "9c68a91caf966f4e67806b2e7795cb285061b7e09b856564da9ba3698c9ad6a0",
    "sha": "9c68a91caf96"
   },
   {
-   "name": "WE DONT TALK ABOUT BRUNO",
+   "name": "WE DON'T TALK ABOUT BRUNO",
    "file": "WE_DONT.lua",
    "bpm": "103",
-   "cat": [],
+   "cat": [
+    "movies/tv",
+    "pop/hiphop"
+   ],
    "alts": [
+    "lin-manuel miranda",
     "encanto"
    ],
    "size": 43092,
@@ -9170,11 +10157,17 @@
    "sha": "b31673c76db4"
   },
   {
-   "name": "WE WISH YOU A MERRY",
+   "name": "WE WISH YOU A MERRY CHRISTMAS",
    "file": "WE_WISH_YOU_A_MERRY.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "seasonal",
+    "classical"
+   ],
+   "alts": [
+    "traditional",
+    "christmas"
+   ],
    "size": 18701,
    "sha256": "5064970fd094e77362b888c3972048b7085286a80bcb1892ae57dba799ef96a9",
    "sha": "5064970fd094"
@@ -9276,26 +10269,33 @@
    "sha": "d66bcd794fa9"
   },
   {
-   "name": "WHERE WE PLAYED",
+   "name": "WHERE WE USED TO PLAY",
    "file": "WHERE_WE.lua",
    "bpm": "96",
    "cat": [
     "video games",
-    "omori"
+    "omori",
+    "beautiful"
    ],
    "alts": [
-    "omori"
+    "omori",
+    "pedro silva"
    ],
    "size": 40064,
    "sha256": "d57be065cc43b8d32efdbcb955d438f5ee13b70dd45a56232f5f8c3aa7664c2e",
    "sha": "d57be065cc43"
   },
   {
-   "name": "WHY DID I SAY OKIE-DOKIE",
+   "name": "WHY DID I SAY OKIE-DOKIE?",
    "file": "WHY_DID_I_SAY.lua",
    "bpm": "113",
-   "cat": [],
+   "cat": [
+    "ddlc",
+    "video games",
+    "memes"
+   ],
    "alts": [
+    "the stupendium",
     "doki doki literature club",
     "ddlc"
    ],
@@ -9350,16 +10350,18 @@
    "sha": "8e66b7822427"
   },
   {
-   "name": "WORLDS END VALENTINE",
+   "name": "WORLD'S END VALENTINE",
    "file": "WORLDS_END.lua",
    "bpm": "152",
    "cat": [
     "video games",
     "omori",
-    "best"
+    "best",
+    "epic"
    ],
    "alts": [
-    "omori"
+    "omori",
+    "pedro silva"
    ],
    "size": 56556,
    "sha256": "8dc9663aade62a42c0cc5901777e44fef2230dd1bfc69bc4490dee8cd885822e",
@@ -9384,8 +10386,15 @@
    "name": "XSTEP",
    "file": "XSTEP.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "geometry dash",
+    "video games",
+    "electronic"
+   ],
+   "alts": [
+    "djvi",
+    "geometry dash"
+   ],
    "size": 20546,
    "sha256": "1b87d34b4950644358062d8f2341fdb59c849ec130d21c081545b9c182e57b06",
    "sha": "1b87d34b4950"
@@ -9401,7 +10410,10 @@
     "best",
     "new"
    ],
-   "alts": [],
+   "alts": [
+    "fjk",
+    "french kiwi juice"
+   ],
    "size": 33268,
    "sha256": "43314ecf7cae28921e49540c756ad6fbf82cba6fa07ba4b501fd21918b77d10b",
    "sha": "43314ecf7cae"
@@ -9463,11 +10475,17 @@
    "sha": "1e74d04a8f91"
   },
   {
-   "name": "YOUR LOVE IS MY DRUG",
+   "name": "YOUR LOVE IS MY DRUG (8-BIT)",
    "file": "YOUR_LOVE_IS_MY_DRUG.lua",
    "bpm": "120",
-   "cat": [],
-   "alts": [],
+   "cat": [
+    "pop/hiphop",
+    "electronic",
+    "memes"
+   ],
+   "alts": [
+    "kesha"
+   ],
    "size": 14433,
    "sha256": "9cc4dbdb9745c2065a46f754fc7b4bba0ed2130ae95b4e4db646495c7768459f",
    "sha": "9cc4dbdb9745"
