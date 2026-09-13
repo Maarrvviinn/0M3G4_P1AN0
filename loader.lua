@@ -1,4 +1,4 @@
-﻿-- 0M3G4 P1AN0 || loader.lua (v2, self-diagnosing)
+-- 0M3G4 P1AN0 || loader.lua (v2, self-diagnosing)
 -- Nothing from the old hellohellohell0.com host is used.
 
 local TAG = "[P1AN0]"
