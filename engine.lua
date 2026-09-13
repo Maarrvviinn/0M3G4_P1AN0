@@ -149,7 +149,7 @@ return function()
             if shift then
                 VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game)
             end
-            if not E.disableAccidents then
+            if E.errorMargin > 0 then
                 local agf = E.errorMargin * 100
                 if math.random(1, 1000) <= agf then
                     VirtualInputManager:SendKeyEvent(not shift, Enum.KeyCode.LeftShift, false, game)
@@ -452,8 +452,6 @@ return function()
             return false, "invalid song script payload: expected string or function"
         end
         E.totalBeats = totalBeats()
-        print(string.format("[P1AN0] loaded '%s': %d actions, %.2f beats, %.1fs duration",
-            tostring(name or "song"), #E.song, E.totalBeats, E.duration()))
         return true
     end
 
@@ -463,7 +461,6 @@ return function()
             return
         end
         if #E.song == 0 then
-            print("[P1AN0] cannot play: #E.song is 0")
             return
         end
         STOP = false
@@ -472,7 +469,6 @@ return function()
         local idx, acc = indexAtBeat(fromBeat or 0)
         E.position = acc
         if E.onProgress then E.onProgress(E.position, E.totalBeats) end
-        print(string.format("[P1AN0] E.play: starting %d actions at index %d (beat %.1f / %.1f)", #E.song, idx, acc, E.totalBeats))
         thread = task.spawn(function() run(idx) end)
         if E.onState then E.onState("play") end
     end
@@ -538,10 +534,6 @@ return function()
     function E.setMidiSpoof(v)
         E.midiSpoof = v and true or false
         return E.midiSpoof
-    end
-
-    function E.setDisableAccidents(v)
-        E.disableAccidents = v and true or false
     end
 
     function E.setPreciseTiming(v)

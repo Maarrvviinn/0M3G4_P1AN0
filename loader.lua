@@ -11,9 +11,7 @@ end
 
 local TAG = "[P1AN0]"
 local function log(...)
-    local parts = { TAG }
-    for i = 1, select("#", ...) do parts[#parts + 1] = tostring(select(i, ...)) end
-    print(table.concat(parts, " "))
+    -- Suppressed noisy console output
 end
 
 -- ----------------------------------------------------------------------
@@ -211,8 +209,8 @@ end
 local ok, err = xpcall(main, handler)
 if ok then
     if statusGui then pcall(function() statusGui:Destroy() end) end
-    log("done")
+    print("[P1AN0] Loaded successfully")
 else
-    log("ERROR", err)
+    warn("[P1AN0] ERROR: " .. tostring(err))
     if statusGui then pcall(function() statusGui:Destroy() end) end
 end

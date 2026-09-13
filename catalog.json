@@ -26,8 +26,7 @@
   "nintendo",
   "geometry dash",
   "omori",
-  "ddlc",
-  "REVIEW"
+  "ddlc"
  ],
  "songs": [
   {
@@ -37,8 +36,7 @@
    "cat": [
     "electronic",
     "phonk/funk",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "phao",
@@ -48,7 +46,8 @@
    ],
    "size": 50749,
    "sha256": "b4d0ee150a5e059b6f6494a1fe5a6046a7ef87cdc339659d217c1b8677a80990",
-   "sha": "b4d0ee150a5e"
+   "sha": "b4d0ee150a5e",
+   "dur": 140
   },
   {
    "name": "505",
@@ -64,7 +63,8 @@
    ],
    "size": 42719,
    "sha256": "aee0d9d704b3f62220c60e99b5e0912f50fc58b31c98da800a4dbf75485a1df0",
-   "sha": "aee0d9d704b3"
+   "sha": "aee0d9d704b3",
+   "dur": 247
   },
   {
    "name": "7 WEEKS & 3 DAYS",
@@ -79,7 +79,8 @@
    ],
    "size": 32368,
    "sha256": "0c9e7e689691f8cab0ccd47d0e9a43b487d77d48641a97ea779009a98c737b7d",
-   "sha": "0c9e7e689691"
+   "sha": "0c9e7e689691",
+   "dur": 191
   },
   {
    "name": "7 YEARS",
@@ -88,30 +89,30 @@
    "cat": [
     "pop/hiphop",
     "sad",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "lukas graham"
    ],
    "size": 44444,
    "sha256": "cfcad11ae0ed6dba2ea1c17208bbba5a8f38c825d0fffb96e469bb643f9967bf",
-   "sha": "cfcad11ae0ed"
+   "sha": "cfcad11ae0ed",
+   "dur": 227
   },
   {
    "name": "90210",
    "file": "A90210.lua",
    "bpm": "70",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "travis scott"
    ],
    "size": 64440,
    "sha256": "6ec6798c7ebb84900065ace3e412149737688797a5b1e01cb4de367c3a17a169",
-   "sha": "6ec6798c7ebb"
+   "sha": "6ec6798c7ebb",
+   "dur": 321
   },
   {
    "name": "99.9",
@@ -126,7 +127,8 @@
    ],
    "size": 24502,
    "sha256": "ab7737a15c71491ea85a53e3010a13efb14125ca982d4fd8e6dd6de3da4c86a9",
-   "sha": "ab7737a15c71"
+   "sha": "ab7737a15c71",
+   "dur": 80
   },
   {
    "name": "A CRUEL ANGEL'S THESIS",
@@ -134,8 +136,7 @@
    "bpm": "76",
    "cat": [
     "movies/tv",
-    "anime/jpop",
-    "new"
+    "anime/jpop"
    ],
    "alts": [
     "yoko takahashi",
@@ -143,7 +144,8 @@
    ],
    "size": 82584,
    "sha256": "c82976d4ba807b4bd2a5ad70c35d29e5786960ea45a4c1712007938cb1d7684f",
-   "sha": "c82976d4ba80"
+   "sha": "c82976d4ba80",
+   "dur": 243
   },
   {
    "name": "A CYBER'S WORLD?",
@@ -159,7 +161,8 @@
    ],
    "size": 38149,
    "sha256": "b1c0e81a0c8eeb44dce828718863445163cb204eb9905b04d3bcda88ec14503b",
-   "sha": "b1c0e81a0c8e"
+   "sha": "b1c0e81a0c8e",
+   "dur": 164
   },
   {
    "name": "A HOME FOR FLOWERS",
@@ -167,8 +170,7 @@
    "bpm": "54",
    "cat": [
     "omori",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "omori",
@@ -177,7 +179,8 @@
    ],
    "size": 13028,
    "sha256": "1d426f6583d4764bf0b199e8415d7fa4c2b493611579937eae566a10cd964ae1",
-   "sha": "1d426f6583d4"
+   "sha": "1d426f6583d4",
+   "dur": 142
   },
   {
    "name": "A SKY FULL OF STARS",
@@ -193,7 +196,8 @@
    ],
    "size": 90324,
    "sha256": "cb7833e0f9dee6629ced78e0a6a4f24f743bf52dad5c7d7d8f7700562652a373",
-   "sha": "cb7833e0f9de"
+   "sha": "cb7833e0f9de",
+   "dur": 293
   },
   {
    "name": "A THOUSAND MILES",
@@ -208,7 +212,8 @@
    ],
    "size": 61394,
    "sha256": "1d5796b210fe1371e70c0b7e9355b0f83393084c1074c5b7a155400e2ebb8e19",
-   "sha": "1d5796b210fe"
+   "sha": "1d5796b210fe",
+   "dur": 222
   },
   {
    "name": "A TALE OF SIX TRILLION YEARS AND AN OVERNIGHT STORY",
@@ -217,8 +222,7 @@
    "cat": [
     "electronic",
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "kemu",
@@ -227,7 +231,8 @@
    ],
    "size": 94716,
    "sha256": "abc62caced2cccd43dce2b88e233ff8d5d9690d2eace144dcd7e589538ebe8c0",
-   "sha": "abc62caced2c"
+   "sha": "abc62caced2c",
+   "dur": 212
   },
   {
    "name": "AFRICA",
@@ -235,15 +240,15 @@
    "bpm": "90",
    "cat": [
     "electronic",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "toto"
    ],
    "size": 73545,
    "sha256": "f8397f702d81b5bcca9c1d168981d03f6fcbfc95d346f95221fdfab50a7b2cb9",
-   "sha": "f8397f702d81"
+   "sha": "f8397f702d81",
+   "dur": 261
   },
   {
    "name": "AFTER DARK",
@@ -258,7 +263,8 @@
    ],
    "size": 43529,
    "sha256": "9638fe37cee0f2a3278973729bf59035d46a0f729ef3aada1a7defeb754bf6da",
-   "sha": "9638fe37cee0"
+   "sha": "9638fe37cee0",
+   "dur": 233
   },
   {
    "name": "AI SCREAM",
@@ -266,8 +272,7 @@
    "bpm": "135",
    "cat": [
     "anime/jpop",
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "kemu",
@@ -276,7 +281,8 @@
    ],
    "size": 60794,
    "sha256": "98c8150952a0bce2fdf42083b981c24045defd9337a698b9cc43628c9c4ff2ec",
-   "sha": "98c8150952a0"
+   "sha": "98c8150952a0",
+   "dur": 275
   },
   {
    "name": "ALL GIRLS ARE THE SAME",
@@ -292,22 +298,23 @@
    ],
    "size": 42189,
    "sha256": "6721cc978a9b069c2fbe532f3f86ba1ab5a7a1a2d860275e71851edecbe49f16",
-   "sha": "6721cc978a9b"
+   "sha": "6721cc978a9b",
+   "dur": 158
   },
   {
    "name": "ALL I WANT FOR CHRISTMAS IS YOU",
    "file": "ALL_I_WANT_FOR_CHRISTMAS_IS_YOU.lua",
    "bpm": "70",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "mariah carey"
    ],
    "size": 63124,
    "sha256": "2477baf5aab08f5baf52e8d584aa877c597afa7229d99d6706d1f5d0d5c5942a",
-   "sha": "2477baf5aab0"
+   "sha": "2477baf5aab0",
+   "dur": 193
   },
   {
    "name": "ALL I WANT IS YOU",
@@ -324,7 +331,8 @@
    ],
    "size": 75505,
    "sha256": "36eca9380dcec8c71e92e5bd36b0889cf2b7115bf23c3466bed38e09d62447e5",
-   "sha": "36eca9380dce"
+   "sha": "36eca9380dce",
+   "dur": 147
   },
   {
    "name": "ALL MY FELLAS",
@@ -339,7 +347,8 @@
    ],
    "size": 9055,
    "sha256": "ecc01c2a79cc78bdc47e80b1ec0f28181d86cf39c48ace27f9166749b8855dbe",
-   "sha": "ecc01c2a79cc"
+   "sha": "ecc01c2a79cc",
+   "dur": 42
   },
   {
    "name": "ALL ROADS LEAD TO ROME",
@@ -347,8 +356,7 @@
    "bpm": "120",
    "cat": [
     "memes",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "girlfriends",
@@ -356,7 +364,8 @@
    ],
    "size": 25024,
    "sha256": "2db54373de4e94adbf516dd05b8c7940f80e274607a87f2388bbde73271c7922",
-   "sha": "2db54373de4e"
+   "sha": "2db54373de4e",
+   "dur": 108
   },
   {
    "name": "ALL STAR",
@@ -364,8 +373,7 @@
    "bpm": "100",
    "cat": [
     "movies/tv",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "shrek",
@@ -373,7 +381,8 @@
    ],
    "size": 45301,
    "sha256": "4789e3719055a2544ea0f040da4cedd2e0863267b703ce5d55aea2111650822e",
-   "sha": "4789e3719055"
+   "sha": "4789e3719055",
+   "dur": 160
   },
   {
    "name": "ALL THE STARS",
@@ -392,7 +401,8 @@
    ],
    "size": 51679,
    "sha256": "20b200acf6a319b595a969fa066ce6f7898f9c14858141d82ee70bae4be9b0f4",
-   "sha": "20b200acf6a3"
+   "sha": "20b200acf6a3",
+   "dur": 184
   },
   {
    "name": "ALONE",
@@ -406,7 +416,8 @@
    ],
    "size": 50058,
    "sha256": "342fdaea3de7877adbfca3c5f61f1374d1625d9da4918fb5cb3748c7f551f4d9",
-   "sha": "342fdaea3de7"
+   "sha": "342fdaea3de7",
+   "dur": 189
   },
   {
    "name": "ALORS ON DANSE",
@@ -422,7 +433,8 @@
    ],
    "size": 35491,
    "sha256": "c559faf05af2610ffdb8410549b8459a6e0344570a64a1914ac1f496c3fdc02e",
-   "sha": "c559faf05af2"
+   "sha": "c559faf05af2",
+   "dur": 171
   },
   {
    "name": "ALTALE",
@@ -437,7 +449,8 @@
    ],
    "size": 56990,
    "sha256": "43808a666f5ee1906810b8b391e07023aeaf4058433003b6b027b1b14b2d8dbf",
-   "sha": "43808a666f5e"
+   "sha": "43808a666f5e",
+   "dur": 151
   },
   {
    "name": "AMOUR PLASTIQUE",
@@ -446,7 +459,6 @@
    "cat": [
     "sad",
     "memes",
-    "new",
     "pop/hiphop"
    ],
    "alts": [
@@ -455,7 +467,8 @@
    ],
    "size": 8426,
    "sha256": "690efa3e35ae5a8083136f43e9eae9e9650839b5deddf528afaad032f14bced2",
-   "sha": "690efa3e35ae"
+   "sha": "690efa3e35ae",
+   "dur": 64
   },
   {
    "name": "AN ENIGMATIC ENCOUNTER",
@@ -472,7 +485,8 @@
    ],
    "size": 69098,
    "sha256": "4f1665e9fec1de5c9651618bc2c7b42412460389b8d1430a58cd56968beacfd8",
-   "sha": "4f1665e9fec1"
+   "sha": "4f1665e9fec1",
+   "dur": 260
   },
   {
    "name": "ANIMATION WARRIOR THEME",
@@ -488,7 +502,8 @@
    ],
    "size": 79078,
    "sha256": "d2a58d2e3f78558e7ad9c85016369abb4311c59f97d22358cb2163b5fdcc1f37",
-   "sha": "d2a58d2e3f78"
+   "sha": "d2a58d2e3f78",
+   "dur": 214
   },
   {
    "name": "ANNIHILATE (SPIDER-MAN)",
@@ -506,7 +521,8 @@
    ],
    "size": 38434,
    "sha256": "d1737e9e445649da523c93a36edb33144028388ee477977ce96a23b2030c5396",
-   "sha": "d1737e9e4456"
+   "sha": "d1737e9e4456",
+   "dur": 171
   },
   {
    "name": "ANOTHER LOVE",
@@ -524,7 +540,8 @@
    ],
    "size": 32009,
    "sha256": "a231d7b4127f371ceeebf9fe93e658c47880b4dcc32336a325f73652583559dc",
-   "sha": "a231d7b4127f"
+   "sha": "a231d7b4127f",
+   "dur": 232
   },
   {
    "name": "ANYONE CAN FIND LOVE (EXCEPT YOU.)",
@@ -540,7 +557,8 @@
    ],
    "size": 36140,
    "sha256": "d5d3c8f72e727b86c306fd3ac5fbe9f1b6b1e86fa16c2639e15a5f6eb3f690ea",
-   "sha": "d5d3c8f72e72"
+   "sha": "d5d3c8f72e72",
+   "dur": 125
   },
   {
    "name": "AQUATIC AMBIENCE",
@@ -558,7 +576,8 @@
    ],
    "size": 42524,
    "sha256": "00ac4154829424b0929318044bf36848d5e5db16341e7ad09ae784cb07a34813",
-   "sha": "00ac41548294"
+   "sha": "00ac41548294",
+   "dur": 124
   },
   {
    "name": "ARIA MATH",
@@ -574,7 +593,8 @@
    ],
    "size": 50933,
    "sha256": "08fad0f4f66f8d1ad83562e3e7bb48237e42c80872d2cbd766957e6e5f340c88",
-   "sha": "08fad0f4f66f"
+   "sha": "08fad0f4f66f",
+   "dur": 288
   },
   {
    "name": "AROUND THE WORLD",
@@ -582,8 +602,7 @@
    "bpm": "121",
    "cat": [
     "electronic",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "atc",
@@ -591,7 +610,8 @@
    ],
    "size": 65685,
    "sha256": "8555f038d4a3a2dc5a5c65ac5dcffce6786b5e61499a759b4b3ee07e46e9b6c9",
-   "sha": "8555f038d4a3"
+   "sha": "8555f038d4a3",
+   "dur": 233
   },
   {
    "name": "ARUARIAN DANCE",
@@ -605,7 +625,8 @@
    ],
    "size": 16175,
    "sha256": "7296bb0a2885029dd748b2401454ca91266a4587a0fa8dcdee5303eeb5a3399c",
-   "sha": "7296bb0a2885"
+   "sha": "7296bb0a2885",
+   "dur": 102
   },
   {
    "name": "AS IT WAS",
@@ -620,7 +641,8 @@
    ],
    "size": 42501,
    "sha256": "b6b9e4921ad6099789204fba763b82ed3d07690ff2cd9190a88833922399422c",
-   "sha": "b6b9e4921ad6"
+   "sha": "b6b9e4921ad6",
+   "dur": 157
   },
   {
    "name": "ASCENSION",
@@ -636,7 +658,8 @@
    ],
    "size": 48843,
    "sha256": "84f256d649556dbd6b789bad07c74c407f8c40c52b2cb1e3163d84f26321c9e7",
-   "sha": "84f256d64955"
+   "sha": "84f256d64955",
+   "dur": 195
   },
   {
    "name": "ASGORE",
@@ -651,7 +674,8 @@
    ],
    "size": 60574,
    "sha256": "53fec0c317a8b3bc65ee7e63e9838bb0181ddd8ae4f6456b93e64715288fd7a2",
-   "sha": "53fec0c317a8"
+   "sha": "53fec0c317a8",
+   "dur": 165
   },
   {
    "name": "ASSUMPTIONS",
@@ -667,7 +691,8 @@
    ],
    "size": 11535,
    "sha256": "15458aa203df3a30ed3b346c374de1d05197ed3b3fcae2a398d519577275df5d",
-   "sha": "15458aa203df"
+   "sha": "15458aa203df",
+   "dur": 30
   },
   {
    "name": "ASTRONOMIA (COFFIN DANCE)",
@@ -684,7 +709,8 @@
    ],
    "size": 18733,
    "sha256": "1fc8a53e49ffcdf0810a2ce585a0de29274fdd2092eee6510c42df7be0bc52db",
-   "sha": "1fc8a53e49ff"
+   "sha": "1fc8a53e49ff",
+   "dur": 60
   },
   {
    "name": "AT THE SPEED OF LIGHT",
@@ -703,7 +729,8 @@
    ],
    "size": 107600,
    "sha256": "cc789633e53ce8cf0e192e87fe13709f25ce3c8f81a4aa67f5c4975f5e082b10",
-   "sha": "cc789633e53c"
+   "sha": "cc789633e53c",
+   "dur": 243
   },
   {
    "name": "ATTACK OF THE KILLER QUEEN",
@@ -721,7 +748,8 @@
    ],
    "size": 100770,
    "sha256": "010bce385854c4dfd76f942717429dec57d717f8084f74a58ecb87416512503d",
-   "sha": "010bce385854"
+   "sha": "010bce385854",
+   "dur": 240
   },
   {
    "name": "AUGUST 10",
@@ -736,7 +764,8 @@
    ],
    "size": 38787,
    "sha256": "76dd248bd045a12c54b69a855cf06b1b141f56c0677025f2198f9944844e00bc",
-   "sha": "76dd248bd045"
+   "sha": "76dd248bd045",
+   "dur": 180
   },
   {
    "name": "AVENGERS THEME (EPIC COVER)",
@@ -754,7 +783,8 @@
    ],
    "size": 68013,
    "sha256": "83f445a6eebb59ada9bf886ba372f612ad59bb2f9109014168c07e654c1018a1",
-   "sha": "83f445a6eebb"
+   "sha": "83f445a6eebb",
+   "dur": 122
   },
   {
    "name": "BABY",
@@ -770,7 +800,8 @@
    ],
    "size": 39202,
    "sha256": "46536f7ce5c34b70d0031705b49425316d160609b7daba0f29dc9543c4c621ac",
-   "sha": "46536f7ce5c3"
+   "sha": "46536f7ce5c3",
+   "dur": 226
   },
   {
    "name": "BABYDOLL",
@@ -785,7 +816,8 @@
    ],
    "size": 20960,
    "sha256": "27a7cbde72f1a36ef25d1ad3f6b7c2250310d89f0476e621cd4cf33077c3685b",
-   "sha": "27a7cbde72f1"
+   "sha": "27a7cbde72f1",
+   "dur": 136
   },
   {
    "name": "BACK ON TRACK",
@@ -802,7 +834,8 @@
    ],
    "size": 27615,
    "sha256": "39798fffa52f430ac76b1c0693b6b47e25d9a7b0627ae4caa885c7761bc4d641",
-   "sha": "39798fffa52f"
+   "sha": "39798fffa52f",
+   "dur": 96
   },
   {
    "name": "BAD APPLE!!",
@@ -820,7 +853,8 @@
    ],
    "size": 71586,
    "sha256": "1f52c5aedeaface3d7154027fa2c728dbad0e4d95903d5c276b637af31bfc05b",
-   "sha": "1f52c5aedeaf"
+   "sha": "1f52c5aedeaf",
+   "dur": 215
   },
   {
    "name": "BAD HABIT",
@@ -835,7 +869,8 @@
    ],
    "size": 55650,
    "sha256": "9588e7859783510b0aa1ea612480168bd3c5cb06dc0182ce4fba2f0755cc2622",
-   "sha": "9588e7859783"
+   "sha": "9588e7859783",
+   "dur": 156
   },
   {
    "name": "BAD PIGGIES",
@@ -849,7 +884,8 @@
    ],
    "size": 50761,
    "sha256": "c51e270d38a010d1c35590b75e6ee559d7295a3ca3e0f414e37930cb221fafdc",
-   "sha": "c51e270d38a0"
+   "sha": "c51e270d38a0",
+   "dur": 121
   },
   {
    "name": "BARBIE GIRL",
@@ -858,15 +894,15 @@
    "cat": [
     "pop/hiphop",
     "movies/tv",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "aqua"
    ],
    "size": 41357,
    "sha256": "1b64cd357cbc30c0b2cbb3b290a30569228e60b74ead29043c6730c0cf3a225f",
-   "sha": "1b64cd357cbc"
+   "sha": "1b64cd357cbc",
+   "dur": 181
   },
   {
    "name": "BASE AFTER BASE",
@@ -883,7 +919,8 @@
    ],
    "size": 55436,
    "sha256": "523967d53aa2c4a7aef8cab8d1db595cc974d0d754ef1a7099ce7dc02d157c5b",
-   "sha": "523967d53aa2"
+   "sha": "523967d53aa2",
+   "dur": 222
   },
   {
    "name": "BATTLE AGAINST A TRUE HERO",
@@ -900,7 +937,8 @@
    ],
    "size": 51808,
    "sha256": "d94975de8e682d5eb3528fcf3d042878ac9e0ce3dcd2fb1a76f845645df94f3c",
-   "sha": "d94975de8e68"
+   "sha": "d94975de8e68",
+   "dur": 128
   },
   {
    "name": "BEANIE",
@@ -914,7 +952,8 @@
    ],
    "size": 15452,
    "sha256": "ef9ac4e150e74043e4e93ab385cee36ba2488e9dcb8840e4ced808c696213ad8",
-   "sha": "ef9ac4e150e7"
+   "sha": "ef9ac4e150e7",
+   "dur": 77
   },
   {
    "name": "BEAUTIFUL IN WHITE",
@@ -930,7 +969,8 @@
    ],
    "size": 28858,
    "sha256": "3cc5fe17b16a65c32d902ad95510a50f2c33da197e48d3ab5f1edb32a452c043",
-   "sha": "3cc5fe17b16a"
+   "sha": "3cc5fe17b16a",
+   "dur": 139
   },
   {
    "name": "BEAUTIFUL THINGS",
@@ -945,7 +985,8 @@
    ],
    "size": 36769,
    "sha256": "9087482b1cf3a5a0a19fa6ddd69a38964a309fb71a80fc3f381df52eb281b4b0",
-   "sha": "9087482b1cf3"
+   "sha": "9087482b1cf3",
+   "dur": 178
   },
   {
    "name": "BEETHOVEN VIRUS",
@@ -962,7 +1003,8 @@
    ],
    "size": 95927,
    "sha256": "036fa801c423e9a38b11b1531aef7c349ca53d44611c4f44cce9765329010a29",
-   "sha": "036fa801c423"
+   "sha": "036fa801c423",
+   "dur": 175
   },
   {
    "name": "BEGINNING",
@@ -979,7 +1021,8 @@
    ],
    "size": 3660,
    "sha256": "f4a4de282b197d895c90118d532588c14d902f39ae20a99eece8b211d8abfa10",
-   "sha": "f4a4de282b19"
+   "sha": "f4a4de282b19",
+   "dur": 40
   },
   {
    "name": "BEGINNING 2",
@@ -996,7 +1039,8 @@
    ],
    "size": 3938,
    "sha256": "94f6616d5c7c9dcb10e9bfc231a733c169013f223af8ab6bfe8983becb56decf",
-   "sha": "94f6616d5c7c"
+   "sha": "94f6616d5c7c",
+   "dur": 49
   },
   {
    "name": "BELIEVER",
@@ -1012,7 +1056,8 @@
    ],
    "size": 46012,
    "sha256": "9f6c3f91556648a69669a9db6ff75473d4569317985b876b95163b92a532869e",
-   "sha": "9f6c3f915566"
+   "sha": "9f6c3f915566",
+   "dur": 190
   },
   {
    "name": "BELLA CIAO",
@@ -1028,7 +1073,8 @@
    ],
    "size": 39613,
    "sha256": "24f179e91161d64a1565f89c84403b167e4b2a249ce0d075199801d5f7811f09",
-   "sha": "24f179e91161"
+   "sha": "24f179e91161",
+   "dur": 130
   },
   {
    "name": "BETTER OFF ALONE",
@@ -1036,8 +1082,7 @@
    "bpm": "130",
    "cat": [
     "electronic",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "a deejay",
@@ -1045,7 +1090,8 @@
    ],
    "size": 20882,
    "sha256": "baf5fba00b6e570edb7c347df6c8299ff5fd3f8cd680bc461bb927e68ddb83db",
-   "sha": "baf5fba00b6e"
+   "sha": "baf5fba00b6e",
+   "dur": 100
   },
   {
    "name": "BIG FISH (大鱼)",
@@ -1062,7 +1108,8 @@
    ],
    "size": 160280,
    "sha256": "02e21ee64ae4bd7f6a2a7d812cb94152262ec5fff5b6f03eb4c82a9ea26da24a",
-   "sha": "02e21ee64ae4"
+   "sha": "02e21ee64ae4",
+   "dur": 307
   },
   {
    "name": "BIG SHOT",
@@ -1077,7 +1124,8 @@
    ],
    "size": 57332,
    "sha256": "43bbe23e89145b9de6135061a9294fbaa7b258782962f4fc5fcba606096b42a1",
-   "sha": "43bbe23e8914"
+   "sha": "43bbe23e8914",
+   "dur": 134
   },
   {
    "name": "BINKS' SAKE (BINKS NO SAKE)",
@@ -1094,14 +1142,14 @@
    ],
    "size": 57724,
    "sha256": "75e2eeefbdebb9733918f8f326a2ce42a84815ccaaf5ccdeb1a698dc79098d17",
-   "sha": "75e2eeefbdeb"
+   "sha": "75e2eeefbdeb",
+   "dur": 224
   },
   {
    "name": "BIRDLAND",
    "file": "BIRDLAND.lua",
    "bpm": "155",
    "cat": [
-    "new",
     "classical"
    ],
    "alts": [
@@ -1110,7 +1158,8 @@
    ],
    "size": 15841,
    "sha256": "c938dd6bfb746108e92eb4d3510085d2ee934fdcaf24424f28faab49915ef027",
-   "sha": "c938dd6bfb74"
+   "sha": "c938dd6bfb74",
+   "dur": 119
   },
   {
    "name": "BIRDS OF A FEATHER",
@@ -1125,7 +1174,8 @@
    ],
    "size": 38283,
    "sha256": "ffa82e51a49cf970989dae709ca0cd4aa926ac8158c6d107c2f7d05a7941bbdd",
-   "sha": "ffa82e51a49c"
+   "sha": "ffa82e51a49c",
+   "dur": 205
   },
   {
    "name": "BLACK CATCHER",
@@ -1133,15 +1183,15 @@
    "bpm": "88",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "black clover"
    ],
    "size": 36677,
    "sha256": "03b48a1336615b502588610b6eb2ad643b3dd48c3850279c0ce01bb341f38b31",
-   "sha": "03b48a133661"
+   "sha": "03b48a133661",
+   "dur": 89
   },
   {
    "name": "BLACK KNIFE",
@@ -1149,15 +1199,15 @@
    "bpm": "148",
    "cat": [
     "deltarune",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 60734,
    "sha256": "92c76c9e19ebd929e324ff110b24edd1a7588953e52eb3361bf4f385bb5970cb",
-   "sha": "92c76c9e19eb"
+   "sha": "92c76c9e19eb",
+   "dur": 117
   },
   {
    "name": "BLIND SPOTS",
@@ -1174,7 +1224,8 @@
    ],
    "size": 57510,
    "sha256": "07a317c99ebd4cd557de9a9ec2ec8a7fcd38528b5ba353bc90661156ead7b7ff",
-   "sha": "07a317c99ebd"
+   "sha": "07a317c99ebd",
+   "dur": 251
   },
   {
    "name": "BLIND SPOTS 2",
@@ -1191,7 +1242,8 @@
    ],
    "size": 69985,
    "sha256": "0c1f3b60e21e4bd274cfadf7686f750a5537c4fd6b0f6250cd80a5f71e0f183c",
-   "sha": "0c1f3b60e21e"
+   "sha": "0c1f3b60e21e",
+   "dur": 248
   },
   {
    "name": "BLINDING LIGHTS",
@@ -1206,7 +1258,8 @@
    ],
    "size": 48490,
    "sha256": "4c75836fa07ba7c61c21995c1063c9a17d5d9feefe1d878e403ae9421d6568fd",
-   "sha": "4c75836fa07b"
+   "sha": "4c75836fa07b",
+   "dur": 178
   },
   {
    "name": "BLOODY MARY",
@@ -1223,7 +1276,8 @@
    ],
    "size": 87563,
    "sha256": "e10f3f66037379d14905c3f417f00eeff3e8ba739cac115e8dda1ddc366baa9f",
-   "sha": "e10f3f660373"
+   "sha": "e10f3f660373",
+   "dur": 239
   },
   {
    "name": "BLUE (DA BA DEE)",
@@ -1238,7 +1292,8 @@
    ],
    "size": 58723,
    "sha256": "69673a3737da6a36da0d9cb6da4da4d2c1af3547ed7250e135b813710a2b7573",
-   "sha": "69673a3737da"
+   "sha": "69673a3737da",
+   "dur": 212
   },
   {
    "name": "BLUE",
@@ -1254,7 +1309,8 @@
    ],
    "size": 43825,
    "sha256": "4e7187a8923769fb1fe04bcc191ece9eccb8e04980666fb3922f80aec55ddf25",
-   "sha": "4e7187a89237"
+   "sha": "4e7187a89237",
+   "dur": 221
   },
   {
    "name": "BLUEBIRD",
@@ -1262,15 +1318,15 @@
    "bpm": "145",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "naruto shippuden"
    ],
    "size": 22331,
    "sha256": "e829e63397d744244b9e213391543869581a8a30f75b2d4baa177bd0a523ad13",
-   "sha": "e829e63397d7"
+   "sha": "e829e63397d7",
+   "dur": 87
   },
   {
    "name": "BOHEMIAN RHAPSODY",
@@ -1284,7 +1340,8 @@
    ],
    "size": 66215,
    "sha256": "9807250cd0b9c99dfec71fc71f62d685f49fe18d68c7028ec62eec23a9561566",
-   "sha": "9807250cd0b9"
+   "sha": "9807250cd0b9",
+   "dur": 299
   },
   {
    "name": "BOOM BOOM BOOM BOOM",
@@ -1292,15 +1349,15 @@
    "bpm": "120",
    "cat": [
     "pop/hiphop",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "vengaboys"
    ],
    "size": 73034,
    "sha256": "c706b99a21f4ad1e18bb8adc02d4a1c0ac6c7dbddffe0b0c7d2130150b6db091",
-   "sha": "c706b99a21f4"
+   "sha": "c706b99a21f4",
+   "dur": 199
   },
   {
    "name": "BREADY, SET, GO!",
@@ -1317,15 +1374,15 @@
    ],
    "size": 84743,
    "sha256": "2657f2c78cd0c3178a39935124c9078bd17fc1ad060ca542ea5a8eb66cd72a67",
-   "sha": "2657f2c78cd0"
+   "sha": "2657f2c78cd0",
+   "dur": 212
   },
   {
    "name": "BUTCHER VANITY",
    "file": "BUTCHER_VANITY.lua",
    "bpm": "142",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "vane lily",
@@ -1334,7 +1391,8 @@
    ],
    "size": 73611,
    "sha256": "5f839f0792a5326ebbb5e1e08b209510775e23cc75329a50a423c36c72371639",
-   "sha": "5f839f0792a5"
+   "sha": "5f839f0792a5",
+   "dur": 184
   },
   {
    "name": "BY YOUR SIDE",
@@ -1351,7 +1409,8 @@
    ],
    "size": 35076,
    "sha256": "4313ccdf1d9090522fc7d8243ebb2cd91900fe3ba87dc11ea00bd45690c00884",
-   "sha": "4313ccdf1d90"
+   "sha": "4313ccdf1d90",
+   "dur": 174
   },
   {
    "name": "CALL ME MAYBE",
@@ -1365,7 +1424,8 @@
    ],
    "size": 54949,
    "sha256": "381176c3c7f2573a6434375c348a7ee9eb523061f59c44a00cd4f8de1efa09a5",
-   "sha": "381176c3c7f2"
+   "sha": "381176c3c7f2",
+   "dur": 198
   },
   {
    "name": "CALL OF SILENCE",
@@ -1384,22 +1444,23 @@
    ],
    "size": 19810,
    "sha256": "59dfaea2db892d9300d52e94997140ca895df562d9facbb26886691c3fed8123",
-   "sha": "59dfaea2db89"
+   "sha": "59dfaea2db89",
+   "dur": 135
   },
   {
    "name": "CALL OUT MY NAME",
    "file": "CALL_OUT_MY_NAME.lua",
    "bpm": "67",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "the weeknd"
    ],
    "size": 31825,
    "sha256": "f3c7fa545962f8228d69bf38ab7b3c886badc5c0e087a5b2953576f0c0e9f8d2",
-   "sha": "f3c7fa545962"
+   "sha": "f3c7fa545962",
+   "dur": 204
   },
   {
    "name": "CAN YOU HEAR THE MUSIC",
@@ -1415,7 +1476,8 @@
    ],
    "size": 72141,
    "sha256": "8dc5dd24534bba81ac15fc3fadca719eaf0f57ff9b3965fdbb10ecf75f9d040d",
-   "sha": "8dc5dd24534b"
+   "sha": "8dc5dd24534b",
+   "dur": 104
   },
   {
    "name": "CAN YOU HEAR THE MUSIC (EPIC VER.)",
@@ -1433,22 +1495,22 @@
    ],
    "size": 134612,
    "sha256": "b2dff7d96fe577aa9c0e02763ef05514b9ed8a2949a95b54e12a2a7ad9aa33c7",
-   "sha": "b2dff7d96fe5"
+   "sha": "b2dff7d96fe5",
+   "dur": 242
   },
   {
    "name": "CAN'T HELP FALLING IN LOVE",
    "file": "CANT_HELP_FALLING_IN_LOVE.lua",
    "bpm": "120",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "elvis presley",
     "cant help falling in love"
    ],
    "size": 28454,
    "sha256": "7905d813c8dc52f3e3a88fcadb4286452c6c49c25325990b448b7564a4c97468",
-   "sha": "7905d813c8dc"
+   "sha": "7905d813c8dc",
+   "dur": 150
   },
   {
    "name": "CANDYLAND",
@@ -1466,7 +1528,8 @@
    ],
    "size": 63542,
    "sha256": "00dc47811b860809b0f2578b1b09326cb5abb81784bd1270958654fae6ee504b",
-   "sha": "00dc47811b86"
+   "sha": "00dc47811b86",
+   "dur": 207
   },
   {
    "name": "CANON IN D",
@@ -1482,7 +1545,8 @@
    ],
    "size": 51549,
    "sha256": "c32093b1f461c6adf5efce9ae9fabc2c2dd401ceda9fa53420904a6bc77608b7",
-   "sha": "c32093b1f461"
+   "sha": "c32093b1f461",
+   "dur": 241
   },
   {
    "name": "CANT LET GO",
@@ -1498,7 +1562,8 @@
    ],
    "size": 24333,
    "sha256": "478fd641c3f89397672266150a62cf1b419cc0a9d18ee9ba2d4e658256b18e2f",
-   "sha": "478fd641c3f8"
+   "sha": "478fd641c3f8",
+   "dur": 81
   },
   {
    "name": "CARAMELLDANSEN",
@@ -1514,7 +1579,8 @@
    ],
    "size": 59405,
    "sha256": "6b676e99e12454c893d6f8a147bbd3166b8b89bbc48f7abb1afabb3adea06bf6",
-   "sha": "6b676e99e124"
+   "sha": "6b676e99e124",
+   "dur": 233
   },
   {
    "name": "CARELESS WHISPER",
@@ -1531,7 +1597,8 @@
    ],
    "size": 40431,
    "sha256": "b42bfc0ea81d2d0ad454059180e1d02b1b6769621f82f96e5eb3f45144b65e76",
-   "sha": "b42bfc0ea81d"
+   "sha": "b42bfc0ea81d",
+   "dur": 276
   },
   {
    "name": "CAROL OF THE BELLS",
@@ -1547,7 +1614,8 @@
    ],
    "size": 50960,
    "sha256": "6d56257a4880aa4689572dc42fb03c61fa347390ba349dd588d3a41a77540b4c",
-   "sha": "6d56257a4880"
+   "sha": "6d56257a4880",
+   "dur": 138
   },
   {
    "name": "CAROL OF THE BELLS (EPIC VER.)",
@@ -1565,7 +1633,8 @@
    ],
    "size": 65306,
    "sha256": "25e1bc21be90983281a1533c1174a8203abdbf6e21ed86d892824bc69e89ff64",
-   "sha": "25e1bc21be90"
+   "sha": "25e1bc21be90",
+   "dur": 160
   },
   {
    "name": "CENTIMETER",
@@ -1581,7 +1650,8 @@
    ],
    "size": 30089,
    "sha256": "a68297a33e5ee91b714ed3468310901011a68211f48192d9fe98d5d5cd70dcee",
-   "sha": "a68297a33e5e"
+   "sha": "a68297a33e5e",
+   "dur": 88
   },
   {
    "name": "CHAMBER OF REFLECTION",
@@ -1590,15 +1660,15 @@
    "cat": [
     "sad",
     "beautiful",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "mac demarco"
    ],
    "size": 36922,
    "sha256": "8e45b16f8164b823cdd09f51f3b44f7855994355cf65f55613a1a43294f20d64",
-   "sha": "8e45b16f8164"
+   "sha": "8e45b16f8164",
+   "dur": 218
   },
   {
    "name": "CHAMPAGNE COAST",
@@ -1614,7 +1684,8 @@
    ],
    "size": 26716,
    "sha256": "c74ba4351b1917490a51e745753a5aed91f28e3b1c10ccf661e70f52855aeb16",
-   "sha": "c74ba4351b19"
+   "sha": "c74ba4351b19",
+   "dur": 148
   },
   {
    "name": "CHAOS KING",
@@ -1629,7 +1700,8 @@
    ],
    "size": 82590,
    "sha256": "523c2aa64f4fa2afa8af16805dcc922b9ccc980dd5b3845f595e18d7f993ad85",
-   "sha": "523c2aa64f4f"
+   "sha": "523c2aa64f4f",
+   "dur": 210
   },
   {
    "name": "CHARIOTS OF FIRE",
@@ -1645,7 +1717,8 @@
    ],
    "size": 22606,
    "sha256": "8d0a02d4f6621c5ebfa1fb08d92a0172a52109195421277147713700d9ac0b36",
-   "sha": "8d0a02d4f662"
+   "sha": "8d0a02d4f662",
+   "dur": 88
   },
   {
    "name": "CHA-LA HEAD-CHA-LA",
@@ -1654,8 +1727,7 @@
    "cat": [
     "anime/jpop",
     "movies/tv",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "hironobu kageyama",
@@ -1663,7 +1735,8 @@
    ],
    "size": 33226,
    "sha256": "9ae232dee5d4658eeef6c68f95e4e96ca2da2544bfe7012c5cafe471553eaddd",
-   "sha": "9ae232dee5d4"
+   "sha": "9ae232dee5d4",
+   "dur": 106
   },
   {
    "name": "CHIISANA KOI NO UTA",
@@ -1672,15 +1745,15 @@
    "cat": [
     "anime/jpop",
     "movies/tv",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "mongol800"
    ],
    "size": 78175,
    "sha256": "e93c6af81ae6cad32eb89fb36cf8dc95ab28cbcf03afe5e19f712e0e2b5ce2f1",
-   "sha": "e93c6af81ae6"
+   "sha": "e93c6af81ae6",
+   "dur": 251
   },
   {
    "name": "CHILDREN",
@@ -1689,15 +1762,15 @@
    "cat": [
     "electronic",
     "sad",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "robert miles"
    ],
    "size": 22712,
    "sha256": "ee5a4f12cbb944bc32695ac1e8200d6fbbaa1b758f9fd7a5546c003f7409377e",
-   "sha": "ee5a4f12cbb9"
+   "sha": "ee5a4f12cbb9",
+   "dur": 132
   },
   {
    "name": "CHRISTMAS KIDS",
@@ -1711,7 +1784,8 @@
    ],
    "size": 52561,
    "sha256": "8a622d7a9719dc88f64ad5565905679b653038ab35c41420ace1cb6ffa2e5a17",
-   "sha": "8a622d7a9719"
+   "sha": "8a622d7a9719",
+   "dur": 125
   },
   {
    "name": "CLAIR DE LUNE",
@@ -1726,7 +1800,8 @@
    ],
    "size": 54536,
    "sha256": "79adc0af52f56cc771d96ab9e678505cbb47ffd77a043afbfa5ad9783682292f",
-   "sha": "79adc0af52f5"
+   "sha": "79adc0af52f5",
+   "dur": 271
   },
   {
    "name": "CLOCKS",
@@ -1740,15 +1815,15 @@
    ],
    "size": 77593,
    "sha256": "fac95e8506335caecc03e6f3f9f7a63d574759790725cc6d8b42402a9e31867d",
-   "sha": "fac95e850633"
+   "sha": "fac95e850633",
+   "dur": 291
   },
   {
    "name": "CLOSE EYES",
    "file": "CLOSE_EYES.lua",
    "bpm": "114",
    "cat": [
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "closed eyes",
@@ -1757,7 +1832,8 @@
    ],
    "size": 15434,
    "sha256": "0a211cd368d10d500e502f64601b2742a3db535c7780c2c524412eb966f86bbd",
-   "sha": "0a211cd368d1"
+   "sha": "0a211cd368d1",
+   "dur": 109
   },
   {
    "name": "CLOUD 9",
@@ -1773,7 +1849,8 @@
    ],
    "size": 10837,
    "sha256": "513f4dbd6a924835b514fcb18689a2ef22ad8b8160e4ccc41668141dcd110901",
-   "sha": "513f4dbd6a92"
+   "sha": "513f4dbd6a92",
+   "dur": 60
   },
   {
    "name": "CLUBSTEP",
@@ -1790,7 +1867,8 @@
    ],
    "size": 22612,
    "sha256": "dec4dd37453bc4c573b9174c8bd1717922598b9e5d0a1ee51719ece999d73640",
-   "sha": "dec4dd37453b"
+   "sha": "dec4dd37453b",
+   "dur": 84
   },
   {
    "name": "COCONUT MALL !!",
@@ -1805,7 +1883,8 @@
    ],
    "size": 56414,
    "sha256": "17a55e257bd90e71cbb403cd829fc3c1c9d30619cbf0c2758625b907c8070d01",
-   "sha": "17a55e257bd9"
+   "sha": "17a55e257bd9",
+   "dur": 124
   },
   {
    "name": "COMEDY / KIGEKI (SPY X FAMILY)",
@@ -1813,8 +1892,7 @@
    "bpm": "88",
    "cat": [
     "movies/tv",
-    "anime/jpop",
-    "new"
+    "anime/jpop"
    ],
    "alts": [
     "gen hoshino",
@@ -1822,7 +1900,8 @@
    ],
    "size": 49331,
    "sha256": "18f9966a17f965bd3a98c3c5dc36b707e252785fb478c4d262044ad2ab883fd4",
-   "sha": "18f9966a17f9"
+   "sha": "18f9966a17f9",
+   "dur": 227
   },
   {
    "name": "COMPTINE D'UN AUTRE ÉTÉ",
@@ -1838,7 +1917,8 @@
    ],
    "size": 33030,
    "sha256": "9dd01e5f01303c349b1c6f8e1a01ff9c6eb57dc4419783a371948e7564051f10",
-   "sha": "9dd01e5f0130"
+   "sha": "9dd01e5f0130",
+   "dur": 132
   },
   {
    "name": "CONGRATULATIONS",
@@ -1846,15 +1926,15 @@
    "bpm": "60",
    "cat": [
     "beautiful",
-    "sad",
-    "new"
+    "sad"
    ],
    "alts": [
     "mac miller"
    ],
    "size": 31039,
    "sha256": "030fb6d22e31adb705ed0fcb7a3e0ea0d54668c6f9ae42cbb8d349f84fa21839",
-   "sha": "030fb6d22e31"
+   "sha": "030fb6d22e31",
+   "dur": 241
   },
   {
    "name": "CORNFIELD CHASE",
@@ -1872,7 +1952,8 @@
    ],
    "size": 38403,
    "sha256": "9d0458409ef7d229ebc14af6c3d1574464936da3eafc8e18324e434fc57801ff",
-   "sha": "9d0458409ef7"
+   "sha": "9d0458409ef7",
+   "dur": 93
   },
   {
    "name": "COUNTING STARS",
@@ -1887,7 +1968,8 @@
    ],
    "size": 69207,
    "sha256": "cd60c5867a9b745cdd5fa83be67f987dd01d6c3bec3ed91a89c099a0b1dad736",
-   "sha": "cd60c5867a9b"
+   "sha": "cd60c5867a9b",
+   "dur": 266
   },
   {
    "name": "CRAB RAVE",
@@ -1905,7 +1987,8 @@
    ],
    "size": 45756,
    "sha256": "ba8d6f4516180167aabb1051993bdabe77fc68645e05e8244d2387862a852b0a",
-   "sha": "ba8d6f451618"
+   "sha": "ba8d6f451618",
+   "dur": 153
   },
   {
    "name": "CRADLES",
@@ -1921,7 +2004,8 @@
    ],
    "size": 21529,
    "sha256": "640ab9970f3f3e27113ab15b07dbb6ddd48cbebed0823e7725b4e28d4fea212d",
-   "sha": "640ab9970f3f"
+   "sha": "640ab9970f3f",
+   "dur": 388
   },
   {
    "name": "CRAZY FROG",
@@ -1929,15 +2013,15 @@
    "bpm": "130",
    "cat": [
     "memes",
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "axel f"
    ],
    "size": 39735,
    "sha256": "1bb6f9750f78e84f9415ecde9f078b03d367f6519a863cd91c1c6d8d1fbefcff",
-   "sha": "1bb6f9750f78"
+   "sha": "1bb6f9750f78",
+   "dur": 160
   },
   {
    "name": "CREEP",
@@ -1952,7 +2036,8 @@
    ],
    "size": 40989,
    "sha256": "ef9b3a92ef46e5b650f04422d586bec544f2bdc847be40f934505d285c5e04c7",
-   "sha": "ef9b3a92ef46"
+   "sha": "ef9b3a92ef46",
+   "dur": 250
   },
   {
    "name": "CREEPIN'",
@@ -1960,8 +2045,7 @@
    "bpm": "98",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "metro boomin",
@@ -1970,7 +2054,8 @@
    ],
    "size": 29973,
    "sha256": "c75dcea106f997e29af137a7dd72e50f2f6888d8b44d78e05676cdfd399b4d44",
-   "sha": "c75dcea106f9"
+   "sha": "c75dcea106f9",
+   "dur": 127
   },
   {
    "name": "CROSSING FIELD (SAO)",
@@ -1985,22 +2070,23 @@
    ],
    "size": 21829,
    "sha256": "391dab8924058920da81ed30655c645d2b9b3baef24219716203bc92762f7e7f",
-   "sha": "391dab892405"
+   "sha": "391dab892405",
+   "dur": 84
   },
   {
    "name": "CRUCIFIED",
    "file": "CRUCIFIED.lua",
    "bpm": "144",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "army of lovers"
    ],
    "size": 68582,
    "sha256": "f202501c14fa71f3dde69caeb02f0155239c88b842c0650a2cfbc0b2089d2240",
-   "sha": "f202501c14fa"
+   "sha": "f202501c14fa",
+   "dur": 165
   },
   {
    "name": "CRY FOR ME (FEAT. 愛海)",
@@ -2008,8 +2094,7 @@
    "bpm": "92",
    "cat": [
     "beautiful",
-    "sad",
-    "new"
+    "sad"
    ],
    "alts": [
     "michita",
@@ -2017,7 +2102,8 @@
    ],
    "size": 47870,
    "sha256": "4bdd247d187f3efefd85b0817750730bce1dd387dfd1b4507dc1e0be87ff6dfe",
-   "sha": "4bdd247d187f"
+   "sha": "4bdd247d187f",
+   "dur": 239
   },
   {
    "name": "CUPID",
@@ -2031,7 +2117,8 @@
    ],
    "size": 25692,
    "sha256": "0b8ce7d81c5e1f2f4219e43c60c6ec6a7d7d0edb8424b38251babd458086ceff",
-   "sha": "0b8ce7d81c5e"
+   "sha": "0b8ce7d81c5e",
+   "dur": 170
   },
   {
    "name": "CUTE DEPRESSED",
@@ -2047,7 +2134,8 @@
    ],
    "size": 40784,
    "sha256": "f093022e187d0d8d19d7b1d859cbad943f3520eb50d953918cdf665630146d7e",
-   "sha": "f093022e187d"
+   "sha": "f093022e187d",
+   "dur": 144
   },
   {
    "name": "CYCLES",
@@ -2064,15 +2152,15 @@
    ],
    "size": 45498,
    "sha256": "7b62ad4a8ae4523ecd94def3a5730e054b0197d6733ede3af2dd55281f91c4d9",
-   "sha": "7b62ad4a8ae4"
+   "sha": "7b62ad4a8ae4",
+   "dur": 212
   },
   {
    "name": "DAD BATTLE (FNF)",
    "file": "DAD_BATTLE.lua",
    "bpm": "180",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "friday night funkin",
@@ -2080,7 +2168,8 @@
    ],
    "size": 20147,
    "sha256": "a2d72ae628db0b9df3055253b5e88acf99077c04b45496241093183426a723b8",
-   "sha": "a2d72ae628db"
+   "sha": "a2d72ae628db",
+   "dur": 85
   },
   {
    "name": "DAIJOUBU",
@@ -2097,7 +2186,8 @@
    ],
    "size": 39999,
    "sha256": "c596e604e7b800fd3fda8be8ab751f6bca67ef0038ccd1ebad2a7d0bea3b1f81",
-   "sha": "c596e604e7b8"
+   "sha": "c596e604e7b8",
+   "dur": 136
   },
   {
    "name": "DAISY BELL (BICYCLE BUILT FOR TWO)",
@@ -2113,7 +2203,8 @@
    ],
    "size": 6102,
    "sha256": "6c25cb0b258ec65d3940c930d75f566b7ceb86d1d9e47275b1ed23598ea6dc01",
-   "sha": "6c25cb0b258e"
+   "sha": "6c25cb0b258e",
+   "dur": 46
   },
   {
    "name": "DAMNED (COD ZOMBIES)",
@@ -2129,7 +2220,8 @@
    ],
    "size": 37616,
    "sha256": "ead341955a7dfaf0071e8b93f86ac5578ba1dc8db40a563812d5953ff4a8e102",
-   "sha": "ead341955a7d"
+   "sha": "ead341955a7d",
+   "dur": 141
   },
   {
    "name": "DANCE OF THE SUGAR PLUM FAIRY",
@@ -2144,7 +2236,8 @@
    ],
    "size": 34716,
    "sha256": "12a20fd0a00bdb118f9dede26740d947b7a9048d98d2a2813171f5dc736c695d",
-   "sha": "12a20fd0a00b"
+   "sha": "12a20fd0a00b",
+   "dur": 90
   },
   {
    "name": "DANDELIONS",
@@ -2152,15 +2245,15 @@
    "bpm": "100",
    "cat": [
     "pop/hiphop",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "ruth b."
    ],
    "size": 16213,
    "sha256": "94e83c88be2ac601831848c6f79b834536905e1017bedca16279bf04b1dba7ad",
-   "sha": "94e83c88be2a"
+   "sha": "94e83c88be2a",
+   "dur": 106
   },
   {
    "name": "DARK BEACH",
@@ -2175,22 +2268,23 @@
    ],
    "size": 58931,
    "sha256": "e09a6ec46636e48c4863b9d30bdf2e2d0017d93c43d2ed9995f61a0bd640ba77",
-   "sha": "e09a6ec46636"
+   "sha": "e09a6ec46636",
+   "dur": 178
   },
   {
    "name": "DARK IS THE NIGHT",
    "file": "DARK_IS_THE_NIGHT.lua",
    "bpm": "120",
    "cat": [
-    "sad",
-    "new"
+    "sad"
    ],
    "alts": [
     "Nikita Bogoslovsky"
    ],
    "size": 19081,
    "sha256": "c7eb37c167cb07490d3fa641f75dd67e5bbff85a4678e3bf5ab5a3277c228204",
-   "sha": "c7eb37c167cb"
+   "sha": "c7eb37c167cb",
+   "dur": 105
   },
   {
    "name": "DAWN OF THE DOORS",
@@ -2206,7 +2300,8 @@
    ],
    "size": 9341,
    "sha256": "de60007d25a36c2120ff716d92104ffa6dd5feb23aced1166d860eec4a468095",
-   "sha": "de60007d25a3"
+   "sha": "de60007d25a3",
+   "dur": 84
   },
   {
    "name": "DAYLIGHT",
@@ -2222,7 +2317,8 @@
    ],
    "size": 48214,
    "sha256": "28e64b1010d047372c4f1ae7b03b4416d28e1b3f6644065a1ec847d211085c5f",
-   "sha": "28e64b1010d0"
+   "sha": "28e64b1010d0",
+   "dur": 204
   },
   {
    "name": "DEADLOCKED",
@@ -2238,7 +2334,8 @@
    ],
    "size": 34923,
    "sha256": "afe7e4dea42bc2af01d414073e59b7e38f23fd9326a85e08aa9c4eb4430a3f60",
-   "sha": "afe7e4dea42b"
+   "sha": "afe7e4dea42b",
+   "dur": 103
   },
   {
    "name": "DEATH BED",
@@ -2255,7 +2352,8 @@
    ],
    "size": 28139,
    "sha256": "72feb1d8296e7c671db80fe90c0064e564f8c6339b1abf8ab27941696f8d33de",
-   "sha": "72feb1d8296e"
+   "sha": "72feb1d8296e",
+   "dur": 132
   },
   {
    "name": "DEATH WALTZ (U.N. OWEN WAS HER?)",
@@ -2273,7 +2371,8 @@
    ],
    "size": 401432,
    "sha256": "1f47e654480b71c1bd3d5f024320fd3206f2c1e74f43ad57c46a38f047e1feeb",
-   "sha": "1f47e654480b"
+   "sha": "1f47e654480b",
+   "dur": 197
   },
   {
    "name": "DECK THE HALLS",
@@ -2289,7 +2388,8 @@
    ],
    "size": 45757,
    "sha256": "a1536a3535b4604cbdc3a0ad450ad83151d509d59198fc287605f7869f07b33d",
-   "sha": "a1536a3535b4"
+   "sha": "a1536a3535b4",
+   "dur": 179
   },
   {
    "name": "DEPARTURE",
@@ -2297,15 +2397,15 @@
    "bpm": "150",
    "cat": [
     "movies/tv",
-    "anime/jpop",
-    "new"
+    "anime/jpop"
    ],
    "alts": [
     "hunter x hunter"
    ],
    "size": 21204,
    "sha256": "823391290c6cd763134f2fc26ca7de181b2c4de8e0ac8cea6f7aacc6c7a6b4b7",
-   "sha": "823391290c6c"
+   "sha": "823391290c6c",
+   "dur": 77
   },
   {
    "name": "DESPACITO",
@@ -2321,7 +2421,8 @@
    ],
    "size": 57543,
    "sha256": "d12999382af5b0eb44ee13fcd35a1e4a805d8c4a2767519e9e2c216af8b9f9d3",
-   "sha": "d12999382af5"
+   "sha": "d12999382af5",
+   "dur": 227
   },
   {
    "name": "DETROIT: BECOME HUMAN - OPENING",
@@ -2338,7 +2439,8 @@
    ],
    "size": 20309,
    "sha256": "715d62d516cb0bcb4460396191204e38a28fbb10c526ef4b51df264deb278691",
-   "sha": "715d62d516cb"
+   "sha": "715d62d516cb",
+   "dur": 96
   },
   {
    "name": "DEXTER - BLOOD THEME",
@@ -2354,7 +2456,8 @@
    ],
    "size": 14907,
    "sha256": "a6f9dc2a921e8a3ab938c15cce69fe592ee5ea07d69011c8a47cd0b68de021e9",
-   "sha": "a6f9dc2a921e"
+   "sha": "a6f9dc2a921e",
+   "dur": 121
   },
   {
    "name": "DIE FOR YOU",
@@ -2362,15 +2465,15 @@
    "bpm": "66",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "the weeknd"
    ],
    "size": 16122,
    "sha256": "6cb321f95575cd6527dcfe07dbcc67ae60f7db3465c1de0156b421ed41e6587c",
-   "sha": "6cb321f95575"
+   "sha": "6cb321f95575",
+   "dur": 128
   },
   {
    "name": "DIE WITH A SMILE",
@@ -2389,7 +2492,8 @@
    ],
    "size": 70211,
    "sha256": "83eced99d39421fbabc3cc64e7d84a067b579b87b9e9c64131e6d91fb23041e5",
-   "sha": "83eced99d394"
+   "sha": "83eced99d394",
+   "dur": 126
   },
   {
    "name": "(I JUST) DIED IN YOUR ARMS",
@@ -2404,7 +2508,8 @@
    ],
    "size": 27712,
    "sha256": "d3cfd9cd8d66b04763db09c3733102ffc9babb35f7a64d458cd311e5ad124a48",
-   "sha": "d3cfd9cd8d66"
+   "sha": "d3cfd9cd8d66",
+   "dur": 220
   },
   {
    "name": "DIES IRAE (MESSA DA REQUIEM)",
@@ -2421,7 +2526,8 @@
    ],
    "size": 105174,
    "sha256": "a264d65cfdf69881591391e8cc3251843bda6b2dc36419d66d6936aaaf3a2de9",
-   "sha": "a264d65cfdf6"
+   "sha": "a264d65cfdf6",
+   "dur": 239
   },
   {
    "name": "DIES IRAE (REQUIEM MVT.3)",
@@ -2435,7 +2541,8 @@
    ],
    "size": 39574,
    "sha256": "95baafa0bb2e68ec8f8136b9594135747c993442ecdaa4bf6984f8758c0b8a41",
-   "sha": "95baafa0bb2e"
+   "sha": "95baafa0bb2e",
+   "dur": 101
   },
   {
    "name": "DIES IRAE (REQUIEM MVT.3) (EPIC VER.)",
@@ -2453,22 +2560,23 @@
    ],
    "size": 58960,
    "sha256": "1de67aa783ba853e4a4fcb6cfbcf39e3d45365bce580a7a3163ebbd767d6a863",
-   "sha": "1de67aa783ba"
+   "sha": "1de67aa783ba",
+   "dur": 101
   },
   {
    "name": "DIRTMOUTH",
    "file": "DIRTMOUTH.lua",
    "bpm": "87",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "hollow knight"
    ],
    "size": 14859,
    "sha256": "af0fd231b783b817be15493c9245c32806cb396867b26a6709d2da0562754ce2",
-   "sha": "af0fd231b783"
+   "sha": "af0fd231b783",
+   "dur": 105
   },
   {
    "name": "DOGSONG",
@@ -2484,7 +2592,8 @@
    ],
    "size": 10501,
    "sha256": "4c421f9b77783d60e903c43f31462ae3aac4179782c54f773282ed0eb845fe51",
-   "sha": "4c421f9b7778"
+   "sha": "4c421f9b7778",
+   "dur": 35
   },
   {
    "name": "DOKI DOKI LITERATURE CLUB MAIN THEME",
@@ -2501,7 +2610,8 @@
    ],
    "size": 49027,
    "sha256": "4c532bded3029effa5033ee5dce69109ba1724e11089be78a78447c541dbb9eb",
-   "sha": "4c532bded302"
+   "sha": "4c532bded302",
+   "dur": 216
   },
   {
    "name": "DONT STOP BELIEVIN'",
@@ -2516,7 +2626,8 @@
    ],
    "size": 59971,
    "sha256": "e7853321f07649a76c8908e543a2eed8bf5213d153784a4f7ea93eb9da6eaecf",
-   "sha": "e7853321f076"
+   "sha": "e7853321f076",
+   "dur": 257
   },
   {
    "name": "DRAGOSTEA DIN TEI (NUMA NUMA)",
@@ -2525,8 +2636,7 @@
    "cat": [
     "pop/hiphop",
     "electronic",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "o-zone",
@@ -2534,7 +2644,8 @@
    ],
    "size": 40322,
    "sha256": "19d289b290d1eb8c5b2cf1e97c5bc65c2fa9a378ed2dddec4200c20f5ca5ed59",
-   "sha": "19d289b290d1"
+   "sha": "19d289b290d1",
+   "dur": 211
   },
   {
    "name": "DRAMAMIME",
@@ -2548,7 +2659,8 @@
    ],
    "size": 18637,
    "sha256": "140c5975778a6e3d21ea96e492a2908b8d495dc1f00303cf8613919ddc8bab7f",
-   "sha": "140c5975778a"
+   "sha": "140c5975778a",
+   "dur": 68
   },
   {
    "name": "DREAM FLOWER",
@@ -2562,7 +2674,8 @@
    ],
    "size": 45928,
    "sha256": "f7a097d8ef68cf33608a46b63a9b54dd227dc89ad1824ceb2cf22daf86338767",
-   "sha": "f7a097d8ef68"
+   "sha": "f7a097d8ef68",
+   "dur": 209
   },
   {
    "name": "DREAM LANTERN (YUME TOURU)",
@@ -2579,7 +2692,8 @@
    ],
    "size": 32125,
    "sha256": "a5ad6048fabf90f8e484739cd0c529d67307bb50c4038e6756a4989f321df983",
-   "sha": "a5ad6048fabf"
+   "sha": "a5ad6048fabf",
+   "dur": 89
   },
   {
    "name": "DREAM ON",
@@ -2593,7 +2707,8 @@
    ],
    "size": 61023,
    "sha256": "8691c7a4a86a1b31614ea4cd1cba02bc2419ec374d5f08337481cb7c34079e3e",
-   "sha": "8691c7a4a86a"
+   "sha": "8691c7a4a86a",
+   "dur": 255
   },
   {
    "name": "DREITON (BEST PART)",
@@ -2610,7 +2725,8 @@
    ],
    "size": 16740,
    "sha256": "852e6fc723553d23e12086150ab9e0bbb9a75e1e1f688472ed2c70e691b23a71",
-   "sha": "852e6fc72355"
+   "sha": "852e6fc72355",
+   "dur": 32
   },
   {
    "name": "DROWNING LOVE",
@@ -2628,7 +2744,8 @@
    ],
    "size": 35707,
    "sha256": "c87820af22d6c80c2802a713e82ffa695687c3c52c81fb699e83e7556cdd5747",
-   "sha": "c87820af22d6"
+   "sha": "c87820af22d6",
+   "dur": 112
   },
   {
    "name": "DRY HANDS",
@@ -2644,7 +2761,8 @@
    ],
    "size": 6306,
    "sha256": "0bbe45e674b33e2c10ccd8faa5688841e72ef0a65adf4b75d9c74b40a38cdb66",
-   "sha": "0bbe45e674b3"
+   "sha": "0bbe45e674b3",
+   "dur": 95
   },
   {
    "name": "DRY OUT",
@@ -2661,7 +2779,8 @@
    ],
    "size": 26498,
    "sha256": "77785b411b63b5e2c352368321ce860e5bc177f983fe164bbec01810594349d8",
-   "sha": "77785b411b63"
+   "sha": "77785b411b63",
+   "dur": 98
   },
   {
    "name": "DUMB DUMB",
@@ -2675,7 +2794,8 @@
    ],
    "size": 44615,
    "sha256": "b0140d2138d6b779e110bd50fa5325e1563e0f03680bc7c451f7bc552e22d4c2",
-   "sha": "b0140d2138d6"
+   "sha": "b0140d2138d6",
+   "dur": 122
   },
   {
    "name": "DUVET",
@@ -2691,7 +2811,8 @@
    ],
    "size": 53693,
    "sha256": "9472ce6fefeb053d1cd1a4fdad10d570f5ee37585b946ee43e12d6816dc11ce8",
-   "sha": "9472ce6fefeb"
+   "sha": "9472ce6fefeb",
+   "dur": 152
   },
   {
    "name": "EASY ON ME",
@@ -2705,7 +2826,8 @@
    ],
    "size": 40197,
    "sha256": "4b31e534f0140564648dade1b31f184f772f8eb0b275f147431b7ace04f30840",
-   "sha": "4b31e534f014"
+   "sha": "4b31e534f014",
+   "dur": 208
   },
   {
    "name": "ELEVATOR JAM",
@@ -2721,7 +2843,8 @@
    ],
    "size": 7055,
    "sha256": "7c2bc9bd42be8c3ba6886c21201c8ee44769b79185a1129fc47f03b760ec9b08",
-   "sha": "7c2bc9bd42be"
+   "sha": "7c2bc9bd42be",
+   "dur": 30
   },
   {
    "name": "ELEVATOR JAM x HERE I COME",
@@ -2739,7 +2862,8 @@
    ],
    "size": 31355,
    "sha256": "00cb0c13d8e0ae3043bd9ae38f36b5e567fa06fb23e1315c829a55f88f0a2ce7",
-   "sha": "00cb0c13d8e0"
+   "sha": "00cb0c13d8e0",
+   "dur": 83
   },
   {
    "name": "ENEMY",
@@ -2754,7 +2878,8 @@
    ],
    "size": 12739,
    "sha256": "2f3fa6e2ca0fb56690cb9e7beb673c6f03836f94aab98d536dfba3405f11a718",
-   "sha": "2f3fa6e2ca0f"
+   "sha": "2f3fa6e2ca0f",
+   "dur": 53
   },
   {
    "name": "ENGRAVINGS",
@@ -2769,7 +2894,8 @@
    ],
    "size": 49153,
    "sha256": "e1625c0ebb7fdad68c7c7632928546982b789744302e0eafe5f7a968c6051bbe",
-   "sha": "e1625c0ebb7f"
+   "sha": "e1625c0ebb7f",
+   "dur": 200
   },
   {
    "name": "ENTRY OF THE GLADIATORS",
@@ -2785,7 +2911,8 @@
    ],
    "size": 70669,
    "sha256": "a679bf14441bb0b6a57f945ff41d437b58505d4492af8de665eaa8dc1ac978f8",
-   "sha": "a679bf14441b"
+   "sha": "a679bf14441b",
+   "dur": 170
   },
   {
    "name": "ERIKA",
@@ -2803,7 +2930,8 @@
    ],
    "size": 28468,
    "sha256": "3fc61aa6394e064cbff748fd5bd0c1a83a89991ac9f8d16e2753e52d27bbb209",
-   "sha": "3fc61aa6394e"
+   "sha": "3fc61aa6394e",
+   "dur": 108
   },
   {
    "name": "ETHEREAL",
@@ -2819,7 +2947,8 @@
    ],
    "size": 24790,
    "sha256": "bdec909a72424519d0f2761985247f4d667d28f4c90a35e0f004af0ae819429e",
-   "sha": "bdec909a7242"
+   "sha": "bdec909a7242",
+   "dur": 110
   },
   {
    "name": "EVERGREEN",
@@ -2837,7 +2966,8 @@
    ],
    "size": 22291,
    "sha256": "7c22a46a320b91eb6be1bd667c25623b335157c7c527af6534522a62bbc4b406",
-   "sha": "7c22a46a320b"
+   "sha": "7c22a46a320b",
+   "dur": 82
   },
   {
    "name": "EVERY LIVING BREATHING CREATURE",
@@ -2854,7 +2984,8 @@
    ],
    "size": 36551,
    "sha256": "f143da731d128a9d40b8e24452a846fab60b37606c80961ea21e26988e2f2e33",
-   "sha": "f143da731d12"
+   "sha": "f143da731d12",
+   "dur": 52
   },
   {
    "name": "EXPERIENCE",
@@ -2872,7 +3003,8 @@
    ],
    "size": 66241,
    "sha256": "35a64acbb20b01f29480e8f6899492a44dcbafa780c43fc61d4915d9992dd69a",
-   "sha": "35a64acbb20b"
+   "sha": "35a64acbb20b",
+   "dur": 294
   },
   {
    "name": "EXPERIENCE FLOWS IN YOU",
@@ -2888,22 +3020,23 @@
    ],
    "size": 30172,
    "sha256": "e29c11d08764a1863cc5c462741dcbc4271ae0f447d98b64135e904e84f49ea3",
-   "sha": "e29c11d08764"
+   "sha": "e29c11d08764",
+   "dur": 112
   },
   {
    "name": "F1",
    "file": "F1.lua",
    "bpm": "110",
    "cat": [
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "hans zimmer"
    ],
    "size": 28487,
    "sha256": "ddb8279c5fba642bb46d4689cf3158649b3963ad98f1930db7340f412e0823ff",
-   "sha": "ddb8279c5fba"
+   "sha": "ddb8279c5fba",
+   "dur": 146
   },
   {
    "name": "FADED",
@@ -2920,7 +3053,8 @@
    ],
    "size": 47428,
    "sha256": "13d357076d4b247a2370ab6ed6a85f5ebf2feb86cf338a64ca6308b9775be0fa",
-   "sha": "13d357076d4b"
+   "sha": "13d357076d4b",
+   "dur": 200
   },
   {
    "name": "FALLEN DOWN",
@@ -2936,7 +3070,8 @@
    ],
    "size": 36730,
    "sha256": "c767c2ffdf1a84992371715dec24f252ace5bbd79f71bec1d49ebb4d3cc5d467",
-   "sha": "c767c2ffdf1a"
+   "sha": "c767c2ffdf1a",
+   "dur": 152
   },
   {
    "name": "FANTAISIE IMPROMPTU",
@@ -2950,7 +3085,8 @@
    ],
    "size": 114066,
    "sha256": "8f891eb84a1b338e0fca9297da5def5c93040270979d4d93f726e338533ca763",
-   "sha": "8f891eb84a1b"
+   "sha": "8f891eb84a1b",
+   "dur": 269
   },
   {
    "name": "FAST",
@@ -2958,15 +3094,15 @@
    "bpm": "86",
    "cat": [
     "pop/hiphop",
-    "sad",
-    "new"
+    "sad"
    ],
    "alts": [
     "juice wrld"
    ],
    "size": 46036,
    "sha256": "b57080722957810a472044b942f87c737e3891643cfd9b80fd4cfbbc58c1f86f",
-   "sha": "b57080722957"
+   "sha": "b57080722957",
+   "dur": 200
   },
   {
    "name": "FEEL GOOD INC",
@@ -2975,15 +3111,15 @@
    "cat": [
     "pop/hiphop",
     "rock",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "gorillaz"
    ],
    "size": 57956,
    "sha256": "baec4b7509f2ea0db0731066db15866ef1600e1b55d8331cdd0782cb7f64ecc6",
-   "sha": "baec4b7509f2"
+   "sha": "baec4b7509f2",
+   "dur": 187
   },
   {
    "name": "FIELD OF HOPES AND DREAMS",
@@ -2998,7 +3134,8 @@
    ],
    "size": 75905,
    "sha256": "3bf1f14c5d8e2770727f0a5ac9467db19eb03fc5ecc9880c6ec53f6009fc9dfc",
-   "sha": "3bf1f14c5d8e"
+   "sha": "3bf1f14c5d8e",
+   "dur": 161
   },
   {
    "name": "FIELD OF MEMORIES",
@@ -3015,7 +3152,8 @@
    ],
    "size": 59077,
    "sha256": "ae1b775004b88fafe4a5dae0e98a22ff088fe1050bb0d93d1d8f6a847c4605ab",
-   "sha": "ae1b775004b8"
+   "sha": "ae1b775004b8",
+   "dur": 140
   },
   {
    "name": "FINAL DUET",
@@ -3030,7 +3168,8 @@
    ],
    "size": 10049,
    "sha256": "3ad8f2fa9231a2a90f6306ac30b2a1a7e4483c28be0adcab4db78f16b9576f5e",
-   "sha": "3ad8f2fa9231"
+   "sha": "3ad8f2fa9231",
+   "dur": 84
   },
   {
    "name": "FINALE",
@@ -3047,7 +3186,8 @@
    ],
    "size": 32711,
    "sha256": "c61fdb4be8a0704c3f05bb13964918e4b521a94e80716c203a18d780d13c0193",
-   "sha": "c61fdb4be8a0"
+   "sha": "c61fdb4be8a0",
+   "dur": 141
   },
   {
    "name": "FIREWORKS (UCHIAGE HANABI)",
@@ -3064,7 +3204,8 @@
    ],
    "size": 69614,
    "sha256": "49d9b10cba1d001fc3c6d5b9a461d4ea4f7a1430cdf6a48ac7a4fd754e2fa9bd",
-   "sha": "49d9b10cba1d"
+   "sha": "49d9b10cba1d",
+   "dur": 223
   },
   {
    "name": "FIVE NIGHTS AT FREDDYS 1",
@@ -3082,7 +3223,8 @@
    ],
    "size": 40776,
    "sha256": "8b7774d51cfb387cfb3d1e56cfc45d8a6060597452ae4a85f787b731b3a2e810",
-   "sha": "8b7774d51cfb"
+   "sha": "8b7774d51cfb",
+   "dur": 134
   },
   {
    "name": "FLARE",
@@ -3098,7 +3240,8 @@
    ],
    "size": 78051,
    "sha256": "7cccdd94edad0f13e8c0162165bbb7a2d3d8dc5f2023afd39c2d04e9e25e1a82",
-   "sha": "7cccdd94edad"
+   "sha": "7cccdd94edad",
+   "dur": 128
   },
   {
    "name": "FLASHING LIGHTS",
@@ -3115,22 +3258,23 @@
    ],
    "size": 45021,
    "sha256": "829620c32eb9187d7694061c81ea40343622283de7b32115585d52e1f73cf8fe",
-   "sha": "829620c32eb9"
+   "sha": "829620c32eb9",
+   "dur": 105
   },
   {
    "name": "FLIGHT (MAN OF STEEL)",
    "file": "FLIGHT.lua",
    "bpm": "80",
    "cat": [
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "hans zimmer"
    ],
    "size": 6045,
    "sha256": "dd4d41b4ada78d2e8956a89a833abd5357ee3799e40ea3661b44b6794674b00d",
-   "sha": "dd4d41b4ada7"
+   "sha": "dd4d41b4ada7",
+   "dur": 82
   },
   {
    "name": "FLIGHT OF THE BUMBLEBEE",
@@ -3145,7 +3289,8 @@
    ],
    "size": 39931,
    "sha256": "1847b021c513b9b3bf2c530620986e217b674a3e3772ecabce441c1e56987f4d",
-   "sha": "1847b021c513"
+   "sha": "1847b021c513",
+   "dur": 100
   },
   {
    "name": "FLOWER DANCE",
@@ -3161,7 +3306,8 @@
    ],
    "size": 74624,
    "sha256": "e589f71c612acaae5cd5568da113184af82182dadffe5c72915aa52c3692403e",
-   "sha": "e589f71c612a"
+   "sha": "e589f71c612a",
+   "dur": 176
   },
   {
    "name": "FLUXXWAVE",
@@ -3176,7 +3322,8 @@
    ],
    "size": 33739,
    "sha256": "55046b9f1b1f5f24a98d80bbbaf430100361d5528fff3cccb36457cd6f7ad839",
-   "sha": "55046b9f1b1f"
+   "sha": "55046b9f1b1f",
+   "dur": 152
   },
   {
    "name": "FLY ME TO THE MOON",
@@ -3194,15 +3341,15 @@
    ],
    "size": 25238,
    "sha256": "aeb07f4168836604ae15c94b44c85c6e15a7e66cb22ebdcd0ece6db5cc1d46b5",
-   "sha": "aeb07f416883"
+   "sha": "aeb07f416883",
+   "dur": 125
   },
   {
    "name": "FLY, MY WINGS",
    "file": "FLY_MY_WINGS.lua",
    "bpm": "72",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "limbus company",
@@ -3211,7 +3358,8 @@
    ],
    "size": 26695,
    "sha256": "fa41a21a9b3bf2c4616ab04a1b0813529978851a14c5acb15088b1e4626925ca",
-   "sha": "fa41a21a9b3b"
+   "sha": "fa41a21a9b3b",
+   "dur": 186
   },
   {
    "name": "FOR THE DAMAGED CODA",
@@ -3229,7 +3377,8 @@
    ],
    "size": 18721,
    "sha256": "e2de0fa51c6b1877e54b3b509d970d5dd22f9152f983555d4a488a58acb4f11c",
-   "sha": "e2de0fa51c6b"
+   "sha": "e2de0fa51c6b",
+   "dur": 109
   },
   {
    "name": "FOR THE DAMAGED CODA (EPIC VER.)",
@@ -3249,7 +3398,8 @@
    ],
    "size": 41978,
    "sha256": "baa690e2504744f81e8728cca3ee3c602e892f94fb6293c66f63cdb71527e3b1",
-   "sha": "baa690e25047"
+   "sha": "baa690e25047",
+   "dur": 154
   },
   {
    "name": "FREAKS",
@@ -3265,7 +3415,8 @@
    ],
    "size": 41678,
    "sha256": "932416f19666e3221f9628ca67f73e4f7d0fb1d58bdf61d2c4f694f042f51e06",
-   "sha": "932416f19666"
+   "sha": "932416f19666",
+   "dur": 143
   },
   {
    "name": "FREEDOM DIVE",
@@ -3279,7 +3430,8 @@
    ],
    "size": 152240,
    "sha256": "177b6a315e416136864b52361841096f8f29ae22e17d111bfc025b0abcc6cbdd",
-   "sha": "177b6a315e41"
+   "sha": "177b6a315e41",
+   "dur": 240
   },
   {
    "name": "FRIENDS",
@@ -3295,7 +3447,8 @@
    ],
    "size": 38397,
    "sha256": "cf6a671408b4f2aad596d65f797e2d13401c050dd60efde9630b2fc0340514b8",
-   "sha": "cf6a671408b4"
+   "sha": "cf6a671408b4",
+   "dur": 202
   },
   {
    "name": "FROM THE START",
@@ -3311,7 +3464,8 @@
    ],
    "size": 55410,
    "sha256": "fb0721871f52818627cd89d21e32523645ff403e64b5b676bfa1e592907b1bad",
-   "sha": "fb0721871f52"
+   "sha": "fb0721871f52",
+   "dur": 310
   },
   {
    "name": "FUKASHIGI NO CARTE (BUNNY GIRL)",
@@ -3326,15 +3480,15 @@
    ],
    "size": 18673,
    "sha256": "679f42db472e7b634bed4dd351ac853dd838675559b167385229f3d8d00ade7c",
-   "sha": "679f42db472e"
+   "sha": "679f42db472e",
+   "dur": 83
   },
   {
    "name": "FUNK ESTRANHO",
    "file": "FUNK_ESTRANHO.lua",
    "bpm": "111",
    "cat": [
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "ALXIKE",
@@ -3342,7 +3496,8 @@
    ],
    "size": 8746,
    "sha256": "570521532dc58186efbdc900dc4ab7b5bc264409f8b0bdc632c5dd4677830f1d",
-   "sha": "570521532dc5"
+   "sha": "570521532dc5",
+   "dur": 39
   },
   {
    "name": "FUR ELISE",
@@ -3357,7 +3512,8 @@
    ],
    "size": 37986,
    "sha256": "cee78d6768c1fd6101843ac5f72772f77d7265d5406be416ae64d7c0b40b55aa",
-   "sha": "cee78d6768c1"
+   "sha": "cee78d6768c1",
+   "dur": 155
   },
   {
    "name": "GANGSTA'S PARADISE",
@@ -3376,7 +3532,8 @@
    ],
    "size": 49141,
    "sha256": "77e0cc2e03248afe4c631e0285f76af2d747a7842432fd30cb3333ec7ced8526",
-   "sha": "77e0cc2e0324"
+   "sha": "77e0cc2e0324",
+   "dur": 179
   },
   {
    "name": "GEOMETRICAL DOMINATOR",
@@ -3384,8 +3541,7 @@
    "bpm": "80",
    "cat": [
     "video games",
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "geometry dash",
@@ -3394,7 +3550,8 @@
    ],
    "size": 26177,
    "sha256": "327174246e2d9dd00aa321c51068fffa1f7648b46f54e8e02cbf19e10c66b469",
-   "sha": "327174246e2d"
+   "sha": "327174246e2d",
+   "dur": 88
   },
   {
    "name": "GEOMETRY DASH THEME (DASH)",
@@ -3410,7 +3567,8 @@
    ],
    "size": 76417,
    "sha256": "46b57ef5d9a4a6e4da0e0a768588b4060147330ee1940f92af286c7a1bec29a2",
-   "sha": "46b57ef5d9a4"
+   "sha": "46b57ef5d9a4",
+   "dur": 188
   },
   {
    "name": "GIGACHAD THEME (CAN YOU FEEL MY HEART)",
@@ -3427,22 +3585,23 @@
    ],
    "size": 23314,
    "sha256": "a26f928ee8f5f9a9d66464a374d6f5b1cbb0616ae82a94fb76a10a136e72f1ac",
-   "sha": "a26f928ee8f5"
+   "sha": "a26f928ee8f5",
+   "dur": 92
   },
   {
    "name": "GIMME! GIMME! GIMME!",
    "file": "GIMME_GIMME_GIMME.lua",
    "bpm": "116",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "abba"
    ],
    "size": 81869,
    "sha256": "1f476fa9a204b2ec57dd5b22c6eb3b9d0a96095d89e45523c89eda84d061958c",
-   "sha": "1f476fa9a204"
+   "sha": "1f476fa9a204",
+   "dur": 256
   },
   {
    "name": "GIORNO'S THEME (IL VENTO D'ORO)",
@@ -3461,7 +3620,8 @@
    ],
    "size": 7409,
    "sha256": "b71444b305dd950705c5388d23ad7461b5044966135319817ae8ffc43dd4f32c",
-   "sha": "b71444b305dd"
+   "sha": "b71444b305dd",
+   "dur": 42
   },
   {
    "name": "GLASSY SKY",
@@ -3477,7 +3637,8 @@
    ],
    "size": 53889,
    "sha256": "348b2f04c12fb485e84ad16b303a83df52fa774b9be4229377e012a385848454",
-   "sha": "348b2f04c12f"
+   "sha": "348b2f04c12f",
+   "dur": 311
   },
   {
    "name": "GODS PLAN",
@@ -3491,22 +3652,23 @@
    ],
    "size": 38364,
    "sha256": "df2338be7dcecc5e6965f34bfac2853352ac29c40404b5a89e2251092a0c528c",
-   "sha": "df2338be7dce"
+   "sha": "df2338be7dce",
+   "dur": 235
   },
   {
    "name": "GOLDEN BROWN",
    "file": "GOLDEN_BROW.lua",
    "bpm": "94",
    "cat": [
-    "rock",
-    "new"
+    "rock"
    ],
    "alts": [
     "the stranglers"
    ],
    "size": 26256,
    "sha256": "d9585fe42071b6724eaa499f822b8c42e58c7e1c58b6a62329992547feceb70d",
-   "sha": "d9585fe42071"
+   "sha": "d9585fe42071",
+   "dur": 89
   },
   {
    "name": "GOLDEN HOUR",
@@ -3524,15 +3686,15 @@
    ],
    "size": 63649,
    "sha256": "5f621face3c56eba71130fbe9f9bd1cd10a60015e9af6104fe3b653350426cde",
-   "sha": "5f621face3c5"
+   "sha": "5f621face3c5",
+   "dur": 208
   },
   {
    "name": "GONE ANGELS",
    "file": "GONE_ANGELS.lua",
    "bpm": "188",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "limbus company",
@@ -3540,7 +3702,8 @@
    ],
    "size": 36618,
    "sha256": "8088fe0a4ae253f73d0e7793948bd506239e207e1b519714c1e660489128be7f",
-   "sha": "8088fe0a4ae2"
+   "sha": "8088fe0a4ae2",
+   "dur": 142
   },
   {
    "name": "GOOD MORNING (OMORI)",
@@ -3555,7 +3718,8 @@
    ],
    "size": 15516,
    "sha256": "5a2328712505b1837d89e3aa04786115b7a8234cbb90465c7a3d45e56022626c",
-   "sha": "5a2328712505"
+   "sha": "5a2328712505",
+   "dur": 105
   },
   {
    "name": "GOOFY AHH NPC MUSIC",
@@ -3573,7 +3737,8 @@
    ],
    "size": 21730,
    "sha256": "6a478affadefb14d7a1ad9e85244265f86bab9183743ec3a65310c035c712b1a",
-   "sha": "6a478affadef"
+   "sha": "6a478affadef",
+   "dur": 92
   },
   {
    "name": "GRAVITY FALLS OPENING THEME",
@@ -3590,7 +3755,8 @@
    ],
    "size": 12663,
    "sha256": "7f5f5e5291941e54bae03b97bff98e59771a9996cca47085329a051ce1f172a2",
-   "sha": "7f5f5e529194"
+   "sha": "7f5f5e529194",
+   "dur": 37
   },
   {
    "name": "GUREN NO YUMIYA (ATTACK ON TITAN)",
@@ -3599,8 +3765,7 @@
    "cat": [
     "movies/tv",
     "anime/jpop",
-    "epic",
-    "new"
+    "epic"
    ],
    "alts": [
     "animenz",
@@ -3608,7 +3773,8 @@
    ],
    "size": 145605,
    "sha256": "a69e416e5b19b1eadb70ee8e233b73fabc7b3636d5cf076efdba1322404ed491",
-   "sha": "a69e416e5b19"
+   "sha": "a69e416e5b19",
+   "dur": 319
   },
   {
    "name": "GURENGE (DEMON SLAYER)",
@@ -3627,7 +3793,8 @@
    ],
    "size": 81090,
    "sha256": "ae0a4e659fa06c2f0de31f9882515ff40381e814ef0a605ba753bf428793bed6",
-   "sha": "ae0a4e659fa0"
+   "sha": "ae0a4e659fa0",
+   "dur": 231
   },
   {
    "name": "GYMNOPÉDIE NO.1",
@@ -3635,15 +3802,15 @@
    "bpm": "54",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "erik satie"
    ],
    "size": 13103,
    "sha256": "cd616338eff531a461076593a891148823819ed4cce5dfde66833a72436cfb47",
-   "sha": "cd616338eff5"
+   "sha": "cd616338eff5",
+   "dur": 257
   },
   {
    "name": "GYMNOPÉDIE NO.2",
@@ -3651,15 +3818,15 @@
    "bpm": "48",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "erik satie"
    ],
    "size": 10593,
    "sha256": "123255d3762cdaace21b5d2fe36868049346bccdd167e4f8594629d7c5e479c1",
-   "sha": "123255d3762c"
+   "sha": "123255d3762c",
+   "dur": 241
   },
   {
    "name": "GYMNOPÉDIE NO.3",
@@ -3667,15 +3834,15 @@
    "bpm": "48",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "erik satie"
    ],
    "size": 9488,
    "sha256": "f91c2927cdb6ce3869f76ff61996eefc25a7c5a3c1a82299343425d47fe8a742",
-   "sha": "f91c2927cdb6"
+   "sha": "f91c2927cdb6",
+   "dur": 218
   },
   {
    "name": "GYPSY WOMAN",
@@ -3692,7 +3859,8 @@
    ],
    "size": 130501,
    "sha256": "0bfdab55002d44efee3e92543dde1e949f581c33228a342644fb5fce6e90baa1",
-   "sha": "0bfdab55002d"
+   "sha": "0bfdab55002d",
+   "dur": 224
   },
   {
    "name": "HAGGSTORM",
@@ -3707,7 +3875,8 @@
    ],
    "size": 12770,
    "sha256": "6a3ce1bcad1c52eb21fd6b1e06288d8eb2a7a07b2654e164a7575b14885d5253",
-   "sha": "6a3ce1bcad1c"
+   "sha": "6a3ce1bcad1c",
+   "dur": 114
   },
   {
    "name": "HANA NI NATTE (APOTHECARY DIARIES)",
@@ -3715,15 +3884,15 @@
    "bpm": "200",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "the apothecary diaries"
    ],
    "size": 29410,
    "sha256": "ba40fcb718a7bb230b66ca29b8da01571fd73a2f22a4349c6cc1bf7d43de8a5d",
-   "sha": "ba40fcb718a7"
+   "sha": "ba40fcb718a7",
+   "dur": 84
   },
   {
    "name": "HAPPIER",
@@ -3741,7 +3910,8 @@
    ],
    "size": 40456,
    "sha256": "0e8303f36ab322803ba968228d67e5d45732513044fbaee6bbbc8d88565022f3",
-   "sha": "0e8303f36ab3"
+   "sha": "0e8303f36ab3",
+   "dur": 209
   },
   {
    "name": "HATSUNE MIKU NO GEKISHOU",
@@ -3761,7 +3931,8 @@
    ],
    "size": 72003,
    "sha256": "a2156a371e87303e1fa08d57f678fac492ef13dec392aada3a873077539a0af4",
-   "sha": "a2156a371e87"
+   "sha": "a2156a371e87",
+   "dur": 139
   },
   {
    "name": "HAZY MOON",
@@ -3777,7 +3948,8 @@
    ],
    "size": 32680,
    "sha256": "c6068db85d786f0bda40557fb649fdd2e187079c670a7c352f52b7d6ea1c15d7",
-   "sha": "c6068db85d78"
+   "sha": "c6068db85d78",
+   "dur": 152
   },
   {
    "name": "HEART AFIRE",
@@ -3793,7 +3965,8 @@
    ],
    "size": 59227,
    "sha256": "61f54f5879d70589012e43e4b763a5daa0aa2a7238219db66c46f80d36e28970",
-   "sha": "61f54f5879d7"
+   "sha": "61f54f5879d7",
+   "dur": 233
   },
   {
    "name": "HEARTACHE",
@@ -3809,7 +3982,8 @@
    ],
    "size": 50141,
    "sha256": "8bfca77c7f45c63947f14ec9dbd835f6b161ae5c11206be08c08a75abc3697bb",
-   "sha": "8bfca77c7f45"
+   "sha": "8bfca77c7f45",
+   "dur": 180
   },
   {
    "name": "HEAT WAVE",
@@ -3823,7 +3997,8 @@
    ],
    "size": 50383,
    "sha256": "34d0070bc00ce421b00904f06a56b8ae50b5369bbdf2b03ce6c93fe4a559c43c",
-   "sha": "34d0070bc00c"
+   "sha": "34d0070bc00c",
+   "dur": 216
   },
   {
    "name": "HEATHENS",
@@ -3838,22 +4013,23 @@
    ],
    "size": 48317,
    "sha256": "678f9104cabf79e8db680274bc00418bac0e3da4e8ed8a177e008db3d5602787",
-   "sha": "678f9104cabf"
+   "sha": "678f9104cabf",
+   "dur": 186
   },
   {
    "name": "HELLO (ADELE)",
    "file": "HELLO_ADELE.lua",
    "bpm": "85",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "adele"
    ],
    "size": 57651,
    "sha256": "587ce181e8413da1548fc1f6d6de25f78c9f916b5c3b46f7d9df4dda9fdf9b4c",
-   "sha": "587ce181e841"
+   "sha": "587ce181e841",
+   "dur": 269
   },
   {
    "name": "HELLO X I LOVE YOU",
@@ -3867,7 +4043,8 @@
    ],
    "size": 66943,
    "sha256": "9efb7a634d07c9cd5aa74c6dc1de93e0dfcf844673095978931a96072b702ecb",
-   "sha": "9efb7a634d07"
+   "sha": "9efb7a634d07",
+   "dur": 194
   },
   {
    "name": "HER",
@@ -3882,7 +4059,8 @@
    ],
    "size": 56675,
    "sha256": "94f81be4e09acb60a3db1a0d6a0c9e33446faae3c3466707fb02ec4940d3597b",
-   "sha": "94f81be4e09a"
+   "sha": "94f81be4e09a",
+   "dur": 289
   },
   {
    "name": "HERE I COME",
@@ -3898,7 +4076,8 @@
    ],
    "size": 56168,
    "sha256": "6f01eef71d0a6870176fc254ddb68ea705c2ec885931f782dc77d588e90db2b0",
-   "sha": "6f01eef71d0a"
+   "sha": "6f01eef71d0a",
+   "dur": 70
   },
   {
    "name": "HERE TO STAY",
@@ -3915,7 +4094,8 @@
    ],
    "size": 22784,
    "sha256": "dfa9a57ae64c419ec723b6ada82e6deb4e7563e0f77ac6dcd5fbd0fefa5f294b",
-   "sha": "dfa9a57ae64c"
+   "sha": "dfa9a57ae64c",
+   "dur": 96
   },
   {
    "name": "HERO (LIMBUS COMPANY)",
@@ -3923,15 +4103,15 @@
    "bpm": "220",
    "cat": [
     "video games",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "mili"
    ],
    "size": 66355,
    "sha256": "4359c71a4c5cc06dd7416de0400d2e2ff5d90816502cb0de24884f4778e6ebaf",
-   "sha": "4359c71a4c5c"
+   "sha": "4359c71a4c5c",
+   "dur": 191
   },
   {
    "name": "HES A PIRATE",
@@ -3948,7 +4128,8 @@
    ],
    "size": 32465,
    "sha256": "184f708596f8b61b4407505a3e0d2cc9ff61b4954d171cec1108b2eaee19802e",
-   "sha": "184f708596f8"
+   "sha": "184f708596f8",
+   "dur": 75
   },
   {
    "name": "HEY KIDS",
@@ -3956,7 +4137,6 @@
    "bpm": "87",
    "cat": [
     "creepy/weirdcore",
-    "new",
     "electronic"
    ],
    "alts": [
@@ -3964,7 +4144,8 @@
    ],
    "size": 40405,
    "sha256": "bb2608e55412e9ef43829037d295da015d45b9f3e2a7cc78c2768431db782cfa",
-   "sha": "bb2608e55412"
+   "sha": "bb2608e55412",
+   "dur": 225
   },
   {
    "name": "HEIL HITLER / CARNIVAL MASHUP",
@@ -3979,15 +4160,15 @@
    ],
    "size": 20887,
    "sha256": "57fa052e2d09031f2d286ea2fccef106eca0fd697de07c5244acf9635c5a7b27",
-   "sha": "57fa052e2d09"
+   "sha": "57fa052e2d09",
+   "dur": 91
   },
   {
    "name": "HIDE",
    "file": "HIDE.lua",
    "bpm": "100",
    "cat": [
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "dorian concept",
@@ -3995,7 +4176,8 @@
    ],
    "size": 16103,
    "sha256": "af9f489ac0ce6bf0f46f4ddb8e1cc66a871d02337acc15120c7a66ec24e1cc42",
-   "sha": "af9f489ac0ce"
+   "sha": "af9f489ac0ce",
+   "dur": 53
   },
   {
    "name": "HIGH HOPES",
@@ -4012,7 +4194,8 @@
    ],
    "size": 69906,
    "sha256": "754f1b683891003c742dc0ce7c00a4602d1dbff7661dcb7f4099ac3d93d9bc3b",
-   "sha": "754f1b683891"
+   "sha": "754f1b683891",
+   "dur": 187
   },
   {
    "name": "HIMITSU KOI GOKORO",
@@ -4029,7 +4212,8 @@
    ],
    "size": 83694,
    "sha256": "160ca0f6dc117515548c3c36d4445bdcf361e7fcf96195eb90f1b537750c99d5",
-   "sha": "160ca0f6dc11"
+   "sha": "160ca0f6dc11",
+   "dur": 212
   },
   {
    "name": "HIS THEME",
@@ -4046,7 +4230,8 @@
    ],
    "size": 15772,
    "sha256": "581161a9bfc09da3b75a4e74d800a48637c8ccbb2aed25b833dff2a267b4ff0c",
-   "sha": "581161a9bfc0"
+   "sha": "581161a9bfc0",
+   "dur": 109
   },
   {
    "name": "HIT THE ROAD, JACK",
@@ -4060,7 +4245,8 @@
    ],
    "size": 41932,
    "sha256": "c54fe3c195147686af755c861b2c0770f4e115c6b181864563ce1dc5c0020dcd",
-   "sha": "c54fe3c19514"
+   "sha": "c54fe3c19514",
+   "dur": 241
   },
   {
    "name": "HOLLOW KNIGHT MAIN THEME",
@@ -4068,8 +4254,7 @@
    "bpm": "55",
    "cat": [
     "video games",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "christopher larkin",
@@ -4077,7 +4262,8 @@
    ],
    "size": 6631,
    "sha256": "3a6132fc734fb98742ec7d060a5f0eb68f925e21cf64c9cd85cfbab9bdbb4858",
-   "sha": "3a6132fc734f"
+   "sha": "3a6132fc734f",
+   "dur": 83
   },
   {
    "name": "HOME (UNDERTALE)",
@@ -4085,15 +4271,15 @@
    "bpm": "115",
    "cat": [
     "undertale",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 26565,
    "sha256": "e1bf10ac932bca5e8fb5e14595b0f834256870110442e8d71e75bfcbf631bc8a",
-   "sha": "e1bf10ac932b"
+   "sha": "e1bf10ac932b",
+   "dur": 238
   },
   {
    "name": "HOMELANDER MASHUP (I CAN DO WHATEVER I WANT)",
@@ -4110,7 +4296,8 @@
    ],
    "size": 35711,
    "sha256": "6680c90eebd999d7ab21c2e1137189f7e7c6adbedc4e605b39f9e683aa69304c",
-   "sha": "6680c90eebd9"
+   "sha": "6680c90eebd9",
+   "dur": 99
   },
   {
    "name": "HOPE",
@@ -4127,7 +4314,8 @@
    ],
    "size": 22714,
    "sha256": "4c1d35f3d1fbeb18417b34940a6eb861ef20e0c50c057cbfbe4972a1b0c2d89f",
-   "sha": "4c1d35f3d1fb"
+   "sha": "4c1d35f3d1fb",
+   "dur": 105
   },
   {
    "name": "HOPES AND DREAMS",
@@ -4146,7 +4334,8 @@
    ],
    "size": 116267,
    "sha256": "023658ec057e33fd87908406dc5440e589f35eaef0b13bed97715e01327ca9ea",
-   "sha": "023658ec057e"
+   "sha": "023658ec057e",
+   "dur": 282
   },
   {
    "name": "HOTLINE BLING",
@@ -4160,7 +4349,8 @@
    ],
    "size": 36336,
    "sha256": "7186eeee87297c3a35b761cabfcd1d3c57abbb760eecfd7ae26f3bf09c56afa6",
-   "sha": "7186eeee8729"
+   "sha": "7186eeee8729",
+   "dur": 266
   },
   {
    "name": "HOUSE OF MEMORIES",
@@ -4176,7 +4366,8 @@
    ],
    "size": 60974,
    "sha256": "ec58b3828870a6bcceee10e6c333ba993601535ee71542001c901a46f7d21dd0",
-   "sha": "ec58b3828870"
+   "sha": "ec58b3828870",
+   "dur": 194
   },
   {
    "name": "HOWLS MOVING CASTLE",
@@ -4194,7 +4385,8 @@
    ],
    "size": 37284,
    "sha256": "25841ffbcc076b69197239334e6902a0640a3e141afcde81c796d4505201d672",
-   "sha": "25841ffbcc07"
+   "sha": "25841ffbcc07",
+   "dur": 268
   },
   {
    "name": "HOWLS MOVING CASTLE (EPIC VER.)",
@@ -4215,7 +4407,8 @@
    ],
    "size": 101517,
    "sha256": "b35a62a8a957a8dd649a5165a4e0078ed9e6277bb5119dbf5f08ce97b25c78f0",
-   "sha": "b35a62a8a957"
+   "sha": "b35a62a8a957",
+   "dur": 308
   },
   {
    "name": "HUNGARIAN DANCE NO.5",
@@ -4230,7 +4423,8 @@
    ],
    "size": 50272,
    "sha256": "1561ec0957143b5f21aa2d358bc179dc30187bb5993afc34fec301f3790bdb30",
-   "sha": "1561ec095714"
+   "sha": "1561ec095714",
+   "dur": 164
   },
   {
    "name": "I BROKE A STRING MAKING THIS PART",
@@ -4239,15 +4433,15 @@
    "cat": [
     "beautiful",
     "best",
-    "epic",
-    "new"
+    "epic"
    ],
    "alts": [
     "chewiecatt"
    ],
    "size": 34466,
    "sha256": "e1e894ee82b74fc531bf7693bc1f8b24a37cc4ff861cd234d45bfa081f46fd3d",
-   "sha": "e1e894ee82b7"
+   "sha": "e1e894ee82b7",
+   "dur": 63
   },
   {
    "name": "I CANT HANDLE CHANGE",
@@ -4255,15 +4449,15 @@
    "bpm": "120",
    "cat": [
     "sad",
-    "rock",
-    "new"
+    "rock"
    ],
    "alts": [
     "roar"
    ],
    "size": 77575,
    "sha256": "306ec207a629e5e9816ab81ff9dddbd68ef7294ba0199d3ffb8118d19b1dfb87",
-   "sha": "306ec207a629"
+   "sha": "306ec207a629",
+   "dur": 193
   },
   {
    "name": "I HATE U, I LOVE U",
@@ -4279,7 +4473,8 @@
    ],
    "size": 37991,
    "sha256": "d5e1ff3a0c071f80ce280ecdea48ec33d03644bb708ce1eaac22b204d9ebbe1c",
-   "sha": "d5e1ff3a0c07"
+   "sha": "d5e1ff3a0c07",
+   "dur": 167
   },
   {
    "name": "I LIKE THE WAY YOU KISS ME",
@@ -4296,7 +4491,8 @@
    ],
    "size": 29867,
    "sha256": "babb9d9e5e10f2bfd8bfa39fc1d76cc947c5c5743b37cea7f9a50295f0285a6e",
-   "sha": "babb9d9e5e10"
+   "sha": "babb9d9e5e10",
+   "dur": 88
   },
   {
    "name": "I REALLY WANT TO STAY AT YOUR HOUSE",
@@ -4313,7 +4509,8 @@
    ],
    "size": 49119,
    "sha256": "3f42e96171222cf07c452c5809c6c050fd15c94d96c01f0a6bedea764d5c59a0",
-   "sha": "3f42e9617122"
+   "sha": "3f42e9617122",
+   "dur": 236
   },
   {
    "name": "I STILL LOVE YOU",
@@ -4331,7 +4528,8 @@
    ],
    "size": 8928,
    "sha256": "8dcb889bfd48bbef6b5951e7ded4d5b04186d73ecc388bf553ed01b68b12df59",
-   "sha": "8dcb889bfd48"
+   "sha": "8dcb889bfd48",
+   "dur": 64
   },
   {
    "name": "I WANT IT THAT WAY",
@@ -4346,7 +4544,8 @@
    ],
    "size": 29387,
    "sha256": "fada12b648d0c3d0f1a15604904be22125e4c211c1e6fd095f301b90469a75fe",
-   "sha": "fada12b648d0"
+   "sha": "fada12b648d0",
+   "dur": 168
   },
   {
    "name": "I WANT YOU TO TELL ME",
@@ -4363,7 +4562,8 @@
    ],
    "size": 43065,
    "sha256": "0561ae4a4bcf07c073bebdd2dbbba9f71a656766541315afafbb8b326006ea87",
-   "sha": "0561ae4a4bcf"
+   "sha": "0561ae4a4bcf",
+   "dur": 194
   },
   {
    "name": "I WILL SURVIVE",
@@ -4378,7 +4578,8 @@
    ],
    "size": 36664,
    "sha256": "8ab3b97a4ac050cb7bfd4b296e45889b3bcc9ef572cb35f7e2ac9d148e112741",
-   "sha": "8ab3b97a4ac0"
+   "sha": "8ab3b97a4ac0",
+   "dur": 123
   },
   {
    "name": "I WONDER",
@@ -4386,8 +4587,7 @@
    "bpm": "90",
    "cat": [
     "pop/hiphop",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "kanye west",
@@ -4395,7 +4595,8 @@
    ],
    "size": 13307,
    "sha256": "778539d1226a480dd6a56a944ae20bf54fdf8428b18c2f67b6e913ec946e36aa",
-   "sha": "778539d1226a"
+   "sha": "778539d1226a",
+   "dur": 70
   },
   {
    "name": "ICARUS",
@@ -4409,7 +4610,8 @@
    ],
    "size": 58214,
    "sha256": "b091ead1d2c08925244b5c1ec37fe8e427ea028d884551199b27890476537174",
-   "sha": "b091ead1d2c0"
+   "sha": "b091ead1d2c0",
+   "dur": 191
   },
   {
    "name": "IDEA 1",
@@ -4417,15 +4619,15 @@
    "bpm": "160",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "gibran alcocer"
    ],
    "size": 30518,
    "sha256": "cc8362819439c59b905b7f88b35f413209a2e9f8e6e2f367d82e63655dc5672b",
-   "sha": "cc8362819439"
+   "sha": "cc8362819439",
+   "dur": 156
   },
   {
    "name": "IDEA 10",
@@ -4441,7 +4643,8 @@
    ],
    "size": 30240,
    "sha256": "2d1802ad2f5634d1a18d99224ed2c610c130c8d7a0818187b8f7ca4538da5cab",
-   "sha": "2d1802ad2f56"
+   "sha": "2d1802ad2f56",
+   "dur": 122
   },
   {
    "name": "IDEA 22",
@@ -4449,15 +4652,15 @@
    "bpm": "120",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "gibran alcocer"
    ],
    "size": 28896,
    "sha256": "34c43b1531fc545c5a3260e65f08bac51ee8ffc814637828feaf36b69af5b493",
-   "sha": "34c43b1531fc"
+   "sha": "34c43b1531fc",
+   "dur": 152
   },
   {
    "name": "IDEA 9",
@@ -4465,15 +4668,15 @@
    "bpm": "195",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "gibran alcocer"
    ],
    "size": 30425,
    "sha256": "352196c87822c4625b225b3baee5e465ffb9bff10a0c1e7e6f859e71f56f0b63",
-   "sha": "352196c87822"
+   "sha": "352196c87822",
+   "dur": 132
   },
   {
    "name": "IDGAF",
@@ -4488,7 +4691,8 @@
    ],
    "size": 34157,
    "sha256": "aca56c658a51ca8fb934bcd916e3dfa2e332c6cd4f03f910ba6ea79892fb9060",
-   "sha": "aca56c658a51"
+   "sha": "aca56c658a51",
+   "dur": 138
   },
   {
    "name": "IDOL",
@@ -4505,7 +4709,8 @@
    ],
    "size": 50265,
    "sha256": "b3e4321b95072882cc7c6554e4974371751edd6f4fee3a70cdb64e738a9efe13",
-   "sha": "b3e4321b9507"
+   "sha": "b3e4321b9507",
+   "dur": 208
   },
   {
    "name": "IDOL (EPIC VER.)",
@@ -4523,7 +4728,8 @@
    ],
    "size": 89177,
    "sha256": "9b72f7cc930f60356e65f176dc95c93dd131710ef37199f97f812173cbfe4f31",
-   "sha": "9b72f7cc930f"
+   "sha": "9b72f7cc930f",
+   "dur": 211
   },
   {
    "name": "IF I AM WITH YOU",
@@ -4545,7 +4751,8 @@
    ],
    "size": 22920,
    "sha256": "871e83aeedf9692cd4cbe82f778bdb373aa289dc8b13dd45f669f8b15ca9e26c",
-   "sha": "871e83aeedf9"
+   "sha": "871e83aeedf9",
+   "dur": 110
   },
   {
    "name": "ILLUSIONARY DAYTIME",
@@ -4561,7 +4768,8 @@
    ],
    "size": 39512,
    "sha256": "63a87a61505d29ab1ce9a0755c20a04263a73ea9c61f35b563ad09f9ec739f64",
-   "sha": "63a87a61505d"
+   "sha": "63a87a61505d",
+   "dur": 179
   },
   {
    "name": "IM INVINCIBLE (ONE PIECE)",
@@ -4569,15 +4777,15 @@
    "bpm": "192",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "one piece film red"
    ],
    "size": 84252,
    "sha256": "9d0bd365220cdb1e800b19d13fb62262382ebfd2dbaace120a2ee4bea7758e37",
-   "sha": "9d0bd365220c"
+   "sha": "9d0bd365220c",
+   "dur": 249
   },
   {
    "name": "IM NOT THE ONLY ONE",
@@ -4592,7 +4800,8 @@
    ],
    "size": 33064,
    "sha256": "8cfa58204e62fe223b1f1511ae873a6c5d61a138bfc72c566d128c98059f29e0",
-   "sha": "8cfa58204e62"
+   "sha": "8cfa58204e62",
+   "dur": 237
   },
   {
    "name": "IM STILL STANDING",
@@ -4609,7 +4818,8 @@
    ],
    "size": 49066,
    "sha256": "b7aef39d886bb2b50a28a6e8e913c620388f91fec006cb2ec3bd193a677a082b",
-   "sha": "b7aef39d886b"
+   "sha": "b7aef39d886b",
+   "dur": 117
   },
   {
    "name": "IMMORTAL",
@@ -4623,7 +4833,8 @@
    ],
    "size": 9340,
    "sha256": "f4eab73da7602b8808ab5882fcf68127a12cb9307c9c0064d9f4cdb6c8523396",
-   "sha": "f4eab73da760"
+   "sha": "f4eab73da760",
+   "dur": 64
   },
   {
    "name": "IMPOSTOR SYNDROME",
@@ -4638,15 +4849,15 @@
    ],
    "size": 13844,
    "sha256": "ed20477df52a4682497065d5d65fcdff7170e7a57cdef9055104517916894c77",
-   "sha": "ed20477df52a"
+   "sha": "ed20477df52a",
+   "dur": 81
   },
   {
    "name": "IN HELL WE LIVE, LAMENT",
    "file": "IN_HELL_WE_LIVE.lua",
    "bpm": "65",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "mili",
@@ -4654,7 +4865,8 @@
    ],
    "size": 102898,
    "sha256": "7c630d6df32152e403a4992cd00004c0976513eccf30d33a4dc764b465996097",
-   "sha": "7c630d6df321"
+   "sha": "7c630d6df321",
+   "dur": 329
   },
   {
    "name": "IN THE NAME OF LOVE",
@@ -4673,7 +4885,8 @@
    ],
    "size": 39422,
    "sha256": "c2bc90813d908e403b5f38e1858157dd9c24672bea1ba46629b2974f6c7b716f",
-   "sha": "c2bc90813d90"
+   "sha": "c2bc90813d90",
+   "dur": 193
   },
   {
    "name": "IN THE POOL",
@@ -4690,7 +4903,8 @@
    ],
    "size": 50244,
    "sha256": "01bada7680133c9fb09bb4a9b0b383d348ab8599f7ba2b9c5674de5b777296fa",
-   "sha": "01bada768013"
+   "sha": "01bada768013",
+   "dur": 176
   },
   {
    "name": "INSANE",
@@ -4704,7 +4918,8 @@
    ],
    "size": 42413,
    "sha256": "1fd6311fd4fd6ae9e191ab3f1b60d447d52159cf682ce9a054a23fb75fda4257",
-   "sha": "1fd6311fd4fd"
+   "sha": "1fd6311fd4fd",
+   "dur": 129
   },
   {
    "name": "COMFORT CHAIN",
@@ -4720,7 +4935,8 @@
    ],
    "size": 21679,
    "sha256": "f873a147a6c285d43a18a084912b95a0c9bce3bc4913e71c8dad650f8aa5d895",
-   "sha": "f873a147a6c2"
+   "sha": "f873a147a6c2",
+   "dur": 162
   },
   {
    "name": "INTERSTELLAR",
@@ -4739,7 +4955,8 @@
    ],
    "size": 169642,
    "sha256": "0c58f630befb405db41896f2375f30fb08d6368673f974bbaaf60dc3ef091058",
-   "sha": "0c58f630befb"
+   "sha": "0c58f630befb",
+   "dur": 681
   },
   {
    "name": "INVISIBLE (EDM)",
@@ -4756,7 +4973,8 @@
    ],
    "size": 53688,
    "sha256": "ad1b8009d2e6981da6dedde708b7e596dafece1d15be88457539a1a62d6d78d0",
-   "sha": "ad1b8009d2e6"
+   "sha": "ad1b8009d2e6",
+   "dur": 187
   },
   {
    "name": "IRIS OUT",
@@ -4773,7 +4991,8 @@
    ],
    "size": 68683,
    "sha256": "4477d4dd18083e9bb9c4219466d35c4dd693a0e60d2678304f5ad99feba10bee",
-   "sha": "4477d4dd1808"
+   "sha": "4477d4dd1808",
+   "dur": 160
   },
   {
    "name": "ISABELLA'S LULLABY (THE PROMISED NEVERLAND)",
@@ -4790,7 +5009,8 @@
    ],
    "size": 10647,
    "sha256": "ce09e63ff913e496d484e4d3a38eca54a52398d3ab5db73512afc5d8c5694bd1",
-   "sha": "ce09e63ff913"
+   "sha": "ce09e63ff913",
+   "dur": 135
   },
   {
    "name": "ISOLATION",
@@ -4809,7 +5029,8 @@
    ],
    "size": 92271,
    "sha256": "e53f6bbf317f8d9488028340fee9b4f2365ce1988472d153f5ace5b16583d2ca",
-   "sha": "e53f6bbf317f"
+   "sha": "e53f6bbf317f",
+   "dur": 190
   },
   {
    "name": "IT MEANS EVERYTHING.",
@@ -4826,7 +5047,8 @@
    ],
    "size": 21990,
    "sha256": "807dc9cd5e58b8a00c9bd8fd4e213782d113a686b18492031e5b40d5c8363a95",
-   "sha": "807dc9cd5e58"
+   "sha": "807dc9cd5e58",
+   "dur": 78
   },
   {
    "name": "IT'S RAINING SOMEWHERE ELSE",
@@ -4834,8 +5056,7 @@
    "bpm": "96",
    "cat": [
     "video games",
-    "undertale",
-    "new"
+    "undertale"
    ],
    "alts": [
     "its raining somewhere else",
@@ -4843,7 +5064,8 @@
    ],
    "size": 17900,
    "sha256": "c12eadc9b5b2a8f75f4cdc062104a70037bd4d17d58e61a7a51a05ea25009ae1",
-   "sha": "c12eadc9b5b2"
+   "sha": "c12eadc9b5b2",
+   "dur": 157
   },
   {
    "name": "IT'S TV TIME!",
@@ -4851,8 +5073,7 @@
    "bpm": "148",
    "cat": [
     "deltarune",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "toby fox",
@@ -4860,7 +5081,8 @@
    ],
    "size": 65633,
    "sha256": "b6929ad9c48a31c7e02e623837b777db885ddbfe493fe35327a54b4d86cae4c2",
-   "sha": "b6929ad9c48a"
+   "sha": "b6929ad9c48a",
+   "dur": 165
   },
   {
    "name": "ITS BEEN SO LONG",
@@ -4877,7 +5099,8 @@
    ],
    "size": 36489,
    "sha256": "b2b81918d667fbc24656cdecaad7b0cf76ba6a1e6f6f009f461b3f50a1d91488",
-   "sha": "b2b81918d667"
+   "sha": "b2b81918d667",
+   "dur": 169
   },
   {
    "name": "ITS JUST A BURNING MEMORY",
@@ -4894,7 +5117,8 @@
    ],
    "size": 19729,
    "sha256": "4b18988488c6630fdf67dad0ebd8835cdbb774f97b8fafee43911409d129859d",
-   "sha": "4b18988488c6"
+   "sha": "4b18988488c6",
+   "dur": 108
   },
   {
    "name": "IT'S RAINING TACOS",
@@ -4909,7 +5133,8 @@
    ],
    "size": 18345,
    "sha256": "9696686c37d5fa9152448b5d56fd46494a9060175da1182f8f4d5783cf2ef1d4",
-   "sha": "9696686c37d5"
+   "sha": "9696686c37d5",
+   "dur": 102
   },
   {
    "name": "JE TE LAISSERAI DES MOTS",
@@ -4925,7 +5150,8 @@
    ],
    "size": 24700,
    "sha256": "da67c2ab7c755f9af231949f2c5480199f40a4ae5795f11a61e30875bdc1db11",
-   "sha": "da67c2ab7c75"
+   "sha": "da67c2ab7c75",
+   "dur": 141
   },
   {
    "name": "JEOPARDY THINK THEME",
@@ -4941,7 +5167,8 @@
    ],
    "size": 6934,
    "sha256": "beed4fddeaf06c6c766ec8aa9c7565b8d38af795b19dfd3b52ad58ffa11b49ea",
-   "sha": "beed4fddeaf0"
+   "sha": "beed4fddeaf0",
+   "dur": 32
   },
   {
    "name": "JINGLE BELL ROCK",
@@ -4957,7 +5184,8 @@
    ],
    "size": 33527,
    "sha256": "d787a4f79befa78c92b1f257938c753d134f4954e4c4c7b952819f5b2dc686c7",
-   "sha": "d787a4f79bef"
+   "sha": "d787a4f79bef",
+   "dur": 141
   },
   {
    "name": "JINGLE BELLS",
@@ -4973,7 +5201,8 @@
    ],
    "size": 64466,
    "sha256": "38ad2cd774f304d89a3d33521fd29dfd572a246102c55376cfab24b5554fb769",
-   "sha": "38ad2cd774f3"
+   "sha": "38ad2cd774f3",
+   "dur": 155
   },
   {
    "name": "JOCELYN FLORES",
@@ -4988,22 +5217,23 @@
    ],
    "size": 21147,
    "sha256": "5fb47acaca23530032ca426dd99feb3f585fe4be4436465c965a9eb5846a9c2b",
-   "sha": "5fb47acaca23"
+   "sha": "5fb47acaca23",
+   "dur": 129
   },
   {
    "name": "JUDAS",
    "file": "JUDAS.lua",
    "bpm": "130",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "lady gaga"
    ],
    "size": 40915,
    "sha256": "3ffac8d46e052d9040065b7f0b8dfc2da403a72586816405d27a03e172de2283",
-   "sha": "3ffac8d46e05"
+   "sha": "3ffac8d46e05",
+   "dur": 225
   },
   {
    "name": "JUMPER",
@@ -5020,7 +5250,8 @@
    ],
    "size": 39375,
    "sha256": "ade87785bc5245a0fc320087ebbf50739dac5870fecfd8c2e7c4d7321d492da5",
-   "sha": "ade87785bc52"
+   "sha": "ade87785bc52",
+   "dur": 108
   },
   {
    "name": "JUST THE TWO OF US",
@@ -5028,8 +5259,7 @@
    "bpm": "120",
    "cat": [
     "pop/hiphop",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "grover washington jr.",
@@ -5037,7 +5267,8 @@
    ],
    "size": 27868,
    "sha256": "964c203c296ef75d98df5cf493bdd45ffb085957078032b52aa62eec295fb088",
-   "sha": "964c203c296e"
+   "sha": "964c203c296e",
+   "dur": 136
   },
   {
    "name": "KAIKAI KITAN (JUJUTSU KAISEN)",
@@ -5054,7 +5285,8 @@
    ],
    "size": 64980,
    "sha256": "93e147a1bbcf18a10f3b627dade68d6bf1850f1c378cbc60763c4833c45e750e",
-   "sha": "93e147a1bbcf"
+   "sha": "93e147a1bbcf",
+   "dur": 251
   },
   {
    "name": "KAMADO TANJIRO NO UTA",
@@ -5062,15 +5294,15 @@
    "bpm": "151",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "demon slayer"
    ],
    "size": 78994,
    "sha256": "80308c72e2e0b5ed122d7f2b36fa7d08b349af4eb976abf1c14bb5445a4bf874",
-   "sha": "80308c72e2e0"
+   "sha": "80308c72e2e0",
+   "dur": 374
   },
   {
    "name": "KAWAIKUTEGOMEN",
@@ -5085,7 +5317,8 @@
    ],
    "size": 77450,
    "sha256": "1cc2fb2bf293f2efb965f774e0c3c2d9f66b694578de04914129037aa2a20c2b",
-   "sha": "1cc2fb2bf293"
+   "sha": "1cc2fb2bf293",
+   "dur": 214
   },
   {
    "name": "KEEP UP",
@@ -5093,15 +5326,15 @@
    "bpm": "135",
    "cat": [
     "pop/hiphop",
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "odetari"
    ],
    "size": 39787,
    "sha256": "d4729e35f2e46c9d12f4389535e46bf5372f713ebcc4f79f28c2695444efa722",
-   "sha": "d4729e35f2e4"
+   "sha": "d4729e35f2e4",
+   "dur": 132
   },
   {
    "name": "KEROSENE",
@@ -5116,7 +5349,8 @@
    ],
    "size": 19319,
    "sha256": "c1273526e60c65fc7208753b29bfd5c685dbdc805a9b54ced527757f8b1f2871",
-   "sha": "c1273526e60c"
+   "sha": "c1273526e60c",
+   "dur": 132
   },
   {
    "name": "KEY",
@@ -5132,7 +5366,8 @@
    ],
    "size": 5404,
    "sha256": "57b14536094d9bada2d81e9e75ddd2a12981fdad55c3213900a4db2c54cd2bb8",
-   "sha": "57b14536094d"
+   "sha": "57b14536094d",
+   "dur": 71
   },
   {
    "name": "KICK BACK (CHAINSAW MAN)",
@@ -5141,8 +5376,7 @@
    "cat": [
     "movies/tv",
     "anime/jpop",
-    "rock",
-    "new"
+    "rock"
    ],
    "alts": [
     "kenshi yonezu",
@@ -5150,7 +5384,8 @@
    ],
    "size": 30221,
    "sha256": "14217752b95aab65f7291422aca860682a43864bc4fe00688aa37178e4000bcf",
-   "sha": "14217752b95a"
+   "sha": "14217752b95a",
+   "dur": 84
   },
   {
    "name": "KIDS",
@@ -5166,7 +5401,8 @@
    ],
    "size": 20416,
    "sha256": "c119323c840d52edfdc478a618e0903412fcb60d28f465b2b1519c56271821c9",
-   "sha": "c119323c840d"
+   "sha": "c119323c840d",
+   "dur": 74
   },
   {
    "name": "KILLSWITCH LULLABY",
@@ -5181,7 +5417,8 @@
    ],
    "size": 36536,
    "sha256": "3c478d52d617463c6be553a2b81272561fa3614515f39f4d069d6edaa4bb28e1",
-   "sha": "3c478d52d617"
+   "sha": "3c478d52d617",
+   "dur": 145
   },
   {
    "name": "KISS OF DEATH (DARLING IN THE FRANXX)",
@@ -5197,21 +5434,21 @@
    ],
    "size": 80568,
    "sha256": "4ec34acc10b95a22ccd2f245cd420f36ba0a94a42f63935998e3a1a7121ea085",
-   "sha": "4ec34acc10b9"
+   "sha": "4ec34acc10b9",
+   "dur": 244
   },
   {
    "name": "KISS THE RAIN",
    "file": "KISS_THE_RAIN.lua",
    "bpm": "58",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "yiruma"
    ],
    "size": 35172,
    "sha256": "a413d61b68fe38631224536198dd5bff8849280b0e2c7bdefaca603c4d31e30d",
-   "sha": "a413d61b68fe"
+   "sha": "a413d61b68fe",
+   "dur": 277
   },
   {
    "name": "L'S THEME",
@@ -5228,7 +5465,8 @@
    ],
    "size": 53821,
    "sha256": "33927a4b2bc2347db678f2c8277a15ccb9f4801f17c183ac5626efd350d8d680",
-   "sha": "33927a4b2bc2"
+   "sha": "33927a4b2bc2",
+   "dur": 167
   },
   {
    "name": "L'AMOUR TOUJOURS",
@@ -5236,8 +5474,7 @@
    "bpm": "160",
    "cat": [
     "sad",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "gigi d'agostino",
@@ -5245,7 +5482,8 @@
    ],
    "size": 81535,
    "sha256": "000a81e67cec0730a0fbe0f1f9ced09f4fcd2120e9f807c67f662fb0ee2b19a6",
-   "sha": "000a81e67cec"
+   "sha": "000a81e67cec",
+   "dur": 321
   },
   {
    "name": "LA CAMPANELLA",
@@ -5263,7 +5501,8 @@
    ],
    "size": 132434,
    "sha256": "ff0a0ad6c0d8df90d22e3a2cd927ed38fb9314f0c7d8aaf9decb32fbfc54221e",
-   "sha": "ff0a0ad6c0d8"
+   "sha": "ff0a0ad6c0d8",
+   "dur": 231
   },
   {
    "name": "LACRIMOSA (REQUIEM MVT.8)",
@@ -5279,7 +5518,8 @@
    ],
    "size": 21531,
    "sha256": "dda343228efe7ecdb071a7499666476a9be74a4256f5187c14044b3cde9816d3",
-   "sha": "dda343228efe"
+   "sha": "dda343228efe",
+   "dur": 163
   },
   {
    "name": "LALALA",
@@ -5293,7 +5533,8 @@
    ],
    "size": 36105,
    "sha256": "ecac02f3fd10a3b51436cba3ea863cbf0a44595a53d14833478ab7ba36723547",
-   "sha": "ecac02f3fd10"
+   "sha": "ecac02f3fd10",
+   "dur": 155
   },
   {
    "name": "LAST CHRISTMAS",
@@ -5301,15 +5542,15 @@
    "bpm": "120",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "wham"
    ],
    "size": 39259,
    "sha256": "9b05f401466ca68066ef48792d8ef0d35124ebcefb6c3badf01c8606881ab47b",
-   "sha": "9b05f401466c"
+   "sha": "9b05f401466c",
+   "dur": 134
   },
   {
    "name": "LAST GOODBYE",
@@ -5320,15 +5561,15 @@
     "video games",
     "best",
     "epic",
-    "peak",
-    "new"
+    "peak"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 30540,
    "sha256": "830521dcd33196b15cc3c2d50da97e9e0413c29fe3a1ec4628d612aaac6154e0",
-   "sha": "830521dcd331"
+   "sha": "830521dcd331",
+   "dur": 120
   },
   {
    "name": "LAVENDER TOWN",
@@ -5344,7 +5585,8 @@
    ],
    "size": 10024,
    "sha256": "3701ca8fc7df26cb955ef1b369c6b1ecd93d867efa0a89c6c6c31a2231c5af17",
-   "sha": "3701ca8fc7df"
+   "sha": "3701ca8fc7df",
+   "dur": 88
   },
   {
    "name": "LE MONDE",
@@ -5352,7 +5594,6 @@
    "bpm": "100",
    "cat": [
     "best",
-    "new",
     "electronic"
    ],
    "alts": [
@@ -5360,7 +5601,8 @@
    ],
    "size": 20907,
    "sha256": "1de80f7111c1e6ec35bc621cb19e2bceee1d4e7d71619e17aaa5b5c5e2d1df48",
-   "sha": "1de80f7111c1"
+   "sha": "1de80f7111c1",
+   "dur": 51
   },
   {
    "name": "LEAVE THE DOOR OPEN",
@@ -5377,7 +5619,8 @@
    ],
    "size": 81412,
    "sha256": "5fcfd935beb51db55a112fd8e9c4b20146d3540f136df161e138a0186e81fc1e",
-   "sha": "5fcfd935beb5"
+   "sha": "5fcfd935beb5",
+   "dur": 147
   },
   {
    "name": "LET GO",
@@ -5394,7 +5637,8 @@
    ],
    "size": 12211,
    "sha256": "fc6b9e549e38e0be08136cb20f6da62a4a08f1b1122a6dc60932c1749c8bd8e8",
-   "sha": "fc6b9e549e38"
+   "sha": "fc6b9e549e38",
+   "dur": 81
   },
   {
    "name": "LET HER GO",
@@ -5402,15 +5646,15 @@
    "bpm": "120",
    "cat": [
     "memes",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "passenger"
    ],
    "size": 39873,
    "sha256": "f9226e4f158ec9000c71fb4b4f1c038c7157a0a720fd5635b5ba64d965eaec8a",
-   "sha": "f9226e4f158e"
+   "sha": "f9226e4f158e",
+   "dur": 305
   },
   {
    "name": "LET IT GO",
@@ -5419,8 +5663,7 @@
    "cat": [
     "movies/tv",
     "memes",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "elsa",
@@ -5429,21 +5672,21 @@
    ],
    "size": 66141,
    "sha256": "89f3419845419b4e161f066fb30a6c10d2b0df5fcc0b88e0fe7298018801f2b1",
-   "sha": "89f341984541"
+   "sha": "89f341984541",
+   "dur": 195
   },
   {
    "name": "LET IT GO X LET HER GO",
    "file": "LET_IT_GO_X_LET_HER_GO.lua",
    "bpm": "120",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "frozen"
    ],
    "size": 32340,
    "sha256": "bac2ba8904a66b1cceba5e766bcd7f02c5eb5ceb0f473dec68cb55f31cf4bebf",
-   "sha": "bac2ba8904a6"
+   "sha": "bac2ba8904a6",
+   "dur": 197
   },
   {
    "name": "LET IT HAPPEN",
@@ -5458,7 +5701,8 @@
    ],
    "size": 60884,
    "sha256": "7421f18279f616f1fdce24f6e6df70374cf9cdd442f0fd1b1968dcb161f760eb",
-   "sha": "7421f18279f6"
+   "sha": "7421f18279f6",
+   "dur": 256
   },
   {
    "name": "LET ME DOWN SLOWLY",
@@ -5472,7 +5716,8 @@
    ],
    "size": 29957,
    "sha256": "24ffbf94459a414211a6355e34b0489b691b2d0904ee7c05bb1bcf50bf63845c",
-   "sha": "24ffbf94459a"
+   "sha": "24ffbf94459a",
+   "dur": 165
   },
   {
    "name": "LET ME LOVE YOU",
@@ -5489,22 +5734,23 @@
    ],
    "size": 63825,
    "sha256": "c5962935df72019ffdbc3594978d653b4c1699bdf7ae5b89b7de7e61d58bd549",
-   "sha": "c5962935df72"
+   "sha": "c5962935df72",
+   "dur": 200
   },
   {
    "name": "LET YOU BREAK MY HEART AGAIN",
    "file": "LET_YOU_BREAK_MY_HEART_AGAIN.lua",
    "bpm": "73",
    "cat": [
-    "sad",
-    "new"
+    "sad"
    ],
    "alts": [
     "laufey"
    ],
    "size": 43559,
    "sha256": "bc4acd1ba9ef14ee1648bdf5c2ca426bd3482e0b7e97ed8d8bd5fb4a9ae12c2d",
-   "sha": "bc4acd1ba9ef"
+   "sha": "bc4acd1ba9ef",
+   "dur": 262
   },
   {
    "name": "IEVAN POLKKA",
@@ -5521,7 +5767,8 @@
    ],
    "size": 56933,
    "sha256": "94da2d6c69385406c06acc902c06113938e1c7e1c3d423c8f9bc22f87cbdd872",
-   "sha": "94da2d6c6938"
+   "sha": "94da2d6c6938",
+   "dur": 129
   },
   {
    "name": "LEVELS",
@@ -5537,7 +5784,8 @@
    ],
    "size": 54164,
    "sha256": "c7eb3eaa991159f44a38e6f505f2a5bbe7e9e2bfdca09db6f9c76235ef641326",
-   "sha": "c7eb3eaa9911"
+   "sha": "c7eb3eaa9911",
+   "dur": 180
   },
   {
    "name": "LIEBESTRAUM NO.3",
@@ -5551,7 +5799,8 @@
    ],
    "size": 62058,
    "sha256": "390fb5d8d7df66d9312ded03182f1174e9ecd9e809f39935ea11e9c41349d5ce",
-   "sha": "390fb5d8d7df"
+   "sha": "390fb5d8d7df",
+   "dur": 224
   },
   {
    "name": "LIFE WILL CHANGE (PERSONA 5)",
@@ -5568,7 +5817,8 @@
    ],
    "size": 75887,
    "sha256": "18312207e2021d3dbd87dc9d7d2c7b00bec3000f76c3f447d176fc8e9287835b",
-   "sha": "18312207e202"
+   "sha": "18312207e202",
+   "dur": 285
   },
   {
    "name": "LIGHT SWITCH",
@@ -5582,7 +5832,8 @@
    ],
    "size": 43874,
    "sha256": "9e4e15d562311d3982b22d53ab8a758cccc7bce96ae1cd70bd2e0a91984a09a7",
-   "sha": "9e4e15d56231"
+   "sha": "9e4e15d56231",
+   "dur": 173
   },
   {
    "name": "LIGHT'S THEME",
@@ -5598,7 +5849,8 @@
    ],
    "size": 35237,
    "sha256": "e4ecf8a4690f382118478e84c794056af532195d35829ded7368407b0de21c32",
-   "sha": "e4ecf8a4690f"
+   "sha": "e4ecf8a4690f",
+   "dur": 189
   },
   {
    "name": "LIKE HIM",
@@ -5607,8 +5859,7 @@
    "cat": [
     "pop/hiphop",
     "beautiful",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "tyler the creator",
@@ -5616,7 +5867,8 @@
    ],
    "size": 90040,
    "sha256": "99fc066336ba553f469e377e79a58bd5ea9e31a702fdc9bf7a12f36c464d1e5c",
-   "sha": "99fc066336ba"
+   "sha": "99fc066336ba",
+   "dur": 265
   },
   {
    "name": "LIKE HIM (BEST PART)",
@@ -5627,8 +5879,7 @@
     "best",
     "peak",
     "pop/hiphop",
-    "epic",
-    "new"
+    "epic"
    ],
    "alts": [
     "chromakopia",
@@ -5636,22 +5887,23 @@
    ],
    "size": 38218,
    "sha256": "f591024d7827918684dd8ef633f76fb25f189585cf6cbb39fa933a10cb7d40f3",
-   "sha": "f591024d7827"
+   "sha": "f591024d7827",
+   "dur": 56
   },
   {
    "name": "LISZT - ETUDE NO.3 (UN SOSPIRO)",
    "file": "ETUDE_NO3_UN_SOSPIRO.lua",
    "bpm": "25",
    "cat": [
-    "classical",
-    "new"
+    "classical"
    ],
    "alts": [
     "franz liszt"
    ],
    "size": 106701,
    "sha256": "6ca7f8ca32d3af0781368c6199de80cd077b40f04c73cc0b06ade254f9a47c84",
-   "sha": "6ca7f8ca32d3"
+   "sha": "6ca7f8ca32d3",
+   "dur": 323
   },
   {
    "name": "LIVING MICE",
@@ -5666,7 +5918,8 @@
    ],
    "size": 15844,
    "sha256": "3a85afaaa405d917a7d32a2a89d4862dc6ffeccec01c047c45d0bc0a8e6cb319",
-   "sha": "3a85afaaa405"
+   "sha": "3a85afaaa405",
+   "dur": 154
   },
   {
    "name": "LOST LIBRARY",
@@ -5681,7 +5934,8 @@
    ],
    "size": 10220,
    "sha256": "ac2050bd797cc7ceee47e4b2b7957ae2a9f28454f9f8e96ce1a3d2908b595984",
-   "sha": "ac2050bd797c"
+   "sha": "ac2050bd797c",
+   "dur": 123
   },
   {
    "name": "LOST UMBRELLA",
@@ -5697,7 +5951,8 @@
    ],
    "size": 86051,
    "sha256": "1beee74d7b353fc6f85be76680e27d50942b1bc717606657182e71b10130bd83",
-   "sha": "1beee74d7b35"
+   "sha": "1beee74d7b35",
+   "dur": 197
   },
   {
    "name": "LOVE (W2E)",
@@ -5712,29 +5967,28 @@
    ],
    "size": 39339,
    "sha256": "a75fdf7b8cd6437f4ea78d8ab7939801464933cffade8fdba132b57730e9fb04",
-   "sha": "a75fdf7b8cd6"
+   "sha": "a75fdf7b8cd6",
+   "dur": 269
   },
   {
    "name": "LOVE STORY",
    "file": "LOVE_STORY.lua",
    "bpm": "180",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "indila"
    ],
    "size": 22958,
    "sha256": "0f4ddf3559001fc1335734f7bb7a17ec2b6c9ffeca229354102857b5fa471378",
-   "sha": "0f4ddf355900"
+   "sha": "0f4ddf355900",
+   "dur": 109
   },
   {
    "name": "LOVELY",
    "file": "LOVELY.lua",
    "bpm": "115",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "billie eilish",
@@ -5742,7 +5996,8 @@
    ],
    "size": 23866,
    "sha256": "e147c59282e15f56cd9600dee2e5c37bb17ca15b6da69558c7744184e8e3e4fc",
-   "sha": "e147c59282e1"
+   "sha": "e147c59282e1",
+   "dur": 189
   },
   {
    "name": "LOVELY BASTARDS",
@@ -5761,21 +6016,21 @@
    ],
    "size": 50931,
    "sha256": "82048af213cc6a6801b43e0987ac7a1b2bb27851f14fff66233f40660276222d",
-   "sha": "82048af213cc"
+   "sha": "82048af213cc",
+   "dur": 117
   },
   {
    "name": "LOVER IS A DAY",
    "file": "LOVER_IS_A_DAY.lua",
    "bpm": "90",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "cuco"
    ],
    "size": 6809,
    "sha256": "d7bfe1aa0812a92c0de0b55ff89c72f2436051ec0e82710fd327041ead1bc142",
-   "sha": "d7bfe1aa0812"
+   "sha": "d7bfe1aa0812",
+   "dur": 45
   },
   {
    "name": "LUTHER",
@@ -5791,7 +6046,8 @@
    ],
    "size": 31491,
    "sha256": "3ba3e306adbe4b999b2bb83e794cd78d752cd4a2d2277e98c00c59a931a30058",
-   "sha": "3ba3e306adbe"
+   "sha": "3ba3e306adbe",
+   "dur": 176
   },
   {
    "name": "LUX AETERNA (REQUIEM FOR A DREAM)",
@@ -5805,7 +6061,8 @@
    ],
    "size": 16054,
    "sha256": "3439fa95312808bb6c31ff405b0f52cef9625cd70a946e4ce641524c3d21e6d7",
-   "sha": "3439fa953128"
+   "sha": "3439fa953128",
+   "dur": 93
   },
   {
    "name": "M@GICAL CURE! LOVE SHOT!",
@@ -5822,7 +6079,8 @@
    ],
    "size": 138152,
    "sha256": "564cb1a744965b16aaf71a8a6d8a2964cbd28832175f8797c4da744db41f57e1",
-   "sha": "564cb1a74496"
+   "sha": "564cb1a74496",
+   "dur": 197
   },
   {
    "name": "MA MEILLEUR ENEMIE",
@@ -5837,7 +6095,8 @@
    ],
    "size": 45026,
    "sha256": "f88168ff2f82dcb9fbc1e8cd8ee6474fe431e4c4b90053f6c7503d926b11fa24",
-   "sha": "f88168ff2f82"
+   "sha": "f88168ff2f82",
+   "dur": 140
   },
   {
    "name": "MANGO MANGO MANGO",
@@ -5854,7 +6113,8 @@
    ],
    "size": 13317,
    "sha256": "db7cbe8c065452208a825d677a9cd994e77644d9bf28fe76022e1fee77457658",
-   "sha": "db7cbe8c0654"
+   "sha": "db7cbe8c0654",
+   "dur": 52
   },
   {
    "name": "MARI BOSS FIGHT",
@@ -5869,7 +6129,8 @@
    ],
    "size": 25383,
    "sha256": "45eaa8c773ad704ec40641e21367402915c9c776242a4b98048730e5d4a45382",
-   "sha": "45eaa8c773ad"
+   "sha": "45eaa8c773ad",
+   "dur": 108
   },
   {
    "name": "MARRIED LIFE (UP)",
@@ -5887,7 +6148,8 @@
    ],
    "size": 47957,
    "sha256": "e5009d78f4652b236de5be148e7cc5d0721cf974aaf6e8f406512881ebf6a8fa",
-   "sha": "e5009d78f465"
+   "sha": "e5009d78f465",
+   "dur": 278
   },
   {
    "name": "MARY ON A CROSS",
@@ -5902,7 +6164,8 @@
    ],
    "size": 52464,
    "sha256": "03d2c3cc7b6fca32e4a1a17ac6a66a0462cbebbe0ae41a13226e9490f2384851",
-   "sha": "03d2c3cc7b6f"
+   "sha": "03d2c3cc7b6f",
+   "dur": 234
   },
   {
    "name": "MASTER OF PUPPETS",
@@ -5916,7 +6179,8 @@
    ],
    "size": 145957,
    "sha256": "acfcebc221c4a90b28f1ec36832da49097e9877e4e2f43398bf9b171d277eff6",
-   "sha": "acfcebc221c4"
+   "sha": "acfcebc221c4",
+   "dur": 498
   },
   {
    "name": "MEANINGFUL LOVE",
@@ -5931,7 +6195,8 @@
    ],
    "size": 47402,
    "sha256": "9ddad488820230ddaa18d957a5d7391824f59fa75523e1ff7af34fe8c612530c",
-   "sha": "9ddad4888202"
+   "sha": "9ddad4888202",
+   "dur": 155
   },
   {
    "name": "MEGALOVANIA",
@@ -5950,7 +6215,8 @@
    ],
    "size": 52644,
    "sha256": "f212600ca783df7686d850f4f9b4f834565d7f3b442803ebe0b6729da661b2d3",
-   "sha": "f212600ca783"
+   "sha": "f212600ca783",
+   "dur": 156
   },
   {
    "name": "MERRY CHRISTMAS MR. LAWRENCE",
@@ -5966,7 +6232,8 @@
    ],
    "size": 64246,
    "sha256": "29d50942f09502da08c218ce18cc6661d2e0988473da5cc381a79dffefee7b5f",
-   "sha": "29d50942f095"
+   "sha": "29d50942f095",
+   "dur": 263
   },
   {
    "name": "METAMORPHOSIS",
@@ -5982,7 +6249,8 @@
    ],
    "size": 7193,
    "sha256": "aee20255e660993070a22cdf578aa95280ef234a138eb28334ceba51d9ff398d",
-   "sha": "aee20255e660"
+   "sha": "aee20255e660",
+   "dur": 31
   },
   {
    "name": "MICE ON VENUS",
@@ -5998,7 +6266,8 @@
    ],
    "size": 19541,
    "sha256": "0d71aadcbe94e25a62afe20f654d998994e1c7a4488e086b0bc7c47b60a4962b",
-   "sha": "0d71aadcbe94"
+   "sha": "0d71aadcbe94",
+   "dur": 236
   },
   {
    "name": "MICHAEL MYERS",
@@ -6013,7 +6282,8 @@
    ],
    "size": 23692,
    "sha256": "894ddff2690bb753be8b81310441db237f35f19cac97ebe7f2fb66107e080658",
-   "sha": "894ddff2690b"
+   "sha": "894ddff2690b",
+   "dur": 121
   },
   {
    "name": "MIDDLE OF THE NIGHT",
@@ -6030,7 +6300,8 @@
    ],
    "size": 52854,
    "sha256": "04f57db5b4762ee5c8de29565b21b37e33dae89aca3e3294119feeff35530799",
-   "sha": "04f57db5b476"
+   "sha": "04f57db5b476",
+   "dur": 182
   },
   {
    "name": "MII CHANNEL THEME",
@@ -6045,7 +6316,8 @@
    ],
    "size": 17608,
    "sha256": "003f49ab0a07c15e7ca3f2c243fa3dc254cf1abff7b77108a7bb55b703c40803",
-   "sha": "003f49ab0a07"
+   "sha": "003f49ab0a07",
+   "dur": 105
   },
   {
    "name": "MIKU",
@@ -6062,7 +6334,8 @@
    ],
    "size": 46352,
    "sha256": "34858461faae6367e2cec5472259b8ac33b910956fcb3558b23647eef88f0fb6",
-   "sha": "34858461faae"
+   "sha": "34858461faae",
+   "dur": 142
   },
   {
    "name": "MINECRAFT",
@@ -6077,7 +6350,8 @@
    ],
    "size": 8704,
    "sha256": "f1ba565be0fabb6205f00a499166f297a6472992c9afbe80f9cb1496e86b8429",
-   "sha": "f1ba565be0fa"
+   "sha": "f1ba565be0fa",
+   "dur": 125
   },
   {
    "name": "MINGLE (ROUND AND ROUND)",
@@ -6092,7 +6366,8 @@
    ],
    "size": 12958,
    "sha256": "a8947bf6ee55b476574a21d089f0251044860c84fd8fcdc8331fee894e99a216",
-   "sha": "a8947bf6ee55"
+   "sha": "a8947bf6ee55",
+   "dur": 63
   },
   {
    "name": "MONODY",
@@ -6110,7 +6385,8 @@
    ],
    "size": 38269,
    "sha256": "e99d44dae50a0a3e493cbee3d471841cd61de93a2b1d7dedb0b05ae723602e8f",
-   "sha": "e99d44dae50a"
+   "sha": "e99d44dae50a",
+   "dur": 150
   },
   {
    "name": "MONTAGEM CORAL",
@@ -6118,8 +6394,7 @@
    "bpm": "130",
    "cat": [
     "electronic",
-    "phonk/funk",
-    "new"
+    "phonk/funk"
    ],
    "alts": [
     "dj holanda",
@@ -6128,7 +6403,8 @@
    ],
    "size": 28281,
    "sha256": "6a6cad6ecdcdd38b242394262314e556ddf7221991081302498954a487aca503",
-   "sha": "6a6cad6ecdcd"
+   "sha": "6a6cad6ecdcd",
+   "dur": 79
   },
   {
    "name": "MONTAGEM HIKARI",
@@ -6144,7 +6420,8 @@
    ],
    "size": 28183,
    "sha256": "980dd779f30df5588e241f62b5b68f659fd3f6f0b4f705584c211745fbf5f947",
-   "sha": "980dd779f30d"
+   "sha": "980dd779f30d",
+   "dur": 96
   },
   {
    "name": "MONTAGEM TOMADA",
@@ -6160,15 +6437,15 @@
    ],
    "size": 10223,
    "sha256": "41c90f731bf26ed74eb884dd1b64faff6da429a9101519c2db8dceac796d18b1",
-   "sha": "41c90f731bf2"
+   "sha": "41c90f731bf2",
+   "dur": 41
   },
   {
    "name": "MONTAGEM XONADA",
    "file": "MONTAGEM_XONADA.lua",
    "bpm": "130",
    "cat": [
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "MXZI",
@@ -6177,7 +6454,8 @@
    ],
    "size": 26684,
    "sha256": "e106f4964020b34d0a3905711ce0580c70ea99482c98401488b4801f1d51905d",
-   "sha": "e106f4964020"
+   "sha": "e106f4964020",
+   "dur": 60
   },
   {
    "name": "MOOD",
@@ -6192,7 +6470,8 @@
    ],
    "size": 44518,
    "sha256": "2f7b3d66dcad62ac7e5af1d39eaaff234f0dcc08c1d3777ffabaedc08c477a08",
-   "sha": "2f7b3d66dcad"
+   "sha": "2f7b3d66dcad",
+   "dur": 137
   },
   {
    "name": "MOOG CITY",
@@ -6209,7 +6488,8 @@
    ],
    "size": 28188,
    "sha256": "b5ddd0910f7379058528e48ab832296a1c2b67d46a93fdea61bd2d581f381781",
-   "sha": "b5ddd0910f73"
+   "sha": "b5ddd0910f73",
+   "dur": 155
   },
   {
    "name": "MOONLIGHT SONATA - FIRST MOVEMENT",
@@ -6223,7 +6503,8 @@
    ],
    "size": 50577,
    "sha256": "bc556d824bb5edd7094313afd823f1863b9c185ca0f730bb44bb17a09bdca924",
-   "sha": "bc556d824bb5"
+   "sha": "bc556d824bb5",
+   "dur": 320
   },
   {
    "name": "MOONLIGHT SONATA - THIRD MOVEMENT",
@@ -6239,21 +6520,21 @@
    ],
    "size": 149216,
    "sha256": "1410934d17a80150b2cf62029c0d8d804717d8083e3fd3484fa576d89ef8731b",
-   "sha": "1410934d17a8"
+   "sha": "1410934d17a8",
+   "dur": 390
   },
   {
    "name": "MRS MAGIC",
    "file": "MRS_MAGIC.lua",
    "bpm": "120",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "strawberry guy"
    ],
    "size": 17887,
    "sha256": "be5baec097f7689ae215cd7147776dae28fa1b715bf50fa3d2d73a0ff6949e28",
-   "sha": "be5baec097f7"
+   "sha": "be5baec097f7",
+   "dur": 115
   },
   {
    "name": "MULTO",
@@ -6261,8 +6542,7 @@
    "bpm": "104",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "ghost",
@@ -6270,7 +6550,8 @@
    ],
    "size": 89087,
    "sha256": "eefa58ae33841e440a28fe0f1320536d098739120323b52e430c0beb0fc2c0ee",
-   "sha": "eefa58ae3384"
+   "sha": "eefa58ae3384",
+   "dur": 235
   },
   {
    "name": "MY CASTLE TOWN",
@@ -6285,7 +6566,8 @@
    ],
    "size": 28547,
    "sha256": "3e5e96cf374951e1e4f4871c7fcf370667ce5507ff99b1971940069e011e1b0a",
-   "sha": "3e5e96cf3749"
+   "sha": "3e5e96cf3749",
+   "dur": 126
   },
   {
    "name": "MY CONFESSION",
@@ -6302,7 +6584,8 @@
    ],
    "size": 16008,
    "sha256": "cd94b18e4fca401e72e97eb60ff12d04f841e8232ac99110fb416f67f5165401",
-   "sha": "cd94b18e4fca"
+   "sha": "cd94b18e4fca",
+   "dur": 120
   },
   {
    "name": "MY EYES",
@@ -6319,7 +6602,8 @@
    ],
    "size": 12049,
    "sha256": "ac4b85fd7da592d9fe690c50241c9208c75378358fef907c002015d84a00dc8f",
-   "sha": "ac4b85fd7da5"
+   "sha": "ac4b85fd7da5",
+   "dur": 94
   },
   {
    "name": "MY FEELINGS",
@@ -6336,7 +6620,8 @@
    ],
    "size": 8527,
    "sha256": "cf86a9a7bcc3d1a26399a7886b753dcb5c1b5658fcadd1fe7dabf20519986c6a",
-   "sha": "cf86a9a7bcc3"
+   "sha": "cf86a9a7bcc3",
+   "dur": 66
   },
   {
    "name": "MY HEART WILL GO ON",
@@ -6354,21 +6639,21 @@
    ],
    "size": 49084,
    "sha256": "59ae6c981e11c1f5c2c8cebd1c17ecfeb605746a9d260a2e082432e5aa937db8",
-   "sha": "59ae6c981e11"
+   "sha": "59ae6c981e11",
+   "dur": 281
   },
   {
    "name": "MY KIND OF WOMAN",
    "file": "MY_KIND_OF_WOMAN.lua",
    "bpm": "90",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "mac demarco"
    ],
    "size": 31781,
    "sha256": "60960f6711d637934072929e1c864f8490d8170debc29f700a0a96fcbbaae690",
-   "sha": "60960f6711d6"
+   "sha": "60960f6711d6",
+   "dur": 186
   },
   {
    "name": "MY LOVE MINE ALL MINE",
@@ -6383,7 +6668,8 @@
    ],
    "size": 32752,
    "sha256": "ee83d3aa449b00e31a6ad916099a2130abd0871d5f38601543edc1c838d41bc4",
-   "sha": "ee83d3aa449b"
+   "sha": "ee83d3aa449b",
+   "dur": 131
   },
   {
    "name": "MY ORDINARY LIFE",
@@ -6397,7 +6683,8 @@
    ],
    "size": 79981,
    "sha256": "4bd0e00cd7ef2699f1e2da611cea359c397f0e771bcacfea0595e810e34cfbc7",
-   "sha": "4bd0e00cd7ef"
+   "sha": "4bd0e00cd7ef",
+   "dur": 226
   },
   {
    "name": "MY WAR (ATTACK ON TITAN)",
@@ -6405,8 +6692,7 @@
    "bpm": "140",
    "cat": [
     "movies/tv",
-    "anime/jpop",
-    "new"
+    "anime/jpop"
    ],
    "alts": [
     "boku no sensou",
@@ -6414,36 +6700,36 @@
    ],
    "size": 20110,
    "sha256": "1b83611f2993fdc366abf82f8338d895e8bdd8f9ea58c352b94e3d83ce0ad826",
-   "sha": "1b83611f2993"
+   "sha": "1b83611f2993",
+   "dur": 88
   },
   {
    "name": "MY WAY",
    "file": "MY_WAY.lua",
    "bpm": "80",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "frank sinatra"
    ],
    "size": 31748,
    "sha256": "a28e5dfec9af21842abae46b9db4e6d93ad9948b5d9182cd4be43ed8f68cda82",
-   "sha": "a28e5dfec9af"
+   "sha": "a28e5dfec9af",
+   "dur": 213
   },
   {
    "name": "NERVES (FNF VS GARCELLO)",
    "file": "NERVES.lua",
    "bpm": "100",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "friday night funkin"
    ],
    "size": 29419,
    "sha256": "1cb25125e0b7f8e2281b6e629e4f3c51016bcf6f655e113967d7189fcc46eef8",
-   "sha": "1cb25125e0b7"
+   "sha": "1cb25125e0b7",
+   "dur": 110
   },
   {
    "name": "NEVADA",
@@ -6459,15 +6745,15 @@
    ],
    "size": 76186,
    "sha256": "54e542a0275ee0b6db34ff12f1fc9fba21a1bcd0bb2e7b6f0d5843ed476e34e6",
-   "sha": "54e542a0275e"
+   "sha": "54e542a0275e",
+   "dur": 205
   },
   {
    "name": "NEVER BE ALONE",
    "file": "NEVER_BE_ALONE.lua",
    "bpm": "105",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "fnaf",
@@ -6476,7 +6762,8 @@
    ],
    "size": 62197,
    "sha256": "3891c6cfc364d20630ff1e20c14c2125734d579d81a6bc62e45eb1b33be13277",
-   "sha": "3891c6cfc364"
+   "sha": "3891c6cfc364",
+   "dur": 177
   },
   {
    "name": "NEVER GONNA GIVE YOU UP",
@@ -6493,7 +6780,8 @@
    ],
    "size": 49464,
    "sha256": "24c5597e4b83d9521b8f5f3b46724e33a30fd360ed73c29bdc29e18df53ded38",
-   "sha": "24c5597e4b83"
+   "sha": "24c5597e4b83",
+   "dur": 189
   },
   {
    "name": "NEVER MEANT TO BELONG",
@@ -6508,7 +6796,8 @@
    ],
    "size": 25121,
    "sha256": "78d9744c31b64c2b36210f3fd3665c7d943dd171c832b8f5b30421a735807410",
-   "sha": "78d9744c31b6"
+   "sha": "78d9744c31b6",
+   "dur": 329
   },
   {
    "name": "NEVER SEE ME AGAIN",
@@ -6516,15 +6805,15 @@
    "bpm": "178",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "kanye west"
    ],
    "size": 51086,
    "sha256": "5df40fdc96d9e85df686463559d73cfcd2bd79a6b95ed10408ba01671a53dc5f",
-   "sha": "5df40fdc96d9"
+   "sha": "5df40fdc96d9",
+   "dur": 151
   },
   {
    "name": "NEW HOME",
@@ -6532,15 +6821,15 @@
    "bpm": "100",
    "cat": [
     "video games",
-    "undertale",
-    "new"
+    "undertale"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 6450,
    "sha256": "9b275816b13bbe3332779ddedcc41cf80e9f6eb9b82d226d76740e47df38bcd9",
-   "sha": "9b275816b13b"
+   "sha": "9b275816b13b",
+   "dur": 65
   },
   {
    "name": "NIGHT DANCER",
@@ -6548,15 +6837,15 @@
    "bpm": "118",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "imase"
    ],
    "size": 66801,
    "sha256": "42287759597df931f91605583897f370b496280c81c82aff0ec37e31b924d891",
-   "sha": "42287759597d"
+   "sha": "42287759597d",
+   "dur": 205
   },
   {
    "name": "NO BATIDÃO",
@@ -6573,7 +6862,8 @@
    ],
    "size": 23855,
    "sha256": "de773975f0bfafabd8c5837b4ad6ff23d94e0f1238d82cb2ee8041a40442668b",
-   "sha": "de773975f0bf"
+   "sha": "de773975f0bf",
+   "dur": 97
   },
   {
    "name": "NO SURPRISES",
@@ -6588,7 +6878,8 @@
    ],
    "size": 28684,
    "sha256": "39e87d225a201a0cd2c61e58bb99a90cd51c0dc695f9a635e907f07de6b269a7",
-   "sha": "39e87d225a20"
+   "sha": "39e87d225a20",
+   "dur": 198
   },
   {
    "name": "NOCTURNE OP.9 NO.2",
@@ -6603,7 +6894,8 @@
    ],
    "size": 28640,
    "sha256": "a495e54ff58d68842d1faa83aad83a0e0f332b09bff591ac8b974dc6a7d62557",
-   "sha": "a495e54ff58d"
+   "sha": "a495e54ff58d",
+   "dur": 402
   },
   {
    "name": "NOPE YOUR TOO LATE I ALREADY DIED",
@@ -6618,7 +6910,8 @@
    ],
    "size": 11263,
    "sha256": "bd14767ef294abd58a51e4407bead1955fc8435f08fce5edbd3f3c7472ec9118",
-   "sha": "bd14767ef294"
+   "sha": "bd14767ef294",
+   "dur": 33
   },
   {
    "name": "NOT A SLACKER ANYMORE",
@@ -6634,7 +6927,8 @@
    ],
    "size": 53326,
    "sha256": "025d1ef62ac855226532de9e335710d054e216dea83eda8604cb9d4daa73660d",
-   "sha": "025d1ef62ac8"
+   "sha": "025d1ef62ac8",
+   "dur": 159
   },
   {
    "name": "NOT LIKE US",
@@ -6650,7 +6944,8 @@
    ],
    "size": 18191,
    "sha256": "e5711bafbd0824a25bf4d382387ed195ef1f28ec343b7ba75c126c686d368450",
-   "sha": "e5711bafbd08"
+   "sha": "e5711bafbd08",
+   "dur": 80
   },
   {
    "name": "NOTHING ELSE MATTERS",
@@ -6665,7 +6960,8 @@
    ],
    "size": 57768,
    "sha256": "29c73cc9b8c3185cfda49fbcdff170cae041d2d57e486f4c3bdae17299b9c946",
-   "sha": "29c73cc9b8c3"
+   "sha": "29c73cc9b8c3",
+   "dur": 353
   },
   {
    "name": "NOTION",
@@ -6680,7 +6976,8 @@
    ],
    "size": 21738,
    "sha256": "90625a2ade0f427b672593918c3becbaaf330910dd6b95b4f826f208ee2a0205",
-   "sha": "90625a2ade0f"
+   "sha": "90625a2ade0f",
+   "dur": 75
   },
   {
    "name": "NUKE POWDER",
@@ -6696,7 +6993,8 @@
    ],
    "size": 73714,
    "sha256": "a34645250edab11f2c79ae1898cf1ac017bd46ff00c310e876600530cf9b0341",
-   "sha": "a34645250eda"
+   "sha": "a34645250eda",
+   "dur": 228
   },
   {
    "name": "NUMBERS",
@@ -6710,7 +7008,8 @@
    ],
    "size": 25449,
    "sha256": "92464d8eb063a53015e829a05901455b77f4757f2202d1c84405e5fe7c165c15",
-   "sha": "92464d8eb063"
+   "sha": "92464d8eb063",
+   "dur": 174
   },
   {
    "name": "NYAN CAT THEME",
@@ -6727,7 +7026,8 @@
    ],
    "size": 24427,
    "sha256": "49a1d74bb4039e7ca2dc5471c39adc4b19861684f2157fc5a02124cd692c253b",
-   "sha": "49a1d74bb403"
+   "sha": "49a1d74bb403",
+   "dur": 58
   },
   {
    "name": "NYEH HEH HEH!",
@@ -6744,7 +7044,8 @@
    ],
    "size": 35375,
    "sha256": "cde72adf268878f699ee246e09d11652d4c3c21c13f2ef8e91ad7606172181e1",
-   "sha": "cde72adf2688"
+   "sha": "cde72adf2688",
+   "dur": 91
   },
   {
    "name": "OBLIVION (GRIMES)",
@@ -6759,7 +7060,8 @@
    ],
    "size": 33497,
    "sha256": "70d00d395807e7ec9e5ad31101307112f5aecceada7c594a74b2e9a35ecfa7b0",
-   "sha": "70d00d395807"
+   "sha": "70d00d395807",
+   "dur": 135
   },
   {
    "name": "OHAYOU SAYORI!",
@@ -6776,7 +7078,8 @@
    ],
    "size": 35138,
    "sha256": "983ae68694673051e3d0a4cf5603b471c775ac74d1bd99e059404d6b0df9263b",
-   "sha": "983ae6869467"
+   "sha": "983ae6869467",
+   "dur": 144
   },
   {
    "name": "OKAY, EVERYONE!",
@@ -6793,7 +7096,8 @@
    ],
    "size": 35870,
    "sha256": "4740c16d12040d593d025192bd56ec1d39d5fab74107aa5fafce634b119278ab",
-   "sha": "4740c16d1204"
+   "sha": "4740c16d1204",
+   "dur": 240
   },
   {
    "name": "OLD DOLL",
@@ -6807,7 +7111,8 @@
    ],
    "size": 18913,
    "sha256": "1526c5c4cdb3a13c98ad59771d8f2c0460b58e0cd89fa95f64cd1de8457ede75",
-   "sha": "1526c5c4cdb3"
+   "sha": "1526c5c4cdb3",
+   "dur": 117
   },
   {
    "name": "OLD TOWN ROAD",
@@ -6822,15 +7127,15 @@
    ],
    "size": 33763,
    "sha256": "79cf7c3500d4be202b0049359a5808e8ebf1f80c49028fe8a7304fd204df61e0",
-   "sha": "79cf7c3500d4"
+   "sha": "79cf7c3500d4",
+   "dur": 151
   },
   {
    "name": "ON MY WAY",
    "file": "ON_MY_WAY.lua",
    "bpm": "85",
    "cat": [
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "alan walker",
@@ -6839,7 +7144,8 @@
    ],
    "size": 52199,
    "sha256": "fc077793ad6e24b646f71f4b78328dbab20285bcbaecb2b08a71ff8d6d0b219a",
-   "sha": "fc077793ad6e"
+   "sha": "fc077793ad6e",
+   "dur": 194
   },
   {
    "name": "ONCE UPON A DECEMBER",
@@ -6856,7 +7162,8 @@
    ],
    "size": 34606,
    "sha256": "c62f3f753ff7850918c7107ccc2f535b45e82a011a398e958e93577df87350e3",
-   "sha": "c62f3f753ff7"
+   "sha": "c62f3f753ff7",
+   "dur": 168
   },
   {
    "name": "ONCE UPON A TIME",
@@ -6872,7 +7179,8 @@
    ],
    "size": 7821,
    "sha256": "52cb07125fbc74e0475173ba1101f4c2535d9ea1f619334ed2bf721adf99199f",
-   "sha": "52cb07125fbc"
+   "sha": "52cb07125fbc",
+   "dur": 88
   },
   {
    "name": "ONE DANCE",
@@ -6888,7 +7196,8 @@
    ],
    "size": 20218,
    "sha256": "8ab3be01b78259be1feacc72d2035861ccb08b4cb2846ee627b83c03ba4bf90d",
-   "sha": "8ab3be01b782"
+   "sha": "8ab3be01b782",
+   "dur": 89
   },
   {
    "name": "ONE OF THE GIRLS",
@@ -6896,8 +7205,7 @@
    "bpm": "88",
    "cat": [
     "pop/hiphop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "idol",
@@ -6905,7 +7213,8 @@
    ],
    "size": 41330,
    "sha256": "ba0c8f9d605c8f5c605bd02e640850af57e924779593d29de51b350128c73b6f",
-   "sha": "ba0c8f9d605c"
+   "sha": "ba0c8f9d605c",
+   "dur": 237
   },
   {
    "name": "ONE SUMMER'S DAY",
@@ -6914,8 +7223,7 @@
    "cat": [
     "beautiful",
     "movies/tv",
-    "anime/jpop",
-    "new"
+    "anime/jpop"
    ],
    "alts": [
     "spirited away",
@@ -6924,7 +7232,8 @@
    ],
    "size": 30318,
    "sha256": "be7be4c7368afd226fd92124004be18bd7c929a98c9c6109b77d9f8efae69b63",
-   "sha": "be7be4c7368a"
+   "sha": "be7be4c7368a",
+   "dur": 206
   },
   {
    "name": "ORDER (ULTRAKILL)",
@@ -6939,7 +7248,8 @@
    ],
    "size": 113457,
    "sha256": "d8aa8323be801c908ca44177f6bf3e0277ecce5ffb8109e07a9957ed68f1988b",
-   "sha": "d8aa8323be80"
+   "sha": "d8aa8323be80",
+   "dur": 419
   },
   {
    "name": "ORDINARY",
@@ -6956,7 +7266,8 @@
    ],
    "size": 63379,
    "sha256": "1e6d773481cd994291cb3c61e02f06d6bb0031aeb7c825ccfb003488f1e1076d",
-   "sha": "1e6d773481cd"
+   "sha": "1e6d773481cd",
+   "dur": 180
   },
   {
    "name": "OVERTAKEN",
@@ -6971,7 +7282,8 @@
    ],
    "size": 16020,
    "sha256": "026483c1e96830b9f2302fc8c5f555a8bcba90a80e76a7986cc802f22b55a1f4",
-   "sha": "026483c1e968"
+   "sha": "026483c1e968",
+   "dur": 111
   },
   {
    "name": "PARADISE",
@@ -6985,21 +7297,21 @@
    ],
    "size": 43084,
    "sha256": "08d289af30812c409c9bd4b779c17549623a8caebaf6476f3c9ee8bc1e59bbb2",
-   "sha": "08d289af3081"
+   "sha": "08d289af3081",
+   "dur": 274
   },
   {
    "name": "PASILYO",
    "file": "PASILYO.lua",
    "bpm": "125",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "sunkissed lola"
    ],
    "size": 11168,
    "sha256": "6afb5bef22b82b315282920800f05496fe513f5587e9fa2c7e0d652beb45d04c",
-   "sha": "6afb5bef22b8"
+   "sha": "6afb5bef22b8",
+   "dur": 94
   },
   {
    "name": "PASSACAGLIA, SUITE NO.7",
@@ -7015,7 +7327,8 @@
    ],
    "size": 33129,
    "sha256": "5d02ce68461d1471a5f56f9ffa1c8eaf5c08d7f9f889092df9ec7df5b71946fc",
-   "sha": "5d02ce68461d"
+   "sha": "5d02ce68461d",
+   "dur": 135
   },
   {
    "name": "PASSO BEM SOLTO",
@@ -7031,7 +7344,8 @@
    ],
    "size": 22812,
    "sha256": "d2d12f20e0564e378b489891577d627dca482ed4ed7c8b16d3d4f3a1bc870cb7",
-   "sha": "d2d12f20e056"
+   "sha": "d2d12f20e056",
+   "dur": 114
   },
   {
    "name": "PAST LIVES",
@@ -7048,7 +7362,8 @@
    ],
    "size": 62558,
    "sha256": "85b5f23ec401a3d1cc10217e3ae90ec7d0b7b8ac902fa18720a76003f727fde5",
-   "sha": "85b5f23ec401"
+   "sha": "85b5f23ec401",
+   "dur": 316
   },
   {
    "name": "PATHÉTIQUE (SONATE OP.13 NO.8)",
@@ -7063,7 +7378,8 @@
    ],
    "size": 50799,
    "sha256": "5382d79fdb30662be563f66aa9516c32cedb1ee849219140a562c6e64c1028bf",
-   "sha": "5382d79fdb30"
+   "sha": "5382d79fdb30",
+   "dur": 281
   },
   {
    "name": "PAYPHONE",
@@ -7080,7 +7396,8 @@
    ],
    "size": 66615,
    "sha256": "b6adf191f6fd8192a6898dd5d8d78dd8e4d59ea50b0d7dc5c3ede6c4e3ab7447",
-   "sha": "b6adf191f6fd"
+   "sha": "b6adf191f6fd",
+   "dur": 222
   },
   {
    "name": "PEACHES",
@@ -7097,7 +7414,8 @@
    ],
    "size": 19813,
    "sha256": "717e6e22be9feaaf8f09499d3cd2cec6a76033644fcea86f2117c868ea45e107",
-   "sha": "717e6e22be9f"
+   "sha": "717e6e22be9f",
+   "dur": 93
   },
   {
    "name": "PEER GYNT OP.46 NO.1 (MORNING MOOD)",
@@ -7106,37 +7424,35 @@
    "cat": [
     "classical",
     "memes",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "grow a garden"
    ],
    "size": 40034,
    "sha256": "de90bf423819bde1d729544b2dfcdae3fb26630a58232c377d346e07fe3198f6",
-   "sha": "de90bf423819"
+   "sha": "de90bf423819",
+   "dur": 215
   },
   {
    "name": "PIANO MAN",
    "file": "PIANO_MAN.lua",
    "bpm": "80",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "billy joel"
    ],
    "size": 88294,
    "sha256": "3912a576a280904103e359d7f19669a5bdb5cbda731d13b20706b3524def9f60",
-   "sha": "3912a576a280"
+   "sha": "3912a576a280",
+   "dur": 362
   },
   {
    "name": "PIXEL PEEKER POLKA (DON'T TOUCH MY PIZZA)",
    "file": "PIXEL_PEEKER_POLKA.lua",
    "bpm": "145",
    "cat": [
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "kevin macleod",
@@ -7144,7 +7460,8 @@
    ],
    "size": 32784,
    "sha256": "e3504ac5f8f7b6bcc40b34cafd0871eed9a610b28eeff1cba857892963134063",
-   "sha": "e3504ac5f8f7"
+   "sha": "e3504ac5f8f7",
+   "dur": 108
   },
   {
    "name": "PLANTS VS. ZOMBIES - MAIN THEME",
@@ -7160,7 +7477,8 @@
    ],
    "size": 12912,
    "sha256": "c96e7f93dbc7f752b52d270b628c4d3dd8e00e8ae3aa2142911eac1b37866713",
-   "sha": "c96e7f93dbc7"
+   "sha": "c96e7f93dbc7",
+   "dur": 71
   },
   {
    "name": "PLAY WITH ME",
@@ -7177,7 +7495,8 @@
    ],
    "size": 39466,
    "sha256": "9319bca1661fa4c0ed3cab7b9a79375af1f4577f6f30c38dfd9f049d250d5797",
-   "sha": "9319bca1661f"
+   "sha": "9319bca1661f",
+   "dur": 150
   },
   {
    "name": "PLEAD (FORSAKEN)",
@@ -7196,7 +7515,8 @@
    ],
    "size": 33119,
    "sha256": "ec1939a8f9cd1b097dbafdfcebdb16ba35d2cdfd7e708b73b3ed3a07db4d438d",
-   "sha": "ec1939a8f9cd"
+   "sha": "ec1939a8f9cd",
+   "dur": 88
   },
   {
    "name": "POEM PANIC!",
@@ -7212,7 +7532,8 @@
    ],
    "size": 42384,
    "sha256": "55d6a3ec93c61399f34e7f5504d62e120d80bc398ac7124409790b765e3855d0",
-   "sha": "55d6a3ec93c6"
+   "sha": "55d6a3ec93c6",
+   "dur": 136
   },
   {
    "name": "POKÉMON THEME SONG",
@@ -7231,7 +7552,8 @@
    ],
    "size": 59113,
    "sha256": "0c5d6f3abc9b3192f268eae6297120e71e246a5b31bc54f21ea18ecd5018acec",
-   "sha": "0c5d6f3abc9b"
+   "sha": "0c5d6f3abc9b",
+   "dur": 175
   },
   {
    "name": "POKÉMON RED & BLUE OPENING",
@@ -7249,7 +7571,8 @@
    ],
    "size": 17204,
    "sha256": "a9bdc38608e768a45e062e94deeae0176344085073a39cb52855d19557de8a49",
-   "sha": "a9bdc38608e7"
+   "sha": "a9bdc38608e7",
+   "dur": 59
   },
   {
    "name": "POLARGEIST",
@@ -7266,22 +7589,23 @@
    ],
    "size": 20916,
    "sha256": "36ff0ef08087f81d66a86b613fbb5a6cb4673aad70f4eefbb0245dafc9f2adf4",
-   "sha": "36ff0ef08087"
+   "sha": "36ff0ef08087",
+   "dur": 120
   },
   {
    "name": "POLONAISE IN F SHARP MINOR OP.44",
    "file": "POLONAISE.lua",
    "bpm": "100",
    "cat": [
-    "classical",
-    "new"
+    "classical"
    ],
    "alts": [
     "frederic chopin"
    ],
    "size": 217324,
    "sha256": "7a20c89a0ac6891c864f247bbe0a0eb362e01fd30bfefab496c05a0068e1e543",
-   "sha": "7a20c89a0ac6"
+   "sha": "7a20c89a0ac6",
+   "dur": 545
   },
   {
    "name": "POSTER BOY",
@@ -7296,7 +7620,8 @@
    ],
    "size": 38707,
    "sha256": "d5053cc7189f938ad0ff0fd00c9bde75d61b2ab4ea98db03609da0d2fae50dda",
-   "sha": "d5053cc7189f"
+   "sha": "d5053cc7189f",
+   "dur": 112
   },
   {
    "name": "PRAYER",
@@ -7312,7 +7637,8 @@
    ],
    "size": 54056,
    "sha256": "815dcff9f3406d8ee52fa1ed786a8df34a26cf5893b1415bff1d205376c042b0",
-   "sha": "815dcff9f340"
+   "sha": "815dcff9f340",
+   "dur": 320
   },
   {
    "name": "PRELUDE NO.2 (BACH)",
@@ -7326,7 +7652,8 @@
    ],
    "size": 36515,
    "sha256": "adb47b17cdcac10e1b23217777fffa472c592d3c5945ab4cef272e6865b639c0",
-   "sha": "adb47b17cdca"
+   "sha": "adb47b17cdca",
+   "dur": 71
   },
   {
    "name": "PRELUDE OP.28 NO.4",
@@ -7340,7 +7667,8 @@
    ],
    "size": 17181,
    "sha256": "f6dcc4b616a477f447e487b3653dc71e9e8636f43fc92954d379b2a9e3373bb8",
-   "sha": "f6dcc4b616a4"
+   "sha": "f6dcc4b616a4",
+   "dur": 145
   },
   {
    "name": "PROPOSE",
@@ -7355,22 +7683,23 @@
    ],
    "size": 112726,
    "sha256": "5dcd80dbbfa58aad61937e29969bfef01fbc12898d022b4f04faeccbd6401d9b",
-   "sha": "5dcd80dbbfa5"
+   "sha": "5dcd80dbbfa5",
+   "dur": 242
   },
   {
    "name": "RACHMANINOFF - CONCERTO OP.30 NO.3",
    "file": "CONCERTO_OP30_NO3.lua",
    "bpm": "150",
    "cat": [
-    "classical",
-    "new"
+    "classical"
    ],
    "alts": [
     "rachmaninoff"
    ],
    "size": 84945,
    "sha256": "83fdd7103494528ad8873b145f29d58cb06adf3725ab4cfd87de5ddef2e6762b",
-   "sha": "83fdd7103494"
+   "sha": "83fdd7103494",
+   "dur": 138
   },
   {
    "name": "RACING INTO THE NIGHT",
@@ -7386,7 +7715,8 @@
    ],
    "size": 90258,
    "sha256": "710567e3f655d1f0abeec4ed7c030ee9583549593d988d362985aed0f56657a4",
-   "sha": "710567e3f655"
+   "sha": "710567e3f655",
+   "dur": 259
   },
   {
    "name": "RAIN",
@@ -7402,22 +7732,23 @@
    ],
    "size": 67084,
    "sha256": "b10d59ccddad279d627cd2ac4b56b73c2050a8ee02aeb4993f12fa563fed0a40",
-   "sha": "b10d59ccddad"
+   "sha": "b10d59ccddad",
+   "dur": 265
   },
   {
    "name": "RANSOM",
    "file": "RANSOM.lua",
    "bpm": "180",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "lil tecca"
    ],
    "size": 33674,
    "sha256": "0ba9ff79ff4538b892cb3e6a994c661a0525295a3bb2d5c711744059890a4b81",
-   "sha": "0ba9ff79ff45"
+   "sha": "0ba9ff79ff45",
+   "dur": 126
   },
   {
    "name": "RAT DANCE",
@@ -7431,7 +7762,8 @@
    ],
    "size": 4042,
    "sha256": "00f84a69daf23ebb6c52aa38b5f473a340554d099074aa61360c561c1420e6ac",
-   "sha": "00f84a69daf2"
+   "sha": "00f84a69daf2",
+   "dur": 18
   },
   {
    "name": "READY OR NOT (FORSAKEN)",
@@ -7448,7 +7780,8 @@
    ],
    "size": 46511,
    "sha256": "d0cb36b1a4e950255627839320ddac50be0253a24ddfe90fb6565b94182e2f3b",
-   "sha": "d0cb36b1a4e9"
+   "sha": "d0cb36b1a4e9",
+   "dur": 117
   },
   {
    "name": "REFLECTION",
@@ -7456,15 +7789,15 @@
    "bpm": "104",
    "cat": [
     "anime/jpop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "toshifumi hinata"
    ],
    "size": 33340,
    "sha256": "ac0a7d363e2d70cb84a06e6e130aa63f7ec6624fe520edccfb511cdfa8f38e9e",
-   "sha": "ac0a7d363e2d"
+   "sha": "ac0a7d363e2d",
+   "dur": 197
   },
   {
    "name": "RENAI CIRCULATION",
@@ -7474,15 +7807,15 @@
     "anime/jpop",
     "memes",
     "peak",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "bakemonogatari"
    ],
    "size": 21542,
    "sha256": "9a749315a174e7245c5cd2c12af9a8c39a60b2c054b8ca180e6b3c33c8b47ca2",
-   "sha": "9a749315a174"
+   "sha": "9a749315a174",
+   "dur": 87
   },
   {
    "name": "RESONANCE",
@@ -7497,7 +7830,8 @@
    ],
    "size": 44765,
    "sha256": "a6ef87d8610ebb941b3533c1d12b867e1b6af1ea2b518f0bfaf6137a673e737c",
-   "sha": "a6ef87d8610e"
+   "sha": "a6ef87d8610e",
+   "dur": 164
   },
   {
    "name": "REVENGE (CREEPER)",
@@ -7507,8 +7841,7 @@
     "video games",
     "video games",
     "memes",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "creeper awww",
@@ -7517,7 +7850,8 @@
    ],
    "size": 70504,
    "sha256": "c363dc71e6d0f3c906b58f1898652db8d79148dbd41b11e8cfd3da6913079805",
-   "sha": "c363dc71e6d0"
+   "sha": "c363dc71e6d0",
+   "dur": 216
   },
   {
    "name": "REVOLUTIONARY (ETUDE OP.10 NO.12)",
@@ -7532,7 +7866,8 @@
    ],
    "size": 71609,
    "sha256": "e441fc9a57cf0e55039dd28b415581e7d40005e87cc07bb1dbed9add52c09045",
-   "sha": "e441fc9a57cf"
+   "sha": "e441fc9a57cf",
+   "dur": 147
   },
   {
    "name": "RIGHTEOUS",
@@ -7547,7 +7882,8 @@
    ],
    "size": 19745,
    "sha256": "4a63c67c500c50ecb2a627df171a1d2eaa2b5476dace94d1f0d665ae9b5d3801",
-   "sha": "4a63c67c500c"
+   "sha": "4a63c67c500c",
+   "dur": 84
   },
   {
    "name": "RIPTIDE",
@@ -7561,7 +7897,8 @@
    ],
    "size": 43189,
    "sha256": "b64c04565ae5f017d44ae15f1d46513e1edfb1a278e00e3058ea15b416cb5f56",
-   "sha": "b64c04565ae5"
+   "sha": "b64c04565ae5",
+   "dur": 201
   },
   {
    "name": "RISE UP",
@@ -7578,7 +7915,8 @@
    ],
    "size": 43506,
    "sha256": "bb2aca7762c1abd1e85a975747e63993a852d57442cd50c549745e6f58dd7dac",
-   "sha": "bb2aca7762c1"
+   "sha": "bb2aca7762c1",
+   "dur": 163
   },
   {
    "name": "RISES THE MOON",
@@ -7593,7 +7931,8 @@
    ],
    "size": 13786,
    "sha256": "7194ea97972d70683cd68c8600f83f33436c3bd9278a0881db96fb3369ef77c7",
-   "sha": "7194ea97972d"
+   "sha": "7194ea97972d",
+   "dur": 82
   },
   {
    "name": "RIVER FLOWS IN YOU",
@@ -7610,7 +7949,8 @@
    ],
    "size": 10695,
    "sha256": "511745334cc3c1cef2e28771414d082aba6c98b50cfde4f3d874bd07efeee633",
-   "sha": "511745334cc3"
+   "sha": "511745334cc3",
+   "dur": 84
   },
   {
    "name": "ROBBERY",
@@ -7618,15 +7958,15 @@
    "bpm": "80",
    "cat": [
     "pop/hiphop",
-    "sad",
-    "new"
+    "sad"
    ],
    "alts": [
     "juice wrld"
    ],
    "size": 43782,
    "sha256": "729e3d40db9b2c6b31ad291802dde3cffcec384570419a094737b1270dd77422",
-   "sha": "729e3d40db9b"
+   "sha": "729e3d40db9b",
+   "dur": 203
   },
   {
    "name": "ROI",
@@ -7634,15 +7974,15 @@
    "bpm": "110",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "videoclub"
    ],
    "size": 13081,
    "sha256": "89fa4e8c4215f7efbc4ada77cc4636b46a96e703727cfc8c7824065e52de299a",
-   "sha": "89fa4e8c4215"
+   "sha": "89fa4e8c4215",
+   "dur": 59
   },
   {
    "name": "RUDE BUSTER",
@@ -7658,7 +7998,8 @@
    ],
    "size": 61042,
    "sha256": "807461b391694fc6f535ee3d741750208245341e4f2f9effd0b1d199c044a81a",
-   "sha": "807461b39169"
+   "sha": "807461b39169",
+   "dur": 151
   },
   {
    "name": "RUDER BUSTER",
@@ -7666,15 +8007,15 @@
    "bpm": "130",
    "cat": [
     "video games",
-    "deltarune",
-    "new"
+    "deltarune"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 49441,
    "sha256": "b3059d23448aa8cc1ab9c084a15afb90ff4a9bf5d1d98c54809aa06003c0bcf1",
-   "sha": "b3059d23448a"
+   "sha": "b3059d23448a",
+   "dur": 103
   },
   {
    "name": "RUE DES TROIS FRÈRES",
@@ -7682,15 +8023,15 @@
    "bpm": "120",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "fabrizio paterlini"
    ],
    "size": 21520,
    "sha256": "2e11a70f9c56159a6ec8519bb951f23551e10d2cfb482f180234435412a9dd46",
-   "sha": "2e11a70f9c56"
+   "sha": "2e11a70f9c56",
+   "dur": 108
   },
   {
    "name": "RUINS",
@@ -7705,7 +8046,8 @@
    ],
    "size": 24649,
    "sha256": "a1decce79ae9ffb596ff5afea460813a014dd029f1ce87329eb4620c70fc23e3",
-   "sha": "a1decce79ae9"
+   "sha": "a1decce79ae9",
+   "dur": 90
   },
   {
    "name": "RUNAWAY",
@@ -7722,7 +8064,8 @@
    ],
    "size": 39830,
    "sha256": "8daace2883eac6b4e0c713ca2f62f46bb82405632d5a98522b12a0c0e266c979",
-   "sha": "8daace2883ea"
+   "sha": "8daace2883ea",
+   "dur": 164
   },
   {
    "name": "RUNAWAY",
@@ -7739,7 +8082,8 @@
    ],
    "size": 26150,
    "sha256": "f618f3759ee2bf426d8033978ce85c7bb52b0aa10cf8fec8c100515cf76b8d51",
-   "sha": "f618f3759ee2"
+   "sha": "f618f3759ee2",
+   "dur": 219
   },
   {
    "name": "RUNNING IN THE 90S",
@@ -7748,15 +8092,15 @@
    "cat": [
     "electronic",
     "memes",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "max coveri"
    ],
    "size": 62650,
    "sha256": "1308b47888688fcbdddb940fa4a72a89c5492a2f4c85c2bf22391c9962a5bc18",
-   "sha": "1308b4788868"
+   "sha": "1308b4788868",
+   "dur": 157
   },
   {
    "name": "RUNNING UP THAT HILL",
@@ -7772,7 +8116,8 @@
    ],
    "size": 30934,
    "sha256": "d63cfaa869374e81757fb38461e848c3943c513250956e9db5cedd37c503d955",
-   "sha": "d63cfaa86937"
+   "sha": "d63cfaa86937",
+   "dur": 143
   },
   {
    "name": "RUSH C",
@@ -7788,7 +8133,8 @@
    ],
    "size": 52853,
    "sha256": "aa347cf8c4af44bd424502884413a961ec3050dd6a62766bb1c2c82da3b14f0b",
-   "sha": "aa347cf8c4af"
+   "sha": "aa347cf8c4af",
+   "dur": 134
   },
   {
    "name": "RUSH E",
@@ -7802,7 +8148,8 @@
    ],
    "size": 51803,
    "sha256": "5688b181751e6cfe95eebaaee138c9a02dee6b0fedb2fec49769b79369485dab",
-   "sha": "5688b181751e"
+   "sha": "5688b181751e",
+   "dur": 266
   },
   {
    "name": "RUSH F",
@@ -7818,7 +8165,8 @@
    ],
    "size": 59243,
    "sha256": "836fd21104bfa3d52f37e54df3ba828f699c411ed92a72fb9845d2de23e8c23e",
-   "sha": "836fd21104bf"
+   "sha": "836fd21104bf",
+   "dur": 138
   },
   {
    "name": "RUSH G",
@@ -7834,7 +8182,8 @@
    ],
    "size": 54073,
    "sha256": "3f751b4d5abe53bbada36df07600bf68ff6e87d25b96a6edaeb79add59e77a9f",
-   "sha": "3f751b4d5abe"
+   "sha": "3f751b4d5abe",
+   "dur": 138
   },
   {
    "name": "RUSH OF LIFE",
@@ -7851,7 +8200,8 @@
    ],
    "size": 62785,
    "sha256": "0d7a6b3e391b8e55752b643c094ef8ac53bd2fee41f7620841b034b5332940c8",
-   "sha": "0d7a6b3e391b"
+   "sha": "0d7a6b3e391b",
+   "dur": 155
   },
   {
    "name": "SAD!",
@@ -7867,7 +8217,8 @@
    ],
    "size": 38806,
    "sha256": "cf25dd7b0ad58b68d957c6eed4321e1e810e245465e35156483c783493df0091",
-   "sha": "cf25dd7b0ad5"
+   "sha": "cf25dd7b0ad5",
+   "dur": 207
   },
   {
    "name": "SADNESS AND SORROW",
@@ -7875,15 +8226,15 @@
    "bpm": "75",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "naruto shippuden"
    ],
    "size": 22087,
    "sha256": "2f732ad45efc777f35793f5a49a3d89d57f2bcddad33a57f3458a596363bb60f",
-   "sha": "2f732ad45efc"
+   "sha": "2f732ad45efc",
+   "dur": 106
   },
   {
    "name": "SAILOR SONG",
@@ -7897,7 +8248,8 @@
    ],
    "size": 37518,
    "sha256": "11481c95a653eff515ce2e0712fbe74f35ab037564533921b29dce2a1d9d8a4a",
-   "sha": "11481c95a653"
+   "sha": "11481c95a653",
+   "dur": 230
   },
   {
    "name": "SAITAMA'S THEME (ONE PUNCH MAN)",
@@ -7914,7 +8266,8 @@
    ],
    "size": 16662,
    "sha256": "9dfe80ca62fadf0e4db4a854901f033b69e6d900249e6be717105db6c0b2e267",
-   "sha": "9dfe80ca62fa"
+   "sha": "9dfe80ca62fa",
+   "dur": 70
   },
   {
    "name": "SANS.",
@@ -7930,7 +8283,8 @@
    ],
    "size": 11135,
    "sha256": "a1c573d477c0a549a5f694cc6a814a31187344d55ca52ebbea58ff40cdc524f6",
-   "sha": "a1c573d477c0"
+   "sha": "a1c573d477c0",
+   "dur": 48
   },
   {
    "name": "SANTA CLAUS IS COMING TO TOWN",
@@ -7947,7 +8301,8 @@
    ],
    "size": 16002,
    "sha256": "4b3098c0e8101cd280d1a86b6a6b7679ecc92acadb46a27f6dc41f57ab70181e",
-   "sha": "4b3098c0e810"
+   "sha": "4b3098c0e810",
+   "dur": 67
   },
   {
    "name": "SAVE YOUR TEARS",
@@ -7962,7 +8317,8 @@
    ],
    "size": 42639,
    "sha256": "e137b1c6def51bbc0628dbe9f3c77dcd6c3363132a788dc0b5fdf6424d78e28a",
-   "sha": "e137b1c6def5"
+   "sha": "e137b1c6def5",
+   "dur": 208
   },
   {
    "name": "SCARLET FOREST",
@@ -7977,22 +8333,23 @@
    ],
    "size": 47115,
    "sha256": "0187c650553ad308676c169ea49984e61d3b48b3b96152c70463b6b69a7895aa",
-   "sha": "0187c650553a"
+   "sha": "0187c650553a",
+   "dur": 129
   },
   {
    "name": "SCHUBERT - SERENADE",
    "file": "SERENADE.lua",
    "bpm": "58",
    "cat": [
-    "classical",
-    "new"
+    "classical"
    ],
    "alts": [
     "franz liszt"
    ],
    "size": 70992,
    "sha256": "bf67c44822a34624a0623712772d44c5cd96904cc091f6442525f52a2aa0acaa",
-   "sha": "bf67c44822a3"
+   "sha": "bf67c44822a3",
+   "dur": 354
   },
   {
    "name": "SEE YOU AGAIN (CHARLIE PUTH)",
@@ -8009,7 +8366,8 @@
    ],
    "size": 42092,
    "sha256": "ff958ab7e3d705fda3c9694e9129d476fa15042de3ebe7357b0053c6e526309e",
-   "sha": "ff958ab7e3d7"
+   "sha": "ff958ab7e3d7",
+   "dur": 298
   },
   {
    "name": "SEE YOU AGAIN (TYLER THE CREATOR)",
@@ -8029,7 +8387,8 @@
    ],
    "size": 14369,
    "sha256": "59d65ef8a962ec30b6790dcbf8da4da48eb371f265e0a9a22b08bf394de6bd93",
-   "sha": "59d65ef8a962"
+   "sha": "59d65ef8a962",
+   "dur": 80
   },
   {
    "name": "SHAPE OF YOU",
@@ -8043,7 +8402,8 @@
    ],
    "size": 59139,
    "sha256": "4a355d0019c0c5394bda11191ead8122e5036f67375dc2c6f12c640e8bf5f04b",
-   "sha": "4a355d0019c0"
+   "sha": "4a355d0019c0",
+   "dur": 235
   },
   {
    "name": "SHIAWASE (VIP)",
@@ -8062,7 +8422,8 @@
    ],
    "size": 50681,
    "sha256": "236498a8c6ce96cd31fec0e5f6f54d49f59b3021be30483c23f888725dbd5c55",
-   "sha": "236498a8c6ce"
+   "sha": "236498a8c6ce",
+   "dur": 178
   },
   {
    "name": "SHIKAIRO DAYS",
@@ -8080,7 +8441,8 @@
    ],
    "size": 39153,
    "sha256": "7d08e3b8ca382a4317d9a19f2f326d969caa653d4b07e9f8e204069d67a7e819",
-   "sha": "7d08e3b8ca38"
+   "sha": "7d08e3b8ca38",
+   "dur": 88
   },
   {
    "name": "SHINZOU WO SASEGEYO",
@@ -8088,8 +8450,7 @@
    "bpm": "80",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "attack on titan",
@@ -8097,7 +8458,8 @@
    ],
    "size": 34681,
    "sha256": "74221db40cb7106c0bbc3c01b8df0e8334be2d13e8c70aa91ff6980ab7d747ea",
-   "sha": "74221db40cb7"
+   "sha": "74221db40cb7",
+   "dur": 88
   },
   {
    "name": "SHOP",
@@ -8112,7 +8474,8 @@
    ],
    "size": 9502,
    "sha256": "5f2cdf36f16bd605535a291e350e2b278d1a9bb77a4f0639b69255b01ad3028b",
-   "sha": "5f2cdf36f16b"
+   "sha": "5f2cdf36f16b",
+   "dur": 49
   },
   {
    "name": "SICK OF U",
@@ -8126,7 +8489,8 @@
    ],
    "size": 51191,
    "sha256": "f015449d1b647c88dea6c7ee769c0fbd24a2f055f2e41487e6c0118d3d3235d8",
-   "sha": "f015449d1b64"
+   "sha": "f015449d1b64",
+   "dur": 166
   },
   {
    "name": "SILHOUETTE (NARUTO)",
@@ -8141,22 +8505,23 @@
    ],
    "size": 31328,
    "sha256": "711ee90e7a1508ef14884048ef4bd500587f99a852afefa4e8a443dc9c4854d8",
-   "sha": "711ee90e7a15"
+   "sha": "711ee90e7a15",
+   "dur": 85
   },
   {
    "name": "SILLY BILLY (FNF)",
    "file": "SILLY_BILLY.lua",
    "bpm": "173",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "friday night funkin"
    ],
    "size": 74930,
    "sha256": "a79dd37f051a4fcbe41328732a373db0b6850f8d2cc836fef087e55348e6e8fd",
-   "sha": "a79dd37f051a"
+   "sha": "a79dd37f051a",
+   "dur": 351
   },
   {
    "name": "SINKING TOWN",
@@ -8173,7 +8538,8 @@
    ],
    "size": 49277,
    "sha256": "767df9a6fc20235023f0f383a82881abe1202648be821605d804b6b1b066e449",
-   "sha": "767df9a6fc20"
+   "sha": "767df9a6fc20",
+   "dur": 180
   },
   {
    "name": "SKELETAL SHENANIGANS",
@@ -8189,7 +8555,8 @@
    ],
    "size": 43198,
    "sha256": "8761321ccc028e871daa9fb99b916353a7a402da70151a9d80349d044a6e436f",
-   "sha": "8761321ccc02"
+   "sha": "8761321ccc02",
+   "dur": 139
   },
   {
    "name": "SKYFALL",
@@ -8204,7 +8571,8 @@
    ],
    "size": 51903,
    "sha256": "38feaa8e86169fb8f241f04fe1ceafd4c04d3d5ddafdbcc6801741cc621af5d7",
-   "sha": "38feaa8e8616"
+   "sha": "38feaa8e8616",
+   "dur": 298
   },
   {
    "name": "SLAY",
@@ -8219,7 +8587,8 @@
    ],
    "size": 6759,
    "sha256": "d9dd348c217f2f28911ef21d781313af60a459d20e93d013d9fb52d9ac53b6ae",
-   "sha": "d9dd348c217f"
+   "sha": "d9dd348c217f",
+   "dur": 34
   },
   {
    "name": "SLOW DANCING IN THE DARK",
@@ -8227,15 +8596,15 @@
    "bpm": "89",
    "cat": [
     "sad",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "joji"
    ],
    "size": 34313,
    "sha256": "875563ad0e4506abc5a5e2e63f6546a030e3b4f27abb5089dc2b4f49ecd56233",
-   "sha": "875563ad0e45"
+   "sha": "875563ad0e45",
+   "dur": 226
   },
   {
    "name": "SNOWFALL",
@@ -8251,15 +8620,15 @@
    ],
    "size": 23383,
    "sha256": "e072fd02bc2711a4db4c90f3f71e7becd66d71b3d67865a7ef0fc4b8d3b2b736",
-   "sha": "e072fd02bc27"
+   "sha": "e072fd02bc27",
+   "dur": 122
   },
   {
    "name": "SNOWMAN",
    "file": "SNOWMAN.lua",
    "bpm": "105",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "christmas",
@@ -8267,7 +8636,8 @@
    ],
    "size": 40739,
    "sha256": "836df4d8f38548edd5393d75700e078bd671507dde960edcc805a4b543566473",
-   "sha": "836df4d8f385"
+   "sha": "836df4d8f385",
+   "dur": 157
   },
   {
    "name": "SNOWY",
@@ -8283,7 +8653,8 @@
    ],
    "size": 10576,
    "sha256": "098cb80640a7d139cb6963dbc39c61036f4ff6a735ba731f0efc529c123e9fbc",
-   "sha": "098cb80640a7"
+   "sha": "098cb80640a7",
+   "dur": 100
   },
   {
    "name": "SOLAS",
@@ -8299,7 +8670,8 @@
    ],
    "size": 22107,
    "sha256": "52965c79f284da3d47b27c81efa4a7ae41ff87196c589a4f6c45d9c73477aaed",
-   "sha": "52965c79f284"
+   "sha": "52965c79f284",
+   "dur": 75
   },
   {
    "name": "SOMEBODY THAT I USED TO KNOW",
@@ -8314,7 +8686,8 @@
    ],
    "size": 68692,
    "sha256": "7e1b8e5c90fc44ef953cb089eca32b0b8f0830dae26bfd91e957ac847ebdc242",
-   "sha": "7e1b8e5c90fc"
+   "sha": "7e1b8e5c90fc",
+   "dur": 243
   },
   {
    "name": "SOMETHING JUST LIKE THIS",
@@ -8331,7 +8704,8 @@
    ],
    "size": 65897,
    "sha256": "85a6bdb24df1020ee2ee550970d9e33a2c9fa2b7620a46c373794dc3eab52fbc",
-   "sha": "85a6bdb24df1"
+   "sha": "85a6bdb24df1",
+   "dur": 247
   },
   {
    "name": "SONG THAT MIGHT PLAY WHEN YOU FIGHT SANS",
@@ -8346,7 +8720,8 @@
    ],
    "size": 26678,
    "sha256": "91982654460bf26410e1f30ddcb2a574fa5b134bc6e8d844b715dc472bd33254",
-   "sha": "91982654460b"
+   "sha": "91982654460b",
+   "dur": 56
   },
   {
    "name": "STATE ANTHEM OF THE SOVIET UNION",
@@ -8362,7 +8737,8 @@
    ],
    "size": 20490,
    "sha256": "24c88d2c1828f984a66000b5c6ced1d08b422dbe72f9c7164a43cc7ec96d859d",
-   "sha": "24c88d2c1828"
+   "sha": "24c88d2c1828",
+   "dur": 125
   },
   {
    "name": "SPACE SONG",
@@ -8380,7 +8756,8 @@
    ],
    "size": 89901,
    "sha256": "9e300cc2bd83b4fd7bd549671fbc991570d831744d4735c8d8df9732c2e25fc7",
-   "sha": "9e300cc2bd83"
+   "sha": "9e300cc2bd83",
+   "dur": 270
   },
   {
    "name": "SPARKLE",
@@ -8399,7 +8776,8 @@
    ],
    "size": 97297,
    "sha256": "528a8517d6ca72792157a6e28f0e1e210b4ba049edc48249f002b64450f7e2e3",
-   "sha": "528a8517d6ca"
+   "sha": "528a8517d6ca",
+   "dur": 342
   },
   {
    "name": "SPAWN",
@@ -8407,15 +8785,15 @@
    "bpm": "140",
    "cat": [
     "deltarune",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 18569,
    "sha256": "7323f43e17808f1e12ce590f8056f206c3c5c3f76ad39040b2afe6c9fc21cba4",
-   "sha": "7323f43e1780"
+   "sha": "7323f43e1780",
+   "dur": 68
   },
   {
    "name": "SPEAR OF JUSTICE",
@@ -8433,7 +8811,8 @@
    ],
    "size": 47268,
    "sha256": "9e3a3183a0edf17c9f254b6d8a5c0607becb1e283730169531ebe36895f879f0",
-   "sha": "9e3a3183a0ed"
+   "sha": "9e3a3183a0ed",
+   "dur": 93
   },
   {
    "name": "SPECIALZ (JJK)",
@@ -8441,15 +8820,15 @@
    "bpm": "117",
    "cat": [
     "movies/tv",
-    "anime/jpop",
-    "new"
+    "anime/jpop"
    ],
    "alts": [
     "jujutsu kaisen"
    ],
    "size": 74502,
    "sha256": "84c08a972f348a7aa528f6740b3fdd56b9d32251abdf50203d45681172a8d139",
-   "sha": "84c08a972f34"
+   "sha": "84c08a972f34",
+   "dur": 216
   },
   {
    "name": "SPECTRE",
@@ -8469,7 +8848,8 @@
    ],
    "size": 50415,
    "sha256": "485933edbda26a958a3f4c16e490b5cc5f18c85e4fef079b1a26f8414190ed89",
-   "sha": "485933edbda2"
+   "sha": "485933edbda2",
+   "dur": 184
   },
   {
    "name": "SPIDER DANCE",
@@ -8485,7 +8865,8 @@
    ],
    "size": 41574,
    "sha256": "b96f91d75ceaf2fbfcc750d9f8c055a8caec4fb4a3d04f424a2ccffc860ede7c",
-   "sha": "b96f91d75cea"
+   "sha": "b96f91d75cea",
+   "dur": 100
   },
   {
    "name": "SPOOKY SCARY SKELETONS",
@@ -8493,15 +8874,15 @@
    "bpm": "225",
    "cat": [
     "creepy/weirdcore",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "halloween"
    ],
    "size": 41234,
    "sha256": "72ad353c82d65976c28c8ae2492ed7bb9025bcbed4d6c58cfd784d90c310f8ed",
-   "sha": "72ad353c82d6"
+   "sha": "72ad353c82d6",
+   "dur": 129
   },
   {
    "name": "STAY",
@@ -8516,7 +8897,8 @@
    ],
    "size": 33059,
    "sha256": "35267e3a5c0c522b5d1b2a54046b224713cc310eff35c2d75ea18bb187c039fd",
-   "sha": "35267e3a5c0c"
+   "sha": "35267e3a5c0c",
+   "dur": 135
   },
   {
    "name": "STAYIN' ALIVE",
@@ -8525,8 +8907,7 @@
    "cat": [
     "pop/hiphop",
     "rock",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "the bee gees",
@@ -8534,7 +8915,8 @@
    ],
    "size": 102242,
    "sha256": "ca87b6274f5ee88ec3c4b9c5d9da5ecb52abe24523968ce1d880048cca758946",
-   "sha": "ca87b6274f5e"
+   "sha": "ca87b6274f5e",
+   "dur": 256
   },
   {
    "name": "STEREO HEARTS",
@@ -8550,7 +8932,8 @@
    ],
    "size": 48271,
    "sha256": "e2051013a96b453e0e05261cf722d0f0121587e5685a16cc89554d57904a5147",
-   "sha": "e2051013a96b"
+   "sha": "e2051013a96b",
+   "dur": 192
   },
   {
    "name": "STEREO LOVE",
@@ -8567,23 +8950,27 @@
    ],
    "size": 57546,
    "sha256": "eab04b03b98e093ec41b6e603f976bfd360a95ef8700ae5964276de1f0a85e96",
-   "sha": "eab04b03b98e"
+   "sha": "eab04b03b98e",
+   "dur": 256
   },
   {
-   "name": "STEREO MADNESS",
+   "name": "Stereo Madness",
    "file": "STEREO_MADNESS.lua",
    "bpm": "160",
    "cat": [
+    "geometry dash",
     "video games",
     "electronic"
    ],
    "alts": [
-    "geometry dash",
-    "gd"
+    "ForeverBound",
+    "Geometry Dash",
+    "GD"
    ],
    "size": 51187,
    "sha256": "4cc1ec20d7ea697d115d27c672405c64ea555d2f306cf7ce479c516b519e65b6",
-   "sha": "4cc1ec20d7ea"
+   "sha": "4cc1ec20d7ea",
+   "dur": 120
   },
   {
    "name": "STILL D.R.E.",
@@ -8591,15 +8978,15 @@
    "bpm": "92",
    "cat": [
     "pop/hiphop",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "snoop dogg"
    ],
    "size": 33966,
    "sha256": "8f3632b97867f4bb1e3beef3c678dd042cd0d0f8fe5abdfefad05f0c82c25db5",
-   "sha": "8f3632b97867"
+   "sha": "8f3632b97867",
+   "dur": 145
   },
   {
    "name": "STRANGER THINGS THEME",
@@ -8616,7 +9003,8 @@
    ],
    "size": 10632,
    "sha256": "f02e0ad167b045ab26ee7f4a230edaadf41a207213d3900dc244dd6a18d4543a",
-   "sha": "f02e0ad167b0"
+   "sha": "f02e0ad167b0",
+   "dur": 52
   },
   {
    "name": "STRANGERS",
@@ -8633,7 +9021,8 @@
    ],
    "size": 41554,
    "sha256": "bba24a410080c42848c298f1ac04746d5991d22b529055ecca7ed80cd46262f6",
-   "sha": "bba24a410080"
+   "sha": "bba24a410080",
+   "dur": 170
   },
   {
    "name": "STRESSED OUT",
@@ -8650,7 +9039,8 @@
    ],
    "size": 46637,
    "sha256": "b56d5b1f1431c4aaa0a5cf1c28162fe7af5f0045e63621d5a88efb3d087fea83",
-   "sha": "b56d5b1f1431"
+   "sha": "b56d5b1f1431",
+   "dur": 200
   },
   {
    "name": "SUBWOOFER LULLABY",
@@ -8665,7 +9055,8 @@
    ],
    "size": 11039,
    "sha256": "899e496295cae886a92aaae24df73b27b21b501b0b01827e03b418a6a5cb74e9",
-   "sha": "899e496295ca"
+   "sha": "899e496295ca",
+   "dur": 185
   },
   {
    "name": "SUCCESSION MAIN THEME",
@@ -8682,7 +9073,8 @@
    ],
    "size": 19771,
    "sha256": "508f6fd70b492589d78cbada13f80002ecbfdd61fcb26c4eff851a0fb1968b2b",
-   "sha": "508f6fd70b49"
+   "sha": "508f6fd70b49",
+   "dur": 98
   },
   {
    "name": "SUNFLOWER",
@@ -8700,7 +9092,8 @@
    ],
    "size": 32830,
    "sha256": "5a3d8e1d21aea2ea4dfc5aad026e30c4fba07db96f731140ba9decf082fb3ec4",
-   "sha": "5a3d8e1d21ae"
+   "sha": "5a3d8e1d21ae",
+   "dur": 140
   },
   {
    "name": "SUPER IDOL",
@@ -8716,7 +9109,8 @@
    ],
    "size": 47655,
    "sha256": "150629eaa85ea0afe44757ee32391041b79b8b6b7baa0237429bd85c4b1e55f4",
-   "sha": "150629eaa85e"
+   "sha": "150629eaa85e",
+   "dur": 189
   },
   {
    "name": "SUPER MARIO BROS. THEME",
@@ -8733,7 +9127,8 @@
    ],
    "size": 31920,
    "sha256": "4a16de0f8dc2e1972010e6ef75c866e58e795641803f8ddd368b75a1532fd0a9",
-   "sha": "4a16de0f8dc2"
+   "sha": "4a16de0f8dc2",
+   "dur": 112
   },
   {
    "name": "SUPER SHY",
@@ -8749,22 +9144,23 @@
    ],
    "size": 65405,
    "sha256": "ca9fda046a5014ca2aa3bb9dad37e3b3b1635ce140988f5d9d09d7c8012ea427",
-   "sha": "ca9fda046a50"
+   "sha": "ca9fda046a50",
+   "dur": 192
   },
   {
    "name": "SUPER SMASH BROS. ULTIMATE",
    "file": "SUPER_SMASH_BROS.lua",
    "bpm": "145",
    "cat": [
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "super smash bros"
    ],
    "size": 56297,
    "sha256": "49b85e72617d8f3cccbdba2128a18f5c4443dc42b6347788767c45fade524b57",
-   "sha": "49b85e72617d"
+   "sha": "49b85e72617d",
+   "dur": 172
   },
   {
    "name": "SUZUME NO TOJIMARI",
@@ -8782,22 +9178,23 @@
    ],
    "size": 55556,
    "sha256": "7882498f44afc206ca5baddff0423c64a3f02c0ed7578d4b34372c3ed8ffcd77",
-   "sha": "7882498f44af"
+   "sha": "7882498f44af",
+   "dur": 203
   },
   {
    "name": "SWAN LAKE",
    "file": "SWAN_LAKE.lua",
    "bpm": "100",
    "cat": [
-    "classical",
-    "new"
+    "classical"
    ],
    "alts": [
     "tchaikovsky"
    ],
    "size": 10870,
    "sha256": "217c33280679f0813bb7df45d67d3e420041f163d0ed6df8ff06d832eb3081ae",
-   "sha": "217c33280679"
+   "sha": "217c33280679",
+   "dur": 64
   },
   {
    "name": "SWEATER WEATHER",
@@ -8813,7 +9210,8 @@
    ],
    "size": 31879,
    "sha256": "11076b4db70582461313e01ed069099b893932961bed743d5df5805969a46c8a",
-   "sha": "11076b4db705"
+   "sha": "11076b4db705",
+   "dur": 220
   },
   {
    "name": "SWEDEN",
@@ -8828,7 +9226,8 @@
    ],
    "size": 14044,
    "sha256": "215937c0c57cea1f0029a01ff0f61ddc937a0efda9a1c72790b42636a7dc79c8",
-   "sha": "215937c0c57c"
+   "sha": "215937c0c57c",
+   "dur": 221
   },
   {
    "name": "SWEET DREAMS (ARE MADE OF THIS)",
@@ -8837,15 +9236,15 @@
    "cat": [
     "pop/hiphop",
     "electronic",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "eurythmics"
    ],
    "size": 37680,
    "sha256": "d64be10eef836bcc6cf5d3e068a530793fa4af52a8869b5b9063baf2b62092bb",
-   "sha": "d64be10eef83"
+   "sha": "d64be10eef83",
+   "dur": 153
   },
   {
    "name": "SWEETLY",
@@ -8860,7 +9259,8 @@
    ],
    "size": 35044,
    "sha256": "c6c094603eebb1285489bcff90707c40624aa650e867f6c756a161e32feed99f",
-   "sha": "c6c094603eeb"
+   "sha": "c6c094603eeb",
+   "dur": 142
   },
   {
    "name": "SWIMMING",
@@ -8876,7 +9276,8 @@
    ],
    "size": 63461,
    "sha256": "4a9f54fb7a38c6aa5ddb0d93027d5206a33be76071b89f01a89bf051cbcfb9b9",
-   "sha": "4a9f54fb7a38"
+   "sha": "4a9f54fb7a38",
+   "dur": 189
   },
   {
    "name": "SYMPHONY NO.5",
@@ -8892,7 +9293,8 @@
    ],
    "size": 122299,
    "sha256": "8d2242afe241b8e7d7d73ae6a11d855b8608d87f08ac40171a85dee0213d2607",
-   "sha": "8d2242afe241"
+   "sha": "8d2242afe241",
+   "dur": 392
   },
   {
    "name": "TAKE FIVE",
@@ -8908,7 +9310,8 @@
    ],
    "size": 40713,
    "sha256": "f9f103ad183c0eca1504ae53791c96ecc14a47af2679460bdaf33f1941e162e6",
-   "sha": "f9f103ad183c"
+   "sha": "f9f103ad183c",
+   "dur": 163
   },
   {
    "name": "TAKE ME BACK HOME",
@@ -8923,7 +9326,8 @@
    ],
    "size": 18281,
    "sha256": "f107ea73c8132a468757c52a0537cd75b3d9af03dd0e3b102d9690bc528caa3d",
-   "sha": "f107ea73c813"
+   "sha": "f107ea73c813",
+   "dur": 80
   },
   {
    "name": "TAKE ON ME",
@@ -8937,21 +9341,21 @@
    ],
    "size": 39259,
    "sha256": "0775899ca07124859feea92436a716514b8d99f955f89f173b214dc378a300d2",
-   "sha": "0775899ca071"
+   "sha": "0775899ca071",
+   "dur": 205
   },
   {
    "name": "TEK IT",
    "file": "TEK_IT.lua",
    "bpm": "147",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "cafune"
    ],
    "size": 10196,
    "sha256": "2a2805f85d3b2a8e8b6205769eae7293a4974f884ff236f99f0a8d9b5cd7709a",
-   "sha": "2a2805f85d3b"
+   "sha": "2a2805f85d3b",
+   "dur": 50
   },
   {
    "name": "TEST DRIVE",
@@ -8967,7 +9371,8 @@
    ],
    "size": 34276,
    "sha256": "23bcf087c558202640af2f9a0165c5387cc2d391eb6367141899606388c46316",
-   "sha": "23bcf087c558"
+   "sha": "23bcf087c558",
+   "dur": 125
   },
   {
    "name": "TETORIS (TETRIS)",
@@ -8985,7 +9390,8 @@
    ],
    "size": 68565,
    "sha256": "a0790593e49e42592f324cc7b61026026a063c42a40ea6cfa7e69a1e36b3a301",
-   "sha": "a0790593e49e"
+   "sha": "a0790593e49e",
+   "dur": 199
   },
   {
    "name": "THẰNG ĐIÊN",
@@ -9001,7 +9407,8 @@
    ],
    "size": 47054,
    "sha256": "142fbb7a8a4810e840561c467aca87f519e44e28c5e58d1d11ebb317867feb4d",
-   "sha": "142fbb7a8a48"
+   "sha": "142fbb7a8a48",
+   "dur": 224
   },
   {
    "name": "THATS WHAT I WANT",
@@ -9015,7 +9422,8 @@
    ],
    "size": 49352,
    "sha256": "4bf4ff05f6fc9b62416edf5e65fafb040880472d0be62f66a572f672bc2a439e",
-   "sha": "4bf4ff05f6fc"
+   "sha": "4bf4ff05f6fc",
+   "dur": 145
   },
   {
    "name": "THE 4 SEASONS - AUTUMN",
@@ -9031,7 +9439,8 @@
    ],
    "size": 68060,
    "sha256": "84e2864cdbe6e74b363914444f93c7f5d931fbad640e1ac73b108a7ff888be8c",
-   "sha": "84e2864cdbe6"
+   "sha": "84e2864cdbe6",
+   "dur": 176
   },
   {
    "name": "THE 4 SEASONS - SPRING",
@@ -9050,7 +9459,8 @@
    ],
    "size": 79248,
    "sha256": "e63e9a8acc213acaadcc13666278503bc53c5d72afa935d4fd1442f22163bdbf",
-   "sha": "e63e9a8acc21"
+   "sha": "e63e9a8acc21",
+   "dur": 188
   },
   {
    "name": "THE 4 SEASONS - SUMMER",
@@ -9070,7 +9480,8 @@
    ],
    "size": 86048,
    "sha256": "70dd64c4df6b598965cd15b2c00c9a58e5c7007a4949d160a9e7716a5d12084f",
-   "sha": "70dd64c4df6b"
+   "sha": "70dd64c4df6b",
+   "dur": 165
   },
   {
    "name": "THE 4 SEASONS - WINTER",
@@ -9090,7 +9501,8 @@
    ],
    "size": 97361,
    "sha256": "95c76c543cfb410638278b987662d91e9ed0adda8f58adc73c0f595046ec09bb",
-   "sha": "95c76c543cfb"
+   "sha": "95c76c543cfb",
+   "dur": 211
   },
   {
    "name": "THE ABYSS",
@@ -9107,7 +9519,8 @@
    ],
    "size": 45127,
    "sha256": "f26b77b0b02a3c85532d6243f0aeb7173071dff9bb69d207a3fa192fcfc4d482",
-   "sha": "f26b77b0b02a"
+   "sha": "f26b77b0b02a",
+   "dur": 158
   },
   {
    "name": "THE AMAZING DIGITAL CIRCUS",
@@ -9122,22 +9535,23 @@
    ],
    "size": 34011,
    "sha256": "ad04d40db9846788572aad4341704a069d5d071fea1f0bf5c246cab583a14729",
-   "sha": "ad04d40db984"
+   "sha": "ad04d40db984",
+   "dur": 109
   },
   {
    "name": "THE BEGINNING",
    "file": "THE_BEGINNING.lua",
    "bpm": "150",
    "cat": [
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "flawed mangoes"
    ],
    "size": 50902,
    "sha256": "84c9de4a47ae87028db6bbc1f4820f29b2ffee2b29dfd66aca6eb7e7fecd71e2",
-   "sha": "84c9de4a47ae"
+   "sha": "84c9de4a47ae",
+   "dur": 179
   },
   {
    "name": "THE BENONI",
@@ -9154,22 +9568,23 @@
    ],
    "size": 44040,
    "sha256": "00e293f5fc3ccae3f7722e7ee94c85d5d036d1c998c8fc1864285b16bffde92c",
-   "sha": "00e293f5fc3c"
+   "sha": "00e293f5fc3c",
+   "dur": 103
   },
   {
    "name": "THE BLUE DANUBE",
    "file": "THE_BLUE_DANUBE.lua",
    "bpm": "120",
    "cat": [
-    "classical",
-    "new"
+    "classical"
    ],
    "alts": [
     "squid game"
    ],
    "size": 14803,
    "sha256": "10e2cb7ea5049edfc98a5edf3d86f133005e92a63729be11357f5cce6af09a83",
-   "sha": "10e2cb7ea504"
+   "sha": "10e2cb7ea504",
+   "dur": 100
   },
   {
    "name": "THE ECSTASY OF GOLD",
@@ -9187,7 +9602,8 @@
    ],
    "size": 28130,
    "sha256": "0a95dda6fa4f4dd0d32c4a598c11a586c8757a5717ffaec2ef68f4f33f46eb24",
-   "sha": "0a95dda6fa4f"
+   "sha": "0a95dda6fa4f",
+   "dur": 105
   },
   {
    "name": "THE ENTERTAINER",
@@ -9203,7 +9619,8 @@
    ],
    "size": 76575,
    "sha256": "89c3e67a9ef37e7cc2dba978cf6b9d72d437739f7dae9c5421dac0bf362c32eb",
-   "sha": "89c3e67a9ef3"
+   "sha": "89c3e67a9ef3",
+   "dur": 303
   },
   {
    "name": "THE GREAT FAIRY FOUNTAIN",
@@ -9218,7 +9635,8 @@
    ],
    "size": 15832,
    "sha256": "f6969fe4a8e2af3d110a2f758983e66e59acbda4d6021a5cdd8e2252480aad47",
-   "sha": "f6969fe4a8e2"
+   "sha": "f6969fe4a8e2",
+   "dur": 51
   },
   {
    "name": "THE LEGEND",
@@ -9233,7 +9651,8 @@
    ],
    "size": 17637,
    "sha256": "f84ccf4ca345b3f717582d67462ce08ec1121e9038b0968034ce7e5d69f513c3",
-   "sha": "f84ccf4ca345"
+   "sha": "f84ccf4ca345",
+   "dur": 106
   },
   {
    "name": "THE NIGHTS",
@@ -9249,22 +9668,23 @@
    ],
    "size": 60797,
    "sha256": "1289f2eb46d359c99940c50366137840ef9d3a0b4c0a6e86b83311227e26e40a",
-   "sha": "1289f2eb46d3"
+   "sha": "1289f2eb46d3",
+   "dur": 168
   },
   {
    "name": "THE REAL SLIM SHADY",
    "file": "THE_REAL_SLIM_SHADY.lua",
    "bpm": "105",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "eminem"
    ],
    "size": 57541,
    "sha256": "f9991ad354117e6b0fac36d05b44f5576489973f7a2ae61797cc12c0f9318f47",
-   "sha": "f9991ad35411"
+   "sha": "f9991ad35411",
+   "dur": 283
   },
   {
    "name": "THE SEARCH",
@@ -9281,7 +9701,8 @@
    ],
    "size": 59510,
    "sha256": "3d63e4a4d6c3936a7adc55c975f98f9401744eda6d9bbfea0e52ed19146e529a",
-   "sha": "3d63e4a4d6c3"
+   "sha": "3d63e4a4d6c3",
+   "dur": 194
   },
   {
    "name": "THE SLAUGHTER CONTINUES",
@@ -9297,7 +9718,8 @@
    ],
    "size": 69075,
    "sha256": "133146987fb432b7824b5301badabf5bf5b84d84929954e23c0fc59eac152c0a",
-   "sha": "133146987fb4"
+   "sha": "133146987fb4",
+   "dur": 180
   },
   {
    "name": "THE WINNER TAKES IT ALL",
@@ -9313,7 +9735,8 @@
    ],
    "size": 72589,
    "sha256": "9898a60171d2552410cb3564a3f08749cb651fde6893004b7d8fae2fa1f89084",
-   "sha": "9898a60171d2"
+   "sha": "9898a60171d2",
+   "dur": 294
   },
   {
    "name": "THE WORLD",
@@ -9329,7 +9752,8 @@
    ],
    "size": 27399,
    "sha256": "4afcf00b9ec6be000d79eba9b0860a665bf7400b5e82225b40ec13770f5b6a55",
-   "sha": "4afcf00b9ec6"
+   "sha": "4afcf00b9ec6",
+   "dur": 85
   },
   {
    "name": "THE WORLD REVOLVING",
@@ -9345,7 +9769,8 @@
    ],
    "size": 65978,
    "sha256": "195b3606c72202c0b01f34b3a721461eb935a747e59075e45a40f1ce760c5b89",
-   "sha": "195b3606c722"
+   "sha": "195b3606c722",
+   "dur": 202
   },
   {
    "name": "THE X-FILES THEME",
@@ -9362,7 +9787,8 @@
    ],
    "size": 26414,
    "sha256": "ce8f307efab9704d8562d6d14492d794d495e66d59c871d739bb2b4be43e7264",
-   "sha": "ce8f307efab9"
+   "sha": "ce8f307efab9",
+   "dur": 184
   },
   {
    "name": "THEORY OF EVERYTHING",
@@ -9379,7 +9805,8 @@
    ],
    "size": 97481,
    "sha256": "ffb17e31130ba91adb4c6c2bb850145e80e4f08a497a8f58746bad237ead0f9a",
-   "sha": "ffb17e31130b"
+   "sha": "ffb17e31130b",
+   "dur": 446
   },
   {
    "name": "THICK OF IT",
@@ -9395,7 +9822,8 @@
    ],
    "size": 22091,
    "sha256": "38897c50954da8a48f05aabb66aca6a69579c3364ffe1901f698c003b73474a7",
-   "sha": "38897c50954d"
+   "sha": "38897c50954d",
+   "dur": 105
   },
   {
    "name": "THIS IS HALLOWEEN",
@@ -9404,8 +9832,7 @@
    "cat": [
     "seasonal",
     "creepy/weirdcore",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "danny elfman",
@@ -9413,7 +9840,8 @@
    ],
    "size": 63507,
    "sha256": "27d05f7698e73281189d88ad9a6ae63dfab7bbf32ff60e297bb8a4a40f6035e8",
-   "sha": "27d05f7698e7"
+   "sha": "27d05f7698e7",
+   "dur": 196
   },
   {
    "name": "THIS IS HOME",
@@ -9429,7 +9857,8 @@
    ],
    "size": 35932,
    "sha256": "30778545f52554ca774229e7d6ccc9d452880957df6fac04da8f91939c44daa7",
-   "sha": "30778545f525"
+   "sha": "30778545f525",
+   "dur": 245
   },
   {
    "name": "THIS IS WHAT FALLING IN LOVE FEELS LIKE",
@@ -9437,15 +9866,15 @@
    "bpm": "80",
    "cat": [
     "beautiful",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "jvke"
    ],
    "size": 26802,
    "sha256": "bf333d1360cc053f391bc39cd1d14d4359960357001af2edb466c594a3cf4ff6",
-   "sha": "bf333d1360cc"
+   "sha": "bf333d1360cc",
+   "dur": 119
   },
   {
    "name": "THIS IS WHAT HEARTBREAK FEELS LIKE",
@@ -9461,7 +9890,8 @@
    ],
    "size": 35478,
    "sha256": "c483f873860765fd3e665e03a0fc15964ead6c7a02cd3e2bacda38217a17babe",
-   "sha": "c483f8738607"
+   "sha": "c483f8738607",
+   "dur": 155
   },
   {
    "name": "THIS IS WHAT SPACE FEELS LIKE",
@@ -9469,15 +9899,15 @@
    "bpm": "130",
    "cat": [
     "beautiful",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "jvke"
    ],
    "size": 43960,
    "sha256": "7c7cbf40b94f609763d0d5a7b7380f71535389c7ff9c4858cdc8a43e10015801",
-   "sha": "7c7cbf40b94f"
+   "sha": "7c7cbf40b94f",
+   "dur": 168
   },
   {
    "name": "THIS IS WHAT WINTER FEELS LIKE",
@@ -9494,7 +9924,8 @@
    ],
    "size": 29923,
    "sha256": "60e602e9b52b98a8952995835c4752f74366351b7f7f292bb007cc846fcacb4b",
-   "sha": "60e602e9b52b"
+   "sha": "60e602e9b52b",
+   "dur": 100
   },
   {
    "name": "THROUGH PATCHES OF VIOLET",
@@ -9510,7 +9941,8 @@
    ],
    "size": 89765,
    "sha256": "6f8164915c71a1481121366b2a06335f59b8d894ce0cdc573eaca41eed6f3d8f",
-   "sha": "6f8164915c71"
+   "sha": "6f8164915c71",
+   "dur": 306
   },
   {
    "name": "THUNDERSTRUCK",
@@ -9525,7 +9957,8 @@
    ],
    "size": 94620,
    "sha256": "f206e65a7708636faed8960787dbab5891cd402e47cc654e766e4f2d4b1b0982",
-   "sha": "f206e65a7708"
+   "sha": "f206e65a7708",
+   "dur": 322
   },
   {
    "name": "TICKING",
@@ -9542,7 +9975,8 @@
    ],
    "size": 103366,
    "sha256": "3165c3ae15760ad393225dd88454c20b2bff7abd323bf47a39dbd03c88c3e6b6",
-   "sha": "3165c3ae1576"
+   "sha": "3165c3ae1576",
+   "dur": 268
   },
   {
    "name": "TIME",
@@ -9551,8 +9985,7 @@
    "cat": [
     "movies/tv",
     "beautiful",
-    "epic",
-    "new"
+    "epic"
    ],
    "alts": [
     "hans zimmer",
@@ -9560,7 +9993,8 @@
    ],
    "size": 18991,
    "sha256": "12736c1509948e1ba4cb931e73835f334a055aeb3677a616699ce17e07ee2a4d",
-   "sha": "12736c150994"
+   "sha": "12736c150994",
+   "dur": 284
   },
   {
    "name": "TIME BACK",
@@ -9576,7 +10010,8 @@
    ],
    "size": 62391,
    "sha256": "36cb65f5febc98dd3f5f5f1cc595e4134e50e5b0a53eeb887b0a98d348681dad",
-   "sha": "36cb65f5febc"
+   "sha": "36cb65f5febc",
+   "dur": 235
   },
   {
    "name": "TIME FLOWS EVER ONWARD",
@@ -9592,15 +10027,15 @@
    ],
    "size": 21141,
    "sha256": "2365ed648282b8482a37ad7d49a018b16e817ba251ac349d6010ef04ce644736",
-   "sha": "2365ed648282"
+   "sha": "2365ed648282",
+   "dur": 127
   },
   {
    "name": "TIMELESS",
    "file": "TIMELESS.lua",
    "bpm": "120",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "the weeknd",
@@ -9609,7 +10044,8 @@
    ],
    "size": 30866,
    "sha256": "2f34140bdfb3334f3b698e5de78bfaebc990cfddc6c430bc7713fc519d20e66d",
-   "sha": "2f34140bdfb3"
+   "sha": "2f34140bdfb3",
+   "dur": 248
   },
   {
    "name": "TOOK HER TO THE O",
@@ -9623,7 +10059,8 @@
    ],
    "size": 16273,
    "sha256": "b9cda17ad0b5fb9535eda17d86200bf81872b08e3047072e3b20d17846459444",
-   "sha": "b9cda17ad0b5"
+   "sha": "b9cda17ad0b5",
+   "dur": 48
   },
   {
    "name": "TORRENT (ETUDE OP.10 NO.4)",
@@ -9640,7 +10077,8 @@
    ],
    "size": 74160,
    "sha256": "de43555b508a871039106b6e059013bef96696150f49ff6c4e2327b2734b51ce",
-   "sha": "de43555b508a"
+   "sha": "de43555b508a",
+   "dur": 107
   },
   {
    "name": "TOXIC",
@@ -9655,7 +10093,8 @@
    ],
    "size": 40019,
    "sha256": "87ff09b8d92151692750b9c1d9a7da01146b7b5c886767dd84f9d731e0522218",
-   "sha": "87ff09b8d921"
+   "sha": "87ff09b8d921",
+   "dur": 163
   },
   {
    "name": "TRANSCENDENTAL ÉTUDE NO.4 (MAZEPPA)",
@@ -9670,7 +10109,8 @@
    ],
    "size": 203289,
    "sha256": "8105b64c56c613c12f48a947f5ee764e5fe447f23f0eac505920a22b1ef8abad",
-   "sha": "8105b64c56c6"
+   "sha": "8105b64c56c6",
+   "dur": 373
   },
   {
    "name": "TRAP ROYALTY",
@@ -9687,7 +10127,8 @@
    ],
    "size": 20285,
    "sha256": "8918433e64597066f02126b72c0639db4c463cf6a6225654c24c95c237a50b1e",
-   "sha": "8918433e6459"
+   "sha": "8918433e6459",
+   "dur": 64
   },
   {
    "name": "TREACHERY (BLEACH)",
@@ -9704,7 +10145,8 @@
    ],
    "size": 55535,
    "sha256": "5196f6523a6e7315003cdff5ec7f5c24e15bdaaae3b5e341af997c545d3afe81",
-   "sha": "5196f6523a6e"
+   "sha": "5196f6523a6e",
+   "dur": 122
   },
   {
    "name": "TURKISH MARCH",
@@ -9719,7 +10161,8 @@
    ],
    "size": 93884,
    "sha256": "7e99bf51641ca8f6d1d34dc40ac9298fca6f259463464247cd8b4c319716d145",
-   "sha": "7e99bf51641c"
+   "sha": "7e99bf51641c",
+   "dur": 290
   },
   {
    "name": "UNDERSTAND",
@@ -9733,7 +10176,8 @@
    ],
    "size": 49852,
    "sha256": "7fdeed0f2e72522e3528df2725958d7bf5dd2a8a3b97f4e56b575958568ce962",
-   "sha": "7fdeed0f2e72"
+   "sha": "7fdeed0f2e72",
+   "dur": 168
   },
   {
    "name": "UNDERTALE",
@@ -9751,7 +10195,8 @@
    ],
    "size": 74894,
    "sha256": "c8ec0e5208be073e75707d7e39672bfc21edee7fe5056a166dfd8e20910229aa",
-   "sha": "c8ec0e5208be"
+   "sha": "c8ec0e5208be",
+   "dur": 364
   },
   {
    "name": "UNDERWATER PROM QUEENS",
@@ -9766,7 +10211,8 @@
    ],
    "size": 32281,
    "sha256": "2efc740bc23096b440fd5619167923ce3d0c7f143aad0f5eb7f3ea0631ab0749",
-   "sha": "2efc740bc230"
+   "sha": "2efc740bc230",
+   "dur": 137
   },
   {
    "name": "UNITY",
@@ -9783,7 +10229,8 @@
    ],
    "size": 32284,
    "sha256": "aafbbf9473615d493826059d5c741e780ff1d2608b2a14e67449789e832f6a70",
-   "sha": "aafbbf947361"
+   "sha": "aafbbf947361",
+   "dur": 105
   },
   {
    "name": "UNRAVEL",
@@ -9799,7 +10246,8 @@
    ],
    "size": 36437,
    "sha256": "b727a434c0ff8278f10ba363d56184c66be398d74f8347bb4051d69f5952d61b",
-   "sha": "b727a434c0ff"
+   "sha": "b727a434c0ff",
+   "dur": 229
   },
   {
    "name": "UNRAVEL (EPIC VER.)",
@@ -9818,7 +10266,8 @@
    ],
    "size": 107924,
    "sha256": "48d625bbf016a24c37f630e60ae87743d333cd72900943b38df38f22b17adde3",
-   "sha": "48d625bbf016"
+   "sha": "48d625bbf016",
+   "dur": 236
   },
   {
    "name": "UNSTOPPABLE",
@@ -9833,7 +10282,8 @@
    ],
    "size": 54236,
    "sha256": "e6f90bfe978ff4cea12794f20165887f2c9834486805764ca054226d672e7c84",
-   "sha": "e6f90bfe978f"
+   "sha": "e6f90bfe978f",
+   "dur": 217
   },
   {
    "name": "UNTIL I FOUND YOU",
@@ -9850,7 +10300,8 @@
    ],
    "size": 33578,
    "sha256": "66ab8bfdf45020fa276cf7505665ce8f7c8f74d866342bc6c5209c4fb6fde637",
-   "sha": "66ab8bfdf450"
+   "sha": "66ab8bfdf450",
+   "dur": 168
   },
   {
    "name": "UNTITLED",
@@ -9868,7 +10319,8 @@
    ],
    "size": 30996,
    "sha256": "ba195ef67f831b567f838b84c317ac81ed7fcdb145f85394e041d35cfc12a25e",
-   "sha": "ba195ef67f83"
+   "sha": "ba195ef67f83",
+   "dur": 152
   },
   {
    "name": "UWA!! SO TEMPERATE♫",
@@ -9876,15 +10328,15 @@
    "bpm": "130",
    "cat": [
     "undertale",
-    "video games",
-    "new"
+    "video games"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 9872,
    "sha256": "5027d920a9c76dd0c333980a69cf16bb2222ed9897a7323e50ae2607a9513e26",
-   "sha": "5027d920a9c7"
+   "sha": "5027d920a9c7",
+   "dur": 60
   },
   {
    "name": "VAMPIRE",
@@ -9900,7 +10352,8 @@
    ],
    "size": 57575,
    "sha256": "90bca578e0e56e9cf511ca560c944ca43c846fdbc5e6e95bf2af3fa78452c820",
-   "sha": "90bca578e0e5"
+   "sha": "90bca578e0e5",
+   "dur": 216
   },
   {
    "name": "VAN GOGH",
@@ -9908,15 +10361,15 @@
    "bpm": "110",
    "cat": [
     "classical",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "virginio aiello"
    ],
    "size": 27727,
    "sha256": "94fd7f569bfa5ffedc92ac6d33d0a808e7e2bad9990d203f4c4de6b096cedb44",
-   "sha": "94fd7f569bfa"
+   "sha": "94fd7f569bfa",
+   "dur": 197
   },
   {
    "name": "VICTORY",
@@ -9932,7 +10385,8 @@
    ],
    "size": 92035,
    "sha256": "422d586eaeab8c8db6fe68fca91863416b80cfc8ab2f3f79ecc15f42fe8162bd",
-   "sha": "422d586eaeab"
+   "sha": "422d586eaeab",
+   "dur": 314
   },
   {
    "name": "VICTORY (BEST PART)",
@@ -9949,21 +10403,21 @@
    ],
    "size": 53432,
    "sha256": "5dcc8c02c6ba2ba0947a4b563379251f32cdf68c44a64f41847bcf53c044163b",
-   "sha": "5dcc8c02c6ba"
+   "sha": "5dcc8c02c6ba",
+   "dur": 330
   },
   {
    "name": "VIENNA",
    "file": "VIENNA.lua",
    "bpm": "120",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "billy joel"
    ],
    "size": 33550,
    "sha256": "895ce11438603e73b349be42b597872936e3da3c5c553a6d0b581c03ef022ca6",
-   "sha": "895ce1143860"
+   "sha": "895ce1143860",
+   "dur": 211
   },
   {
    "name": "VIVA LA VIDA",
@@ -9980,7 +10434,8 @@
    ],
    "size": 49658,
    "sha256": "c1b602f11946fe0826a1c83fbf4071e6cd91af5f1e41a05000b52207d7d26df6",
-   "sha": "c1b602f11946"
+   "sha": "c1b602f11946",
+   "dur": 251
   },
   {
    "name": "VOILÀ",
@@ -9995,7 +10450,8 @@
    ],
    "size": 23576,
    "sha256": "4981ddfbdcf10aeb7b1afce8c96383067e87ebda3d4318ab6ebd237a466b0c8c",
-   "sha": "4981ddfbdcf1"
+   "sha": "4981ddfbdcf1",
+   "dur": 129
   },
   {
    "name": "WAITING FOR LOVE",
@@ -10012,7 +10468,8 @@
    ],
    "size": 55518,
    "sha256": "4ffb4d66799120dfc0047d91c91477c75aba96c6cab2b73b04fd382df9cba506",
-   "sha": "4ffb4d667991"
+   "sha": "4ffb4d667991",
+   "dur": 225
   },
   {
    "name": "WAKE ME UP",
@@ -10027,7 +10484,8 @@
    ],
    "size": 64387,
    "sha256": "645a2ac5a90deddf7a43bb2608213f2613196c8fcee0e9698b8c08e005bb4918",
-   "sha": "645a2ac5a90d"
+   "sha": "645a2ac5a90d",
+   "dur": 246
   },
   {
    "name": "WALTZ OP.64 NO.2",
@@ -10041,7 +10499,8 @@
    ],
    "size": 59171,
    "sha256": "71dcb17a8ffcb6824fffb6697d944b7f00b58daae2904af90617e2a0570b6657",
-   "sha": "71dcb17a8ffc"
+   "sha": "71dcb17a8ffc",
+   "dur": 222
   },
   {
    "name": "WASHING MACHINE HEART",
@@ -10057,7 +10516,8 @@
    ],
    "size": 30801,
    "sha256": "e70eb301a648cfdda6e4ef8231e68f468cecd59588df68c11d260a8f290a56ab",
-   "sha": "e70eb301a648"
+   "sha": "e70eb301a648",
+   "dur": 132
   },
   {
    "name": "WATERFALL",
@@ -10066,15 +10526,15 @@
    "cat": [
     "video games",
     "undertale",
-    "beautiful",
-    "new"
+    "beautiful"
    ],
    "alts": [
     "toby fox"
    ],
    "size": 13451,
    "sha256": "378b76601295d4923ea72f1f84e355807fbf5ff438864ebc3739c7929aa6ddf0",
-   "sha": "378b76601295"
+   "sha": "378b76601295",
+   "dur": 102
   },
   {
    "name": "WE ARE NUMBER ONE",
@@ -10082,7 +10542,6 @@
    "bpm": "168",
    "cat": [
     "memes",
-    "new",
     "movies/tv"
    ],
    "alts": [
@@ -10091,7 +10550,8 @@
    ],
    "size": 43398,
    "sha256": "12d249a82decbbe9f7293fc127ca2094d3eda30d762ef6e3c79379c1697c23b7",
-   "sha": "12d249a82dec"
+   "sha": "12d249a82dec",
+   "dur": 133
   },
   {
    "name": "WE ARE! (ONE PIECE)",
@@ -10107,7 +10567,8 @@
    ],
    "size": 56591,
    "sha256": "9c68a91caf966f4e67806b2e7795cb285061b7e09b856564da9ba3698c9ad6a0",
-   "sha": "9c68a91caf96"
+   "sha": "9c68a91caf96",
+   "dur": 134
   },
   {
    "name": "WE DON'T TALK ABOUT BRUNO",
@@ -10123,7 +10584,8 @@
    ],
    "size": 43092,
    "sha256": "41bea9d6daa3b4a5b1c2ac7c3c3885518aeefd6bd57ee06f1dd07b9cc000db93",
-   "sha": "41bea9d6daa3"
+   "sha": "41bea9d6daa3",
+   "dur": 206
   },
   {
    "name": "WE NOT LIKE YOU",
@@ -10131,15 +10593,15 @@
    "bpm": "155",
    "cat": [
     "pop/hiphop",
-    "memes",
-    "new"
+    "memes"
    ],
    "alts": [
     "nettspend"
    ],
    "size": 14992,
    "sha256": "25be26dd965226591d3204250ef4506b3180bfa60372f3d442616a250f810f6e",
-   "sha": "25be26dd9652"
+   "sha": "25be26dd9652",
+   "dur": 61
   },
   {
    "name": "WE WERE ANGELS",
@@ -10147,15 +10609,15 @@
    "bpm": "148",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "dragon ball z"
    ],
    "size": 54995,
    "sha256": "b31673c76db4d7a27847bebdc342ff8e194983a5412adf086bf952693dc0ff97",
-   "sha": "b31673c76db4"
+   "sha": "b31673c76db4",
+   "dur": 224
   },
   {
    "name": "WE WISH YOU A MERRY CHRISTMAS",
@@ -10171,7 +10633,8 @@
    ],
    "size": 18701,
    "sha256": "5064970fd094e77362b888c3972048b7085286a80bcb1892ae57dba799ef96a9",
-   "sha": "5064970fd094"
+   "sha": "5064970fd094",
+   "dur": 88
   },
   {
    "name": "WEDDING MARCH",
@@ -10187,7 +10650,8 @@
    ],
    "size": 138566,
    "sha256": "e9703849d22c356db4a57d3c24033eef7b9e263e1fa3b0dcb735431c20fe3a6d",
-   "sha": "e9703849d22c"
+   "sha": "e9703849d22c",
+   "dur": 380
   },
   {
    "name": "WET HANDS",
@@ -10203,7 +10667,8 @@
    ],
    "size": 19736,
    "sha256": "6f3f3fd432e3f49e90f4ec6b681aa2667d1d6ee5de4c18c354b70407a2f01a66",
-   "sha": "6f3f3fd432e3"
+   "sha": "6f3f3fd432e3",
+   "dur": 153
   },
   {
    "name": "WHAT IS LOVE",
@@ -10211,15 +10676,15 @@
    "bpm": "120",
    "cat": [
     "pop/hiphop",
-    "electronic",
-    "new"
+    "electronic"
    ],
    "alts": [
     "haddaway"
    ],
    "size": 64368,
    "sha256": "034c1782c84fa26f86683d904d59a81c57685644b382fe7b3c3ad1d22ea093c2",
-   "sha": "034c1782c84f"
+   "sha": "034c1782c84f",
+   "dur": 274
   },
   {
    "name": "WHAT WAS I MADE FOR",
@@ -10227,29 +10692,28 @@
    "bpm": "80",
    "cat": [
     "movies/tv",
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "billie eilish"
    ],
    "size": 23217,
    "sha256": "a5fb41476c21f1e08767168e3e9c6d6c9432290a386343ded6fdb4529a03437e",
-   "sha": "a5fb41476c21"
+   "sha": "a5fb41476c21",
+   "dur": 201
   },
   {
    "name": "WHEN I MET YOU",
    "file": "WHEN_I_MET_YOU.lua",
    "bpm": "70",
-   "cat": [
-    "new"
-   ],
+   "cat": [],
    "alts": [
     "apo hiking society"
    ],
    "size": 76808,
    "sha256": "0e0d4b8ca0df09af8571a00abe3f642e0bfbc8c0468e8519de8e6f6a081f844c",
-   "sha": "0e0d4b8ca0df"
+   "sha": "0e0d4b8ca0df",
+   "dur": 254
   },
   {
    "name": "WHERE OUR BLUE IS",
@@ -10257,8 +10721,7 @@
    "bpm": "152",
    "cat": [
     "anime/jpop",
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "tatsuya kitani",
@@ -10267,7 +10730,8 @@
    ],
    "size": 48755,
    "sha256": "d66bcd794fa9f8fd35200f6a82df969189fff14b030e3b77d3b4316646f127f1",
-   "sha": "d66bcd794fa9"
+   "sha": "d66bcd794fa9",
+   "dur": 190
   },
   {
    "name": "WHERE WE USED TO PLAY",
@@ -10284,7 +10748,8 @@
    ],
    "size": 40064,
    "sha256": "d57be065cc43b8d32efdbcb955d438f5ee13b70dd45a56232f5f8c3aa7664c2e",
-   "sha": "d57be065cc43"
+   "sha": "d57be065cc43",
+   "dur": 405
   },
   {
    "name": "WHY DID I SAY OKIE-DOKIE?",
@@ -10302,22 +10767,23 @@
    ],
    "size": 95048,
    "sha256": "bac5a1aa748dde2795a77caae77f9ddd592998a6d58c74ef6058a153ae66003a",
-   "sha": "bac5a1aa748d"
+   "sha": "bac5a1aa748d",
+   "dur": 313
   },
   {
    "name": "WIEGE",
    "file": "WIEGE.lua",
    "bpm": "75",
    "cat": [
-    "movies/tv",
-    "new"
+    "movies/tv"
    ],
    "alts": [
     "alien stage"
    ],
    "size": 35419,
    "sha256": "d792d0e6780bc9e975041a28f423abfb144763cd3ee137772e362d7d68b3e135",
-   "sha": "d792d0e6780b"
+   "sha": "d792d0e6780b",
+   "dur": 227
   },
   {
    "name": "WII SPORTS TITLE THEME",
@@ -10334,7 +10800,8 @@
    ],
    "size": 75170,
    "sha256": "6fd756695288078ec8fd4370158183fc3daed5624fa9052322cfa01af6d70c8c",
-   "sha": "6fd756695288"
+   "sha": "6fd756695288",
+   "dur": 129
   },
   {
    "name": "WINTER WIND (ETUDE OP.25 NO.11)",
@@ -10348,7 +10815,8 @@
    ],
    "size": 111324,
    "sha256": "8e66b7822427b28a2135bbbc3f96bee8ac829756c0b7e384c407cfb86b2b5d9b",
-   "sha": "8e66b7822427"
+   "sha": "8e66b7822427",
+   "dur": 74
   },
   {
    "name": "WORLD'S END VALENTINE",
@@ -10366,7 +10834,8 @@
    ],
    "size": 56556,
    "sha256": "8dc9663aade62a42c0cc5901777e44fef2230dd1bfc69bc4490dee8cd885822e",
-   "sha": "8dc9663aade6"
+   "sha": "8dc9663aade6",
+   "dur": 142
   },
   {
    "name": "XO TOUR LLIF3",
@@ -10381,7 +10850,8 @@
    ],
    "size": 43877,
    "sha256": "9d5306c244de5bf9b7c5c8f3480766b11052046352b4b4e2e3eea039587e0d37",
-   "sha": "9d5306c244de"
+   "sha": "9d5306c244de",
+   "dur": 204
   },
   {
    "name": "XSTEP",
@@ -10398,7 +10868,8 @@
    ],
    "size": 20546,
    "sha256": "1b87d34b4950644358062d8f2341fdb59c849ec130d21c081545b9c182e57b06",
-   "sha": "1b87d34b4950"
+   "sha": "1b87d34b4950",
+   "dur": 88
   },
   {
    "name": "YLANG YLANG",
@@ -10408,8 +10879,7 @@
     "sad",
     "beautiful",
     "memes",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "fjk",
@@ -10417,7 +10887,8 @@
    ],
    "size": 33268,
    "sha256": "43314ecf7cae28921e49540c756ad6fbf82cba6fa07ba4b501fd21918b77d10b",
-   "sha": "43314ecf7cae"
+   "sha": "43314ecf7cae",
+   "dur": 197
   },
   {
    "name": "YOUNG GIRL A",
@@ -10435,7 +10906,8 @@
    ],
    "size": 34851,
    "sha256": "21f7913e366e9b8c03fb1da735599a58b4642735fc752498dd41bde902f0dd54",
-   "sha": "21f7913e366e"
+   "sha": "21f7913e366e",
+   "dur": 193
   },
   {
    "name": "YOUNG GIRL A (EPIC VER.)",
@@ -10455,7 +10927,8 @@
    ],
    "size": 148010,
    "sha256": "f76b958f512d21a438d6e68362c771d081ffc62d325643c53b9f196973951280",
-   "sha": "f76b958f512d"
+   "sha": "f76b958f512d",
+   "dur": 231
   },
   {
    "name": "YOUR GAZE (FRAGRANT FLOWER)",
@@ -10465,15 +10938,15 @@
     "anime/jpop",
     "movies/tv",
     "beautiful",
-    "best",
-    "new"
+    "best"
    ],
    "alts": [
     "the fragrant flower blooms with dignity"
    ],
    "size": 33924,
    "sha256": "1e74d04a8f91e18af1f7fa4a58f725ec3049f369d6bfd6246dac8b10d7a61e2d",
-   "sha": "1e74d04a8f91"
+   "sha": "1e74d04a8f91",
+   "dur": 87
   },
   {
    "name": "YOUR LOVE IS MY DRUG (8-BIT)",
@@ -10489,22 +10962,23 @@
    ],
    "size": 14433,
    "sha256": "9cc4dbdb9745c2065a46f754fc7b4bba0ed2130ae95b4e4db646495c7768459f",
-   "sha": "9cc4dbdb9745"
+   "sha": "9cc4dbdb9745",
+   "dur": 127
   },
   {
    "name": "YOUR POWER",
    "file": "YOUR_POWER.lua",
    "bpm": "130",
    "cat": [
-    "pop/hiphop",
-    "new"
+    "pop/hiphop"
    ],
    "alts": [
     "billie eilish"
    ],
    "size": 39464,
    "sha256": "27faab813c9be8a70e5d683a60e463e4c57c81c81b4d3b9cea71fe08c3595e79",
-   "sha": "27faab813c9b"
+   "sha": "27faab813c9b",
+   "dur": 236
   },
   {
    "name": "YOUR REALITY",
@@ -10521,7 +10995,8 @@
    ],
    "size": 27523,
    "sha256": "b932945cac73eec6ca3c22675100f32f850cf7c2c02be97be3d72754fa3cceb7",
-   "sha": "b932945cac73"
+   "sha": "b932945cac73",
+   "dur": 165
   },
   {
    "name": "YUUSHA (THE BRAVE)",
@@ -10536,7 +11011,8 @@
    ],
    "size": 73737,
    "sha256": "16003e38ba515b6b25fc61257632a33aaf606d4242bc5dd04629f9f66009407b",
-   "sha": "16003e38ba51"
+   "sha": "16003e38ba51",
+   "dur": 191
   },
   {
    "name": "ZOMBIE",
@@ -10550,7 +11026,8 @@
    ],
    "size": 52831,
    "sha256": "8cb5ac7c28233c0c29bbaba80190719df459a0f12985c7bbfaccca63ec59d8b0",
-   "sha": "8cb5ac7c2823"
+   "sha": "8cb5ac7c2823",
+   "dur": 310
   },
   {
    "name": "言えない",
@@ -10567,7 +11044,8 @@
    ],
    "size": 61220,
    "sha256": "678bbcee242a7ce7f745e460fe7a522aa118088cc6745ae9360880e17a4146ce",
-   "sha": "678bbcee242a"
+   "sha": "678bbcee242a",
+   "dur": 202
   },
   {
    "name": "WITCHBLADES",
@@ -10585,412 +11063,462 @@
    ],
    "size": 47288,
    "sha256": "4f8b433eaed44b396570f2e01d91829fa3aec985fb1ca23d8cc1cedb004fb831",
-   "sha": "4f8b433eaed4"
+   "sha": "4f8b433eaed4",
+   "dur": 236
   },
   {
    "name": "abcdefu",
    "file": "ABCDEFU.lua",
    "bpm": "61",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "new"
    ],
    "alts": [
     "GAYLE",
-    "Wesley2712",
-    "NotHammer043"
+    "Wesley2712"
    ],
    "size": 22919,
    "sha256": "2b63845377aecdf9258f349f04647cc82ef1b03f2555c6d5af965a4a86a1146f",
-   "sha": "2b63845377ae"
+   "sha": "2b63845377ae",
+   "dur": 169
   },
   {
    "name": "Airplanes",
    "file": "AIRPLANES.lua",
    "bpm": "90",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "new"
    ],
    "alts": [
     "B.o.B",
-    "NotHammer043"
+    "Hayley Williams"
    ],
    "size": 33953,
    "sha256": "2a515f2dc214dec1ac6d7ef3c513ea6163b848ff81e7b0eff74f6b93e2cc623c",
-   "sha": "2a515f2dc214"
+   "sha": "2a515f2dc214",
+   "dur": 181
   },
   {
    "name": "God's Plan",
    "file": "GOD_S_PLAN.lua",
    "bpm": "76",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "new"
    ],
    "alts": [
     "Drake"
    ],
    "size": 58894,
    "sha256": "ae00d52983de17d00e007754949a43fd2b1ce5cac97d3e0369c89875f7f3b104",
-   "sha": "ae00d52983de"
+   "sha": "ae00d52983de",
+   "dur": 177
   },
   {
    "name": "hot girl bummer",
    "file": "HOT_GIRL_BUMMER.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "new"
    ],
    "alts": [
-    "blackbear",
-    "NotHammer043"
+    "blackbear"
    ],
    "size": 53105,
    "sha256": "636a76bd12ec08d6849c1922e4dc504f5bbac0d0efd0d7c352841a07b653aba7",
-   "sha": "636a76bd12ec"
+   "sha": "636a76bd12ec",
+   "dur": 183
   },
   {
    "name": "Someone You Loved",
    "file": "SOMEONE_YOU_LOVED.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "beautiful",
+    "new"
    ],
    "alts": [
     "Lewis Capaldi",
-    "The Theorist",
-    "WhispyVT"
+    "The Theorist"
    ],
    "size": 43179,
    "sha256": "3262dc5cdc1de58043c797c4dd0426b6c56bbe4917f4260a12de1135abf58882",
-   "sha": "3262dc5cdc1d"
+   "sha": "3262dc5cdc1d",
+   "dur": 177
   },
   {
-   "name": "Changes",
+   "name": "changes",
    "file": "CHANGES.lua",
    "bpm": "125",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "new"
    ],
    "alts": [
-    "Xxxtentacion",
-    "XXXTentacion",
-    "CHVNZ",
-    "eDEN"
+    "XXXTENTACION"
    ],
    "size": 17877,
    "sha256": "8f4e25a7d4704af4249ff428451d875b8ee19ded9991f718a5031b40fe9fc510",
-   "sha": "8f4e25a7d470"
+   "sha": "8f4e25a7d470",
+   "dur": 121
   },
   {
    "name": "Leave Out All The Rest",
    "file": "LEAVE_OUT_ALL_THE_REST.lua",
    "bpm": "144",
    "cat": [
-    "REVIEW"
+    "rock",
+    "sad",
+    "new"
    ],
    "alts": [
-    "Linkin Park",
-    "ellinya19"
+    "Linkin Park"
    ],
    "size": 64280,
    "sha256": "07b5dab3e99582c59cf185d21c5271b1b78885bae19f437bac040f2c79f2c790",
-   "sha": "07b5dab3e995"
+   "sha": "07b5dab3e995",
+   "dur": 252
   },
   {
    "name": "Crawling",
    "file": "CRAWLING.lua",
    "bpm": "105",
    "cat": [
-    "REVIEW"
+    "rock",
+    "new"
    ],
    "alts": [
-    "Linkin Park",
-    "ellinya19"
+    "Linkin Park"
    ],
    "size": 54144,
    "sha256": "6a21498dc0064f3ab6843acec8984a8c5ee7115f1dcb12b34636dee70b78bf20",
-   "sha": "6a21498dc006"
+   "sha": "6a21498dc006",
+   "dur": 203
   },
   {
    "name": "Numb",
    "file": "NUMB.lua",
    "bpm": "110",
    "cat": [
-    "REVIEW"
+    "rock",
+    "best",
+    "new"
    ],
    "alts": [
-    "Linkin Park",
-    "ellinya19"
+    "Linkin Park"
    ],
    "size": 62092,
    "sha256": "e8689bdc364336c298b2a94f7ce84aadb1c5fdc82f88e8d3f13605a6e67cfe61",
-   "sha": "e8689bdc3643"
+   "sha": "e8689bdc3643",
+   "dur": 188
   },
   {
    "name": "In The End",
    "file": "IN_THE_END.lua",
    "bpm": "105",
    "cat": [
-    "REVIEW"
+    "rock",
+    "best",
+    "peak",
+    "new"
    ],
    "alts": [
-    "Linkin Park",
-    "ellinya19"
+    "Linkin Park"
    ],
    "size": 57049,
    "sha256": "4021b5920b03a1621b4b4d7744e572c9b61f282605b9628efe32f6c7afd3cf65",
-   "sha": "4021b5920b03"
+   "sha": "4021b5920b03",
+   "dur": 216
   },
   {
    "name": "CASTLE OF GLASS",
    "file": "CASTLE_OF_GLASS.lua",
    "bpm": "108",
    "cat": [
-    "REVIEW"
+    "rock",
+    "new"
    ],
    "alts": [
-    "Linkin Park",
-    "ellinya19"
+    "Linkin Park"
    ],
    "size": 67990,
    "sha256": "232c7b00c887082502763eafa548626f2e99acb4d25e80b1079c9b737cfc7be0",
-   "sha": "232c7b00c887"
+   "sha": "232c7b00c887",
+   "dur": 240
   },
   {
    "name": "One More Light",
    "file": "ONE_MORE_LIGHT.lua",
    "bpm": "85",
    "cat": [
-    "REVIEW"
+    "rock",
+    "sad",
+    "beautiful",
+    "new"
    ],
    "alts": [
     "Linkin Park",
-    "Chester Bennington, Mike Shinoda, Brad Delson, Joe Hahn, Dave Farrell, Colin Brittain",
-    "its_ghosty_i_got_banned"
+    "Chester Bennington"
    ],
    "size": 38973,
    "sha256": "fbe29636c6b721ef74bc014587dc4eef7b936e63830ecc4540c50e78172a57d7",
-   "sha": "fbe29636c6b7"
+   "sha": "fbe29636c6b7",
+   "dur": 246
   },
   {
    "name": "Empty Out Your Pockets",
    "file": "EMPTY_OUT_YOUR_POCKETS.lua",
    "bpm": "92",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "new"
    ],
    "alts": [
-    "Juice WRLD",
-    "idk"
+    "Juice WRLD"
    ],
    "size": 22949,
    "sha256": "76c41073a98725a8917f4748c407684147647acbd26f215b6d3245b8167a34d6",
-   "sha": "76c41073a987"
+   "sha": "76c41073a987",
+   "dur": 135
   },
   {
    "name": "Wishing Well",
    "file": "WISHING_WELL.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "new"
    ],
    "alts": [
-    "Juice WRLD",
-    "WhispyVT"
+    "Juice WRLD"
    ],
    "size": 64358,
    "sha256": "92d2e50dfc51782153464abb3c989e61c69bd5be5180fe475da678c335ce0948",
-   "sha": "92d2e50dfc51"
+   "sha": "92d2e50dfc51",
+   "dur": 183
   },
   {
    "name": "Empty",
    "file": "EMPTY.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "new"
    ],
    "alts": [
-    "Juice WRLD",
-    "The Theorist",
-    "WhispyVT"
+    "Juice WRLD"
    ],
    "size": 66218,
    "sha256": "44906606139a079268c9c32d004e166374ed48fc6c2214af1ce87912135d0428",
-   "sha": "44906606139a"
+   "sha": "44906606139a",
+   "dur": 248
   },
   {
    "name": "Righteous",
    "file": "RIGHTEOUS_2.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "sad",
+    "new"
    ],
    "alts": [
-    "Juice WRLD",
-    "The Theorist",
-    "WhispyVT"
+    "Juice WRLD"
    ],
    "size": 58446,
    "sha256": "9e12908201fc6c98a4ca2fee1e3c6084c5ec7c42cbce2a6558b153634064dcfd",
-   "sha": "9e12908201fc"
+   "sha": "9e12908201fc",
+   "dur": 223
   },
   {
    "name": "Come & Go",
    "file": "COME_GO.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "electronic",
+    "rock",
+    "new"
    ],
    "alts": [
-    "Juice WRLD & Marshmello",
-    "The Theorist",
-    "WhispyVT"
+    "Juice WRLD",
+    "Marshmello"
    ],
    "size": 60845,
    "sha256": "18d4f4b0407f7ed6298cbe0d39a0c0d2469394ae42d352765eb19e130c3e478e",
-   "sha": "18d4f4b0407f"
+   "sha": "18d4f4b0407f",
+   "dur": 190
   },
   {
    "name": "Moonlight",
    "file": "MOONLIGHT_2.lua",
    "bpm": "130",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "beautiful",
+    "new"
    ],
    "alts": [
-    "Kali Uchis",
-    "NotHammer043"
+    "Kali Uchis"
    ],
    "size": 23640,
    "sha256": "b8a5e22dbea460c86d7f3bcebfa1ca750302f1eb175cb7ecd4f8d96e6def7e66",
-   "sha": "b8a5e22dbea4"
+   "sha": "b8a5e22dbea4",
+   "dur": 89
   },
   {
    "name": "Alone",
    "file": "ALONE_2.lua",
    "bpm": "96",
    "cat": [
-    "REVIEW"
+    "electronic",
+    "new"
    ],
    "alts": [
-    "Alan Walker",
-    "Pechemelba",
-    "NotHammer043"
+    "Alan Walker"
    ],
    "size": 27072,
    "sha256": "466d836570ad3d1a03660551423da6dbf8e8b0566af94349e006f1abc901f333",
-   "sha": "466d836570ad"
+   "sha": "466d836570ad",
+   "dur": 152
   },
   {
-   "name": "Ballin",
+   "name": "Ballin'",
    "file": "BALLIN.lua",
    "bpm": "130",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "memes",
+    "new"
    ],
    "alts": [
-    "Mustard, Roddy Rich",
-    "The Theorist",
-    "NotHammer043"
+    "Mustard",
+    "Roddy Ricch"
    ],
    "size": 51355,
    "sha256": "9db1d4586945d0d6e3cb2273d3a1dc1a7c2e80da12e41727406db850a9a6581d",
-   "sha": "9db1d4586945"
+   "sha": "9db1d4586945",
+   "dur": 177
   },
   {
    "name": "Wii Shop Channel Theme",
    "file": "WII_SHOP_CHANNEL_THEME.lua",
    "bpm": "145",
    "cat": [
-    "REVIEW"
+    "nintendo",
+    "video games",
+    "memes",
+    "new"
    ],
    "alts": [
     "Kazumi Totaka",
-    "Ashley Dawn",
-    "NotHammer043"
+    "Nintendo",
+    "Wii"
    ],
    "size": 29701,
    "sha256": "d631336f3de81e7a200a3ef879d48992f97bccb3792f0dd6109df456b8e68f46",
-   "sha": "d631336f3de8"
+   "sha": "d631336f3de8",
+   "dur": 112
   },
   {
-   "name": "Simpsons theme",
+   "name": "The Simpsons Theme",
    "file": "SIMPSONS_THEME.lua",
    "bpm": "160",
    "cat": [
-    "REVIEW"
+    "movies/tv",
+    "memes",
+    "new"
    ],
    "alts": [
-    "Simpsons",
-    "Nicolas Dupouy-Manescau",
-    "vito"
+    "Danny Elfman",
+    "The Simpsons"
    ],
    "size": 31661,
    "sha256": "990824373a530292cd8cfd358a3fc02f172db78c5ff0dea366615e58bd021bfa",
-   "sha": "990824373a53"
+   "sha": "990824373a53",
+   "dur": 85
   },
   {
    "name": "Everybody Wants To Rule The World",
    "file": "EVERYBODY_WANTS_TO_RULE_THE_WORLD.lua",
    "bpm": "120",
    "cat": [
-    "REVIEW"
+    "rock",
+    "pop/hiphop",
+    "best",
+    "new"
    ],
    "alts": [
-    "Tears For Fears",
-    "ORIGINAL",
-    "NotHammer043"
+    "Tears For Fears"
    ],
    "size": 54046,
    "sha256": "0ea8ec3ce06aeda6c3202e6989cf35f1a24b35489574a9c301559e46f58da821",
-   "sha": "0ea8ec3ce06a"
+   "sha": "0ea8ec3ce06a",
+   "dur": 224
   },
   {
    "name": "Pigstep",
    "file": "PIGSTEP.lua",
    "bpm": "169",
    "cat": [
-    "REVIEW"
+    "minecraft",
+    "video games",
+    "electronic",
+    "new"
    ],
    "alts": [
-    "Lena Raine, Minecraft",
-    "Alphysans",
-    "NotHammer043"
+    "Lena Raine",
+    "Minecraft"
    ],
    "size": 32564,
    "sha256": "83631ffa843a0f19235ef15c53fbf0fac1a064da7fe0fb44c4043085eba11c74",
-   "sha": "83631ffa843a"
+   "sha": "83631ffa843a",
+   "dur": 138
   },
   {
    "name": "Angry Birds Theme",
    "file": "ANGRY_BIRDS_THEME.lua",
    "bpm": "125",
    "cat": [
-    "REVIEW"
+    "video games",
+    "memes",
+    "new"
    ],
    "alts": [
-    "David Schweitzer, Ari Pulkkinen",
-    "Frank & Zach Piano Duets",
-    "Raven13111"
+    "Ari Pulkkinen",
+    "Angry Birds"
    ],
    "size": 66525,
    "sha256": "101600a27704476c8bd663ff0bc6cf00195d9ee056c374db42fd7701a7c5e471",
-   "sha": "101600a27704"
+   "sha": "101600a27704",
+   "dur": 155
   },
   {
-   "name": "Fe!n",
+   "name": "FE!N",
    "file": "FE_N.lua",
    "bpm": "75",
    "cat": [
-    "REVIEW"
+    "pop/hiphop",
+    "new"
    ],
    "alts": [
     "Travis Scott",
-    "Henry Hove",
-    "eDEN"
+    "Playboi Carti"
    ],
    "size": 17658,
    "sha256": "905fc4dd80355c86390220146b4fc0099b23b7696721bfb31adc2a00182dd687",
-   "sha": "905fc4dd8035"
+   "sha": "905fc4dd8035",
+   "dur": 83
   }
  ]
 }

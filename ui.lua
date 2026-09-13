@@ -136,9 +136,10 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
     local DEFAULTS = {
         autoplay = false, cachesongs = false, disablenotifs = false, mutesfx = false,
-        secondaryloader = false, disableaccidents = false, disablefeaturedsongs = false,
+        secondaryloader = false,
         alwaysshowmidispoofer = false, errorMargin = 0, midiSpoof = false,
         sidebarCollapsed = false, showColArtist = true, showColGenre = true, showColBpm = true,
+        showColLength = true,
         enableMinimizeKey = true, minimizeKeybind = "LeftAlt",
     }
     local function copy(t) local o = {} for k, v in pairs(t) do o[k] = v end return o end
@@ -360,10 +361,11 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         BackgroundTransparency = 1, BorderSizePixel = 0, ZIndex = 2,
     })
     local thIndex = label(tableHeader, { Position = UDim2.new(0, 4, 0, 0), Size = UDim2.fromOffset(36, 26) }, "#", 12, false, C.dim, Enum.TextXAlignment.Center)
-    local thBpm = label(tableHeader, { Position = UDim2.new(1, -64, 0, 0), Size = UDim2.fromOffset(56, 26) }, "BPM", 12, false, C.dim, Enum.TextXAlignment.Right)
+    local thBpm = label(tableHeader, { Position = UDim2.new(1, -116, 0, 0), Size = UDim2.fromOffset(50, 26) }, "BPM", 12, false, C.dim, Enum.TextXAlignment.Right)
+    local thLength = label(tableHeader, { Position = UDim2.new(1, -62, 0, 0), Size = UDim2.fromOffset(54, 26) }, "Length", 12, false, C.dim, Enum.TextXAlignment.Right)
 
     local thCols = make("Frame", {
-        Parent = tableHeader, Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(1, -124, 1, 0),
+        Parent = tableHeader, Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(1, -176, 1, 0),
         BackgroundTransparency = 1, BorderSizePixel = 0,
     })
     local thTitle = label(thCols, { Position = UDim2.new(0, 0, 0, 0), Size = UDim2.new(0.46, -8, 1, 0) }, "Title", 12, false, C.dim)
@@ -570,10 +572,8 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         for _, rawBase in ipairs(HOSTS) do
             local base = rawBase:sub(-1) == "/" and rawBase or (rawBase .. "/")
             local url = base .. "songs/" .. fileName
-            print("[P1AN0] fetching: " .. url)
             local body = httpGet(url)
             if body and #body > 0 then
-                print(string.format("[P1AN0] fetched '%s' (%d bytes)", fileName, #body))
                 return body
             end
         end
@@ -632,10 +632,18 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             setIcon(rowRefs[current.file].playIcon, isPlaying and "pause" or "play", C.accent)
         end
     end
+
+    local selectNextAutoplaySong
+
     Engine.onFinish = function()
         setTransportIcon()
         sfx("18595195017", 0.5)
         notify("Finished: " .. tostring(Engine.songName))
+        if Settings.data.autoplay and selectNextAutoplaySong then
+            task.spawn(function()
+                selectNextAutoplaySong()
+            end)
+        end
     end
 
     local function updateBpmLabels()
@@ -704,14 +712,10 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         curTime.Text = "0:00"
         totTime.Text = "--:--"
         fill.Size = UDim2.new(0, 0, 1, 0)
-        isDownloading = true
-
-        print(string.format("[P1AN0] selectSong: '%s' (%s)", song.name, song.file))
         local src, err = getSongSource(song)
         isDownloading = false
 
         if not src then
-            print(string.format("[P1AN0] failed to load '%s': %s", song.name, tostring(err)))
             notify("Download failed: " .. song.name, C.danger)
             npSub.Text = "Download failed"
             playPendingOnLoad = false
@@ -724,7 +728,6 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
         local ok, lerr = pcall(function() return Engine.load(src, song.name) end)
         if not ok or not lerr then
-            print(string.format("[P1AN0] Engine.load error for '%s': %s", song.name, tostring(lerr)))
             notify("Song error: " .. tostring(lerr), C.danger)
             npSub.Text = "Load error"
             playPendingOnLoad = false
@@ -739,11 +742,9 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         else
             npSub.Text = string.format("%s  ·  %s BPM", genre, tostring(song.bpm))
         end
-        print(string.format("[P1AN0] ready '%s': %d actions, duration=%.1fs", song.name, #Engine.song, Engine.duration()))
 
         if playPendingOnLoad or Settings.data.autoplay then
             playPendingOnLoad = false
-            print("[P1AN0] playing: " .. song.name)
             Engine.play()
             setTransportIcon()
             sfx("70452176150315", 0.1)
@@ -758,12 +759,26 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         local showArt = Settings.data.showColArtist
         local showGen = Settings.data.showColGenre
         local showBpm = Settings.data.showColBpm
+        local showLen = Settings.data.showColLength
 
         thArtist.Visible = showArt
         thGenre.Visible = showGen
         thBpm.Visible = showBpm
+        thLength.Visible = showLen
 
-        local colRightBuffer = showBpm and 124 or 52
+        local rightOffset = 16
+        if showLen then
+            thLength.Position = UDim2.new(1, -rightOffset - 50, 0, 0)
+            thLength.Size = UDim2.fromOffset(50, 26)
+            rightOffset = rightOffset + 58
+        end
+        if showBpm then
+            thBpm.Position = UDim2.new(1, -rightOffset - 46, 0, 0)
+            thBpm.Size = UDim2.fromOffset(46, 26)
+            rightOffset = rightOffset + 54
+        end
+
+        local colRightBuffer = rightOffset + 6
         thCols.Size = UDim2.new(1, -colRightBuffer, 1, 0)
 
         local titleScale, titlePos
@@ -817,6 +832,12 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             end
             if ref.bpmLbl then
                 ref.bpmLbl.Visible = showBpm
+                local bpmPos = 16 + (showLen and 58 or 0) + 46
+                ref.bpmLbl.Position = UDim2.new(1, -bpmPos, 0, 0)
+            end
+            if ref.lenLbl then
+                ref.lenLbl.Visible = showLen
+                ref.lenLbl.Position = UDim2.new(1, -16 - 50, 0, 0)
             end
         end
     end
@@ -846,6 +867,32 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             if not hit then return false end
         end
         return true
+    end
+
+    selectNextAutoplaySong = function()
+        if not catalog or not catalog.songs or #catalog.songs == 0 then return end
+        local pool = {}
+        for _, song in ipairs(catalog.songs) do
+            if matches(song) then
+                pool[#pool + 1] = song
+            end
+        end
+        if #pool == 0 then
+            pool = catalog.songs
+        end
+        local nextIndex = 1
+        if current then
+            for i, song in ipairs(pool) do
+                if song.file == current.file then
+                    nextIndex = (i % #pool) + 1
+                    break
+                end
+            end
+        end
+        local nextSong = pool[nextIndex]
+        if nextSong then
+            selectSong(nextSong, true)
+        end
     end
 
     local function render(animateTransition)
@@ -887,10 +934,14 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                 local artistLbl = label(rowCols, { Position = UDim2.new(0.48, 0, 0, 0), Size = UDim2.new(0.28, -8, 1, 0) }, getSongArtist(song), 12, false, C.sub)
                 artistLbl.TextTruncate = Enum.TextTruncate.AtEnd
 
-                local genreLbl = label(rowCols, { Position = UDim2.new(0.78, 0, 0, 0), Size = UDim2.new(0.22, 0, 1, 0) }, (#song.cat > 0) and song.cat[1] or "", 12, false, C.sub)
+                local genreStr = (#song.cat > 0) and song.cat[1] or "untagged"
+                local genreLbl = label(rowCols, { Position = UDim2.new(0.78, 0, 0, 0), Size = UDim2.new(0.22, 0, 1, 0) }, genreStr, 12, false, C.sub)
                 genreLbl.TextTruncate = Enum.TextTruncate.AtEnd
 
-                local bpmLbl = label(row, { Position = UDim2.new(1, -64, 0, 0), Size = UDim2.fromOffset(56, 36) }, tostring(song.bpm), 12, false, C.sub, Enum.TextXAlignment.Right)
+                local durSec = tonumber(song.dur) or 0
+                local lenText = durSec > 0 and fmt(durSec) or "--:--"
+                local lenLbl = label(row, { Position = UDim2.new(1, -66, 0, 0), Size = UDim2.fromOffset(50, 36) }, lenText, 12, false, C.sub, Enum.TextXAlignment.Right)
+                local bpmLbl = label(row, { Position = UDim2.new(1, -120, 0, 0), Size = UDim2.fromOffset(46, 36) }, tostring(song.bpm), 12, false, C.sub, Enum.TextXAlignment.Right)
 
                 rowRefs[song.file] = {
                     row = row,
@@ -899,6 +950,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                     artistLbl = artistLbl,
                     genreLbl = genreLbl,
                     bpmLbl = bpmLbl,
+                    lenLbl = lenLbl,
                     indexLbl = indexLbl,
                     playIcon = rowPlayIcon,
                 }
@@ -1290,16 +1342,15 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     sectionHeader("Playback")
     settingRow("Autoplay", "Start playing immediately when a song is selected", "autoplay", "play", ">")
     settingRow("Precise timing", "Frame-perfect rests (uses more CPU)", "secondaryloader", "clock", "o", function(v) Engine.setPreciseTiming(v) end)
-    settingRow("Disable fake accidents", "Never intentionally miss or shift notes", "disableaccidents", "shield-check", "v", function(v) Engine.setDisableAccidents(v) end)
 
     sectionHeader("Table Columns")
     settingRow("Show Artist", "Display artist column in track table", "showColArtist", "user", "@", function() updateColumnLayout() end)
     settingRow("Show Genre", "Display genre category column", "showColGenre", "tag", "#", function() updateColumnLayout() end)
-    settingRow("Show BPM", "Display BPM column on the right", "showColBpm", "clock", "~", function() updateColumnLayout() end)
+    settingRow("Show BPM", "Display BPM column", "showColBpm", "clock", "~", function() updateColumnLayout() end)
+    settingRow("Show Length", "Display duration column", "showColLength", "clock", "o", function() updateColumnLayout() end)
 
     sectionHeader("Library")
     settingRow("Cache songs", "Save songs to workspace (off = always fetch)", "cachesongs", "box", "[]")
-    settingRow("Hide featured", "Hide the Featured library item", "disablefeaturedsongs", "sparkles", "*", function(v) libItems.featured.Visible = not v end)
     settingRow("Always show MIDI spoofer", "Show MIDI toggle outside Piano Rooms", "alwaysshowmidispoofer", "zap", "!", function() updateMidiBadge() end)
 
     local function keybindRow(title, subtitle, key, iconName, glyph)
@@ -1442,13 +1493,12 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     dragify(toggle, toggle)
 
     -- Initialize engine and UI states
-    Engine.setDisableAccidents(Settings.data.disableaccidents)
     Engine.setPreciseTiming(Settings.data.secondaryloader)
     Engine.setMidiSpoof(Settings.data.midiSpoof)
     Engine.setErrorMargin(Settings.data.errorMargin)
     Settings.data.errorMargin = Engine.errorMargin
     updateMidiBadge()
-    libItems.featured.Visible = not Settings.data.disablefeaturedsongs
+    libItems.featured.Visible = true
     updateBpmLabels()
     updateProgress()
     render(false)
@@ -1456,8 +1506,5 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     -- Synchronize sidebar collapse state cleanly on startup
     setSidebarCollapsed(isSidebarCollapsed)
 
-    print(string.format("[P1AN0] ui built: parent=%s songs=%d cache=%s autoplay=%s fileapi=%s/%s",
-        tostring(gui.Parent), #catalog.songs, tostring(Settings.data.cachesongs), tostring(Settings.data.autoplay),
-        tostring(hasRead()), tostring(hasWrite())))
     notify("0M3G4 P1AN0  ·  " .. tostring(#catalog.songs) .. " songs")
 end
