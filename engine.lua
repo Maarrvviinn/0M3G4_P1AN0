@@ -394,7 +394,7 @@ return function()
                 _G.finishedSong = doFinished
             end)
         end
-        local compile = loadstring or load
+        local compile = (getgenv and getgenv().loadstring) or (env and env.loadstring) or loadstring or (getfenv and getfenv().loadstring) or load
         local fn, err
         if type(scriptText) == "function" then
             fn = scriptText
