@@ -76,6 +76,18 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         if IIcons then IIcons.set(obj, name, color) end
     end
 
+    local function setObjColor(obj, col)
+        if not obj then return end
+        if obj:IsA("ImageLabel") then
+            obj.ImageColor3 = col
+        elseif obj:IsA("TextLabel") or obj:IsA("TextBox") or obj:IsA("TextButton") then
+            obj.TextColor3 = col
+        else
+            local ic = obj:FindFirstChild("Icon")
+            if ic then setObjColor(ic, col) end
+        end
+    end
+
     -- Tactile button interaction helper
     local function addTactile(btn, opts)
         opts = opts or {}
@@ -276,7 +288,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         onHover = function(h)
             collapseBtn.BackgroundTransparency = h and 0.85 or 1
             collapseBtn.BackgroundColor3 = C.hover
-            collapseIcon.TextColor3 = h and C.text or C.sub
+            setObjColor(collapseIcon, h and C.text or C.sub)
         end
     })
 
@@ -325,7 +337,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             onHover = function(h)
                 b.BackgroundTransparency = h and 0.82 or 1
                 b.BackgroundColor3 = C.hover
-                ic.TextColor3 = h and C.text or C.sub
+                setObjColor(ic, h and C.text or C.sub)
             end
         })
         return b, ic
@@ -403,7 +415,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                 if primary then
                     TweenService:Create(b, TweenInfo.new(0.15, Enum.EasingStyle.Quart), { BackgroundColor3 = h and C.accentHover or C.accent }):Play()
                 else
-                    ic.TextColor3 = h and C.text or C.sub
+                    setObjColor(ic, h and C.text or C.sub)
                 end
             end
         })
@@ -429,14 +441,14 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         local minus = make("TextButton", { Parent = c, Size = UDim2.fromOffset(18, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
         corner(minus, 4)
         local mic = icon(minus, "minus", 11, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "-")
-        addTactile(minus, { onHover = function(h) mic.TextColor3 = h and C.text or C.sub end })
+        addTactile(minus, { onHover = function(h) setObjColor(mic, h and C.text or C.sub) end })
 
         local val = label(c, { Position = UDim2.new(0, 18, 0, 0), Size = UDim2.new(1, -36, 1, 0) }, "", 11, true, C.text, Enum.TextXAlignment.Center)
 
         local plus = make("TextButton", { Parent = c, Position = UDim2.new(1, -18, 0, 0), Size = UDim2.fromOffset(18, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
         corner(plus, 4)
         local pic = icon(plus, "plus", 11, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "+")
-        addTactile(plus, { onHover = function(h) pic.TextColor3 = h and C.text or C.sub end })
+        addTactile(plus, { onHover = function(h) setObjColor(pic, h and C.text or C.sub) end })
 
         return c, minus, val, plus
     end
@@ -483,7 +495,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         onHover = function(h)
             panelClose.BackgroundTransparency = h and 0.85 or 1
             panelClose.BackgroundColor3 = C.hover
-            pCloseIc.TextColor3 = h and C.text or C.sub
+            setObjColor(pCloseIc, h and C.text or C.sub)
         end
     })
 
@@ -921,7 +933,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         addTactile(b, {
             onHover = function(h)
                 lbl.TextColor3 = (h or filterCat == filter) and C.text or C.sub
-                ic.TextColor3 = (h or filterCat == filter) and C.text or C.sub
+                setObjColor(ic, (h or filterCat == filter) and C.text or C.sub)
             end
         })
 
@@ -930,7 +942,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             for _, item in ipairs(sideItemButtons) do
                 local active = (item.filter == filter)
                 item.lbl.TextColor3 = active and C.text or C.sub
-                item.icon.TextColor3 = active and C.text or C.sub
+                setObjColor(item.icon, active and C.text or C.sub)
             end
             render(true)
         end)
@@ -976,7 +988,6 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             collapseBtn.Position = UDim2.new(0.5, 0, 0.5, 0)
             collapseBtn.Size = UDim2.fromOffset(32, 32)
             setIcon(collapseIcon, "panel-left-open", C.sub)
-            collapseIcon.Text = "[>]"
 
             browseBtn.AnchorPoint = Vector2.new(0.5, 0)
             browseBtn.Position = UDim2.new(0.5, 0, 0, 2)
@@ -994,7 +1005,6 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             collapseBtn.Position = UDim2.new(1, -12, 0.5, 0)
             collapseBtn.Size = UDim2.fromOffset(28, 28)
             setIcon(collapseIcon, "panel-left-close", C.sub)
-            collapseIcon.Text = "[|]"
 
             browseBtn.AnchorPoint = Vector2.new(0, 0)
             browseBtn.Position = UDim2.new(0, 10, 0, 2)
