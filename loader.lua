@@ -165,15 +165,19 @@ local function main()
     if type(compile) ~= "function" then return false, "loadstring is not available in this executor" end
 
     setStatus("building engine...")
-    local factory, cerr = compile(engineSrc, "P1AN0_ENGINE")
-    if not factory then return false, "engine compile error: " .. tostring(cerr) end
-    local Engine = factory()
+    local engineChunk, cerr = compile(engineSrc, "P1AN0_ENGINE")
+    if not engineChunk then return false, "engine compile error: " .. tostring(cerr) end
+    local engineFactory = engineChunk()
+    if type(engineFactory) ~= "function" then return false, "engine.lua did not return a factory" end
+    local Engine = engineFactory()
     log("engine ready")
 
     setStatus("building ui...")
-    local uiFactory, uerr = compile(uiSrc, "P1AN0_UI")
-    if not uiFactory then return false, "ui compile error: " .. tostring(uerr) end
-    uiFactory(Engine, catalog, host, parentGui)
+    local uiChunk, uerr = compile(uiSrc, "P1AN0_UI")
+    if not uiChunk then return false, "ui compile error: " .. tostring(uerr) end
+    local uiFn = uiChunk()
+    if type(uiFn) ~= "function" then return false, "ui.lua did not return a factory" end
+    uiFn(Engine, catalog, host, parentGui)
     log("ui ready")
 
     return true
