@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-13T03:02:32.026Z",
- "count": 651,
+ "generated": "2026-09-13T03:26:26.826Z",
+ "count": 652,
  "categories": [
   "new",
   "peak",
@@ -26,7 +26,8 @@
   "nintendo",
   "geometry dash",
   "omori",
-  "ddlc"
+  "ddlc",
+  "REVIEW"
  ],
  "songs": [
   {
@@ -10585,6 +10586,20 @@
    "size": 47288,
    "sha256": "4f8b433eaed44b396570f2e01d91829fa3aec985fb1ca23d8cc1cedb004fb831",
    "sha": "4f8b433eaed4"
+  },
+  {
+   "name": "Stronger (Feat. Daft Punk)",
+   "file": "STRONGER_FEAT_DAFT_PUNK.lua",
+   "bpm": "240",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Kanye West"
+   ],
+   "size": 26338,
+   "sha256": "1733886637944e50f4e8dabd3012a1f11aedb5669beb63fd48cd3549d6f554d2",
+   "sha": "173388663794"
   }
  ]
 }
