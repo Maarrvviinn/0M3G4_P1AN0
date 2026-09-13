@@ -98,7 +98,7 @@ return function()
         lbl.Size = UDim2.fromOffset(size, size)
         if position then lbl.Position = position end
         if anchor then lbl.AnchorPoint = anchor end
-        lbl.Text = glyph or "•"
+        lbl.Text = glyph or "*"
         lbl.TextColor3 = color or Color3.fromRGB(255, 255, 255)
         lbl.TextSize = size
         lbl.TextXAlignment = Enum.TextXAlignment.Center

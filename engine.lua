@@ -256,10 +256,7 @@ return function()
     -- ------------------------------------------------------------------
     local function rec(t) E.song[#E.song + 1] = t end
 
-    env.bpm = E.bpm
-    env.x = "short"
-
-    env.keypress = function(keys, beats)
+    local function doKeypress(keys, beats)
         local last = E.song[#E.song]
         if last and last.type == "keypress" and last.beats == beats
             and keys:sub(1, 5) ~= "Ctrl+" and last.keys:sub(1, 5) ~= "Ctrl+" then
@@ -269,12 +266,34 @@ return function()
             rec({ type = "keypress", keys = keys, beats = beats, mergeCount = 1 })
         end
     end
-    env.rest = function(beats) rec({ type = "rest", beats = beats }) end
-    env.adjustVelocity = function(v) rec({ type = "adjustVelocity", vel = v }) end
-    env.pedalDown = function() rec({ type = "pedalDown" }) end
-    env.pedalUp = function() rec({ type = "pedalUp" }) end
-    env.keysequence16 = env.keypress
-    env.finishedSong = function() rec({ type = "finishedSong" }) end
+    local function doRest(beats) rec({ type = "rest", beats = beats }) end
+    local function doVel(v) rec({ type = "adjustVelocity", vel = v }) end
+    local function doPedalDown() rec({ type = "pedalDown" }) end
+    local function doPedalUp() rec({ type = "pedalUp" }) end
+    local function doFinished() rec({ type = "finishedSong" }) end
+
+    -- dedicated environment for the song chunk (works even when loadstring sandboxes chunks)
+    local songEnv = setmetatable({}, { __index = env })
+    songEnv.keypress = doKeypress
+    songEnv.rest = doRest
+    songEnv.adjustVelocity = doVel
+    songEnv.pedalDown = doPedalDown
+    songEnv.pedalUp = doPedalUp
+    songEnv.keysequence16 = doKeypress
+    songEnv.finishedSong = doFinished
+    songEnv.bpm = E.bpm
+    songEnv.x = "short"
+
+    -- also expose globally for non-sandboxed executors
+    env.keypress = doKeypress
+    env.rest = doRest
+    env.adjustVelocity = doVel
+    env.pedalDown = doPedalDown
+    env.pedalUp = doPedalUp
+    env.keysequence16 = doKeypress
+    env.finishedSong = doFinished
+    env.bpm = E.bpm
+    env.x = "short"
 
     -- ------------------------------------------------------------------
     -- playback
@@ -356,7 +375,9 @@ return function()
         E.song = {}
         E.songName = name
         env.bpm = E.bpm
+        songEnv.bpm = E.bpm
         env.x = "short"
+        songEnv.x = "short"
         local compile = loadstring or load
         local fn, err
         if type(scriptText) == "function" then
@@ -365,6 +386,7 @@ return function()
             fn, err = compile(scriptText, "P1AN0_SONG")
         end
         if not fn then return false, tostring(err) end
+        if setfenv then pcall(setfenv, fn, songEnv) end
         local ok, runErr = pcall(fn)
         if not ok then return false, tostring(runErr) end
         E.totalBeats = totalBeats()
@@ -435,6 +457,7 @@ return function()
     function E.setBpm(n)
         E.bpm = math.clamp(math.floor(n), 10, 1000)
         env.bpm = E.bpm
+        songEnv.bpm = E.bpm
         return E.bpm
     end
 
