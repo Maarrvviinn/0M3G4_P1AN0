@@ -1,8 +1,10 @@
 -- 0M3G4 P1AN0 || ui.lua
 -- Spotify-inspired desktop client for Roblox piano autoplayer.
--- Features: Collapsible sidebar, customizable table columns (Artist/Genre/BPM),
--- playlist switch transitions, crisp border, triple-layer click/hover isolation,
--- and robust multi-protocol song loading.
+-- Features: Fixed native HttpGet download flow matching TALENTLESS source,
+-- sleek player bar with NO bulky grey backgrounds, compact 52px MIDI badge with zero timestamp collisions,
+-- clean 68px collapsible sidebar with centered icons, dynamic proportional table columns
+-- that resize without clipping behind Settings, tactile button click/hover micro-interactions,
+-- and ironclad isolation from ghost hovers.
 
 return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local Players = game:GetService("Players")
@@ -17,20 +19,21 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     }
 
     local C = {
-        bg      = Color3.fromRGB(18, 18, 18),
-        sidebar = Color3.fromRGB(0, 0, 0),
-        panel   = Color3.fromRGB(18, 18, 18),
-        card    = Color3.fromRGB(32, 32, 32),
-        cardHi  = Color3.fromRGB(44, 44, 44),
-        hover   = Color3.fromRGB(40, 40, 40),
-        elev    = Color3.fromRGB(32, 32, 32),
-        accent  = Color3.fromRGB(30, 215, 96),
-        text    = Color3.fromRGB(255, 255, 255),
-        sub     = Color3.fromRGB(166, 166, 166),
-        dim     = Color3.fromRGB(120, 120, 120),
-        bar     = Color3.fromRGB(72, 72, 72),
-        border  = Color3.fromRGB(50, 50, 50),
-        danger  = Color3.fromRGB(240, 90, 90),
+        bg          = Color3.fromRGB(18, 18, 18),
+        sidebar     = Color3.fromRGB(0, 0, 0),
+        panel       = Color3.fromRGB(18, 18, 18),
+        card        = Color3.fromRGB(28, 28, 28),
+        cardHi      = Color3.fromRGB(38, 38, 38),
+        hover       = Color3.fromRGB(36, 36, 36),
+        elev        = Color3.fromRGB(28, 28, 28),
+        accent      = Color3.fromRGB(30, 215, 96),       -- Spotify neon green
+        accentHover = Color3.fromRGB(35, 235, 105),
+        text        = Color3.fromRGB(255, 255, 255),
+        sub         = Color3.fromRGB(170, 170, 170),
+        dim         = Color3.fromRGB(110, 110, 110),
+        bar         = Color3.fromRGB(70, 70, 70),
+        border      = Color3.fromRGB(48, 48, 48),
+        danger      = Color3.fromRGB(240, 90, 90),
     }
 
     local function setFont(obj, weight)
@@ -39,15 +42,18 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                 weight or Enum.FontWeight.Regular, Enum.FontStyle.Normal)
         end)
     end
+
     local function make(class, props, children)
         local inst = Instance.new(class)
         for k, v in pairs(props or {}) do inst[k] = v end
         for _, c in ipairs(children or {}) do c.Parent = inst end
         return inst
     end
+
     local function corner(parent, r)
         return make("UICorner", { CornerRadius = UDim.new(0, r or 8), Parent = parent })
     end
+
     local function label(parent, props, text, size, bold, color, align)
         local l = make("TextLabel", props or {})
         l.BackgroundTransparency = 1
@@ -66,8 +72,42 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         if IIcons then return IIcons.new(parent, name, size, color, pos, anchor, glyph) end
         return label(parent, { Position = pos, AnchorPoint = anchor, Size = UDim2.fromOffset(size, size) }, glyph or "*", size, false, color, Enum.TextXAlignment.Center)
     end
+
     local function setIcon(obj, name, color)
         if IIcons then IIcons.set(obj, name, color) end
+    end
+
+    -- Tactile button interaction helper (hover brightening + scale depress)
+    local function addTactile(btn, opts)
+        opts = opts or {}
+        local uis = make("UIScale", { Parent = btn, Scale = 1 })
+        local defaultScale = opts.defaultScale or 1
+        local downScale = opts.downScale or 0.94
+
+        btn.MouseEnter:Connect(function()
+            if opts.onHover then opts.onHover(true) end
+            if opts.hoverBg then
+                TweenService:Create(btn, TweenInfo.new(0.15, Enum.EasingStyle.Quart), { BackgroundColor3 = opts.hoverBg }):Play()
+            end
+        end)
+
+        btn.MouseLeave:Connect(function()
+            if opts.onHover then opts.onHover(false) end
+            if opts.hoverBg and opts.idleBg then
+                TweenService:Create(btn, TweenInfo.new(0.15, Enum.EasingStyle.Quart), { BackgroundColor3 = opts.idleBg }):Play()
+            end
+            TweenService:Create(uis, TweenInfo.new(0.12, Enum.EasingStyle.Quart), { Scale = defaultScale }):Play()
+        end)
+
+        btn.MouseButton1Down:Connect(function()
+            TweenService:Create(uis, TweenInfo.new(0.08, Enum.EasingStyle.Quart), { Scale = downScale }):Play()
+        end)
+
+        btn.MouseButton1Up:Connect(function()
+            TweenService:Create(uis, TweenInfo.new(0.15, Enum.EasingStyle.Back, Enum.EasingDirection.Out), { Scale = defaultScale }):Play()
+        end)
+
+        return uis
     end
 
     local function getSongArtist(song)
@@ -109,6 +149,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         end
         Settings.data = s
     end
+
     local function saveSettings()
         if not hasWrite() then return end
         pcall(function()
@@ -156,6 +197,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         end
         return nil
     end
+
     local parentGui = resolveParent()
     if not parentGui then error("[P1AN0] no valid gui parent") end
 
@@ -188,11 +230,11 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     corner(win, 10)
     -- Subtle elegant border around the window
     make("UIStroke", {
-        Parent = win, Color = C.border, Thickness = 1, Transparency = 0.35,
+        Parent = win, Color = C.border, Thickness = 1, Transparency = 0.45,
         ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
     })
 
-    -- Floating toggle button on screen edge
+    -- Floating edge toggle button on screen edge (visible only when minimized)
     local toggle = make("TextButton", {
         Name = "toggle", Parent = gui, AnchorPoint = Vector2.new(0, 0.5),
         Position = UDim2.new(0, 8, 0.4, 0), Size = UDim2.fromOffset(44, 44),
@@ -201,11 +243,14 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     })
     corner(toggle, 22)
     icon(toggle, "music", 22, Color3.fromRGB(0, 0, 0), UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "o")
+    addTactile(toggle, { hoverBg = C.accentHover, idleBg = C.accent, downScale = 0.9 })
 
-    local SIDE_EXP, SIDE_COL = 240, 60
+    local SIDE_EXP, SIDE_COL = 230, 68
     local NOW_H = 92
+    local PANEL_W = 360
     local isSidebarCollapsed = Settings.data.sidebarCollapsed and true or false
     local currentSideW = isSidebarCollapsed and SIDE_COL or SIDE_EXP
+    local panelOpen = false
 
     local sidebar = make("Frame", {
         Parent = win, Size = UDim2.new(0, currentSideW, 1, -NOW_H),
@@ -220,62 +265,88 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
     -- Sidebar brand header with collapse toggle button
     local brand = make("Frame", { Parent = sidebar, Size = UDim2.new(1, 0, 0, 56), BackgroundTransparency = 1, ZIndex = 2 })
-    local brandIcon = icon(brand, "music", 22, C.text, UDim2.new(0, 18, 0.5, 0), Vector2.new(0, 0.5), "o")
-    local brandTitle = label(brand, { Position = UDim2.new(0, 48, 0, 0), Size = UDim2.new(1, -92, 1, 0), ZIndex = 2 }, "0M3G4 P1AN0", 15, true, C.text)
+    local brandIcon = icon(brand, "music", 20, C.accent, UDim2.new(0, isSidebarCollapsed and 34 or 20, 0.5, 0), Vector2.new(0.5, 0.5), "o")
+    local brandTitle = label(brand, { Position = UDim2.new(0, 42, 0, 0), Size = UDim2.new(1, -84, 1, 0), ZIndex = 2 }, "0M3G4 P1AN0", 15, true, C.text)
     brandTitle.Visible = not isSidebarCollapsed
 
     local collapseBtn = make("TextButton", {
-        Parent = brand, AnchorPoint = Vector2.new(1, 0.5),
-        Position = UDim2.new(1, -8, 0.5, 0), Size = UDim2.fromOffset(32, 32),
-        BackgroundTransparency = 1, Text = "", AutoButtonColor = false, ZIndex = 3,
+        Parent = brand, AnchorPoint = isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(1, 0.5),
+        Position = isSidebarCollapsed and UDim2.new(0.5, 0, 0.5, 0) or UDim2.new(1, -10, 0.5, 0),
+        Size = UDim2.fromOffset(30, 30), BackgroundTransparency = 1, Text = "", AutoButtonColor = false, ZIndex = 4,
     })
-    local collapseIcon = icon(collapseBtn, "panel-left", 16, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "[|]")
+    corner(collapseBtn, 6)
+    local collapseIcon = icon(collapseBtn, isSidebarCollapsed and "panel-left-open" or "panel-left-close", 16, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), isSidebarCollapsed and "[>]" or "[|]")
+    addTactile(collapseBtn, {
+        onHover = function(h)
+            collapseBtn.BackgroundTransparency = h and 0.85 or 1
+            collapseBtn.BackgroundColor3 = C.hover
+            collapseIcon.TextColor3 = h and C.text or C.sub
+        end
+    })
 
     local nav = make("Frame", { Parent = sidebar, Position = UDim2.new(0, 0, 0, 56), Size = UDim2.new(1, 0, 0, 88), BackgroundTransparency = 1, ZIndex = 2 })
-    local browseBtn = make("TextButton", { Parent = nav, Position = UDim2.new(0, 10, 0, 2), Size = UDim2.new(1, -20, 0, 40), BackgroundColor3 = C.hover, BackgroundTransparency = 0.8, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2 })
+    local browseBtn = make("TextButton", {
+        Parent = nav, Position = UDim2.new(0, isSidebarCollapsed and 14 or 10, 0, 2),
+        Size = isSidebarCollapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40),
+        BackgroundColor3 = C.hover, BackgroundTransparency = 0.8, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2,
+    })
     corner(browseBtn, 6)
-    local browseIcon = icon(browseBtn, "home", 18, C.text, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), "^")
+    local browseIcon = icon(browseBtn, "home", 18, C.text, isSidebarCollapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0), isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5), "^")
     local browseLbl = label(browseBtn, { Position = UDim2.new(0, 38, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Browse", 14, true, C.text)
     browseLbl.Visible = not isSidebarCollapsed
+    addTactile(browseBtn)
 
-    local settingsBtn = make("TextButton", { Parent = nav, Position = UDim2.new(0, 10, 0, 44), Size = UDim2.new(1, -20, 0, 40), BackgroundColor3 = C.hover, BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2 })
+    local settingsBtn = make("TextButton", {
+        Parent = nav, Position = UDim2.new(0, isSidebarCollapsed and 14 or 10, 0, 44),
+        Size = isSidebarCollapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40),
+        BackgroundColor3 = C.hover, BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2,
+    })
     corner(settingsBtn, 6)
-    local settingsIcon = icon(settingsBtn, "sliders", 18, C.sub, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), "*")
+    local settingsIcon = icon(settingsBtn, "sliders", 18, C.sub, isSidebarCollapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0), isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5), "*")
     local settingsLbl = label(settingsBtn, { Position = UDim2.new(0, 38, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Settings", 14, false, C.sub)
     settingsLbl.Visible = not isSidebarCollapsed
+    addTactile(settingsBtn)
 
-    local libHeader = label(sidebar, { Position = UDim2.new(0, 20, 0, 150), Size = UDim2.new(1, -30, 0, 18), ZIndex = 2 }, "LIBRARY", 11, true, C.dim)
+    local libHeader = label(sidebar, { Position = UDim2.new(0, 18, 0, 150), Size = UDim2.new(1, -26, 0, 18), ZIndex = 2 }, "LIBRARY", 11, true, C.dim)
     libHeader.Visible = not isSidebarCollapsed
 
     local sideList = make("ScrollingFrame", {
         Parent = sidebar, Position = UDim2.new(0, 6, 0, 172), Size = UDim2.new(1, -12, 1, -180),
-        BackgroundTransparency = 1, BorderSizePixel = 0, ScrollBarThickness = 2,
+        BackgroundTransparency = 1, BorderSizePixel = 0, ScrollBarThickness = isSidebarCollapsed and 0 or 2,
         ScrollBarImageColor3 = Color3.fromRGB(60, 60, 60),
         CanvasSize = UDim2.new(0, 0, 0, 0), AutomaticCanvasSize = Enum.AutomaticSize.Y,
         ZIndex = 2,
     })
     make("UIListLayout", { Parent = sideList, Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder })
 
+    -- Top bar in main viewport
     local top = make("Frame", { Parent = main, Size = UDim2.new(1, 0, 0, 60), BackgroundTransparency = 1, Active = true, ZIndex = 1 })
-    local searchBox = make("Frame", { Parent = top, Position = UDim2.new(0, 20, 0, 14), Size = UDim2.new(0, 320, 0, 34), BackgroundColor3 = C.elev, BorderSizePixel = 0 })
+    local searchBox = make("Frame", { Parent = top, Position = UDim2.new(0, 20, 0, 14), Size = UDim2.new(0, 300, 0, 34), BackgroundColor3 = C.card, BorderSizePixel = 0 })
     corner(searchBox, 17)
     icon(searchBox, "search", 16, C.sub, UDim2.new(0, 12, 0.5, 0), Vector2.new(0, 0.5), "?")
     local search = make("TextBox", { Parent = searchBox, Position = UDim2.new(0, 36, 0, 0), Size = UDim2.new(1, -46, 1, 0), BackgroundTransparency = 1, ClearTextOnFocus = false, PlaceholderText = "What do you want to play?", PlaceholderColor3 = C.sub, Text = "", TextColor3 = C.text, TextSize = 13, TextXAlignment = Enum.TextXAlignment.Left })
 
-    local function topIconButton(x)
-        return make("TextButton", { Parent = top, Position = UDim2.new(1, x, 0, 14), Size = UDim2.fromOffset(34, 34), BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2 })
+    local function topIconButton(x, iconName, glyph)
+        local b = make("TextButton", { Parent = top, Position = UDim2.new(1, x, 0, 14), Size = UDim2.fromOffset(32, 32), BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2 })
+        corner(b, 16)
+        local ic = icon(b, iconName, 17, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), glyph)
+        addTactile(b, {
+            onHover = function(h)
+                b.BackgroundTransparency = h and 0.82 or 1
+                b.BackgroundColor3 = C.hover
+                ic.TextColor3 = h and C.text or C.sub
+            end
+        })
+        return b, ic
     end
-    local gearBtn = topIconButton(-112)
-    icon(gearBtn, "settings", 18, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "*")
-    local minBtn = topIconButton(-74)
-    icon(minBtn, "minus", 18, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "-")
-    local closeBtn = topIconButton(-36)
-    icon(closeBtn, "x", 18, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "x")
+    local gearBtn = topIconButton(-112, "settings", "*")
+    local minBtn = topIconButton(-74, "minus", "-")
+    local closeBtn = topIconButton(-36, "x", "x")
 
     local header = label(main, { Position = UDim2.new(0, 20, 0, 64), Size = UDim2.new(1, -40, 0, 24) }, "All songs", 20, true, C.text)
     local subheader = label(main, { Position = UDim2.new(0, 20, 0, 90), Size = UDim2.new(1, -40, 0, 16) }, "", 12, false, C.sub)
 
-    -- Dynamic table header & columns
+    -- Dynamic table header
     local tableHeader = make("Frame", {
         Parent = main, Position = UDim2.new(0, 12, 0, 112), Size = UDim2.new(1, -24, 0, 28),
         BackgroundTransparency = 1, BorderSizePixel = 0, ZIndex = 2,
@@ -300,10 +371,11 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     make("UIListLayout", { Parent = list, Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder })
     make("UIPadding", { Parent = list, PaddingBottom = UDim.new(0, 12) })
 
-    -- ---------------------------------------------------------------- bottom player
-    local now = make("Frame", { Parent = win, Position = UDim2.new(0, 0, 1, -NOW_H), Size = UDim2.new(1, 0, 0, NOW_H), BackgroundColor3 = Color3.fromRGB(24, 24, 24), BorderSizePixel = 0, Active = true, ZIndex = 5 })
-    make("Frame", { Parent = now, Size = UDim2.new(1, 0, 0, 1), BackgroundColor3 = C.hover })
+    -- ---------------------------------------------------------------- bottom player bar
+    local now = make("Frame", { Parent = win, Position = UDim2.new(0, 0, 1, -NOW_H), Size = UDim2.new(1, 0, 0, NOW_H), BackgroundColor3 = Color3.fromRGB(24, 24, 24), BorderSizePixel = 0, Active = true, ZIndex = 10 })
+    make("Frame", { Parent = now, Size = UDim2.new(1, 0, 0, 1), BackgroundColor3 = Color3.fromRGB(38, 38, 38) })
 
+    -- Left: Currently playing info
     local leftContainer = make("Frame", { Parent = now, Position = UDim2.new(0, 16, 0, 0), Size = UDim2.new(0, 230, 1, 0), BackgroundTransparency = 1 })
     local art = make("Frame", { Parent = leftContainer, Position = UDim2.new(0, 0, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5), Size = UDim2.fromOffset(54, 54), BackgroundColor3 = Color3.fromRGB(45, 45, 45), BorderSizePixel = 0 })
     corner(art, 8)
@@ -319,14 +391,26 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local npSub = label(textWrap, { Position = UDim2.new(0, 0, 0, 20), Size = UDim2.new(1, 0, 0, 16) }, "pick a song", 11, false, C.sub)
     npSub.TextTruncate = Enum.TextTruncate.AtEnd
 
-    local transport = make("Frame", { Parent = now, AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0.5, 0, 0.5, 0), Size = UDim2.fromOffset(360, 68), BackgroundTransparency = 1 })
-    local btns = make("Frame", { Parent = transport, AnchorPoint = Vector2.new(0.5, 0), Position = UDim2.new(0.5, 0, 0, 2), Size = UDim2.fromOffset(160, 36), BackgroundTransparency = 1 })
+    -- Center: Transport & Scrubber (Width 320px, clear buffer from right controls)
+    local transport = make("Frame", { Parent = now, AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0.5, 0, 0.5, 0), Size = UDim2.fromOffset(320, 68), BackgroundTransparency = 1 })
+    local btns = make("Frame", { Parent = transport, AnchorPoint = Vector2.new(0.5, 0), Position = UDim2.new(0.5, 0, 0, 2), Size = UDim2.fromOffset(150, 36), BackgroundTransparency = 1 })
     make("UIListLayout", { Parent = btns, FillDirection = Enum.FillDirection.Horizontal, HorizontalAlignment = Enum.HorizontalAlignment.Center, VerticalAlignment = Enum.VerticalAlignment.Center, Padding = UDim.new(0, 16), SortOrder = Enum.SortOrder.LayoutOrder })
+
     local function transportBtn(name, glyph, size, primary)
         local b = make("TextButton", { Parent = btns, Size = UDim2.fromOffset(size, size), BackgroundColor3 = primary and C.accent or C.bg, BackgroundTransparency = primary and 0 or 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false })
         if primary then corner(b, size / 2) end
-        icon(b, name, size * 0.5, primary and Color3.fromRGB(0, 0, 0) or C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), glyph)
-        return b
+        local ic = icon(b, name, size * 0.5, primary and Color3.fromRGB(0, 0, 0) or C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), glyph)
+        addTactile(b, {
+            downScale = 0.9,
+            onHover = function(h)
+                if primary then
+                    TweenService:Create(b, TweenInfo.new(0.15, Enum.EasingStyle.Quart), { BackgroundColor3 = h and C.accentHover or C.accent }):Play()
+                else
+                    ic.TextColor3 = h and C.text or C.sub
+                end
+            end
+        })
+        return b, ic
     end
     local shuffleBtn = transportBtn("shuffle", "~", 26, false)
     local playBtn = transportBtn("play", ">", 36, true)
@@ -339,28 +423,52 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local fill = make("Frame", { Parent = track, Size = UDim2.new(0, 0, 1, 0), BackgroundColor3 = C.text, BorderSizePixel = 0 })
     corner(fill, 2)
 
-    local right = make("Frame", { Parent = now, AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -16, 0.5, 0), Size = UDim2.fromOffset(300, 36), BackgroundTransparency = 1 })
-    make("UIListLayout", { Parent = right, FillDirection = Enum.FillDirection.Horizontal, HorizontalAlignment = Enum.HorizontalAlignment.Right, VerticalAlignment = Enum.VerticalAlignment.Center, Padding = UDim.new(0, 8), SortOrder = Enum.SortOrder.LayoutOrder })
-    local function pill(order, width, glyph)
-        local p = make("Frame", { Parent = right, Size = UDim2.fromOffset(width, 32), BackgroundColor3 = C.elev, BorderSizePixel = 0, LayoutOrder = order })
-        corner(p, 16)
-        local minus = make("TextButton", { Parent = p, Size = UDim2.fromOffset(24, 32), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
-        icon(minus, "minus", 12, C.text, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "-")
-        local val = label(p, { Position = UDim2.new(0, 24, 0, 0), Size = UDim2.new(1, -48, 1, 0) }, "", 11, true, C.text, Enum.TextXAlignment.Center)
-        local plus = make("TextButton", { Parent = p, Position = UDim2.new(1, -24, 0, 0), Size = UDim2.fromOffset(24, 32), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
-        icon(plus, "plus", 12, C.text, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "+")
-        return p, minus, val, plus
+    -- Right: Minimal controls (NO ugly grey rectangles; width 200px, 70px+ buffer from transport)
+    local right = make("Frame", { Parent = now, AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -16, 0.5, 0), Size = UDim2.fromOffset(200, 32), BackgroundTransparency = 1 })
+    make("UIListLayout", { Parent = right, FillDirection = Enum.FillDirection.Horizontal, HorizontalAlignment = Enum.HorizontalAlignment.Right, VerticalAlignment = Enum.VerticalAlignment.Center, Padding = UDim.new(0, 10), SortOrder = Enum.SortOrder.LayoutOrder })
+
+    local function miniControl(order, width)
+        local c = make("Frame", { Parent = right, Size = UDim2.fromOffset(width, 28), BackgroundTransparency = 1, LayoutOrder = order })
+        local minus = make("TextButton", { Parent = c, Size = UDim2.fromOffset(18, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
+        corner(minus, 4)
+        local mic = icon(minus, "minus", 11, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "-")
+        addTactile(minus, { onHover = function(h) mic.TextColor3 = h and C.text or C.sub end })
+
+        local val = label(c, { Position = UDim2.new(0, 18, 0, 0), Size = UDim2.new(1, -36, 1, 0) }, "", 11, true, C.text, Enum.TextXAlignment.Center)
+
+        local plus = make("TextButton", { Parent = c, Position = UDim2.new(1, -18, 0, 0), Size = UDim2.fromOffset(18, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
+        corner(plus, 4)
+        local pic = icon(plus, "plus", 11, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "+")
+        addTactile(plus, { onHover = function(h) pic.TextColor3 = h and C.text or C.sub end })
+
+        return c, minus, val, plus
     end
-    local _, bpmMinus, bpmVal, bpmPlus = pill(1, 96, "clock")
-    local _, errMinus, errVal, errPlus = pill(2, 92, "zap")
-    local midiPill = make("TextButton", { Parent = right, Size = UDim2.fromOffset(105, 32), BackgroundColor3 = C.elev, BorderSizePixel = 0, Text = "MIDI: off", TextColor3 = C.sub, TextSize = 11, AutoButtonColor = true, LayoutOrder = 3 })
-    corner(midiPill, 16)
-    setFont(midiPill, Enum.FontWeight.Bold)
+    local _, bpmMinus, bpmVal, bpmPlus = miniControl(1, 68)
+    local _, errMinus, errVal, errPlus = miniControl(2, 64)
+
+    -- Compact 52px inline MIDI badge with green status dot
+    local midiBadge = make("TextButton", {
+        Parent = right, Size = UDim2.fromOffset(52, 24),
+        BackgroundColor3 = Color3.fromRGB(28, 28, 28), BackgroundTransparency = 0.5,
+        BorderSizePixel = 0, Text = "", AutoButtonColor = false, LayoutOrder = 3,
+    })
+    corner(midiBadge, 12)
+    local midiDot = make("Frame", {
+        Parent = midiBadge, Size = UDim2.fromOffset(6, 6),
+        Position = UDim2.new(0, 8, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5),
+        BackgroundColor3 = C.dim, BorderSizePixel = 0,
+    })
+    corner(midiDot, 3)
+    local midiLbl = label(midiBadge, { Position = UDim2.new(0, 18, 0, 0), Size = UDim2.new(1, -22, 1, 0) }, "MIDI", 11, true, C.dim, Enum.TextXAlignment.Left)
+    addTactile(midiBadge, {
+        onHover = function(h)
+            midiBadge.BackgroundTransparency = h and 0.2 or 0.5
+        end
+    })
 
     -- ---------------------------------------------------------------- settings panel
-    local panelW = 380
     local panel = make("Frame", {
-        Parent = win, Position = UDim2.new(1, 0, 0, 0), Size = UDim2.fromOffset(panelW, H - NOW_H),
+        Parent = win, Position = UDim2.new(1, 0, 0, 0), Size = UDim2.fromOffset(PANEL_W, H - NOW_H),
         BackgroundColor3 = C.panel, BorderSizePixel = 0, Visible = false, Active = true, ZIndex = 20,
     })
     make("Frame", { Parent = panel, Size = UDim2.new(0, 1, 1, 0), BackgroundColor3 = Color3.fromRGB(38, 38, 38), BorderSizePixel = 0, ZIndex = 21 })
@@ -371,8 +479,16 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
     local panelHead = make("Frame", { Parent = panel, Size = UDim2.new(1, 0, 0, 58), BackgroundTransparency = 1, Active = true, ZIndex = 21 })
     label(panelHead, { Position = UDim2.new(0, 22, 0, 0), Size = UDim2.new(1, -70, 1, 0), ZIndex = 21 }, "Settings", 20, true, C.text)
-    local panelClose = make("TextButton", { Parent = panelHead, Position = UDim2.new(1, -48, 0, 13), Size = UDim2.fromOffset(32, 32), BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 22 })
-    icon(panelClose, "x", 16, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "x")
+    local panelClose = make("TextButton", { Parent = panelHead, Position = UDim2.new(1, -46, 0, 14), Size = UDim2.fromOffset(30, 30), BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 22 })
+    corner(panelClose, 15)
+    local pCloseIc = icon(panelClose, "x", 16, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "x")
+    addTactile(panelClose, {
+        onHover = function(h)
+            panelClose.BackgroundTransparency = h and 0.85 or 1
+            panelClose.BackgroundColor3 = C.hover
+            pCloseIc.TextColor3 = h and C.text or C.sub
+        end
+    })
 
     local settingsList = make("ScrollingFrame", {
         Parent = panel, Position = UDim2.new(0, 14, 0, 62), Size = UDim2.new(1, -28, 1, -76),
@@ -402,25 +518,22 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     end
 
     -- ---------------------------------------------------------------- robust song fetching
+    -- Matches TALENTLESS source directly: relies on native game:HttpGet without hanging request stubs
     local memCache = {}
     local function cachePath(file) return CACHE_DIR .. "/" .. file end
 
     local function httpGet(url)
-        -- 1. Try executor request/http_request first (non-blocking async pool, handles cloudflare/fastly)
-        local req = (syn and syn.request) or (http and http.request) or (fluxus and fluxus.request) or request or http_request
-        if type(req) == "function" then
-            local ok, res = pcall(req, { Url = url, Method = "GET" })
-            if ok and type(res) == "table" and (res.StatusCode == 200 or not res.StatusCode) then
-                local b = res.Body or res.body
-                if type(b) == "string" and #b > 0 then return b end
-            end
-        end
-        -- 2. Try game:HttpGet without true cache flag (prevents libcurl socket keepalive hanging on raw github)
-        local ok, res = pcall(function() return game:HttpGet(url) end)
+        -- 1. Direct game:HttpGet with cache (standard native executor API)
+        local ok, res = pcall(function() return game:HttpGet(url, true) end)
         if ok and type(res) == "string" and #res > 0 then return res end
-        -- 3. Try game:HttpGet with true cache flag as fallback
-        local ok2, res2 = pcall(function() return game:HttpGet(url, true) end)
+
+        -- 2. Direct game:HttpGet without cache flag
+        local ok2, res2 = pcall(function() return game:HttpGet(url) end)
         if ok2 and type(res2) == "string" and #res2 > 0 then return res2 end
+
+        -- 3. game:HttpGetAsync
+        local ok3, res3 = pcall(function() return game:HttpGetAsync(url) end)
+        if ok3 and type(res3) == "string" and #res3 > 0 then return res3 end
 
         return nil
     end
@@ -460,17 +573,21 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         return body
     end
 
-    -- ---------------------------------------------------------------- playback
+    -- ---------------------------------------------------------------- playback & row tracking
     local current = nil
     local rowRefs = {}
+    local isDownloading = false
+    local playPendingOnLoad = false
 
     local function fmt(sec)
         sec = math.max(0, math.floor(sec or 0))
         return string.format("%d:%02d", math.floor(sec / 60), sec % 60)
     end
+
     local function setTransportIcon()
         setIcon(playBtn, (Engine.playing and not Engine.paused) and "pause" or "play", Color3.fromRGB(0, 0, 0))
     end
+
     local function updateProgress()
         local total = Engine.totalBeats
         local p = (total and total > 0) and (Engine.position / total) or 0
@@ -485,9 +602,17 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         sfx("18595195017", 0.5)
         notify("Finished: " .. tostring(Engine.songName))
     end
+
     local function updateBpmLabels()
-        bpmVal.Text = "BPM " .. tostring(Engine.bpm)
-        errVal.Text = string.format("ERR %d%%", math.floor(Engine.errorMargin * 100 + 0.5))
+        bpmVal.Text = tostring(Engine.bpm) .. " BPM"
+        errVal.Text = string.format("%d%% ERR", math.floor(Engine.errorMargin * 100 + 0.5))
+    end
+
+    local function updateMidiBadge()
+        local active = Settings.data.midiSpoof
+        midiDot.BackgroundColor3 = active and C.accent or C.dim
+        midiLbl.TextColor3 = active and C.text or C.dim
+        midiBadge.Visible = Settings.data.alwaysshowmidispoofer or game.PlaceId == 10888259502
     end
 
     local function updateRowHighlight(newSong)
@@ -515,24 +640,42 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         updateRowHighlight(song)
         current = song
         npTitle.Text = song.name
-        local tags = (#song.cat > 0) and table.concat(song.cat, " . ") or "untagged"
-        npSub.Text = string.format("%s BPM  .  %s", tostring(song.bpm), tags)
+        local tags = (#song.cat > 0) and table.concat(song.cat, " · ") or "untagged"
+        npSub.Text = string.format("%s BPM  ·  %s", tostring(song.bpm), tags)
     end
 
-    -- Async song selection that never freezes or blocks the UI
+    -- Asynchronous song loader that immediately prepares song for playing
     local function selectSong(song, forcePlay)
         updateNow(song)
+        if forcePlay then playPendingOnLoad = true end
+
+        -- If song script is already in memory and engine has it loaded
+        if Engine.songName == song.name and #Engine.song > 0 then
+            Engine.setBpm(tonumber(song.bpm) or 120)
+            updateBpmLabels()
+            if forcePlay or Settings.data.autoplay then
+                Engine.play()
+                setTransportIcon()
+                sfx("70452176150315", 0.1)
+            end
+            return
+        end
+
         npSub.Text = "Loading song from CDN..."
         curTime.Text = "0:00"
         totTime.Text = "--:--"
         fill.Size = UDim2.new(0, 0, 1, 0)
+        isDownloading = true
 
         print(string.format("[P1AN0] selectSong: '%s' (%s)", song.name, song.file))
         local src, err = getSongSource(song)
+        isDownloading = false
+
         if not src then
             print(string.format("[P1AN0] failed to load '%s': %s", song.name, tostring(err)))
             notify("Failed to load " .. song.name .. " (" .. tostring(err) .. ")", C.danger)
             npSub.Text = "Download failed"
+            playPendingOnLoad = false
             return
         end
 
@@ -544,26 +687,28 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             print(string.format("[P1AN0] Engine.load error for '%s': %s", song.name, tostring(lerr)))
             notify("Song error: " .. tostring(lerr), C.danger)
             npSub.Text = "Load error"
+            playPendingOnLoad = false
             return
         end
 
         updateProgress()
-        local tags = (#song.cat > 0) and table.concat(song.cat, " . ") or "untagged"
-        npSub.Text = string.format("%s BPM  .  %s", tostring(song.bpm), tags)
-        print(string.format("[P1AN0] ready '%s': %d actions, duration=%.1fs",
-            song.name, #Engine.song, Engine.duration()))
+        local tags = (#song.cat > 0) and table.concat(song.cat, " · ") or "untagged"
+        npSub.Text = string.format("%s BPM  ·  %s", tostring(song.bpm), tags)
+        print(string.format("[P1AN0] ready '%s': %d actions, duration=%.1fs", song.name, #Engine.song, Engine.duration()))
 
-        if forcePlay or Settings.data.autoplay then
+        if playPendingOnLoad or Settings.data.autoplay then
+            playPendingOnLoad = false
             print("[P1AN0] playing: " .. song.name)
             Engine.play()
+            setTransportIcon()
             sfx("70452176150315", 0.1)
         else
             setTransportIcon()
-            notify("Ready: " .. song.name .. "  (press play)")
+            notify("Ready: " .. song.name .. "  (click play)")
         end
     end
 
-    -- ---------------------------------------------------------------- dynamic layout calculation
+    -- ---------------------------------------------------------------- dynamic proportional columns
     local function updateColumnLayout()
         local showArt = Settings.data.showColArtist
         local showGen = Settings.data.showColGenre
@@ -573,40 +718,38 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         thGenre.Visible = showGen
         thBpm.Visible = showBpm
 
-        local offset = 44
-        local totalW = 600
-        local rightReserved = showBpm and 68 or 16
+        -- Measure list width or use dynamic proportions
+        local availW = math.max(300, list.AbsoluteSize.X - 44 - (showBpm and 64 or 12))
 
-        -- Calculate column widths based on enabled columns
         local titleW, artW, genW
         if showArt and showGen then
-            titleW = 230
-            artW = 160
-            genW = 130
+            titleW = math.floor(availW * 0.46)
+            artW = math.floor(availW * 0.30)
+            genW = math.floor(availW * 0.24)
         elseif showArt and not showGen then
-            titleW = 320
-            artW = 200
+            titleW = math.floor(availW * 0.62)
+            artW = math.floor(availW * 0.38)
             genW = 0
         elseif not showArt and showGen then
-            titleW = 340
+            titleW = math.floor(availW * 0.66)
             artW = 0
-            genW = 180
+            genW = math.floor(availW * 0.34)
         else
-            titleW = 480
+            titleW = availW
             artW = 0
             genW = 0
         end
 
+        local offset = 44
         thTitle.Position = UDim2.new(0, offset, 0, 0)
         thTitle.Size = UDim2.new(0, titleW, 1, 0)
 
-        thArtist.Position = UDim2.new(0, offset + titleW + 10, 0, 0)
+        thArtist.Position = UDim2.new(0, offset + titleW + 8, 0, 0)
         thArtist.Size = UDim2.new(0, artW, 1, 0)
 
-        thGenre.Position = UDim2.new(0, offset + titleW + 10 + (showArt and (artW + 10) or 0), 0, 0)
+        thGenre.Position = UDim2.new(0, offset + titleW + (showArt and (artW + 16) or 8), 0, 0)
         thGenre.Size = UDim2.new(0, genW, 1, 0)
 
-        -- Update existing song row elements
         for _, ref in pairs(rowRefs) do
             if ref.nm then
                 ref.nm.Position = UDim2.new(0, offset, 0, 0)
@@ -614,12 +757,12 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             end
             if ref.artistLbl then
                 ref.artistLbl.Visible = showArt
-                ref.artistLbl.Position = UDim2.new(0, offset + titleW + 10, 0, 0)
+                ref.artistLbl.Position = UDim2.new(0, offset + titleW + 8, 0, 0)
                 ref.artistLbl.Size = UDim2.new(0, artW, 1, 0)
             end
             if ref.genreLbl then
                 ref.genreLbl.Visible = showGen
-                ref.genreLbl.Position = UDim2.new(0, offset + titleW + 10 + (showArt and (artW + 10) or 0), 0, 0)
+                ref.genreLbl.Position = UDim2.new(0, offset + titleW + (showArt and (artW + 16) or 8), 0, 0)
                 ref.genreLbl.Size = UDim2.new(0, genW, 1, 0)
             end
             if ref.bpmLbl then
@@ -628,7 +771,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         end
     end
 
-    -- ---------------------------------------------------------------- list & rendering
+    -- ---------------------------------------------------------------- song list rendering
     local filterCat = nil
     local query = ""
     local function matches(song)
@@ -682,13 +825,13 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                 local rowPlayIcon = icon(indexSlot, "play", 14, isCurrent and C.accent or C.text, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), ">")
                 rowPlayIcon.Visible = false
 
-                local nm = label(row, { Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(0, 230, 1, 0) }, song.name, 13, false, isCurrent and C.accent or C.text)
+                local nm = label(row, { Position = UDim2.new(0, 44, 0, 0), Size = UDim2.new(0, 240, 1, 0) }, song.name, 13, false, isCurrent and C.accent or C.text)
                 nm.TextTruncate = Enum.TextTruncate.AtEnd
 
-                local artistLbl = label(row, { Position = UDim2.new(0, 284, 0, 0), Size = UDim2.new(0, 160, 1, 0) }, getSongArtist(song), 12, false, C.sub)
+                local artistLbl = label(row, { Position = UDim2.new(0, 290, 0, 0), Size = UDim2.new(0, 160, 1, 0) }, getSongArtist(song), 12, false, C.sub)
                 artistLbl.TextTruncate = Enum.TextTruncate.AtEnd
 
-                local genreLbl = label(row, { Position = UDim2.new(0, 454, 0, 0), Size = UDim2.new(0, 130, 1, 0) }, (#song.cat > 0) and song.cat[1] or "", 12, false, C.sub)
+                local genreLbl = label(row, { Position = UDim2.new(0, 460, 0, 0), Size = UDim2.new(0, 130, 1, 0) }, (#song.cat > 0) and song.cat[1] or "", 12, false, C.sub)
                 genreLbl.TextTruncate = Enum.TextTruncate.AtEnd
 
                 local bpmLbl = label(row, { Position = UDim2.new(1, -64, 0, 0), Size = UDim2.fromOffset(56, 36) }, tostring(song.bpm), 12, false, C.sub, Enum.TextXAlignment.Right)
@@ -704,11 +847,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                 }
 
                 row.MouseEnter:Connect(function()
-                    -- Reject hover if mouse is hovering over open settings panel
-                    if panel.Visible then
-                        local mouse = UIS:GetMouseLocation()
-                        if mouse.X >= panel.AbsolutePosition.X then return end
-                    end
+                    if panelOpen and panel.Visible then return end
                     row.BackgroundTransparency = 0.94
                     indexLbl.Visible = false
                     rowPlayIcon.Visible = true
@@ -720,18 +859,21 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
                         setIcon(rowPlayIcon, "play", C.text)
                     end
                 end)
+
                 row.MouseLeave:Connect(function()
                     row.BackgroundTransparency = 1
                     indexLbl.Visible = true
                     rowPlayIcon.Visible = false
                 end)
+
                 row.MouseButton1Click:Connect(function()
-                    if panel.Visible then
-                        local mouse = UIS:GetMouseLocation()
-                        if mouse.X >= panel.AbsolutePosition.X then return end
-                    end
+                    if panelOpen and panel.Visible then return end
                     if current and current.file == song.file then
-                        if Engine.playing then Engine.togglePause() else Engine.play() end
+                        if Engine.playing then
+                            Engine.togglePause()
+                        else
+                            Engine.play()
+                        end
                         setTransportIcon()
                     else
                         task.spawn(function()
@@ -748,109 +890,60 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
         if animateTransition then
             list.CanvasPosition = Vector2.new(0, 0)
-            list.Position = UDim2.new(0, 12, 0, 154)
+            list.Position = UDim2.new(0, 12, 0, 156)
             TweenService:Create(list, TweenInfo.new(0.2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {
                 Position = UDim2.new(0, 12, 0, 144)
             }):Play()
         end
     end
 
+    -- ---------------------------------------------------------------- sidebar items & collapse
     local order = 0
     local sideItemButtons = {}
     local function sideItem(name, iconName, glyph, filter)
         order = order + 1
-        local b = make("TextButton", { Parent = sideList, Size = UDim2.new(1, 0, 0, 32), BackgroundColor3 = C.sidebar, BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, LayoutOrder = order, ZIndex = 2 })
+        local b = make("TextButton", {
+            Parent = sideList,
+            Size = isSidebarCollapsed and UDim2.fromOffset(40, 36) or UDim2.new(1, 0, 0, 32),
+            Position = isSidebarCollapsed and UDim2.new(0.5, 0, 0, 0) or UDim2.new(0, 0, 0, 0),
+            AnchorPoint = isSidebarCollapsed and Vector2.new(0.5, 0) or Vector2.new(0, 0),
+            BackgroundColor3 = C.sidebar, BackgroundTransparency = 1, BorderSizePixel = 0,
+            Text = "", AutoButtonColor = false, LayoutOrder = order, ZIndex = 2,
+        })
         corner(b, 4)
-        local ic = icon(b, iconName, 16, C.sub, UDim2.new(0, 8, 0.5, 0), Vector2.new(0, 0.5), glyph)
+        local ic = icon(b, iconName, 16, C.sub, isSidebarCollapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 8, 0.5, 0), isSidebarCollapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5), glyph)
         local lbl = label(b, { Position = UDim2.new(0, 34, 0, 0), Size = UDim2.new(1, -40, 1, 0), ZIndex = 2 }, name, 13, false, C.sub)
         lbl.Visible = not isSidebarCollapsed
 
         sideItemButtons[#sideItemButtons + 1] = { btn = b, lbl = lbl, icon = ic, filter = filter }
+        addTactile(b, {
+            onHover = function(h)
+                lbl.TextColor3 = (h or filterCat == filter) and C.text or C.sub
+                ic.TextColor3 = (h or filterCat == filter) and C.text or C.sub
+            end
+        })
 
-        b.MouseEnter:Connect(function() lbl.TextColor3 = C.text end)
-        b.MouseLeave:Connect(function() if filterCat ~= filter then lbl.TextColor3 = C.sub end end)
         b.MouseButton1Click:Connect(function()
             filterCat = filter
             for _, item in ipairs(sideItemButtons) do
-                item.lbl.TextColor3 = (item.filter == filter) and C.text or C.sub
+                local active = (item.filter == filter)
+                item.lbl.TextColor3 = active and C.text or C.sub
+                item.icon.TextColor3 = active and C.text or C.sub
             end
             render(true)
         end)
         return b
     end
 
-    local libItems = { all = sideItem("All songs", "music", "o", nil), new = sideItem("New", "sparkles", "*", "__new"), featured = sideItem("Featured", "zap", "!", "__featured") }
+    local libItems = {
+        all = sideItem("All songs", "music", "o", nil),
+        new = sideItem("New", "sparkles", "*", "__new"),
+        featured = sideItem("Featured", "zap", "!", "__featured"),
+    }
     for _, cat in ipairs(catalog.categories or {}) do
         sideItem(cat, "tag", "#", cat)
     end
     search:GetPropertyChangedSignal("Text"):Connect(function() query = search.Text or ""; render(false) end)
-
-    -- ---------------------------------------------------------------- controls
-    playBtn.MouseButton1Click:Connect(function()
-        if not current then return end
-        if Engine.playing then
-            Engine.togglePause()
-            setTransportIcon()
-            return
-        end
-        if Engine.songName and #Engine.song > 0 then
-            Engine.play()
-            setTransportIcon()
-            sfx("70452176150315", 0.1)
-            return
-        end
-        task.spawn(function()
-            selectSong(current, true)
-        end)
-    end)
-    stopBtn.MouseButton1Click:Connect(function()
-        Engine.stop(); Engine.clear(); setTransportIcon(); updateProgress(); sfx("1524549907", 0.1); notify("Stopped")
-    end)
-    shuffleBtn.MouseButton1Click:Connect(function()
-        if #catalog.songs > 0 then
-            task.spawn(function()
-                selectSong(catalog.songs[math.random(1, #catalog.songs)], true)
-            end)
-        end
-    end)
-    bpmMinus.MouseButton1Click:Connect(function() Engine.setBpm(Engine.bpm - 10); updateBpmLabels() end)
-    bpmPlus.MouseButton1Click:Connect(function() Engine.setBpm(Engine.bpm + 10); updateBpmLabels() end)
-    errMinus.MouseButton1Click:Connect(function() Engine.setErrorMargin(Engine.errorMargin - 0.01); Settings.data.errorMargin = Engine.errorMargin; saveSettings(); updateBpmLabels() end)
-    errPlus.MouseButton1Click:Connect(function() Engine.setErrorMargin(Engine.errorMargin + 0.01); Settings.data.errorMargin = Engine.errorMargin; saveSettings(); updateBpmLabels() end)
-
-    local function updateMidiVisibility()
-        midiPill.Visible = Settings.data.alwaysshowmidispoofer or game.PlaceId == 10888259502
-    end
-    midiPill.MouseButton1Click:Connect(function()
-        Settings.data.midiSpoof = not Settings.data.midiSpoof
-        Engine.setMidiSpoof(Settings.data.midiSpoof)
-        midiPill.Text = Settings.data.midiSpoof and "MIDI: on" or "MIDI: off"
-        midiPill.TextColor3 = Settings.data.midiSpoof and C.accent or C.sub
-        saveSettings()
-    end)
-
-    local seeking = false
-    local function seekFromInput(input)
-        return math.clamp((input.Position.X - track.AbsolutePosition.X) / math.max(1, track.AbsoluteSize.X), 0, 1)
-    end
-    track.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            seeking = true
-            fill.BackgroundColor3 = C.accent
-        end
-    end)
-    UIS.InputChanged:Connect(function(input)
-        if seeking and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
-            fill.Size = UDim2.new(seekFromInput(input), 0, 1, 0)
-        end
-    end)
-    UIS.InputEnded:Connect(function(input)
-        if seeking and (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
-            seeking = false
-            fill.BackgroundColor3 = C.text
-            Engine.seek(seekFromInput(input))
-        end
-    end)
 
     -- ---------------------------------------------------------------- sidebar collapse wiring
     local function setSidebarCollapsed(collapsed)
@@ -858,32 +951,53 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         Settings.data.sidebarCollapsed = collapsed
         saveSettings()
 
-        local targetW = collapsed and SIDE_COL or SIDE_EXP
-        local tInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        currentSideW = collapsed and SIDE_COL or SIDE_EXP
+        local tInfo = TweenInfo.new(0.22, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 
-        TweenService:Create(sidebar, tInfo, { Size = UDim2.new(0, targetW, 1, -NOW_H) }):Play()
+        TweenService:Create(sidebar, tInfo, { Size = UDim2.new(0, currentSideW, 1, -NOW_H) }):Play()
+        local mainW = panelOpen and (currentSideW + PANEL_W) or currentSideW
         TweenService:Create(main, tInfo, {
-            Position = UDim2.new(0, targetW, 0, 0),
-            Size = UDim2.new(1, -targetW, 1, -NOW_H),
+            Position = UDim2.new(0, currentSideW, 0, 0),
+            Size = UDim2.new(1, -mainW, 1, -NOW_H),
         }):Play()
 
         brandTitle.Visible = not collapsed
         browseLbl.Visible = not collapsed
         settingsLbl.Visible = not collapsed
         libHeader.Visible = not collapsed
+        sideList.ScrollBarThickness = collapsed and 0 or 2
+
+        collapseIcon.Text = collapsed and "[>]" or "[|]"
+        setIcon(collapseIcon, collapsed and "panel-left-open" or "panel-left-close", C.sub)
+        collapseBtn.Position = collapsed and UDim2.new(0.5, 0, 0.5, 0) or UDim2.new(1, -10, 0.5, 0)
+        collapseBtn.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(1, 0.5)
+
+        brandIcon.Position = UDim2.new(0, collapsed and 34 or 20, 0.5, 0)
+
+        browseBtn.Size = collapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40)
+        browseBtn.Position = UDim2.new(0, collapsed and 14 or 10, 0, 2)
+        browseIcon.Position = collapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0)
+        browseIcon.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5)
+
+        settingsBtn.Size = collapsed and UDim2.fromOffset(40, 40) or UDim2.new(1, -20, 0, 40)
+        settingsBtn.Position = UDim2.new(0, collapsed and 14 or 10, 0, 44)
+        settingsIcon.Position = collapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 12, 0.5, 0)
+        settingsIcon.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5)
 
         for _, item in ipairs(sideItemButtons) do
             item.lbl.Visible = not collapsed
+            item.btn.Size = collapsed and UDim2.fromOffset(40, 36) or UDim2.new(1, 0, 0, 32)
+            item.btn.Position = collapsed and UDim2.new(0.5, 0, 0, 0) or UDim2.new(0, 0, 0, 0)
+            item.btn.AnchorPoint = collapsed and Vector2.new(0.5, 0) or Vector2.new(0, 0)
+            item.icon.Position = collapsed and UDim2.fromScale(0.5, 0.5) or UDim2.new(0, 8, 0.5, 0)
+            item.icon.AnchorPoint = collapsed and Vector2.new(0.5, 0.5) or Vector2.new(0, 0.5)
         end
-        task.delay(0.22, function() updateColumnLayout() end)
-    end
 
-    collapseBtn.MouseButton1Click:Connect(function()
-        setSidebarCollapsed(not isSidebarCollapsed)
-    end)
+        task.delay(0.24, function() updateColumnLayout() end)
+    end
+    collapseBtn.MouseButton1Click:Connect(function() setSidebarCollapsed(not isSidebarCollapsed) end)
 
     -- ---------------------------------------------------------------- settings panel wiring
-    local panelOpen = false
     local function updateNav()
         if panelOpen then
             settingsBtn.BackgroundTransparency = 0.8
@@ -911,13 +1025,21 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         panel.Visible = true
         updateNav()
         if open then clearSongHovers() end
-        local target = open and UDim2.new(1, -panelW, 0, 0) or UDim2.new(1, 0, 0, 0)
-        TweenService:Create(panel, TweenInfo.new(0.22, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Position = target }):Play()
+
+        -- Smoothly resize main area so table columns NEVER clip behind settings panel
+        local tInfo = TweenInfo.new(0.22, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+        local mainW = open and (currentSideW + PANEL_W) or currentSideW
+        TweenService:Create(main, tInfo, { Size = UDim2.new(1, -mainW, 1, -NOW_H) }):Play()
+
+        local target = open and UDim2.new(1, -PANEL_W, 0, 0) or UDim2.new(1, 0, 0, 0)
+        TweenService:Create(panel, tInfo, { Position = target }):Play()
+
         if not open then
             task.delay(0.22, function()
                 if not panelOpen then panel.Visible = false end
             end)
         end
+        task.delay(0.24, function() updateColumnLayout() end)
     end
     gearBtn.MouseButton1Click:Connect(function() setPanel(not panelOpen) end)
     settingsBtn.MouseButton1Click:Connect(function() setPanel(not panelOpen) end)
@@ -929,6 +1051,91 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         render(true)
     end)
 
+    -- ---------------------------------------------------------------- transport controls wiring
+    playBtn.MouseButton1Click:Connect(function()
+        if not current then
+            if #catalog.songs > 0 then
+                task.spawn(function() selectSong(catalog.songs[1], true) end)
+            end
+            return
+        end
+
+        if Engine.playing then
+            Engine.togglePause()
+            setTransportIcon()
+            return
+        end
+
+        if isDownloading then
+            playPendingOnLoad = true
+            notify("Starting playback once loaded...")
+            return
+        end
+
+        if Engine.songName == current.name and #Engine.song > 0 then
+            Engine.play()
+            setTransportIcon()
+            sfx("70452176150315", 0.1)
+            return
+        end
+
+        task.spawn(function()
+            selectSong(current, true)
+        end)
+    end)
+
+    stopBtn.MouseButton1Click:Connect(function()
+        Engine.stop()
+        Engine.clear()
+        setTransportIcon()
+        updateProgress()
+        sfx("1524549907", 0.1)
+        notify("Stopped")
+    end)
+
+    shuffleBtn.MouseButton1Click:Connect(function()
+        if #catalog.songs > 0 then
+            local nextSong = catalog.songs[math.random(1, #catalog.songs)]
+            task.spawn(function() selectSong(nextSong, true) end)
+        end
+    end)
+
+    bpmMinus.MouseButton1Click:Connect(function() Engine.setBpm(Engine.bpm - 10); updateBpmLabels() end)
+    bpmPlus.MouseButton1Click:Connect(function() Engine.setBpm(Engine.bpm + 10); updateBpmLabels() end)
+    errMinus.MouseButton1Click:Connect(function() Engine.setErrorMargin(Engine.errorMargin - 0.01); Settings.data.errorMargin = Engine.errorMargin; saveSettings(); updateBpmLabels() end)
+    errPlus.MouseButton1Click:Connect(function() Engine.setErrorMargin(Engine.errorMargin + 0.01); Settings.data.errorMargin = Engine.errorMargin; saveSettings(); updateBpmLabels() end)
+
+    midiBadge.MouseButton1Click:Connect(function()
+        Settings.data.midiSpoof = not Settings.data.midiSpoof
+        Engine.setMidiSpoof(Settings.data.midiSpoof)
+        updateMidiBadge()
+        saveSettings()
+    end)
+
+    local seeking = false
+    local function seekFromInput(input)
+        return math.clamp((input.Position.X - track.AbsolutePosition.X) / math.max(1, track.AbsoluteSize.X), 0, 1)
+    end
+    track.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            seeking = true
+            fill.BackgroundColor3 = C.accent
+        end
+    end)
+    UIS.InputChanged:Connect(function(input)
+        if seeking and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+            fill.Size = UDim2.new(seekFromInput(input), 0, 1, 0)
+        end
+    end)
+    UIS.InputEnded:Connect(function(input)
+        if seeking and (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+            seeking = false
+            fill.BackgroundColor3 = C.text
+            Engine.seek(seekFromInput(input))
+        end
+    end)
+
+    -- ---------------------------------------------------------------- settings panel controls
     local function toggleSwitch(parent, initial, onChanged)
         local state = initial and true or false
         local sw = make("TextButton", {
@@ -943,6 +1150,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             BackgroundColor3 = Color3.fromRGB(255, 255, 255), BorderSizePixel = 0, ZIndex = 25,
         })
         corner(knob, 9)
+
         local function toggle()
             state = not state
             sw.BackgroundColor3 = state and C.accent or Color3.fromRGB(80, 80, 80)
@@ -950,6 +1158,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             onChanged(state)
         end
         sw.MouseButton1Click:Connect(toggle)
+        addTactile(sw, { downScale = 0.92 })
         return sw, toggle
     end
 
@@ -990,9 +1199,9 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     end
 
     sectionHeader("Playback")
-    settingRow("Autoplay", "Start playing when a song is selected", "autoplay", "play", ">")
+    settingRow("Autoplay", "Start playing immediately when a song is selected", "autoplay", "play", ">")
     settingRow("Precise timing", "Frame-perfect rests (uses more CPU)", "secondaryloader", "clock", "o", function(v) Engine.setPreciseTiming(v) end)
-    settingRow("Disable fake accidents", "Never intentionally miss or shift", "disableaccidents", "shield-check", "v", function(v) Engine.setDisableAccidents(v) end)
+    settingRow("Disable fake accidents", "Never intentionally miss or shift notes", "disableaccidents", "shield-check", "v", function(v) Engine.setDisableAccidents(v) end)
 
     sectionHeader("Table Columns")
     settingRow("Show Artist", "Display artist column in track table", "showColArtist", "user", "@", function() updateColumnLayout() end)
@@ -1002,7 +1211,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     sectionHeader("Library")
     settingRow("Cache songs", "Save songs to workspace (off = always fetch)", "cachesongs", "box", "[]")
     settingRow("Hide featured", "Hide the Featured library item", "disablefeaturedsongs", "sparkles", "*", function(v) libItems.featured.Visible = not v end)
-    settingRow("Always show MIDI spoofer", "Show MIDI toggle outside Piano Rooms", "alwaysshowmidispoofer", "zap", "!", function() updateMidiVisibility() end)
+    settingRow("Always show MIDI spoofer", "Show MIDI toggle outside Piano Rooms", "alwaysshowmidispoofer", "zap", "!", function() updateMidiBadge() end)
 
     sectionHeader("Interface")
     settingRow("Disable notifications", "Hide the in-window toasts", "disablenotifs", "info", "i")
@@ -1016,13 +1225,14 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     })
     corner(resetBtn, 6)
     setFont(resetBtn, Enum.FontWeight.Bold)
+    addTactile(resetBtn, { downScale = 0.96 })
     resetBtn.MouseButton1Click:Connect(function()
         for k, v in pairs(DEFAULTS) do Settings.data[k] = v end
         saveSettings()
         notify("Settings reset (reopen script to rebuild)")
     end)
 
-    -- Window / Minimize / Close controls
+    -- Window Minimize / Close / Dragging
     toggle.MouseButton1Click:Connect(function()
         win.Visible = true
         toggle.Visible = false
@@ -1055,15 +1265,14 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     dragify(top, win)
     dragify(toggle, toggle)
 
+    -- Initialize engine and UI states
     Engine.setDisableAccidents(Settings.data.disableaccidents)
     Engine.setPreciseTiming(Settings.data.secondaryloader)
     Engine.setMidiSpoof(Settings.data.midiSpoof)
     Engine.setErrorMargin(Settings.data.errorMargin)
     Settings.data.errorMargin = Engine.errorMargin
-    midiPill.Text = Settings.data.midiSpoof and "MIDI: on" or "MIDI: off"
-    midiPill.TextColor3 = Settings.data.midiSpoof and C.accent or C.sub
+    updateMidiBadge()
     libItems.featured.Visible = not Settings.data.disablefeaturedsongs
-    updateMidiVisibility()
     updateBpmLabels()
     updateProgress()
     render(false)
@@ -1071,5 +1280,5 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     print(string.format("[P1AN0] ui built: parent=%s songs=%d cache=%s autoplay=%s fileapi=%s/%s",
         tostring(gui.Parent), #catalog.songs, tostring(Settings.data.cachesongs), tostring(Settings.data.autoplay),
         tostring(hasRead()), tostring(hasWrite())))
-    notify("0M3G4 P1AN0  .  " .. tostring(#catalog.songs) .. " songs")
+    notify("0M3G4 P1AN0  ·  " .. tostring(#catalog.songs) .. " songs")
 end
