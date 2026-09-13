@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-13T14:59:40.931Z",
- "count": 657,
+ "generated": "2026-09-13T15:51:47.540Z",
+ "count": 683,
  "categories": [
   "new",
   "peak",
@@ -10671,6 +10671,410 @@
    "size": 33953,
    "sha256": "2a515f2dc214dec1ac6d7ef3c513ea6163b848ff81e7b0eff74f6b93e2cc623c",
    "sha": "2a515f2dc214"
+  },
+  {
+   "name": "God's Plan",
+   "file": "GOD_S_PLAN.lua",
+   "bpm": "76",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Drake"
+   ],
+   "size": 58894,
+   "sha256": "ae00d52983de17d00e007754949a43fd2b1ce5cac97d3e0369c89875f7f3b104",
+   "sha": "ae00d52983de"
+  },
+  {
+   "name": "hot girl bummer",
+   "file": "HOT_GIRL_BUMMER.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "blackbear",
+    "NotHammer043"
+   ],
+   "size": 53105,
+   "sha256": "636a76bd12ec08d6849c1922e4dc504f5bbac0d0efd0d7c352841a07b653aba7",
+   "sha": "636a76bd12ec"
+  },
+  {
+   "name": "Someone You Loved",
+   "file": "SOMEONE_YOU_LOVED.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Lewis Capaldi",
+    "The Theorist",
+    "WhispyVT"
+   ],
+   "size": 43179,
+   "sha256": "3262dc5cdc1de58043c797c4dd0426b6c56bbe4917f4260a12de1135abf58882",
+   "sha": "3262dc5cdc1d"
+  },
+  {
+   "name": "Changes",
+   "file": "CHANGES.lua",
+   "bpm": "125",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Xxxtentacion",
+    "XXXTentacion",
+    "CHVNZ",
+    "eDEN"
+   ],
+   "size": 17877,
+   "sha256": "8f4e25a7d4704af4249ff428451d875b8ee19ded9991f718a5031b40fe9fc510",
+   "sha": "8f4e25a7d470"
+  },
+  {
+   "name": "Leave Out All The Rest",
+   "file": "LEAVE_OUT_ALL_THE_REST.lua",
+   "bpm": "144",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Linkin Park",
+    "ellinya19"
+   ],
+   "size": 64280,
+   "sha256": "07b5dab3e99582c59cf185d21c5271b1b78885bae19f437bac040f2c79f2c790",
+   "sha": "07b5dab3e995"
+  },
+  {
+   "name": "Crawling",
+   "file": "CRAWLING.lua",
+   "bpm": "105",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Linkin Park",
+    "ellinya19"
+   ],
+   "size": 54144,
+   "sha256": "6a21498dc0064f3ab6843acec8984a8c5ee7115f1dcb12b34636dee70b78bf20",
+   "sha": "6a21498dc006"
+  },
+  {
+   "name": "Numb",
+   "file": "NUMB.lua",
+   "bpm": "110",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Linkin Park",
+    "ellinya19"
+   ],
+   "size": 62092,
+   "sha256": "e8689bdc364336c298b2a94f7ce84aadb1c5fdc82f88e8d3f13605a6e67cfe61",
+   "sha": "e8689bdc3643"
+  },
+  {
+   "name": "In The End",
+   "file": "IN_THE_END.lua",
+   "bpm": "105",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Linkin Park",
+    "ellinya19"
+   ],
+   "size": 57049,
+   "sha256": "4021b5920b03a1621b4b4d7744e572c9b61f282605b9628efe32f6c7afd3cf65",
+   "sha": "4021b5920b03"
+  },
+  {
+   "name": "CASTLE OF GLASS",
+   "file": "CASTLE_OF_GLASS.lua",
+   "bpm": "108",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Linkin Park",
+    "ellinya19"
+   ],
+   "size": 67990,
+   "sha256": "232c7b00c887082502763eafa548626f2e99acb4d25e80b1079c9b737cfc7be0",
+   "sha": "232c7b00c887"
+  },
+  {
+   "name": "One More Light",
+   "file": "ONE_MORE_LIGHT.lua",
+   "bpm": "85",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Linkin Park",
+    "Chester Bennington, Mike Shinoda, Brad Delson, Joe Hahn, Dave Farrell, Colin Brittain",
+    "its_ghosty_i_got_banned"
+   ],
+   "size": 38973,
+   "sha256": "fbe29636c6b721ef74bc014587dc4eef7b936e63830ecc4540c50e78172a57d7",
+   "sha": "fbe29636c6b7"
+  },
+  {
+   "name": "Empty Out Your Pockets",
+   "file": "EMPTY_OUT_YOUR_POCKETS.lua",
+   "bpm": "92",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Juice WRLD",
+    "idk"
+   ],
+   "size": 22949,
+   "sha256": "76c41073a98725a8917f4748c407684147647acbd26f215b6d3245b8167a34d6",
+   "sha": "76c41073a987"
+  },
+  {
+   "name": "Wishing Well",
+   "file": "WISHING_WELL.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Juice WRLD",
+    "WhispyVT"
+   ],
+   "size": 64358,
+   "sha256": "92d2e50dfc51782153464abb3c989e61c69bd5be5180fe475da678c335ce0948",
+   "sha": "92d2e50dfc51"
+  },
+  {
+   "name": "Empty",
+   "file": "EMPTY.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Juice WRLD",
+    "The Theorist",
+    "WhispyVT"
+   ],
+   "size": 66218,
+   "sha256": "44906606139a079268c9c32d004e166374ed48fc6c2214af1ce87912135d0428",
+   "sha": "44906606139a"
+  },
+  {
+   "name": "Righteous",
+   "file": "RIGHTEOUS_2.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Juice WRLD",
+    "The Theorist",
+    "WhispyVT"
+   ],
+   "size": 58446,
+   "sha256": "9e12908201fc6c98a4ca2fee1e3c6084c5ec7c42cbce2a6558b153634064dcfd",
+   "sha": "9e12908201fc"
+  },
+  {
+   "name": "Come & Go",
+   "file": "COME_GO.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Juice WRLD & Marshmello",
+    "The Theorist",
+    "WhispyVT"
+   ],
+   "size": 60845,
+   "sha256": "18d4f4b0407f7ed6298cbe0d39a0c0d2469394ae42d352765eb19e130c3e478e",
+   "sha": "18d4f4b0407f"
+  },
+  {
+   "name": "Moonlight",
+   "file": "MOONLIGHT_2.lua",
+   "bpm": "130",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Kali Uchis",
+    "NotHammer043"
+   ],
+   "size": 23640,
+   "sha256": "b8a5e22dbea460c86d7f3bcebfa1ca750302f1eb175cb7ecd4f8d96e6def7e66",
+   "sha": "b8a5e22dbea4"
+  },
+  {
+   "name": "Alone",
+   "file": "ALONE_2.lua",
+   "bpm": "96",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Alan Walker",
+    "Pechemelba",
+    "NotHammer043"
+   ],
+   "size": 27072,
+   "sha256": "466d836570ad3d1a03660551423da6dbf8e8b0566af94349e006f1abc901f333",
+   "sha": "466d836570ad"
+  },
+  {
+   "name": "Ballin",
+   "file": "BALLIN.lua",
+   "bpm": "130",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Mustard, Roddy Rich",
+    "The Theorist",
+    "NotHammer043"
+   ],
+   "size": 51355,
+   "sha256": "9db1d4586945d0d6e3cb2273d3a1dc1a7c2e80da12e41727406db850a9a6581d",
+   "sha": "9db1d4586945"
+  },
+  {
+   "name": "Wii Shop Channel Theme",
+   "file": "WII_SHOP_CHANNEL_THEME.lua",
+   "bpm": "145",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Kazumi Totaka",
+    "Ashley Dawn",
+    "NotHammer043"
+   ],
+   "size": 29701,
+   "sha256": "d631336f3de81e7a200a3ef879d48992f97bccb3792f0dd6109df456b8e68f46",
+   "sha": "d631336f3de8"
+  },
+  {
+   "name": "Simpsons theme",
+   "file": "SIMPSONS_THEME.lua",
+   "bpm": "160",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Simpsons",
+    "Nicolas Dupouy-Manescau",
+    "vito"
+   ],
+   "size": 31661,
+   "sha256": "990824373a530292cd8cfd358a3fc02f172db78c5ff0dea366615e58bd021bfa",
+   "sha": "990824373a53"
+  },
+  {
+   "name": "Forever Young",
+   "file": "FOREVER_YOUNG.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Alphaville"
+   ],
+   "size": 270840,
+   "sha256": "e842574e6723f3d9d2d26ef5fbf155d10d0af1468d202ebe7147234865b465ba",
+   "sha": "e842574e6723"
+  },
+  {
+   "name": "Everybody Wants To Rule The World",
+   "file": "EVERYBODY_WANTS_TO_RULE_THE_WORLD.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Tears For Fears",
+    "ORIGINAL",
+    "NotHammer043"
+   ],
+   "size": 54046,
+   "sha256": "0ea8ec3ce06aeda6c3202e6989cf35f1a24b35489574a9c301559e46f58da821",
+   "sha": "0ea8ec3ce06a"
+  },
+  {
+   "name": "Pigstep",
+   "file": "PIGSTEP.lua",
+   "bpm": "169",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Lena Raine, Minecraft",
+    "Alphysans",
+    "NotHammer043"
+   ],
+   "size": 32564,
+   "sha256": "83631ffa843a0f19235ef15c53fbf0fac1a064da7fe0fb44c4043085eba11c74",
+   "sha": "83631ffa843a"
+  },
+  {
+   "name": "Angry Birds Theme",
+   "file": "ANGRY_BIRDS_THEME.lua",
+   "bpm": "125",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "David Schweitzer, Ari Pulkkinen",
+    "Frank & Zach Piano Duets",
+    "Raven13111"
+   ],
+   "size": 66525,
+   "sha256": "101600a27704476c8bd663ff0bc6cf00195d9ee056c374db42fd7701a7c5e471",
+   "sha": "101600a27704"
+  },
+  {
+   "name": "Chipi Chipi Chapa Chapa",
+   "file": "CHIPI_CHIPI_CHAPA_CHAPA.lua",
+   "bpm": "148",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Christell",
+    "TridashieRD, AskariFox",
+    "NotHammer043"
+   ],
+   "size": 20703,
+   "sha256": "1ff963554f7aec585b71af07c723e6d072dd023ade132fa2a6387e2c4fc265cf",
+   "sha": "1ff963554f7a"
+  },
+  {
+   "name": "Fe!n",
+   "file": "FE_N.lua",
+   "bpm": "75",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Travis Scott",
+    "Henry Hove",
+    "eDEN"
+   ],
+   "size": 17658,
+   "sha256": "905fc4dd80355c86390220146b4fc0099b23b7696721bfb31adc2a00182dd687",
+   "sha": "905fc4dd8035"
   }
  ]
 }
