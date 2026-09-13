@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-13T20:29:19.460Z",
- "count": 679,
+ "generated": "2026-09-13T20:32:04.874Z",
+ "count": 680,
  "categories": [
   "REVIEW",
   "new",
@@ -11552,6 +11552,22 @@
    "sha": "1ab9292d0110",
    "duration": 2.824,
    "notes": 38
+  },
+  {
+   "name": "Erika",
+   "file": "ERIKA_2.lua",
+   "bpm": "200",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "Nazi"
+   ],
+   "size": 55764,
+   "sha256": "4a1c099c419df5d7796fc9c01989f0198fa32c0f3274722fa2f4e96457a6b862",
+   "sha": "4a1c099c419d",
+   "duration": 163.51,
+   "notes": 2772
   }
  ]
 }
