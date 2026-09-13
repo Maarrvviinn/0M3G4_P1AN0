@@ -221,9 +221,11 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         DisplayOrder = 2147483000, ZIndexBehavior = Enum.ZIndexBehavior.Sibling, Parent = parentGui,
     })
 
-    local keyConn
+    local keyConn, dragMoveConn, dragEndConn
     local function unload()
         if keyConn then pcall(function() keyConn:Disconnect() end); keyConn = nil end
+        if dragMoveConn then pcall(function() dragMoveConn:Disconnect() end); dragMoveConn = nil end
+        if dragEndConn then pcall(function() dragEndConn:Disconnect() end); dragEndConn = nil end
         pcall(function() Engine.stop() end)
         pcall(function() Engine.clear() end)
         pcall(function() gui:Destroy() end)
@@ -328,7 +330,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     -- Top bar in main viewport
     local top = make("Frame", { Parent = main, Size = UDim2.new(1, 0, 0, 60), BackgroundTransparency = 1, Active = true, ZIndex = 1 })
     local searchBox = make("Frame", { Parent = top, Position = UDim2.new(0, 20, 0, 14), Size = UDim2.new(0, 300, 0, 34), BackgroundColor3 = C.card, BorderSizePixel = 0 })
-    corner(searchBox, 17)
+    corner(searchBox, 8)
     icon(searchBox, "search", 16, C.sub, UDim2.new(0, 12, 0.5, 0), Vector2.new(0, 0.5), "?")
     local search = make("TextBox", { Parent = searchBox, Position = UDim2.new(0, 36, 0, 0), Size = UDim2.new(1, -46, 1, 0), BackgroundTransparency = 1, ClearTextOnFocus = false, PlaceholderText = "What do you want to play?", PlaceholderColor3 = C.sub, Text = "", TextColor3 = C.text, TextSize = 13, TextXAlignment = Enum.TextXAlignment.Left })
 
@@ -444,7 +446,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             Parent = right, Size = UDim2.fromOffset(width, 26),
             BackgroundColor3 = Color3.fromRGB(24, 24, 24), BorderSizePixel = 0, LayoutOrder = order,
         })
-        corner(c, 13)
+        corner(c, 6)
         make("UIStroke", { Parent = c, Color = C.border, Thickness = 1, Transparency = 0.5 })
 
         local minus = make("TextButton", { Parent = c, Position = UDim2.new(0, 0, 0, 0), Size = UDim2.fromOffset(20, 26), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
@@ -468,7 +470,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         BackgroundColor3 = Color3.fromRGB(28, 28, 28), BackgroundTransparency = 0.5,
         BorderSizePixel = 0, Text = "", AutoButtonColor = false, LayoutOrder = 3,
     })
-    corner(midiBadge, 12)
+    corner(midiBadge, 6)
     local midiDot = make("Frame", {
         Parent = midiBadge, Size = UDim2.fromOffset(6, 6),
         Position = UDim2.new(0, 8, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5),
@@ -623,7 +625,13 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         totTime.Text = fmt(Engine.duration())
     end
     Engine.onProgress = function() updateProgress() end
-    Engine.onState = function() setTransportIcon() end
+    Engine.onState = function()
+        setTransportIcon()
+        if current and rowRefs[current.file] and rowRefs[current.file].playIcon then
+            local isPlaying = Engine.playing and not Engine.paused
+            setIcon(rowRefs[current.file].playIcon, isPlaying and "pause" or "play", C.accent)
+        end
+    end
     Engine.onFinish = function()
         setTransportIcon()
         sfx("18595195017", 0.5)
@@ -1253,8 +1261,10 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
         local ic = icon(row, iconName, 17, C.sub, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), glyph)
         ic.ZIndex = 23
-        label(row, { Position = UDim2.new(0, 38, 0, 6), Size = UDim2.new(1, -100, 0, 18), ZIndex = 23 }, title, 13, true, C.text)
-        label(row, { Position = UDim2.new(0, 38, 0, 24), Size = UDim2.new(1, -100, 0, 15), ZIndex = 23 }, subtitle or "", 11, false, C.dim)
+        local titleLbl = label(row, { Position = UDim2.new(0, 38, 0, 6), Size = UDim2.new(1, -115, 0, 18), ZIndex = 23 }, title, 13, true, C.text)
+        titleLbl.TextTruncate = Enum.TextTruncate.AtEnd
+        local subLbl = label(row, { Position = UDim2.new(0, 38, 0, 24), Size = UDim2.new(1, -115, 0, 15), ZIndex = 23 }, subtitle or "", 11, false, C.dim)
+        subLbl.TextTruncate = Enum.TextTruncate.AtEnd
         make("Frame", { Parent = row, Position = UDim2.new(0, 38, 1, -1), Size = UDim2.new(1, -38, 0, 1), BackgroundColor3 = Color3.fromRGB(28, 28, 28), BorderSizePixel = 0, ZIndex = 23 })
 
         local sw, toggleFn = toggleSwitch(row, Settings.data[key], function(v)
@@ -1282,20 +1292,83 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     settingRow("Hide featured", "Hide the Featured library item", "disablefeaturedsongs", "sparkles", "*", function(v) libItems.featured.Visible = not v end)
     settingRow("Always show MIDI spoofer", "Show MIDI toggle outside Piano Rooms", "alwaysshowmidispoofer", "zap", "!", function() updateMidiBadge() end)
 
+    local function keybindRow(title, subtitle, key, iconName, glyph)
+        sorder = sorder + 1
+        local row = make("Frame", {
+            Parent = settingsList, Size = UDim2.new(1, 0, 0, 48),
+            BackgroundColor3 = Color3.fromRGB(255, 255, 255), BackgroundTransparency = 1,
+            BorderSizePixel = 0, LayoutOrder = sorder, Active = true, ZIndex = 22,
+        })
+        corner(row, 6)
+
+        local ic = icon(row, iconName, 17, C.sub, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), glyph)
+        ic.ZIndex = 23
+        local titleLbl = label(row, { Position = UDim2.new(0, 38, 0, 6), Size = UDim2.new(1, -115, 0, 18), ZIndex = 23 }, title, 13, true, C.text)
+        titleLbl.TextTruncate = Enum.TextTruncate.AtEnd
+        local subLbl = label(row, { Position = UDim2.new(0, 38, 0, 24), Size = UDim2.new(1, -115, 0, 15), ZIndex = 23 }, subtitle or "", 11, false, C.dim)
+        subLbl.TextTruncate = Enum.TextTruncate.AtEnd
+        make("Frame", { Parent = row, Position = UDim2.new(0, 38, 1, -1), Size = UDim2.new(1, -38, 0, 1), BackgroundColor3 = Color3.fromRGB(28, 28, 28), BorderSizePixel = 0, ZIndex = 23 })
+
+        local keyBtn = make("TextButton", {
+            Parent = row, AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -10, 0.5, 0),
+            Size = UDim2.fromOffset(80, 26), BackgroundColor3 = Color3.fromRGB(28, 28, 28),
+            BorderSizePixel = 0, Text = Settings.data[key] or "None", TextColor3 = C.text,
+            TextSize = 11, AutoButtonColor = false, Active = true, ZIndex = 24,
+        })
+        corner(keyBtn, 6)
+        setFont(keyBtn, Enum.FontWeight.Medium)
+        make("UIStroke", { Parent = keyBtn, Color = C.border, Thickness = 1, Transparency = 0.5 })
+
+        local listening = false
+        local bindConn = nil
+
+        keyBtn.MouseButton1Click:Connect(function()
+            if listening then return end
+            listening = true
+            keyBtn.Text = "..."
+            keyBtn.TextColor3 = C.accent
+
+            bindConn = UIS.InputBegan:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.Keyboard then
+                    if bindConn then bindConn:Disconnect(); bindConn = nil end
+                    listening = false
+                    if input.KeyCode ~= Enum.KeyCode.Escape then
+                        Settings.data[key] = input.KeyCode.Name
+                        saveSettings()
+                        keyBtn.Text = input.KeyCode.Name
+                    else
+                        keyBtn.Text = Settings.data[key] or "None"
+                    end
+                    keyBtn.TextColor3 = C.text
+                end
+            end)
+        end)
+        addTactile(keyBtn, { downScale = 0.95 })
+        return row
+    end
+
     sectionHeader("Interface")
-    settingRow("Minimize hotkey (Left Alt)", "Toggle minimize / restore with Left Alt key", "enableMinimizeKey", "minimize-2", "-")
+    keybindRow("Minimize hotkey", "Key to toggle minimize / restore", "minimizeKeybind", "minimize-2", "-")
     settingRow("Disable notifications", "Hide floating notification toasts", "disablenotifs", "info", "i")
     settingRow("Mute sound effects", "Silence click and play sounds", "mutesfx", "volume-x", "x")
 
     local resetBtn = make("TextButton", {
-        Parent = settingsList, Size = UDim2.new(1, 0, 0, 38),
-        BackgroundColor3 = C.hover, BorderSizePixel = 0, Text = "Reset to defaults",
-        TextColor3 = C.text, TextSize = 12, AutoButtonColor = true, LayoutOrder = 999,
+        Parent = settingsList, Size = UDim2.new(1, -8, 0, 36),
+        Position = UDim2.new(0, 4, 0, 0),
+        BackgroundColor3 = Color3.fromRGB(24, 24, 24), BorderSizePixel = 0, Text = "Reset to defaults",
+        TextColor3 = C.sub, TextSize = 12, AutoButtonColor = false, LayoutOrder = 999,
         Active = true, ZIndex = 22,
     })
     corner(resetBtn, 6)
-    setFont(resetBtn, Enum.FontWeight.Bold)
-    addTactile(resetBtn, { downScale = 0.96 })
+    make("UIStroke", { Parent = resetBtn, Color = C.border, Thickness = 1, Transparency = 0.6 })
+    setFont(resetBtn, Enum.FontWeight.Medium)
+    addTactile(resetBtn, {
+        downScale = 0.96,
+        onHover = function(h)
+            resetBtn.BackgroundColor3 = h and C.hover or Color3.fromRGB(24, 24, 24)
+            resetBtn.TextColor3 = h and C.text or C.sub
+        end
+    })
     resetBtn.MouseButton1Click:Connect(function()
         for k, v in pairs(DEFAULTS) do Settings.data[k] = v end
         saveSettings()
@@ -1318,7 +1391,8 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
 
     keyConn = UIS.InputBegan:Connect(function(input, processed)
         if processed then return end
-        if Settings.data.enableMinimizeKey and input.KeyCode == Enum.KeyCode[Settings.data.minimizeKeybind or "LeftAlt"] then
+        local bind = Settings.data.minimizeKeybind or "LeftAlt"
+        if bind ~= "" and bind ~= "None" and pcall(function() return Enum.KeyCode[bind] end) and input.KeyCode == Enum.KeyCode[bind] then
             toggleMinimized()
         end
     end)
@@ -1326,23 +1400,34 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         unload()
     end)
 
-    local dragging, dragStart, startPos
+    local activeDrag = nil
     local function dragify(handle, target)
         handle.InputBegan:Connect(function(input)
             if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-                dragging = true; dragStart = input.Position; startPos = target.Position
+                activeDrag = {
+                    target = target,
+                    dragStart = input.Position,
+                    startPos = target.Position,
+                }
             end
-        end)
-        handle.InputChanged:Connect(function(input)
-            if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
-                local d = input.Position - dragStart
-                target.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + d.X, startPos.Y.Scale, startPos.Y.Offset + d.Y)
-            end
-        end)
-        handle.InputEnded:Connect(function(input)
-            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = false end
         end)
     end
+
+    dragMoveConn = UIS.InputChanged:Connect(function(input)
+        if activeDrag and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+            local d = input.Position - activeDrag.dragStart
+            activeDrag.target.Position = UDim2.new(
+                activeDrag.startPos.X.Scale, activeDrag.startPos.X.Offset + d.X,
+                activeDrag.startPos.Y.Scale, activeDrag.startPos.Y.Offset + d.Y
+            )
+        end
+    end)
+
+    dragEndConn = UIS.InputEnded:Connect(function(input)
+        if activeDrag and (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+            activeDrag = nil
+        end
+    end)
     dragify(top, win)
     dragify(toggle, toggle)
 

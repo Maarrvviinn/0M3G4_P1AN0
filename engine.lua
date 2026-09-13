@@ -89,12 +89,21 @@ return function()
     -- input primitives
     -- ------------------------------------------------------------------
     local function preciseWait(seconds)
-        local start = os.clock()
-        while os.clock() - start < seconds do
-            if seconds - (os.clock() - start) > 0.015 then
-                RunService.Heartbeat:Wait()
+        local remaining = seconds
+        local last = os.clock()
+        while remaining > 0 do
+            if STOP then return false end
+            while E.paused do
+                resumeEvent.Event:Wait()
+                last = os.clock()
+                if STOP then return false end
             end
+            RunService.Heartbeat:Wait()
+            local now = os.clock()
+            remaining = remaining - (now - last)
+            last = now
         end
+        return true
     end
 
     local function noteHoldWait(beats, bpm, shorts)
