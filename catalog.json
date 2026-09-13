@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-13T15:51:47.540Z",
- "count": 683,
+ "generated": "2026-09-13T16:29:25.523Z",
+ "count": 677,
  "categories": [
   "new",
   "peak",
@@ -10588,60 +10588,6 @@
    "sha": "4f8b433eaed4"
   },
   {
-   "name": "Stronger (Feat. Daft Punk)",
-   "file": "STRONGER_FEAT_DAFT_PUNK.lua",
-   "bpm": "240",
-   "cat": [
-    "REVIEW"
-   ],
-   "alts": [
-    "Kanye West"
-   ],
-   "size": 26338,
-   "sha256": "1733886637944e50f4e8dabd3012a1f11aedb5669beb63fd48cd3549d6f554d2",
-   "sha": "173388663794"
-  },
-  {
-   "name": "Mr Blue Sky",
-   "file": "MR_BLUE_SKY.lua",
-   "bpm": "175",
-   "cat": [
-    "REVIEW"
-   ],
-   "alts": [],
-   "size": 128226,
-   "sha256": "832a2a32bb49003c6696c6a247386b6436040b2cf82446528cb40c55ecdd8e1a",
-   "sha": "832a2a32bb49"
-  },
-  {
-   "name": "Mr Blue Sky2",
-   "file": "MR_BLUE_SKY2.lua",
-   "bpm": "175",
-   "cat": [
-    "REVIEW"
-   ],
-   "alts": [
-    "ELO"
-   ],
-   "size": 128226,
-   "sha256": "832a2a32bb49003c6696c6a247386b6436040b2cf82446528cb40c55ecdd8e1a",
-   "sha": "832a2a32bb49"
-  },
-  {
-   "name": "Sugar Sugar",
-   "file": "SUGAR_SUGAR.lua",
-   "bpm": "120",
-   "cat": [
-    "REVIEW"
-   ],
-   "alts": [
-    "The Archies"
-   ],
-   "size": 26787,
-   "sha256": "5d4e7097540bf49fee80330f25a8afa7af8cf13906087c5ba25a933eae926275",
-   "sha": "5d4e7097540b"
-  },
-  {
    "name": "abcdefu",
    "file": "ABCDEFU.lua",
    "bpm": "61",
@@ -10983,20 +10929,6 @@
    "sha": "990824373a53"
   },
   {
-   "name": "Forever Young",
-   "file": "FOREVER_YOUNG.lua",
-   "bpm": "120",
-   "cat": [
-    "REVIEW"
-   ],
-   "alts": [
-    "Alphaville"
-   ],
-   "size": 270840,
-   "sha256": "e842574e6723f3d9d2d26ef5fbf155d10d0af1468d202ebe7147234865b465ba",
-   "sha": "e842574e6723"
-  },
-  {
    "name": "Everybody Wants To Rule The World",
    "file": "EVERYBODY_WANTS_TO_RULE_THE_WORLD.lua",
    "bpm": "120",
@@ -11043,22 +10975,6 @@
    "size": 66525,
    "sha256": "101600a27704476c8bd663ff0bc6cf00195d9ee056c374db42fd7701a7c5e471",
    "sha": "101600a27704"
-  },
-  {
-   "name": "Chipi Chipi Chapa Chapa",
-   "file": "CHIPI_CHIPI_CHAPA_CHAPA.lua",
-   "bpm": "148",
-   "cat": [
-    "REVIEW"
-   ],
-   "alts": [
-    "Christell",
-    "TridashieRD, AskariFox",
-    "NotHammer043"
-   ],
-   "size": 20703,
-   "sha256": "1ff963554f7aec585b71af07c723e6d072dd023ade132fa2a6387e2c4fc265cf",
-   "sha": "1ff963554f7a"
   },
   {
    "name": "Fe!n",
