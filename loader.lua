@@ -49,9 +49,9 @@ local function tryRequest(url)
 end
 
 local function httpGet(url)
-    local body = tryHttpGet(url)
+    local body = tryRequest(url)
     if body and #body > 0 then return body end
-    body = tryRequest(url)
+    body = tryHttpGet(url)
     if body and #body > 0 then return body end
     return nil
 end
@@ -59,7 +59,7 @@ end
 -- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
 -- can never serve a stale copy. Bump REV whenever those files change.
 -- raw.githubusercontent.com is listed FIRST because commits are immediately live.
-local REV = "cbd681e"
+local REV = "59f8b6b"
 
 local HOSTS = {
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
