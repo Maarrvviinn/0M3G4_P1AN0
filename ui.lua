@@ -60,9 +60,17 @@ return function(Engine, catalog, host, inheritedParent)
 
     local function resolveParent()
         local candidates = {}
-        if inheritedParent and inheritedParent:IsA("CoreGui") then candidates[#candidates + 1] = function() return inheritedParent end end
+        -- PlayerGui first: proven to render on this setup
+        candidates[#candidates + 1] = function()
+            local Players = game:GetService("Players")
+            local lp = Players.LocalPlayer
+            if not lp then
+                repeat task.wait(0.1) until Players.LocalPlayer
+                lp = Players.LocalPlayer
+            end
+            return lp:FindFirstChildOfClass("PlayerGui") or lp:WaitForChild("PlayerGui", 10)
+        end
         candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
-        candidates[#candidates + 1] = function() return game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui", 5) end
         if gethui then
             candidates[#candidates + 1] = function()
                 local h = gethui()
@@ -85,15 +93,18 @@ return function(Engine, catalog, host, inheritedParent)
     end
 
     local parentGui = resolveParent()
-    if not parentGui then error("[P1AN0] no valid gui parent (CoreGui/gethui/PlayerGui all failed)") end
+    if not parentGui then error("[P1AN0] no valid gui parent (PlayerGui/CoreGui/gethui all failed)") end
+
+    local old = parentGui:FindFirstChild("0M3G4_P1AN0")
+    if old then old:Destroy() end
 
     local gui = make("ScreenGui", {
         Name = "0M3G4_P1AN0",
         ResetOnSpawn = false,
         Enabled = true,
-        DisplayOrder = 1000,
         IgnoreGuiInset = true,
-        ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+        DisplayOrder = 2147483000,
+        ZIndexBehavior = Enum.ZIndexBehavior.Global,
         Parent = parentGui,
     })
 
