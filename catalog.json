@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-12T23:40:22.170Z",
- "count": 650,
+ "generated": "2026-09-13T03:02:32.026Z",
+ "count": 651,
  "categories": [
   "new",
   "peak",
@@ -10567,6 +10567,24 @@
    "size": 61220,
    "sha256": "678bbcee242a7ce7f745e460fe7a522aa118088cc6745ae9360880e17a4146ce",
    "sha": "678bbcee242a"
+  },
+  {
+   "name": "WITCHBLADES",
+   "file": "WITCHBLADES.lua",
+   "bpm": "76",
+   "cat": [
+    "pop/hiphop",
+    "sad",
+    "electronic"
+   ],
+   "alts": [
+    "Lil Peep & Lil Tracy",
+    "Adrian Soto",
+    "eDEN"
+   ],
+   "size": 47288,
+   "sha256": "4f8b433eaed44b396570f2e01d91829fa3aec985fb1ca23d8cc1cedb004fb831",
+   "sha": "4f8b433eaed4"
   }
  ]
 }

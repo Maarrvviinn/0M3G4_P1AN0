@@ -56,14 +56,7 @@ local function httpGet(url)
     return nil
 end
 
--- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
--- can never serve a stale copy. Bump REV whenever those files change.
--- raw.githubusercontent.com is listed FIRST because commits are immediately live.
-local REV = "cff8bb5"
-
 local HOSTS = {
-    "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
-    "https://cdn.jsdelivr.net/gh/Maarrvviinn/0M3G4_P1AN0@" .. REV .. "/",
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/main/",
 }
 
