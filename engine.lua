@@ -27,6 +27,9 @@ return function()
     local thread = nil
     local resumeEvent = Instance.new("BindableEvent")
     local env = (getgenv and getgenv()) or _G
+    local function safeSet(t, k, v)
+        if type(t) == "table" then pcall(function() t[k] = v end) end
+    end
 
     -- ------------------------------------------------------------------
     -- key tables (ported from the original engine)
@@ -230,7 +233,7 @@ return function()
             end
         end
     end
-    env.pressKey = pressKey
+    safeSet(env, "pressKey", pressKey)
 
     local function adjustVelocitytrigger(velo)
         if STOP then return end
@@ -289,15 +292,15 @@ return function()
     songEnv.x = "short"
 
     -- also expose globally for non-sandboxed executors
-    env.keypress = doKeypress
-    env.rest = doRest
-    env.adjustVelocity = doVel
-    env.pedalDown = doPedalDown
-    env.pedalUp = doPedalUp
-    env.keysequence16 = doKeypress
-    env.finishedSong = doFinished
-    env.bpm = E.bpm
-    env.x = "short"
+    safeSet(env, "keypress", doKeypress)
+    safeSet(env, "rest", doRest)
+    safeSet(env, "adjustVelocity", doVel)
+    safeSet(env, "pedalDown", doPedalDown)
+    safeSet(env, "pedalUp", doPedalUp)
+    safeSet(env, "keysequence16", doKeypress)
+    safeSet(env, "finishedSong", doFinished)
+    safeSet(env, "bpm", E.bpm)
+    safeSet(env, "x", "short")
 
     -- ------------------------------------------------------------------
     -- playback
@@ -378,9 +381,9 @@ return function()
         E.stop()
         E.song = {}
         E.songName = name
-        env.bpm = E.bpm
+        safeSet(env, "bpm", E.bpm)
         songEnv.bpm = E.bpm
-        env.x = "short"
+        safeSet(env, "x", "short")
         if _G and type(_G) == "table" then
             pcall(function()
                 _G.bpm = E.bpm
@@ -394,7 +397,16 @@ return function()
                 _G.finishedSong = doFinished
             end)
         end
-        local compile = (getgenv and getgenv().loadstring) or (env and env.loadstring) or loadstring or (getfenv and getfenv().loadstring) or load
+        local rawCompile = (getgenv and getgenv().loadstring) or (env and env.loadstring) or loadstring or (getfenv and getfenv().loadstring) or load
+        local function safeCompile(code, chunkName)
+            if type(rawCompile) ~= "function" then return nil, "no compile function available" end
+            local ok, res = pcall(rawCompile, code, chunkName)
+            if ok and res then return res end
+            local ok2, res2 = pcall(rawCompile, code)
+            if ok2 and res2 then return res2 end
+            return nil, tostring(res or res2 or "compile failed")
+        end
+
         local fn, err
         if type(scriptText) == "function" then
             fn = scriptText
@@ -407,7 +419,7 @@ return function()
             local wrapped = "return function(keypress, rest, adjustVelocity, pedalDown, pedalUp, keysequence16, finishedSong, bpm, x)\n"
                 .. scriptText
                 .. "\nend"
-            fn, err = compile(wrapped, "P1AN0_SONG")
+            fn, err = safeCompile(wrapped, "P1AN0_SONG")
             if fn then
                 local okF, chunkFn = pcall(fn)
                 if okF and type(chunkFn) == "function" then
@@ -421,7 +433,7 @@ return function()
                 end
             else
                 -- Fallback to compiling unwrapped script
-                fn, err = compile(scriptText, "P1AN0_SONG")
+                fn, err = safeCompile(scriptText, "P1AN0_SONG")
                 if not fn then return false, tostring(err) end
                 if setfenv then pcall(setfenv, fn, songEnv) end
                 local ok, runErr = pcall(fn)
@@ -441,13 +453,17 @@ return function()
             if E.paused then E.resume() end
             return
         end
-        if #E.song == 0 then return end
+        if #E.song == 0 then
+            print("[P1AN0] cannot play: #E.song is 0")
+            return
+        end
         STOP = false
         E.paused = false
         E.totalBeats = totalBeats()
         local idx, acc = indexAtBeat(fromBeat or 0)
         E.position = acc
         if E.onProgress then E.onProgress(E.position, E.totalBeats) end
+        print(string.format("[P1AN0] E.play: starting %d actions at index %d (beat %.1f / %.1f)", #E.song, idx, acc, E.totalBeats))
         thread = task.spawn(function() run(idx) end)
         if E.onState then E.onState("play") end
     end
