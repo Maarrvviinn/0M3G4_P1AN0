@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-13T14:54:58.429Z",
- "count": 654,
+ "generated": "2026-09-13T14:56:26.264Z",
+ "count": 655,
  "categories": [
   "new",
   "peak",
@@ -10626,6 +10626,20 @@
    "size": 128226,
    "sha256": "832a2a32bb49003c6696c6a247386b6436040b2cf82446528cb40c55ecdd8e1a",
    "sha": "832a2a32bb49"
+  },
+  {
+   "name": "Sugar Sugar",
+   "file": "SUGAR_SUGAR.lua",
+   "bpm": "120",
+   "cat": [
+    "REVIEW"
+   ],
+   "alts": [
+    "The Archies"
+   ],
+   "size": 26787,
+   "sha256": "5d4e7097540bf49fee80330f25a8afa7af8cf13906087c5ba25a933eae926275",
+   "sha": "5d4e7097540b"
   }
  ]
 }
