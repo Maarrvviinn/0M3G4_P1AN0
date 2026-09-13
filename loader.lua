@@ -1,4 +1,4 @@
--- 0M3G4 P1AN0 || loader.lua (v2, self-diagnosing)
+﻿-- 0M3G4 P1AN0 || loader.lua (v2, self-diagnosing)
 -- Nothing from the old hellohellohell0.com host is used.
 
 local TAG = "[P1AN0]"
@@ -42,9 +42,14 @@ local function httpGet(url)
     return nil
 end
 
+-- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
+-- can never serve a stale copy. Bump REV whenever those files change.
+local REV = "0e956e0"
+
 local HOSTS = {
+    "https://cdn.jsdelivr.net/gh/Maarrvviinn/0M3G4_P1AN0@" .. REV .. "/",
+    "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/main/",
-    "https://cdn.jsdelivr.net/gh/Maarrvviinn/0M3G4_P1AN0@main/",
 }
 
 local function fetchFile(name)
@@ -65,8 +70,15 @@ end
 -- ----------------------------------------------------------------------
 local function resolveParent()
     local candidates = {}
+    candidates[#candidates + 1] = function()
+        local lp = game:GetService("Players").LocalPlayer
+        if not lp then
+            repeat task.wait(0.1) until game:GetService("Players").LocalPlayer
+            lp = game:GetService("Players").LocalPlayer
+        end
+        return lp:FindFirstChildOfClass("PlayerGui") or lp:WaitForChild("PlayerGui", 10)
+    end
     candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
-    candidates[#candidates + 1] = function() return game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui", 5) end
     if gethui then
         candidates[#candidates + 1] = function()
             local h = gethui()
@@ -98,6 +110,9 @@ if parentGui then
         statusGui = Instance.new("ScreenGui")
         statusGui.Name = "0M3G4_Status"
         statusGui.ResetOnSpawn = false
+        statusGui.IgnoreGuiInset = true
+        statusGui.DisplayOrder = 2147483000
+        statusGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
         statusGui.Parent = parentGui
         statusLabel = Instance.new("TextLabel")
         statusLabel.Size = UDim2.new(0, 420, 0, 34)
