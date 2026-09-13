@@ -13,6 +13,7 @@ return function()
     E.bpm = 120
     E.errorMargin = 0
     E.midiSpoof = false
+    E.preciseTiming = false
     E.playing = false
     E.paused = false
     E.position = 0
@@ -20,6 +21,7 @@ return function()
     E.songName = nil
     E.onProgress = nil
     E.onFinish = nil
+    E.onState = nil
 
     local STOP = false
     local thread = nil
@@ -323,7 +325,14 @@ return function()
                 local isChord = (a.mergeCount or 1) > 1
                 coroutine.wrap(function() pressKey(a.keys, a.beats, E.bpm, isChord) end)()
             elseif a.type == "rest" then
-                if not sleep((a.beats / E.bpm) * 60) then break end
+                local secs = (a.beats / E.bpm) * 60
+                if E.preciseTiming then
+                    if STOP then break end
+                    preciseWait(secs)
+                    if STOP then break end
+                else
+                    if not sleep(secs) then break end
+                end
                 E.position = E.position + a.beats
                 if E.onProgress then E.onProgress(E.position, E.totalBeats) end
             elseif a.type == "adjustVelocity" then
@@ -338,6 +347,7 @@ return function()
         end
         E.playing = false
         STOP = true
+        if E.onState then E.onState("finish") end
         if E.onFinish then E.onFinish() end
     end
 
@@ -347,7 +357,13 @@ return function()
         E.songName = name
         env.bpm = E.bpm
         env.x = "short"
-        local fn, err = loadstring(scriptText, "P1AN0_SONG")
+        local compile = loadstring or load
+        local fn, err
+        if type(scriptText) == "function" then
+            fn = scriptText
+        else
+            fn, err = compile(scriptText, "P1AN0_SONG")
+        end
         if not fn then return false, tostring(err) end
         local ok, runErr = pcall(fn)
         if not ok then return false, tostring(runErr) end
@@ -368,17 +384,20 @@ return function()
         E.position = acc
         if E.onProgress then E.onProgress(E.position, E.totalBeats) end
         thread = task.spawn(function() run(idx) end)
+        if E.onState then E.onState("play") end
     end
 
     function E.pause()
         if not E.playing then return end
         E.paused = true
+        if E.onState then E.onState("pause") end
     end
 
     function E.resume()
         if not E.playing then return end
         E.paused = false
         resumeEvent:Fire()
+        if E.onState then E.onState("play") end
     end
 
     function E.togglePause()
@@ -393,6 +412,7 @@ return function()
         resumeEvent:Fire()
         if thread then pcall(task.cancel, thread) end
         thread = nil
+        if E.onState then E.onState("stop") end
     end
 
     function E.seek(percent)
@@ -430,6 +450,19 @@ return function()
 
     function E.setDisableAccidents(v)
         E.disableAccidents = v and true or false
+    end
+
+    function E.setPreciseTiming(v)
+        E.preciseTiming = v and true or false
+    end
+
+    function E.duration()
+        if E.totalBeats <= 0 then return 0 end
+        return (E.totalBeats / E.bpm) * 60
+    end
+
+    function E.positionSeconds()
+        return (E.position / E.bpm) * 60
     end
 
     E.clear = function()
