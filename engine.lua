@@ -208,6 +208,10 @@ return function()
                     local key = keys:sub(i, i)
                     table.insert(table.find(shiftKeys, key) and shiftRequired or nonShift, key)
                 end
+            else
+                for i = 1, #keys do
+                    table.insert(nonShift, keys:sub(i, i))
+                end
             end
             for _, key in ipairs(nonShift) do
                 coroutine.wrap(function() triggerPress(key, beats, bpm, false, ctrlRequired) end)()
@@ -377,19 +381,58 @@ return function()
         env.bpm = E.bpm
         songEnv.bpm = E.bpm
         env.x = "short"
-        songEnv.x = "short"
+        if _G and type(_G) == "table" then
+            pcall(function()
+                _G.bpm = E.bpm
+                _G.x = "short"
+                _G.keypress = doKeypress
+                _G.rest = doRest
+                _G.adjustVelocity = doVel
+                _G.pedalDown = doPedalDown
+                _G.pedalUp = doPedalUp
+                _G.keysequence16 = doKeypress
+                _G.finishedSong = doFinished
+            end)
+        end
         local compile = loadstring or load
         local fn, err
         if type(scriptText) == "function" then
             fn = scriptText
+            if setfenv then pcall(setfenv, fn, songEnv) end
+            local ok, runErr = pcall(fn)
+            if not ok then return false, tostring(runErr) end
+        elseif type(scriptText) == "string" then
+            -- Wrap in a closure that receives recorders directly as local arguments.
+            -- This completely bypasses any executor sandbox or broken setfenv in Luau.
+            local wrapped = "return function(keypress, rest, adjustVelocity, pedalDown, pedalUp, keysequence16, finishedSong, bpm, x)\n"
+                .. scriptText
+                .. "\nend"
+            fn, err = compile(wrapped, "P1AN0_SONG")
+            if fn then
+                local okF, chunkFn = pcall(fn)
+                if okF and type(chunkFn) == "function" then
+                    if setfenv then pcall(setfenv, chunkFn, songEnv) end
+                    local ok, runErr = pcall(chunkFn, doKeypress, doRest, doVel, doPedalDown, doPedalUp, doKeypress, doFinished, E.bpm, "short")
+                    if not ok then return false, tostring(runErr) end
+                else
+                    if setfenv then pcall(setfenv, fn, songEnv) end
+                    local ok, runErr = pcall(fn)
+                    if not ok then return false, tostring(runErr) end
+                end
+            else
+                -- Fallback to compiling unwrapped script
+                fn, err = compile(scriptText, "P1AN0_SONG")
+                if not fn then return false, tostring(err) end
+                if setfenv then pcall(setfenv, fn, songEnv) end
+                local ok, runErr = pcall(fn)
+                if not ok then return false, tostring(runErr) end
+            end
         else
-            fn, err = compile(scriptText, "P1AN0_SONG")
+            return false, "invalid song script payload: expected string or function"
         end
-        if not fn then return false, tostring(err) end
-        if setfenv then pcall(setfenv, fn, songEnv) end
-        local ok, runErr = pcall(fn)
-        if not ok then return false, tostring(runErr) end
         E.totalBeats = totalBeats()
+        print(string.format("[P1AN0] loaded '%s': %d actions, %.2f beats, %.1fs duration",
+            tostring(name or "song"), #E.song, E.totalBeats, E.duration()))
         return true
     end
 
