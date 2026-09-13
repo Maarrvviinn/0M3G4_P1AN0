@@ -139,6 +139,7 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         secondaryloader = false, disableaccidents = false, disablefeaturedsongs = false,
         alwaysshowmidispoofer = false, errorMargin = 0, midiSpoof = false,
         sidebarCollapsed = false, showColArtist = true, showColGenre = true, showColBpm = true,
+        enableMinimizeKey = true, minimizeKeybind = "LeftAlt",
     }
     local function copy(t) local o = {} for k, v in pairs(t) do o[k] = v end return o end
     local function hasRead() return type(readfile) == "function" and type(isfile) == "function" end
@@ -220,7 +221,9 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         DisplayOrder = 2147483000, ZIndexBehavior = Enum.ZIndexBehavior.Sibling, Parent = parentGui,
     })
 
+    local keyConn
     local function unload()
+        if keyConn then pcall(function() keyConn:Disconnect() end); keyConn = nil end
         pcall(function() Engine.stop() end)
         pcall(function() Engine.clear() end)
         pcall(function() gui:Destroy() end)
@@ -292,29 +295,29 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         end
     })
 
-    local nav = make("Frame", { Parent = sidebar, Position = UDim2.new(0, 0, 0, 56), Size = UDim2.new(1, 0, 0, 88), BackgroundTransparency = 1, ZIndex = 2 })
+    local nav = make("Frame", { Parent = sidebar, Position = UDim2.new(0, 0, 0, 56), Size = UDim2.new(1, 0, 0, 80), BackgroundTransparency = 1, ZIndex = 2 })
     local browseBtn = make("TextButton", {
-        Parent = nav, Position = UDim2.new(0, 10, 0, 2), Size = UDim2.new(1, -20, 0, 38),
+        Parent = nav, Position = UDim2.new(0, 8, 0, 2), Size = UDim2.new(1, -16, 0, 34),
         BackgroundColor3 = C.hover, BackgroundTransparency = 0.8, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2,
     })
     corner(browseBtn, 6)
-    local browseIcon = icon(browseBtn, "home", 18, C.text, UDim2.new(0, 12, 0.5, 0), Vector2.new(0, 0.5), "^")
-    local browseLbl = label(browseBtn, { Position = UDim2.new(0, 38, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Browse", 14, true, C.text)
+    local browseIcon = icon(browseBtn, "home", 18, C.text, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), "^")
+    local browseLbl = label(browseBtn, { Position = UDim2.new(0, 36, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Browse", 14, true, C.text)
     addTactile(browseBtn)
 
     local settingsBtn = make("TextButton", {
-        Parent = nav, Position = UDim2.new(0, 10, 0, 44), Size = UDim2.new(1, -20, 0, 38),
+        Parent = nav, Position = UDim2.new(0, 8, 0, 40), Size = UDim2.new(1, -16, 0, 34),
         BackgroundColor3 = C.hover, BackgroundTransparency = 1, BorderSizePixel = 0, Text = "", AutoButtonColor = false, ZIndex = 2,
     })
     corner(settingsBtn, 6)
-    local settingsIcon = icon(settingsBtn, "sliders", 18, C.sub, UDim2.new(0, 12, 0.5, 0), Vector2.new(0, 0.5), "*")
-    local settingsLbl = label(settingsBtn, { Position = UDim2.new(0, 38, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Settings", 14, false, C.sub)
+    local settingsIcon = icon(settingsBtn, "sliders", 18, C.sub, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), "*")
+    local settingsLbl = label(settingsBtn, { Position = UDim2.new(0, 36, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, "Settings", 14, false, C.sub)
     addTactile(settingsBtn)
 
-    local libHeader = label(sidebar, { Position = UDim2.new(0, 18, 0, 150), Size = UDim2.new(1, -26, 0, 18), ZIndex = 2 }, "LIBRARY", 11, true, C.dim)
+    local libHeader = label(sidebar, { Position = UDim2.new(0, 18, 0, 144), Size = UDim2.new(1, -26, 0, 18), ZIndex = 2 }, "LIBRARY", 11, true, C.dim)
 
     local sideList = make("ScrollingFrame", {
-        Parent = sidebar, Position = UDim2.new(0, 6, 0, 172), Size = UDim2.new(1, -12, 1, -180),
+        Parent = sidebar, Position = UDim2.new(0, 8, 0, 166), Size = UDim2.new(1, -16, 1, -174),
         BackgroundTransparency = 1, BorderSizePixel = 0, ScrollBarThickness = 2,
         ScrollBarImageColor3 = Color3.fromRGB(60, 60, 60),
         CanvasSize = UDim2.new(0, 0, 0, 0), AutomaticCanvasSize = Enum.AutomaticSize.Y,
@@ -432,28 +435,32 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local fill = make("Frame", { Parent = track, Size = UDim2.new(0, 0, 1, 0), BackgroundColor3 = C.text, BorderSizePixel = 0 })
     corner(fill, 2)
 
-    -- Right: Minimal controls (NO ugly grey rectangles; width 200px, 70px+ buffer from transport)
-    local right = make("Frame", { Parent = now, AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -16, 0.5, 0), Size = UDim2.fromOffset(200, 32), BackgroundTransparency = 1 })
-    make("UIListLayout", { Parent = right, FillDirection = Enum.FillDirection.Horizontal, HorizontalAlignment = Enum.HorizontalAlignment.Right, VerticalAlignment = Enum.VerticalAlignment.Center, Padding = UDim.new(0, 10), SortOrder = Enum.SortOrder.LayoutOrder })
+    -- Right: Minimal controls (Clean integrated pill steppers)
+    local right = make("Frame", { Parent = now, AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -16, 0.5, 0), Size = UDim2.fromOffset(236, 32), BackgroundTransparency = 1 })
+    make("UIListLayout", { Parent = right, FillDirection = Enum.FillDirection.Horizontal, HorizontalAlignment = Enum.HorizontalAlignment.Right, VerticalAlignment = Enum.VerticalAlignment.Center, Padding = UDim.new(0, 8), SortOrder = Enum.SortOrder.LayoutOrder })
 
     local function miniControl(order, width)
-        local c = make("Frame", { Parent = right, Size = UDim2.fromOffset(width, 28), BackgroundTransparency = 1, LayoutOrder = order })
-        local minus = make("TextButton", { Parent = c, Size = UDim2.fromOffset(18, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
-        corner(minus, 4)
+        local c = make("Frame", {
+            Parent = right, Size = UDim2.fromOffset(width, 26),
+            BackgroundColor3 = Color3.fromRGB(24, 24, 24), BorderSizePixel = 0, LayoutOrder = order,
+        })
+        corner(c, 13)
+        make("UIStroke", { Parent = c, Color = C.border, Thickness = 1, Transparency = 0.5 })
+
+        local minus = make("TextButton", { Parent = c, Position = UDim2.new(0, 0, 0, 0), Size = UDim2.fromOffset(20, 26), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
         local mic = icon(minus, "minus", 11, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "-")
         addTactile(minus, { onHover = function(h) setObjColor(mic, h and C.text or C.sub) end })
 
-        local val = label(c, { Position = UDim2.new(0, 18, 0, 0), Size = UDim2.new(1, -36, 1, 0) }, "", 11, true, C.text, Enum.TextXAlignment.Center)
+        local val = label(c, { Position = UDim2.new(0, 20, 0, 0), Size = UDim2.new(1, -40, 1, 0) }, "", 10, true, C.text, Enum.TextXAlignment.Center)
 
-        local plus = make("TextButton", { Parent = c, Position = UDim2.new(1, -18, 0, 0), Size = UDim2.fromOffset(18, 28), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
-        corner(plus, 4)
+        local plus = make("TextButton", { Parent = c, Position = UDim2.new(1, -20, 0, 0), Size = UDim2.fromOffset(20, 26), BackgroundTransparency = 1, Text = "", AutoButtonColor = false })
         local pic = icon(plus, "plus", 11, C.sub, UDim2.fromScale(0.5, 0.5), Vector2.new(0.5, 0.5), "+")
         addTactile(plus, { onHover = function(h) setObjColor(pic, h and C.text or C.sub) end })
 
         return c, minus, val, plus
     end
-    local _, bpmMinus, bpmVal, bpmPlus = miniControl(1, 68)
-    local _, errMinus, errVal, errPlus = miniControl(2, 64)
+    local _, bpmMinus, bpmVal, bpmPlus = miniControl(1, 80)
+    local _, errMinus, errVal, errPlus = miniControl(2, 74)
 
     -- Compact 52px inline MIDI badge with green status dot
     local midiBadge = make("TextButton", {
@@ -508,10 +515,14 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     })
     make("UIListLayout", { Parent = settingsList, Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder })
 
-    local toast = label(win, { AnchorPoint = Vector2.new(0.5, 1), Position = UDim2.new(0.5, 0, 1, -NOW_H - 14), Size = UDim2.fromOffset(420, 34), ZIndex = 30 }, "", 13, true, C.text, Enum.TextXAlignment.Center)
-    toast.BackgroundColor3 = C.card
-    toast.Visible = false
+    local toast = label(gui, {
+        AnchorPoint = Vector2.new(0.5, 0), Position = UDim2.new(0.5, 0, 0, 20),
+        Size = UDim2.fromOffset(360, 34), BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+        BorderSizePixel = 0, Visible = false, ZIndex = 2147483010,
+    }, "", 12, true, C.text, Enum.TextXAlignment.Center)
     corner(toast, 8)
+    make("UIStroke", { Parent = toast, Color = C.border, Thickness = 1, Transparency = 0.35 })
+
     local toastToken = 0
     local function notify(text, color)
         if Settings.data.disablenotifs then return end
@@ -520,9 +531,19 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         toast.Text = text
         toast.TextColor3 = color or C.text
         toast.Visible = true
+        toast.BackgroundTransparency = 0
+        toast.TextTransparency = 0
         task.spawn(function()
-            task.wait(3)
-            if toastToken == my then toast.Visible = false end
+            task.wait(2.8)
+            if toastToken == my then
+                local tw = TweenService:Create(toast, TweenInfo.new(0.25, Enum.EasingStyle.Quart), {
+                    BackgroundTransparency = 1, TextTransparency = 1
+                })
+                tw:Play()
+                tw.Completed:Connect(function()
+                    if toastToken == my then toast.Visible = false end
+                end)
+            end
         end)
     end
 
@@ -921,13 +942,13 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     local function sideItem(name, iconName, glyph, filter)
         order = order + 1
         local b = make("TextButton", {
-            Parent = sideList, Size = UDim2.new(1, 0, 0, 32),
+            Parent = sideList, Size = UDim2.new(1, 0, 0, 34),
             Position = UDim2.new(0, 0, 0, 0), BackgroundColor3 = C.sidebar, BackgroundTransparency = 1,
             BorderSizePixel = 0, Text = "", AutoButtonColor = false, LayoutOrder = order, ZIndex = 2,
         })
-        corner(b, 4)
-        local ic = icon(b, iconName, 16, C.sub, UDim2.new(0, 8, 0.5, 0), Vector2.new(0, 0.5), glyph)
-        local lbl = label(b, { Position = UDim2.new(0, 34, 0, 0), Size = UDim2.new(1, -40, 1, 0), ZIndex = 2 }, name, 13, false, C.sub)
+        corner(b, 6)
+        local ic = icon(b, iconName, 16, C.sub, UDim2.new(0, 10, 0.5, 0), Vector2.new(0, 0.5), glyph)
+        local lbl = label(b, { Position = UDim2.new(0, 36, 0, 0), Size = UDim2.new(1, -42, 1, 0), ZIndex = 2 }, name, 13, false, C.sub)
 
         sideItemButtons[#sideItemButtons + 1] = { btn = b, lbl = lbl, icon = ic, filter = filter }
         addTactile(b, {
@@ -1007,16 +1028,16 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             setIcon(collapseIcon, "panel-left-close", C.sub)
 
             browseBtn.AnchorPoint = Vector2.new(0, 0)
-            browseBtn.Position = UDim2.new(0, 10, 0, 2)
-            browseBtn.Size = UDim2.new(1, -20, 0, 38)
+            browseBtn.Position = UDim2.new(0, 8, 0, 2)
+            browseBtn.Size = UDim2.new(1, -16, 0, 34)
             browseIcon.AnchorPoint = Vector2.new(0, 0.5)
-            browseIcon.Position = UDim2.new(0, 12, 0.5, 0)
+            browseIcon.Position = UDim2.new(0, 10, 0.5, 0)
 
             settingsBtn.AnchorPoint = Vector2.new(0, 0)
-            settingsBtn.Position = UDim2.new(0, 10, 0, 44)
-            settingsBtn.Size = UDim2.new(1, -20, 0, 38)
+            settingsBtn.Position = UDim2.new(0, 8, 0, 40)
+            settingsBtn.Size = UDim2.new(1, -16, 0, 34)
             settingsIcon.AnchorPoint = Vector2.new(0, 0.5)
-            settingsIcon.Position = UDim2.new(0, 12, 0.5, 0)
+            settingsIcon.Position = UDim2.new(0, 10, 0.5, 0)
         end
 
         for _, item in ipairs(sideItemButtons) do
@@ -1024,15 +1045,15 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             if collapsed then
                 item.btn.AnchorPoint = Vector2.new(0.5, 0)
                 item.btn.Position = UDim2.new(0.5, 0, 0, 0)
-                item.btn.Size = UDim2.fromOffset(40, 36)
+                item.btn.Size = UDim2.fromOffset(40, 34)
                 item.icon.AnchorPoint = Vector2.new(0.5, 0.5)
                 item.icon.Position = UDim2.fromScale(0.5, 0.5)
             else
                 item.btn.AnchorPoint = Vector2.new(0, 0)
                 item.btn.Position = UDim2.new(0, 0, 0, 0)
-                item.btn.Size = UDim2.new(1, 0, 0, 32)
+                item.btn.Size = UDim2.new(1, 0, 0, 34)
                 item.icon.AnchorPoint = Vector2.new(0, 0.5)
-                item.icon.Position = UDim2.new(0, 8, 0.5, 0)
+                item.icon.Position = UDim2.new(0, 10, 0.5, 0)
             end
         end
 
@@ -1068,6 +1089,10 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
         panel.Visible = true
         updateNav()
         if open then clearSongHovers() end
+
+        gearBtn.Visible = not open
+        minBtn.Visible = not open
+        closeBtn.Visible = not open
 
         local tInfo = TweenInfo.new(0.22, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
         local mainW = open and (currentSideW + PANEL_W) or currentSideW
@@ -1174,6 +1199,8 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
             seeking = false
             fill.BackgroundColor3 = C.text
             Engine.seek(seekFromInput(input))
+            setTransportIcon()
+            if current then updateRowHighlight(current) end
         end
     end)
 
@@ -1256,7 +1283,8 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     settingRow("Always show MIDI spoofer", "Show MIDI toggle outside Piano Rooms", "alwaysshowmidispoofer", "zap", "!", function() updateMidiBadge() end)
 
     sectionHeader("Interface")
-    settingRow("Disable notifications", "Hide the in-window toasts", "disablenotifs", "info", "i")
+    settingRow("Minimize hotkey (Left Alt)", "Toggle minimize / restore with Left Alt key", "enableMinimizeKey", "minimize-2", "-")
+    settingRow("Disable notifications", "Hide floating notification toasts", "disablenotifs", "info", "i")
     settingRow("Mute sound effects", "Silence click and play sounds", "mutesfx", "volume-x", "x")
 
     local resetBtn = make("TextButton", {
@@ -1275,13 +1303,24 @@ return function(Engine, catalog, hostOrHosts, inheritedParent, Icons)
     end)
 
     -- Window Minimize / Close / Dragging
-    toggle.MouseButton1Click:Connect(function()
-        win.Visible = true
-        toggle.Visible = false
-    end)
-    minBtn.MouseButton1Click:Connect(function()
-        win.Visible = false
-        toggle.Visible = true
+    local function toggleMinimized()
+        if win.Visible then
+            win.Visible = false
+            toggle.Visible = true
+        else
+            win.Visible = true
+            toggle.Visible = false
+        end
+    end
+
+    toggle.MouseButton1Click:Connect(toggleMinimized)
+    minBtn.MouseButton1Click:Connect(toggleMinimized)
+
+    keyConn = UIS.InputBegan:Connect(function(input, processed)
+        if processed then return end
+        if Settings.data.enableMinimizeKey and input.KeyCode == Enum.KeyCode[Settings.data.minimizeKeybind or "LeftAlt"] then
+            toggleMinimized()
+        end
     end)
     closeBtn.MouseButton1Click:Connect(function()
         unload()

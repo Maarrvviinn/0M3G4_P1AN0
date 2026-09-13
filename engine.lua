@@ -510,6 +510,7 @@ return function()
             E.paused = false
             E.playing = true
             thread = task.spawn(function() run(idx) end)
+            if E.onState then E.onState("play") end
         end
     end
 
