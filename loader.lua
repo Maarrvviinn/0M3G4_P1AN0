@@ -59,7 +59,7 @@ end
 -- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
 -- can never serve a stale copy. Bump REV whenever those files change.
 -- raw.githubusercontent.com is listed FIRST because commits are immediately live.
-local REV = "3b04d06"
+local REV = "7feb338"
 
 local HOSTS = {
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
@@ -220,8 +220,6 @@ if ok then
     if statusGui then pcall(function() statusGui:Destroy() end) end
     log("done")
 else
-    setStatus("ERROR: " .. tostring(err), true)
     log("ERROR", err)
-    -- keep the error toast on screen
-    if statusGui and statusLabel then pcall(function() statusGui.Name = "0M3G4_Error" end) end
+    if statusGui then pcall(function() statusGui:Destroy() end) end
 end
