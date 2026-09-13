@@ -60,10 +60,16 @@ return function(Engine, catalog, host, inheritedParent)
 
     local function resolveParent()
         local candidates = {}
-        if inheritedParent then candidates[#candidates + 1] = function() return inheritedParent end end
-        if gethui then candidates[#candidates + 1] = function() return gethui() end end
+        if inheritedParent and inheritedParent:IsA("CoreGui") then candidates[#candidates + 1] = function() return inheritedParent end end
         candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
         candidates[#candidates + 1] = function() return game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui", 5) end
+        if gethui then
+            candidates[#candidates + 1] = function()
+                local h = gethui()
+                if h and h:IsA("ScreenGui") and h.Name ~= "RobloxGui" then return h end
+                return nil
+            end
+        end
         for _, f in ipairs(candidates) do
             local ok, parent = pcall(f)
             if ok and parent then
@@ -79,11 +85,14 @@ return function(Engine, catalog, host, inheritedParent)
     end
 
     local parentGui = resolveParent()
-    if not parentGui then error("[P1AN0] no valid gui parent (gethui/CoreGui/PlayerGui all failed)") end
+    if not parentGui then error("[P1AN0] no valid gui parent (CoreGui/gethui/PlayerGui all failed)") end
 
     local gui = make("ScreenGui", {
         Name = "0M3G4_P1AN0",
         ResetOnSpawn = false,
+        Enabled = true,
+        DisplayOrder = 1000,
+        IgnoreGuiInset = true,
         ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
         Parent = parentGui,
     })
@@ -552,4 +561,13 @@ return function(Engine, catalog, host, inheritedParent)
     updateBpmLabels()
     render()
     notify("0M3G4 P1AN0 loaded  •  " .. tostring(catalog.count or #catalog.songs) .. " songs")
+
+    task.delay(0.7, function()
+        pcall(function()
+            print(string.format(
+                "[P1AN0] diag parent=%s enabled=%s frameVisible=%s frameSize=%s framePos=%s togglePos=%s",
+                tostring(gui.Parent), tostring(gui.Enabled), tostring(frame.Visible),
+                tostring(frame.AbsoluteSize), tostring(frame.AbsolutePosition), tostring(toggle.AbsolutePosition)))
+        end)
+    end)
 end

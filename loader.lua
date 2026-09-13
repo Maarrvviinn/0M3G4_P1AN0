@@ -65,9 +65,15 @@ end
 -- ----------------------------------------------------------------------
 local function resolveParent()
     local candidates = {}
-    if gethui then candidates[#candidates + 1] = function() return gethui() end end
     candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
     candidates[#candidates + 1] = function() return game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui", 5) end
+    if gethui then
+        candidates[#candidates + 1] = function()
+            local h = gethui()
+            if h and h:IsA("ScreenGui") and h.Name ~= "RobloxGui" then return h end
+            return nil
+        end
+    end
     for _, f in ipairs(candidates) do
         local ok, parent = pcall(f)
         if ok and parent then
