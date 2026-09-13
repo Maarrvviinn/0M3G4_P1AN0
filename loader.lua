@@ -59,7 +59,7 @@ end
 -- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
 -- can never serve a stale copy. Bump REV whenever those files change.
 -- raw.githubusercontent.com is listed FIRST because commits are immediately live.
-local REV = "974f022"
+local REV = "3b04d06"
 
 local HOSTS = {
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
