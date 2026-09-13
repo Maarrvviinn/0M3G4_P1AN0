@@ -1,6 +1,14 @@
 -- 0M3G4 P1AN0 || loader.lua (v2, self-diagnosing)
 -- Nothing from the old hellohellohell0.com host is used.
 
+-- Hot unload previous instance if one exists
+if _G.P1AN0_UNLOAD and type(_G.P1AN0_UNLOAD) == "function" then
+    pcall(_G.P1AN0_UNLOAD)
+end
+if getgenv and getgenv().P1AN0_UNLOAD and type(getgenv().P1AN0_UNLOAD) == "function" then
+    pcall(getgenv().P1AN0_UNLOAD)
+end
+
 local TAG = "[P1AN0]"
 local function log(...)
     local parts = { TAG }
@@ -16,9 +24,12 @@ local function tryHttpGet(url)
     if not ok then
         ok, res = pcall(function() return game:HttpGetAsync(url) end)
     end
-    if ok then
-        if type(res) == "string" then return res end
-        if type(res) == "table" and type(res.Body) == "string" then return res.Body end
+    if ok and res then
+        if type(res) == "string" and #res > 0 then return res end
+        if type(res) == "table" then
+            local b = res.Body or res.body
+            if type(b) == "string" and #b > 0 then return b end
+        end
     end
     return nil
 end
@@ -28,8 +39,8 @@ local function tryRequest(url)
     if type(req) ~= "function" then return nil end
     local ok, res = pcall(req, { Url = url, Method = "GET" })
     if ok and type(res) == "table" then
-        if type(res.Body) == "string" then return res.Body end
-        if type(res.body) == "string" then return res.body end
+        local b = res.Body or res.body
+        if type(b) == "string" and #b > 0 then return b end
     end
     return nil
 end
@@ -44,11 +55,12 @@ end
 
 -- Pin to the commit that holds the current engine/ui/catalog so the raw CDN
 -- can never serve a stale copy. Bump REV whenever those files change.
-local REV = "e36857c"
+-- raw.githubusercontent.com is listed FIRST because commits are immediately live.
+local REV = "871963b"
 
 local HOSTS = {
-    "https://cdn.jsdelivr.net/gh/Maarrvviinn/0M3G4_P1AN0@" .. REV .. "/",
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/" .. REV .. "/",
+    "https://cdn.jsdelivr.net/gh/Maarrvviinn/0M3G4_P1AN0@" .. REV .. "/",
     "https://raw.githubusercontent.com/Maarrvviinn/0M3G4_P1AN0/main/",
 }
 
@@ -56,7 +68,7 @@ local function fetchFile(name)
     for _, base in ipairs(HOSTS) do
         log("fetching", base .. name)
         local body = httpGet(base .. name)
-        if body then
+        if body and #body > 0 then
             log("ok", name, #body, "bytes")
             return body, base
         end
@@ -66,10 +78,21 @@ local function fetchFile(name)
 end
 
 -- ----------------------------------------------------------------------
--- parent resolution (gethui -> CoreGui -> PlayerGui)
+-- parent resolution (CoreGui first for Escape menu interactivity -> gethui -> PlayerGui)
 -- ----------------------------------------------------------------------
 local function resolveParent()
     local candidates = {}
+    -- 1. CoreGui (doesn't block click events when Roblox Escape menu is opened)
+    candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
+    -- 2. gethui()
+    if gethui then
+        candidates[#candidates + 1] = function()
+            local h = gethui()
+            if h and not h:IsA("ScreenGui") then return h end
+            return nil
+        end
+    end
+    -- 3. PlayerGui fallback
     candidates[#candidates + 1] = function()
         local lp = game:GetService("Players").LocalPlayer
         if not lp then
@@ -77,14 +100,6 @@ local function resolveParent()
             lp = game:GetService("Players").LocalPlayer
         end
         return lp:FindFirstChildOfClass("PlayerGui") or lp:WaitForChild("PlayerGui", 10)
-    end
-    candidates[#candidates + 1] = function() return game:GetService("CoreGui") end
-    if gethui then
-        candidates[#candidates + 1] = function()
-            local h = gethui()
-            if h and h:IsA("ScreenGui") and h.Name ~= "RobloxGui" then return h end
-            return nil
-        end
     end
     for _, f in ipairs(candidates) do
         local ok, parent = pcall(f)
@@ -112,7 +127,7 @@ if parentGui then
         statusGui.ResetOnSpawn = false
         statusGui.IgnoreGuiInset = true
         statusGui.DisplayOrder = 2147483000
-        statusGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+        statusGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
         statusGui.Parent = parentGui
         statusLabel = Instance.new("TextLabel")
         statusLabel.Size = UDim2.new(0, 420, 0, 34)
@@ -163,7 +178,7 @@ local function main()
     local iconsSrc = fetchFile("icons.lua")
     if not iconsSrc then return false, "could not download icons.lua" end
 
-    local compile = loadstring or load
+    local compile = (getgenv and getgenv().loadstring) or loadstring or load
     if type(compile) ~= "function" then return false, "loadstring is not available in this executor" end
 
     setStatus("building engine...")
@@ -186,7 +201,8 @@ local function main()
     local Icons = type(iconsFn) == "function" and iconsFn() or nil
     log("icons ready:", Icons and tostring(Icons.Lucide ~= nil) or "none")
 
-    uiFn(Engine, catalog, host, parentGui, Icons)
+    -- Pass HOSTS table to UI for multi-source fallback
+    uiFn(Engine, catalog, HOSTS, parentGui, Icons)
     log("ui ready")
 
     return true
